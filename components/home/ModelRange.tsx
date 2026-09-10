@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { rangeTabs, seriesFilters, vehiclesByRange } from "@/lib/data";
@@ -47,6 +47,7 @@ function ModelTile({ vehicle }: { vehicle: Vehicle }) {
           src={vehicle.cardImage}
           alt={vehicle.shortName}
           fill
+          draggable={false}
           sizes="(min-width: 1280px) 24vw, (min-width: 1024px) 32vw, (min-width: 640px) 48vw, 90vw"
           className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
         />
@@ -65,7 +66,19 @@ export function ModelRange() {
   const [series, setSeries] = useState<VehicleSeries | "all">("all");
   const [page, setPage] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [trackWidth, setTrackWidth] = useState(0);
+  const trackRef = useRef<HTMLDivElement>(null);
   const itemsPerView = useItemsPerView();
+
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el) return;
+    const observer = new ResizeObserver((entries) => {
+      setTrackWidth(entries[0].contentRect.width);
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   const filtered = useMemo(() => {
     const list = vehiclesByRange(range);
@@ -89,7 +102,7 @@ export function ModelRange() {
       setPage((current) => (current + 1) % pages.length);
     }, AUTOPLAY_MS);
     return () => window.clearInterval(timer);
-  }, [paused, pages.length]);
+  }, [paused, pages.length, safePage]);
 
   function changeRange(next: VehicleRange) {
     setRange(next);
@@ -98,6 +111,16 @@ export function ModelRange() {
 
   function goTo(next: number) {
     setPage((next + pages.length) % pages.length);
+  }
+
+  function handleDragEnd(_: unknown, info: { offset: { x: number }; velocity: { x: number } }) {
+    setPaused(false);
+    const threshold = trackWidth * 0.18;
+    if (info.offset.x < -threshold || info.velocity.x < -500) {
+      goTo(safePage + 1);
+    } else if (info.offset.x > threshold || info.velocity.x > 500) {
+      goTo(safePage - 1);
+    }
   }
 
   return (
@@ -190,9 +213,16 @@ export function ModelRange() {
         ) : (
           <div className="mt-10 overflow-hidden">
             <motion.div
-              className="flex"
-              animate={{ x: `-${safePage * 100}%` }}
-              transition={{ type: "spring", stiffness: 260, damping: 32 }}
+              ref={trackRef}
+              className="flex cursor-grab touch-pan-y active:cursor-grabbing"
+              drag="x"
+              dragConstraints={{ left: -(pages.length - 1) * trackWidth, right: 0 }}
+              dragElastic={0.12}
+              dragMomentum={false}
+              onDragStart={() => setPaused(true)}
+              onDragEnd={handleDragEnd}
+              animate={{ x: -safePage * trackWidth }}
+              transition={{ duration: 0.65, ease: [0.65, 0, 0.35, 1] }}
             >
               {pages.map((group, groupIndex) => (
                 <div
