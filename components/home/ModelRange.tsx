@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { rangeTabs, seriesFilters, vehiclesByRange } from "@/lib/data";
 import type { Vehicle, VehicleRange, VehicleSeries } from "@/lib/types";
 import { Button, DiscoverLink } from "../shared/Button";
@@ -40,44 +40,21 @@ function chunk(list: Vehicle[], size: number) {
 }
 
 function ModelTile({ vehicle }: { vehicle: Vehicle }) {
-  const frameRef = useRef<HTMLDivElement>(null);
-  const [tilt, setTilt] = useState({ rx: 0, ry: 0 });
-
-  function handleMouseMove(event: MouseEvent<HTMLDivElement>) {
-    const frame = frameRef.current;
-    if (!frame) return;
-    const rect = frame.getBoundingClientRect();
-    const px = (event.clientX - rect.left) / rect.width - 0.5;
-    const py = (event.clientY - rect.top) / rect.height - 0.5;
-    setTilt({ rx: py * -8, ry: px * 8 });
-  }
-
   return (
     <article className="group text-center">
-      <div
-        ref={frameRef}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={() => setTilt({ rx: 0, ry: 0 })}
-        className="relative mx-auto h-56 w-full overflow-hidden bg-gradient-to-b from-[#f6f8fb] to-[#e9edf2] [perspective:900px] lg:h-64"
-      >
-        <motion.div
-          animate={{ rotateX: tilt.rx, rotateY: tilt.ry, scale: tilt.rx || tilt.ry ? 1.08 : 1 }}
-          transition={{ type: "spring", stiffness: 220, damping: 20 }}
-          className="relative h-full w-full [transform-style:preserve-3d]"
-        >
-          <Image
-            src={vehicle.cardImage}
-            alt={vehicle.shortName}
-            fill
-            sizes="(min-width: 1280px) 24vw, (min-width: 1024px) 32vw, (min-width: 640px) 48vw, 90vw"
-            className="object-contain p-6"
-          />
-        </motion.div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-accent transition-transform duration-500 ease-out group-hover:scale-x-100" />
+      <div className="relative mx-auto h-52 w-full overflow-hidden lg:h-60">
+        <Image
+          src={vehicle.cardImage}
+          alt={vehicle.shortName}
+          fill
+          sizes="(min-width: 1280px) 24vw, (min-width: 1024px) 32vw, (min-width: 640px) 48vw, 90vw"
+          className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+        />
       </div>
       <h3 className="mt-5 text-[15px] font-semibold tracking-wide uppercase">{vehicle.name}</h3>
-      <div className="mt-2 flex justify-center">
+      <div className="relative mt-2 inline-flex flex-col items-center">
         <DiscoverLink href={`/models/${vehicle.slug}`} />
+        <span className="mt-1 h-[2px] w-0 bg-accent transition-all duration-300 ease-out group-hover:w-full" />
       </div>
     </article>
   );
@@ -211,21 +188,23 @@ export function ModelRange() {
         {filtered.length === 0 ? (
           <p className="mt-10 text-[14px] text-muted">No models in this series.</p>
         ) : (
-          <div className="relative mt-10 overflow-hidden">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`${range}-${series}-${safePage}`}
-                initial={{ opacity: 0, x: 48 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -48 }}
-                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-              >
-                {pages[safePage].map((vehicle) => (
-                  <ModelTile key={vehicle.slug} vehicle={vehicle} />
-                ))}
-              </motion.div>
-            </AnimatePresence>
+          <div className="mt-10 overflow-hidden">
+            <motion.div
+              className="flex"
+              animate={{ x: `-${safePage * 100}%` }}
+              transition={{ type: "spring", stiffness: 260, damping: 32 }}
+            >
+              {pages.map((group, groupIndex) => (
+                <div
+                  key={groupIndex}
+                  className="grid w-full shrink-0 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                >
+                  {group.map((vehicle) => (
+                    <ModelTile key={vehicle.slug} vehicle={vehicle} />
+                  ))}
+                </div>
+              ))}
+            </motion.div>
           </div>
         )}
 
