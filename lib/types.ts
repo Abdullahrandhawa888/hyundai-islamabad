@@ -29,7 +29,7 @@ export type FeatureTile = {
 };
 
 export type VehicleRange = "hyundai" | "n" | "ioniq";
-export type VehicleSeries = "E" | "S" | "T" | "I" | "C";
+export type VehicleSeries = "E" | "S" | "T" | "I" | "C" | "P";
 
 export type VehicleColor = {
   name: string;

@@ -22,7 +22,9 @@ export function ModelCard({ vehicle }: { vehicle: Vehicle }) {
       <p className="mt-2 text-[13px] text-muted">{vehicle.tagline}</p>
       {from ? (
         <p className="mt-3 text-[14px]">
-          From {formatPrice(from.discountedPrice ?? from.price)}
+          {(from.discountedPrice ?? from.price) > 0
+            ? `From ${formatPrice(from.discountedPrice ?? from.price)}`
+            : formatPrice(from.price)}
         </p>
       ) : null}
       <div className="mt-4 flex justify-center">

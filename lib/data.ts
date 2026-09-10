@@ -112,6 +112,46 @@ const suvColors = [
 
 export const vehicles: Vehicle[] = [
   {
+    slug: "elantra-1-6",
+    name: "THE Elantra 1.6",
+    shortName: "Elantra 1.6",
+    tagline: "Distinctive design, everyday efficiency.",
+    description:
+      "The Hyundai ELANTRA 1.6 pairs Hyundai’s parametric design language with a proven 1.6L Smartstream petrol engine, delivering a refined, fuel-efficient sedan for daily driving - assembled locally to global standards.",
+    highlights: [
+      "1.6L Smartstream petrol engine",
+      "6-speed automatic transmission",
+      "10.25-inch TFT LCD cluster and infotainment",
+      "Wireless Android Auto and Apple CarPlay",
+      "Dual-zone automatic climate control",
+      "Electronic parking brake with Auto-Hold",
+      "LED headlamps, DRLs and tail lights",
+    ],
+    ranges: ["hyundai"],
+    series: "E",
+    category: "Sedan",
+    fuel: "Petrol",
+    cardImage: "/images/vehicles/coming-soon.svg",
+    heroImage: "/images/vehicles/coming-soon.svg",
+    gallery: ["/images/vehicles/coming-soon.svg"],
+    colors: sedanColors,
+    specs: [
+      { label: "Engine", value: "1.6 Smartstream petrol" },
+      { label: "Drivetrain", value: "FWD" },
+      { label: "Transmission", value: "6-speed automatic" },
+      { label: "Wheels", value: "16-inch alloy" },
+      { label: "Warranty", value: "48 months / 100,000 km" },
+    ],
+    variants: [
+      {
+        name: "Elantra 1.6",
+        price: 0,
+        note: "Pricing to be announced",
+      },
+    ],
+    brochure: "/enquiry?type=brochure&model=elantra-1-6",
+  },
+  {
     slug: "elantra-hybrid",
     name: "THE Elantra Hybrid",
     shortName: "Elantra Hybrid",
@@ -195,91 +235,6 @@ export const vehicles: Vehicle[] = [
     brochure: "/enquiry?type=brochure&model=sonata",
   },
   {
-    slug: "sonata-n-line",
-    name: "THE Sonata N Line",
-    shortName: "Sonata N Line",
-    tagline: "Performance, dressed for the city.",
-    description:
-      "Sonata N Line brings Hyundai N performance cues to the executive sedan: a 2.5 turbo GDi engine, sport-tuned presence and a cabin finished for drivers who want more than a commute.",
-    highlights: [
-      "2.5 Turbo GDi",
-      "N Line exterior and interior styling",
-      "Sport-focused driving modes",
-      "Premium infotainment",
-      "Performance-oriented design",
-    ],
-    ranges: ["n"],
-    series: "S",
-    category: "Sedan",
-    fuel: "Petrol",
-    cardImage: "/images/vehicles/sonata-n-line.webp",
-    heroImage: "/images/vehicles/sonata-n-line.webp",
-    gallery: ["/images/vehicles/sonata-n-line.webp"],
-    colors: sedanColors,
-    specs: [
-      { label: "Engine", value: "2.5 Turbo GDi" },
-      { label: "Drivetrain", value: "FWD" },
-      { label: "Transmission", value: "Automatic" },
-      { label: "Warranty", value: "48 months / 100,000 km" },
-    ],
-    variants: [
-      {
-        name: "Sonata 2.5 N Line",
-        price: 15890000,
-        note: "On-road figure may include freight, NEV levy and WHT",
-      },
-    ],
-    brochure: "/enquiry?type=brochure&model=sonata-n-line",
-  },
-  {
-    slug: "tucson-hybrid",
-    name: "THE Tucson Hybrid",
-    shortName: "Tucson Hybrid",
-    tagline: "The hybrid SUV for every journey.",
-    description:
-      "Tucson Hybrid pairs Hyundai’s parametric SUV design with a 1.6 GDi hybrid powertrain. Choose Smart FWD or Signature AWD - both with an 8-speed DCT and a cabin built for family miles.",
-    highlights: [
-      "1.6 GDi HEV powertrain",
-      "Smart FWD or Signature AWD",
-      "8-speed EcoShift DCT",
-      "Panoramic presence and LED lighting",
-      "Advanced driver assistance",
-      "Family-ready cargo space",
-    ],
-    ranges: ["hyundai", "ioniq"],
-    series: "T",
-    category: "SUV",
-    fuel: "Hybrid",
-    cardImage: "/images/vehicles/tucson-hybrid.webp",
-    heroImage: "/images/vehicles/tucson-hybrid.webp",
-    gallery: [
-      "/images/vehicles/tucson-hybrid.webp",
-      "/images/vehicles/tucson-hybrid.webp",
-    ],
-    colors: suvColors,
-    specs: [
-      { label: "Engine", value: "1.6 GDi HEV" },
-      { label: "Drivetrain", value: "FWD or AWD" },
-      { label: "Transmission", value: "8-speed DCT" },
-      { label: "Warranty", value: "48 months / 100,000 km" },
-    ],
-    variants: [
-      {
-        name: "Tucson Hybrid Smart FWD",
-        price: 12926000,
-        discountedPrice: 12202000,
-        note: "Promotional price valid until 31 Aug 2026",
-      },
-      {
-        name: "Tucson Hybrid Signature AWD",
-        price: 14101000,
-        discountedPrice: 13300000,
-        note: "Promotional price valid until 31 Aug 2026",
-      },
-    ],
-    brochure: "/enquiry?type=brochure&model=tucson-hybrid",
-  },
-  {
     slug: "tucson",
     name: "THE Tucson",
     shortName: "Tucson",
@@ -361,6 +316,126 @@ export const vehicles: Vehicle[] = [
       },
     ],
     brochure: "/enquiry?type=brochure&model=santa-fe-hybrid",
+  },
+  {
+    slug: "sonata-n-line",
+    name: "THE Sonata N Line",
+    shortName: "Sonata N Line",
+    tagline: "Performance, dressed for the city.",
+    description:
+      "Sonata N Line brings Hyundai N performance cues to the executive sedan: a 2.5 turbo GDi engine, sport-tuned presence and a cabin finished for drivers who want more than a commute.",
+    highlights: [
+      "2.5 Turbo GDi",
+      "N Line exterior and interior styling",
+      "Sport-focused driving modes",
+      "Premium infotainment",
+      "Performance-oriented design",
+    ],
+    ranges: ["hyundai", "n"],
+    series: "S",
+    category: "Sedan",
+    fuel: "Petrol",
+    cardImage: "/images/vehicles/sonata-n-line.webp",
+    heroImage: "/images/vehicles/sonata-n-line.webp",
+    gallery: ["/images/vehicles/sonata-n-line.webp"],
+    colors: sedanColors,
+    specs: [
+      { label: "Engine", value: "2.5 Turbo GDi" },
+      { label: "Drivetrain", value: "FWD" },
+      { label: "Transmission", value: "Automatic" },
+      { label: "Warranty", value: "48 months / 100,000 km" },
+    ],
+    variants: [
+      {
+        name: "Sonata 2.5 N Line",
+        price: 15890000,
+        note: "On-road figure may include freight, NEV levy and WHT",
+      },
+    ],
+    brochure: "/enquiry?type=brochure&model=sonata-n-line",
+  },
+  {
+    slug: "palisade",
+    name: "THE Palisade",
+    shortName: "Palisade",
+    tagline: "Command the road, three rows deep.",
+    description:
+      "The Hyundai PALISADE is a flagship three-row SUV built for large families - bold presence, a premium cabin and long-distance comfort for Pakistan’s motorways.",
+    highlights: [
+      "Flagship three-row SUV",
+      "Premium, tech-forward cabin",
+      "Advanced driver assistance suite",
+      "Commanding road presence",
+      "Generous cargo and passenger space",
+    ],
+    ranges: ["hyundai"],
+    series: "P",
+    category: "SUV",
+    fuel: "Petrol",
+    cardImage: "/images/vehicles/coming-soon.svg",
+    heroImage: "/images/vehicles/coming-soon.svg",
+    gallery: ["/images/vehicles/coming-soon.svg"],
+    colors: suvColors,
+    specs: [
+      { label: "Body", value: "Three-row flagship SUV" },
+      { label: "Warranty", value: "48 months / 100,000 km" },
+    ],
+    variants: [
+      {
+        name: "Palisade",
+        price: 0,
+        note: "Pricing to be announced",
+      },
+    ],
+    brochure: "/enquiry?type=brochure&model=palisade",
+  },
+  {
+    slug: "tucson-hybrid",
+    name: "THE Tucson Hybrid",
+    shortName: "Tucson Hybrid",
+    tagline: "The hybrid SUV for every journey.",
+    description:
+      "Tucson Hybrid pairs Hyundai’s parametric SUV design with a 1.6 GDi hybrid powertrain. Choose Smart FWD or Signature AWD - both with an 8-speed DCT and a cabin built for family miles.",
+    highlights: [
+      "1.6 GDi HEV powertrain",
+      "Smart FWD or Signature AWD",
+      "8-speed EcoShift DCT",
+      "Panoramic presence and LED lighting",
+      "Advanced driver assistance",
+      "Family-ready cargo space",
+    ],
+    ranges: ["hyundai", "ioniq"],
+    series: "T",
+    category: "SUV",
+    fuel: "Hybrid",
+    cardImage: "/images/vehicles/tucson-hybrid.webp",
+    heroImage: "/images/vehicles/tucson-hybrid.webp",
+    gallery: [
+      "/images/vehicles/tucson-hybrid.webp",
+      "/images/vehicles/tucson-hybrid.webp",
+    ],
+    colors: suvColors,
+    specs: [
+      { label: "Engine", value: "1.6 GDi HEV" },
+      { label: "Drivetrain", value: "FWD or AWD" },
+      { label: "Transmission", value: "8-speed DCT" },
+      { label: "Warranty", value: "48 months / 100,000 km" },
+    ],
+    variants: [
+      {
+        name: "Tucson Hybrid Smart FWD",
+        price: 12926000,
+        discountedPrice: 12202000,
+        note: "Promotional price valid until 31 Aug 2026",
+      },
+      {
+        name: "Tucson Hybrid Signature AWD",
+        price: 14101000,
+        discountedPrice: 13300000,
+        note: "Promotional price valid until 31 Aug 2026",
+      },
+    ],
+    brochure: "/enquiry?type=brochure&model=tucson-hybrid",
   },
   {
     slug: "ioniq-5",
@@ -474,6 +549,7 @@ export const seriesFilters: { id: VehicleSeries; label: string }[] = [
   { id: "T", label: "T" },
   { id: "I", label: "I" },
   { id: "C", label: "C" },
+  { id: "P", label: "P" },
 ];
 
 export const heroSlides: HeroSlide[] = [
@@ -875,5 +951,6 @@ export function vehiclesByRange(range: VehicleRange) {
 }
 
 export function formatPrice(value: number) {
+  if (value <= 0) return "Contact for Pricing";
   return `Rs ${value.toLocaleString("en-PK")}`;
 }
