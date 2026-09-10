@@ -505,13 +505,13 @@ export const featureTiles: FeatureTile[] = [
     id: "ioniq-5",
     title: "The IONIQ 5",
     href: "/models/ioniq-5",
-    image: "/images/vehicles/ioniq-5.webp",
+    image: "/images/vehicles/ioniq-5-tile.jpg",
   },
   {
     id: "ioniq-6",
     title: "THE New IONIQ 6",
     href: "/models/ioniq-6",
-    image: "/images/vehicles/ioniq-6.webp",
+    image: "/images/vehicles/ioniq-6-tile.jpg",
   },
 ];
 
