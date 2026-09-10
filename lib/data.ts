@@ -496,7 +496,7 @@ export const heroSlides: HeroSlide[] = [
     title: "The Sonata N Line",
     subtitle: "Performance, dressed for the city",
     cta: { label: "Find Out More", href: "/models/sonata-n-line" },
-    image: "/images/hero/3.PNG",
+    image: "/images/hero/sonata-n-line.png",
   },
 ];
 
