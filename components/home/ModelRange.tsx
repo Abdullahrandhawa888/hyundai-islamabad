@@ -8,8 +8,6 @@ import { rangeTabs, seriesFilters, vehiclesByRange } from "@/lib/data";
 import type { Vehicle, VehicleRange, VehicleSeries } from "@/lib/types";
 import { Button, DiscoverLink } from "../shared/Button";
 
-const AUTOPLAY_MS = 5000;
-
 function useItemsPerView() {
   const [items, setItems] = useState(4);
 
@@ -65,7 +63,6 @@ export function ModelRange() {
   const [range, setRange] = useState<VehicleRange>("hyundai");
   const [series, setSeries] = useState<VehicleSeries | "all">("all");
   const [page, setPage] = useState(0);
-  const [paused, setPaused] = useState(false);
   const itemsPerView = useItemsPerView();
 
   const filtered = useMemo(() => {
@@ -83,14 +80,6 @@ export function ModelRange() {
   }
 
   const safePage = Math.min(page, pages.length - 1);
-
-  useEffect(() => {
-    if (paused || pages.length <= 1) return;
-    const timer = window.setInterval(() => {
-      setPage((current) => (current + 1) % pages.length);
-    }, AUTOPLAY_MS);
-    return () => window.clearInterval(timer);
-  }, [paused, pages.length, safePage]);
 
   function changeRange(next: VehicleRange) {
     setRange(next);
@@ -144,11 +133,7 @@ export function ModelRange() {
         ))}
       </div>
 
-      <div
-        className="w-full px-4 py-14 sm:px-6 lg:px-10 2xl:px-16"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-      >
+      <div className="w-full px-4 py-14 sm:px-6 lg:px-10 2xl:px-16">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <h2 className="text-3xl font-light tracking-wide uppercase md:text-4xl">
@@ -217,16 +202,10 @@ export function ModelRange() {
                 type="button"
                 aria-label={`Models page ${pageIndex + 1}`}
                 onClick={() => goTo(pageIndex)}
-                className="h-[3px] w-10 overflow-hidden bg-[#e2e5ea]"
-              >
-                <span
-                  className={`block h-full bg-accent transition-all ${
-                    safePage === pageIndex
-                      ? "w-full duration-[5000ms] ease-linear"
-                      : "w-0 duration-200 ease-out"
-                  }`}
-                />
-              </button>
+                className={`h-[3px] transition-all duration-300 ease-out ${
+                  safePage === pageIndex ? "w-10 bg-accent" : "w-6 bg-[#e2e5ea] hover:bg-[#c7ccd3]"
+                }`}
+              />
             ))}
           </div>
         ) : null}
