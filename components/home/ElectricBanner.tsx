@@ -6,12 +6,13 @@ import { Button } from "../shared/Button";
 export function ElectricBanner() {
   return (
     <section className="bg-white">
-      <div className="relative h-[280px] md:h-[360px]">
+      <div className="relative h-[280px] bg-[#0d0c12] md:h-[360px]">
         <Image
-          src="/images/vehicles/ioniq-5.webp"
-          alt="Hyundai electric models"
+          src="/images/vehicles/lineup-banner.jpg"
+          alt="Hyundai vehicle lineup"
           fill
-          className="object-cover"
+          sizes="100vw"
+          className="object-contain"
         />
         <div className="absolute inset-0 bg-black/35" />
         <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-5 text-white md:px-8">
