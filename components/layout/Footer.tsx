@@ -5,6 +5,7 @@ const columns = [
   {
     title: "Contact",
     links: [
+      { label: "About Us", href: "/about" },
       { label: "Find Us", href: "/contact" },
       { label: "Make an Enquiry", href: "/enquiry" },
       { label: "Book a Service", href: "/services/book" },
