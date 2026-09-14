@@ -4,25 +4,25 @@ import { PageHero } from "@/components/shared/PageHero";
 import { customerPromise, freeServices, maintenanceCharts, site } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "After Sales",
+  title: "Service",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        title="After Sales"
+        title="Service"
         crumbs={[
           { label: "Homepage", href: "/" },
-          { label: "After Sales" },
+          { label: "Service" },
         ]}
         image="/images/dealer.jpg"
       />
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
         <p className="max-w-2xl text-[15px] leading-8 text-[#444]">
-          At Hyundai Islamabad, we dedicate ourselves to delivering the finest after-sales
-          service to our customers. The workshop at I-9/3 is open {site.hours.service}. Service
-          line: 0304 111 1603.
+          At Hyundai Islamabad, we dedicate ourselves to delivering the finest service to our
+          customers. The workshop at I-9/3 is open {site.hours.service}. Service line: 0304 111
+          1603.
         </p>
         <Button href="/services/book" variant="primary" className="mt-6">
           Book a Service

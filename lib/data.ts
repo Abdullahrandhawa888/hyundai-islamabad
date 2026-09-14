@@ -51,7 +51,7 @@ export const navItems: NavItem[] = [
   { label: "Models", href: "/models" },
   { label: "Offers", href: "/offers" },
   {
-    label: "After Sales",
+    label: "Service",
     href: "/services",
     children: [
       { label: "Warranty T&Cs", href: "/warranty" },

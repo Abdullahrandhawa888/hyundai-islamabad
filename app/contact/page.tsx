@@ -47,7 +47,7 @@ export default function ContactPage() {
               <strong>Sales</strong> · {site.hours.sales}
             </p>
             <p>
-              <strong>After Sales</strong> · {site.hours.service}
+              <strong>Service</strong> · {site.hours.service}
             </p>
           </div>
           {locations.map((location) => (

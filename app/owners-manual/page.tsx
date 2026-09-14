@@ -14,7 +14,7 @@ export default function OwnersManualPage() {
         title="Owner’s Manual"
         crumbs={[
           { label: "Homepage", href: "/" },
-          { label: "After Sales", href: "/services" },
+          { label: "Service", href: "/services" },
           { label: "Owner’s Manual" },
         ]}
         image="/images/dealer.jpg"

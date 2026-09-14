@@ -21,7 +21,7 @@ const columns = [
   {
     title: "Explore Hyundai",
     links: [
-      { label: "After Sales", href: "/services" },
+      { label: "Service", href: "/services" },
       { label: "Warranty T&C", href: "/warranty" },
       { label: "Owner's Manual", href: "/owners-manual" },
       { label: "Book a Service", href: "/services/book" },

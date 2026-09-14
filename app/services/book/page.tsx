@@ -13,7 +13,7 @@ export default function BookServicePage() {
         title="Book a Service"
         crumbs={[
           { label: "Homepage", href: "/" },
-          { label: "After Sales", href: "/services" },
+          { label: "Service", href: "/services" },
           { label: "Book a Service" },
         ]}
         image="/images/dealer.jpg"
