@@ -8,21 +8,12 @@ export function ElectricBanner() {
     <section className="bg-white">
       <div className="relative h-[280px] bg-[#0d0c12] md:h-[360px]">
         <Image
-          src="/images/vehicles/lineup-banner.jpg"
+          src="/images/vehicles/lineup-banner-wide.jpg"
           alt="Hyundai vehicle lineup"
           fill
           sizes="100vw"
-          className="object-contain"
+          className="object-contain lg:object-cover"
         />
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-5 text-white md:px-8">
-          <p className="text-[12px] font-semibold tracking-[0.2em] uppercase">
-            {electricCopy.heading}
-          </p>
-          <h2 className="mt-2 max-w-3xl text-2xl font-light md:text-4xl">
-            {electricCopy.title}
-          </h2>
-        </div>
       </div>
 
       <div className="mx-auto max-w-6xl px-5 py-12 md:px-8">
