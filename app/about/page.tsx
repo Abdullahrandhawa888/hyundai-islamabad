@@ -6,10 +6,25 @@ import { aboutParagraphs } from "@/lib/data";
 export const metadata: Metadata = { title: "About Us" };
 
 const stats = [
-  { label: "Hyundai dealerships", value: "3" },
+  { label: "Dealerships", value: "3" },
   { label: "Steel plants", value: "2" },
   { label: "Annual steel capacity", value: "500,000 tons" },
   { label: "Steel trading roots since", value: "1970" },
+];
+
+const dealerships = [
+  {
+    name: "Hyundai Ittehad",
+    detail: "Hyundai Islamabad - passenger vehicles, this showroom",
+  },
+  {
+    name: "Jetour Ittehad",
+    detail: "Jetour SUVs, I-9/3 Islamabad",
+  },
+  {
+    name: "CSM Ittehad",
+    detail: "Part of the Ittehad Automotive dealership network",
+  },
 ];
 
 const leadership = [
@@ -49,12 +64,20 @@ export default function AboutPage() {
         <div className="mt-16 max-w-3xl">
           <h2 className="text-2xl font-light">Ittehad Automotive</h2>
           <p className="mt-4 text-[14px] leading-7 text-muted">
-            Hyundai Islamabad is owned and operated by Ittehad Automotive, the exclusive 3S
-            (Sales, Service, Spare Parts) dealer for Hyundai passenger vehicles in the region.
-            Ittehad Automotive operates a network of three Hyundai dealerships, each staffed by
-            Hyundai-trained sales and service teams committed to the same standard of customer
-            care.
+            Hyundai Islamabad is owned and operated by Ittehad Automotive (Ittehad Motors), an
+            Ittehad Steel company. Ittehad Automotive operates three dealerships across
+            Islamabad, each representing a different automotive brand under the same commitment
+            to trained sales and service teams:
           </p>
+        </div>
+
+        <div className="mt-6 grid gap-6 sm:grid-cols-3">
+          {dealerships.map((dealership) => (
+            <article key={dealership.name} className="border border-line p-6">
+              <h3 className="text-[15px] font-semibold">{dealership.name}</h3>
+              <p className="mt-2 text-[13px] leading-6 text-muted">{dealership.detail}</p>
+            </article>
+          ))}
         </div>
 
         <div className="mt-12 max-w-3xl">
@@ -67,7 +90,7 @@ export default function AboutPage() {
             - producing reinforcement bars and light-section steel to international standards at
             a combined capacity of roughly 500,000 metric tons a year. That same manufacturing
             discipline and long-term thinking carries over into how Ittehad Automotive runs its
-            Hyundai dealerships.
+            dealerships.
           </p>
         </div>
 
