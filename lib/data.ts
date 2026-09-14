@@ -52,6 +52,7 @@ export const navItems: NavItem[] = [
   { label: "Offers", href: "/offers" },
   { label: "Service", href: "/services" },
   { label: "Our Team", href: "/team" },
+  { label: "Accessories", href: "/accessories" },
 ];
 
 export const locations: Location[] = [
