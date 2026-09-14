@@ -50,18 +50,7 @@ export const extraPhones = [
 export const navItems: NavItem[] = [
   { label: "Models", href: "/models" },
   { label: "Offers", href: "/offers" },
-  {
-    label: "Service",
-    href: "/services",
-    children: [
-      { label: "Warranty T&Cs", href: "/warranty" },
-      { label: "Customer Promise", href: "/services#customer-promise" },
-      { label: "Free Services", href: "/services#free-services" },
-      { label: "Periodic Maintenance Charts", href: "/services#maintenance" },
-      { label: "Owner's Manual", href: "/owners-manual" },
-      { label: "Book a Service", href: "/services/book" },
-    ],
-  },
+  { label: "Service", href: "/services" },
   {
     label: "More Tools",
     href: "/news",

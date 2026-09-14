@@ -24,9 +24,32 @@ export default function ServicesPage() {
           customers. The workshop at I-9/3 is open {site.hours.service}. Service line: 0304 111
           1603.
         </p>
-        <Button href="/services/book" variant="primary" className="mt-6">
-          Book a Service
-        </Button>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Button href="/services/book" variant="primary">
+            Book a Service
+          </Button>
+          <Button href="/warranty" variant="outline">
+            Warranty T&Cs
+          </Button>
+          <Button href="/owners-manual" variant="outline">
+            Owner&rsquo;s Manual
+          </Button>
+        </div>
+
+        <nav className="mt-10 flex flex-wrap gap-6 border-y border-line py-4 text-[13px] font-semibold tracking-wide uppercase">
+          <a href="#free-services" className="text-nav transition-colors duration-300 ease-out hover:text-accent">
+            Free Services
+          </a>
+          <a
+            href="#customer-promise"
+            className="text-nav transition-colors duration-300 ease-out hover:text-accent"
+          >
+            Customer Promise
+          </a>
+          <a href="#maintenance" className="text-nav transition-colors duration-300 ease-out hover:text-accent">
+            Maintenance Charts
+          </a>
+        </nav>
 
         <h2 id="free-services" className="mt-14 scroll-mt-28 text-2xl font-light">
           Free services
