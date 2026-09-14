@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Button, DiscoverLink } from "@/components/shared/Button";
+import { Button } from "@/components/shared/Button";
 import { PageHero } from "@/components/shared/PageHero";
 import { EnquiryForm } from "@/components/shared/EnquiryForm";
 import { formatPrice, getVehicle, vehicles } from "@/lib/data";
@@ -152,9 +152,6 @@ export default async function ModelDetailPage({
       <section className="border-t border-line">
         <div className="mx-auto max-w-3xl px-5 py-14 md:px-8">
           <EnquiryForm intent="enquiry" defaultModel={vehicle.slug} />
-          <div className="mt-6">
-            <DiscoverLink href="/stock">View Stock Online</DiscoverLink>
-          </div>
         </div>
       </section>
     </>

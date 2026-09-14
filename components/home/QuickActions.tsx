@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const actions = [
-  { label: "View Stock", href: "/stock" },
   { label: "Book A Service", href: "/services/book" },
   { label: "Make an Enquiry", href: "/enquiry" },
   { label: "View Our Offers", href: "/offers" },
@@ -9,7 +8,7 @@ const actions = [
 
 export function QuickActions() {
   return (
-    <section className="grid border-y border-line md:grid-cols-4">
+    <section className="grid border-y border-line md:grid-cols-3">
       {actions.map((action) => (
         <Link
           key={action.href}

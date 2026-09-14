@@ -145,9 +145,6 @@ export function ModelRange() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <Button href="/stock" variant="outline">
-              View Stock Online
-            </Button>
             <div className="flex gap-2">
               <button
                 type="button"

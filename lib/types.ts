@@ -68,18 +68,6 @@ export type Vehicle = {
   brochure: string;
 };
 
-export type StockItem = {
-  id: string;
-  vehicleSlug: string;
-  year: number;
-  color: string;
-  transmission: string;
-  mileage: string;
-  price: number;
-  status: "In Stock" | "Incoming" | "Demo";
-  image: string;
-};
-
 export type Offer = {
   id: string;
   title: string;

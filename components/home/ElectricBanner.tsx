@@ -39,9 +39,6 @@ export function ElectricBanner() {
           <Button href="/enquiry" variant="outline">
             Make an Inquiry
           </Button>
-          <Button href="/stock" variant="outline">
-            View Stock
-          </Button>
         </div>
       </div>
     </section>

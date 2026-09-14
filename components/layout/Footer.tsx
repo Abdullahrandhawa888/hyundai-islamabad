@@ -14,7 +14,6 @@ const columns = [
     title: "Buyers Choice",
     links: [
       { label: "Models", href: "/models" },
-      { label: "View Stock", href: "/stock" },
       { label: "Price List", href: "/prices" },
       { label: "Offers", href: "/offers" },
     ],
