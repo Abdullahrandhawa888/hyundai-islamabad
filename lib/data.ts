@@ -51,16 +51,7 @@ export const navItems: NavItem[] = [
   { label: "Models", href: "/models" },
   { label: "Offers", href: "/offers" },
   { label: "Service", href: "/services" },
-  {
-    label: "More Tools",
-    href: "/news",
-    children: [
-      { label: "Corporate Sales", href: "/corporate" },
-      { label: "News & Events", href: "/news" },
-      { label: "Price List", href: "/prices" },
-      { label: "Our Team", href: "/team" },
-    ],
-  },
+  { label: "Our Team", href: "/team" },
 ];
 
 export const locations: Location[] = [
