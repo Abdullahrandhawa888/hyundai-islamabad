@@ -8,11 +8,11 @@ export function ElectricBanner() {
     <section className="bg-white">
       <div className="relative h-[280px] bg-[#0d0c12] md:h-[360px]">
         <Image
-          src="/images/vehicles/lineup-banner-wide.jpg"
+          src="/images/vehicles/lineup-banner-centered.jpg"
           alt="Hyundai vehicle lineup"
           fill
           sizes="100vw"
-          className="object-contain lg:object-cover"
+          className="object-contain xl:object-cover"
         />
       </div>
 
