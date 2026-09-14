@@ -10,7 +10,8 @@ export function DealerIntro() {
             src={site.dealerImage}
             alt={`${site.name} dealership`}
             fill
-            className="object-cover"
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover xl:object-contain"
           />
         </div>
         <div className="flex flex-col justify-center px-6 py-12 md:px-12">

@@ -39,7 +39,7 @@ export const site = {
     nishat: "https://hyundai-nishat.com/",
   },
   logo: "/images/logo.png",
-  dealerImage: "/images/dealer.jpg",
+  dealerImage: "/images/vehicles/dealership-showroom.jpg",
 };
 
 export const extraPhones = [
