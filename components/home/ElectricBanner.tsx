@@ -12,7 +12,7 @@ export function ElectricBanner() {
           alt="Hyundai vehicle lineup"
           fill
           sizes="100vw"
-          className="object-contain xl:object-cover"
+          className="object-contain"
         />
       </div>
 
