@@ -4,9 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { ChevronDown, MapPin, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Clock, MapPin, Menu, Phone, X } from "lucide-react";
 import { navItems, site } from "@/lib/data";
 import { ContactDrawer } from "./ContactDrawer";
+
+function shorten(hours: string) {
+  return hours.replace(/:00/g, "").replace(/\b0(\d)/g, "$1").replace(/ (AM|PM)/g, "$1");
+}
+
+const salesHoursShort = shorten(site.hours.sales);
+const serviceHoursShort = shorten(site.hours.service);
 
 export function Header() {
   const pathname = usePathname();
@@ -23,6 +30,19 @@ export function Header() {
 
   return (
     <>
+      <div className="border-b border-line bg-gradient-to-r from-accent/5 to-accent/10 lg:hidden">
+        <div className="mx-auto flex items-center justify-end gap-2 px-4 py-1.5 md:px-6">
+          <Clock size={12} className="shrink-0 text-accent" />
+          <div className="text-right text-[10.5px] leading-tight text-nav">
+            <p>
+              <span className="font-semibold text-foreground">Sales</span> {salesHoursShort}
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">Service</span> {serviceHoursShort}
+            </p>
+          </div>
+        </div>
+      </div>
       <header className="sticky top-0 z-40 border-b border-line bg-white">
         <div className="mx-auto flex h-[88px] max-w-[1400px] items-center gap-4 px-4 md:px-6">
           <Link href="/" className="flex shrink-0 items-center gap-3">
@@ -86,6 +106,18 @@ export function Header() {
           </nav>
 
           <div className="ml-auto flex items-center gap-3">
+            <div className="hidden items-center gap-2 rounded-full border border-accent/20 bg-accent/5 py-1.5 pr-3.5 pl-3 lg:flex">
+              <Clock size={15} className="shrink-0 text-accent" />
+              <div className="text-[10.5px] leading-tight text-nav">
+                <p>
+                  <span className="font-semibold text-foreground">Sales</span> {salesHoursShort}
+                </p>
+                <p>
+                  <span className="font-semibold text-foreground">Service</span>{" "}
+                  {serviceHoursShort}
+                </p>
+              </div>
+            </div>
             <a
               href={site.phoneHref}
               className="hidden items-center gap-2 text-[13px] font-semibold text-nav transition-colors duration-300 ease-out hover:text-foreground md:flex"
