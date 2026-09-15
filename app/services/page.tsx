@@ -84,7 +84,8 @@ export default function ServicesPage() {
           <p className="mt-3 max-w-3xl text-[14px] leading-7 text-muted">
             {maintenanceCharts.intro}
           </p>
-          <div className="mt-6 overflow-x-auto">
+          <p className="mt-4 text-[12px] text-muted sm:hidden">Swipe the table sideways to see all columns →</p>
+          <div className="mt-2 overflow-x-auto sm:mt-6">
             <table className="w-full min-w-[980px] border-collapse text-left text-[13px]">
               <thead>
                 <tr className="border-b border-foreground text-[12px] tracking-wide uppercase">

@@ -24,7 +24,8 @@ export default function PricesPage() {
           August 2026 hybrid revisions. Freight, insurance, NEV levy and withholding tax may apply.
           Prices at invoice are final. Contact the showroom for a payable quotation.
         </p>
-        <div className="mt-8 overflow-x-auto">
+        <p className="mt-6 text-[12px] text-muted sm:hidden">Swipe the table sideways to see all columns →</p>
+        <div className="mt-3 overflow-x-auto sm:mt-8">
           <table className="w-full min-w-[720px] border-collapse text-left text-[14px]">
             <thead>
               <tr className="border-b border-foreground text-[12px] tracking-wide uppercase">
