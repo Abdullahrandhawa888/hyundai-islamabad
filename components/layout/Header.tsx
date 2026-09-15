@@ -23,16 +23,6 @@ export function Header() {
 
   return (
     <>
-      <div className="hidden border-b border-line bg-[#f6f8fb] lg:block">
-        <div className="mx-auto flex max-w-[1400px] items-center justify-end gap-6 px-4 py-1.5 text-[11px] text-nav md:px-6">
-          <span>
-            <span className="font-semibold text-foreground">Sales:</span> {site.hours.sales}
-          </span>
-          <span>
-            <span className="font-semibold text-foreground">Service:</span> {site.hours.service}
-          </span>
-        </div>
-      </div>
       <header className="sticky top-0 z-40 border-b border-line bg-white">
         <div className="mx-auto flex h-[88px] max-w-[1400px] items-center gap-4 px-4 md:px-6">
           <Link href="/" className="flex shrink-0 items-center gap-3">

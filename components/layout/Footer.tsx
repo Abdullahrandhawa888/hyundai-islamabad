@@ -1,5 +1,11 @@
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 import { site, vehicles } from "@/lib/data";
+
+const storeHours = [
+  { label: "Sales Hours", value: site.hours.sales },
+  { label: "Service Hours", value: site.hours.service },
+];
 
 const columns = [
   {
@@ -139,6 +145,28 @@ export function Footer() {
             >
               Hyundai Nishat
             </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-5 py-6 md:px-8">
+          <h3 className="mb-3 text-[12px] font-semibold tracking-[0.16em] text-white/70 uppercase">
+            Store Hours
+          </h3>
+          <div className="divide-y divide-white/10 border-y border-white/10">
+            {storeHours.map((row) => (
+              <details key={row.label} className="group py-3">
+                <summary className="flex cursor-pointer items-center justify-between text-[13px] font-medium text-white [&::-webkit-details-marker]:hidden">
+                  {row.label}
+                  <ChevronDown
+                    size={16}
+                    className="text-white/60 transition-transform duration-300 ease-out group-open:rotate-180"
+                  />
+                </summary>
+                <p className="mt-2 text-[13px] text-white/70">{row.value}</p>
+              </details>
+            ))}
           </div>
         </div>
       </div>
