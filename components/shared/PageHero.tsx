@@ -6,6 +6,7 @@ type PageHeroProps = {
   crumbs: { label: string; href?: string }[];
   image?: string;
   compact?: boolean;
+  imagePosition?: string;
 };
 
 export function PageHero({
@@ -13,6 +14,7 @@ export function PageHero({
   crumbs,
   image = "/images/vehicles/elantra-hybrid.webp",
   compact = false,
+  imagePosition = "object-center",
 }: PageHeroProps) {
   return (
     <section
@@ -23,7 +25,7 @@ export function PageHero({
         alt=""
         fill
         sizes="100vw"
-        className="object-cover transition-transform duration-[8000ms] ease-out hover:scale-105"
+        className={`object-cover ${imagePosition} transition-transform duration-[8000ms] ease-out hover:scale-105`}
         priority
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/45" />

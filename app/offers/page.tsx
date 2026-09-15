@@ -11,23 +11,14 @@ export const metadata: Metadata = {
 export default function OffersPage() {
   return (
     <>
-      <div className="relative aspect-[1881/836] w-full bg-navy">
-        <Image
-          src="/images/vehicles/offers-banner.png"
-          alt="Exclusive offers await at Hyundai Islamabad"
-          fill
-          sizes="100vw"
-          priority
-          className="object-cover"
-        />
-      </div>
       <PageHero
         title="Current offers"
         crumbs={[
           { label: "Homepage", href: "/" },
           { label: "Offers" },
         ]}
-        image="/images/vehicles/elantra-hybrid.webp"
+        image="/images/vehicles/offers-banner.png"
+        imagePosition="object-left md:object-center"
       />
       <section className="mx-auto max-w-6xl space-y-8 px-5 py-14 md:px-8">
         {offers.map((offer) => (
