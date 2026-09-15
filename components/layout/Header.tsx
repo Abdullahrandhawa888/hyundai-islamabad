@@ -30,15 +30,21 @@ export function Header() {
 
   return (
     <>
-      <div className="border-b border-line bg-gradient-to-r from-accent/5 to-accent/10 lg:hidden">
+      <div className="bg-gradient-to-r from-accent to-navy lg:hidden">
         <div className="mx-auto flex items-center justify-end gap-2 px-4 py-1.5 md:px-6">
-          <Clock size={12} className="shrink-0 text-accent" />
-          <div className="text-right text-[10.5px] leading-tight text-nav">
+          <span className="relative flex h-1.5 w-1.5 shrink-0">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          </span>
+          <Clock size={12} className="shrink-0 text-white/85" />
+          <div className="text-right text-[10.5px] leading-tight text-white">
             <p>
-              <span className="font-semibold text-foreground">Sales</span> {salesHoursShort}
+              <span className="font-semibold">Sales</span>{" "}
+              <span className="text-white/80">{salesHoursShort}</span>
             </p>
             <p>
-              <span className="font-semibold text-foreground">Service</span> {serviceHoursShort}
+              <span className="font-semibold">Service</span>{" "}
+              <span className="text-white/80">{serviceHoursShort}</span>
             </p>
           </div>
         </div>
@@ -106,18 +112,6 @@ export function Header() {
           </nav>
 
           <div className="ml-auto flex items-center gap-3">
-            <div className="hidden items-center gap-2 rounded-full border border-accent/20 bg-accent/5 py-1.5 pr-3.5 pl-3 lg:flex">
-              <Clock size={15} className="shrink-0 text-accent" />
-              <div className="text-[10.5px] leading-tight text-nav">
-                <p>
-                  <span className="font-semibold text-foreground">Sales</span> {salesHoursShort}
-                </p>
-                <p>
-                  <span className="font-semibold text-foreground">Service</span>{" "}
-                  {serviceHoursShort}
-                </p>
-              </div>
-            </div>
             <a
               href={site.phoneHref}
               className="hidden items-center gap-2 text-[13px] font-semibold text-nav transition-colors duration-300 ease-out hover:text-foreground md:flex"
@@ -139,6 +133,23 @@ export function Header() {
             >
               Enquire
             </Link>
+            <div className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-accent to-navy py-1.5 pr-4 pl-3 shadow-[0_2px_10px_rgba(28,105,212,0.35)] lg:flex">
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+              </span>
+              <Clock size={14} className="shrink-0 text-white/85" />
+              <div className="text-[10.5px] leading-tight text-white">
+                <p>
+                  <span className="font-semibold">Sales</span>{" "}
+                  <span className="text-white/80">{salesHoursShort}</span>
+                </p>
+                <p>
+                  <span className="font-semibold">Service</span>{" "}
+                  <span className="text-white/80">{serviceHoursShort}</span>
+                </p>
+              </div>
+            </div>
             <button
               type="button"
               className="p-1 text-foreground lg:hidden"
