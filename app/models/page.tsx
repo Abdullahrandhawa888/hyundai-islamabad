@@ -15,7 +15,7 @@ export default function ModelsPage() {
           { label: "Homepage", href: "/" },
           { label: "Models" },
         ]}
-        image="/images/vehicles/santa-fe.png"
+        image="/images/vehicles/models-showroom.jpg"
       />
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
         <p className="max-w-2xl text-[14px] leading-7 text-muted">
