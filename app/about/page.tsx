@@ -61,6 +61,15 @@ export default function AboutPage() {
           ))}
         </div>
 
+        <div className="mt-16 max-w-3xl border-l-4 border-accent pl-6">
+          <h2 className="text-2xl font-light">Our Mission</h2>
+          <p className="mt-4 text-[14px] leading-7 text-muted">
+            Ittehad Automotive&rsquo;s mission is to provide quality vehicles at fair prices. We
+            take pride in serving any and all of our clients after purchasing their vehicles from
+            us, and as long as they own the vehicle, we stand right behind them.
+          </p>
+        </div>
+
         <div className="mt-16 max-w-3xl">
           <h2 className="text-2xl font-light">Ittehad Automotive</h2>
           <p className="mt-4 text-[14px] leading-7 text-muted">
