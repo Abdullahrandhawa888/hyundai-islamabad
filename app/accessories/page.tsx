@@ -32,7 +32,7 @@ export default function AccessoriesPage() {
           { label: "Homepage", href: "/" },
           { label: "Accessories" },
         ]}
-        image="/images/vehicles/tucson-hybrid.webp"
+        image="/images/vehicles/accessories-rack.png"
       />
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
         <p className="max-w-2xl text-[14px] leading-7 text-muted">
