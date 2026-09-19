@@ -74,9 +74,9 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="mt-10 rounded-2xl bg-white p-8 shadow-sm md:p-10">
+          <div className="mt-10 rounded-2xl border border-[#e9ddc6] bg-[#f3ead9] p-8 shadow-sm md:p-10">
             <div className="flex items-start gap-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/70">
                 <Heart className="h-5 w-5 text-accent" strokeWidth={1.75} />
               </span>
               <div>
