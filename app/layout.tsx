@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Dancing_Script, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { site } from "@/lib/data";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const dancingScript = Dancing_Script({
-  variable: "--font-cursive",
   subsets: ["latin"],
   display: "swap",
 });
@@ -26,10 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${dancingScript.variable} h-full scroll-smooth antialiased`}
-    >
+    <html lang="en" className={`${inter.variable} h-full scroll-smooth antialiased`}>
       <body className={`${inter.className} flex min-h-full flex-col bg-white text-foreground`}>
         <SiteShell>{children}</SiteShell>
       </body>
