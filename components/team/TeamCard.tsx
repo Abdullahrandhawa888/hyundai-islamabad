@@ -11,39 +11,29 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function TeamCard({ member }: { member: TeamMember }) {
   return (
-    <article className="team-card relative w-full max-w-[300px] shrink-0 overflow-hidden rounded-sm">
-      <div className="team-card__image relative aspect-[4/3] w-full">
+    <article className="group w-full max-w-[260px] shrink-0">
+      <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#f0f3f7]">
         <Image
           src={member.image}
           alt={member.name}
           fill
-          sizes="(min-width: 1024px) 300px, 90vw"
-          className="object-cover object-top transition-transform duration-500 ease-out hover:scale-105"
+          sizes="(min-width: 1024px) 260px, 80vw"
+          className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
         />
-        <div
-          className="team-card__overlay pointer-events-none absolute inset-0"
-          aria-hidden="true"
-          style={{
-            background:
-              "linear-gradient(to top, oklch(0 0 0 / 0.85) 0%, oklch(0 0 0 / 0.55) 40%, oklch(0 0 0 / 0) 80%)",
-          }}
-        />
-        <div className="team-card__content absolute inset-x-0 bottom-0 p-4">
-          <h3 className="text-[15px] font-semibold text-[oklch(1_0_0)]">{member.name}</h3>
-          <p className="mt-0.5 text-[12px] text-[oklch(1_0_0/0.8)]">{member.role}</p>
-          <a
-            href={member.whatsappHref}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-2 inline-flex items-center gap-1.5 text-[12px] font-medium text-[oklch(1_0_0)] transition-opacity duration-300 ease-out hover:opacity-80"
-          >
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#25D366]">
-              <WhatsAppIcon className="h-3.5 w-3.5 fill-white" />
-            </span>
-            {member.phoneDisplay}
-          </a>
-        </div>
       </div>
+      <h3 className="mt-4 text-[16px] font-semibold text-foreground">{member.name}</h3>
+      <p className="mt-0.5 text-[13px] font-medium text-accent">{member.role}</p>
+      <a
+        href={member.whatsappHref}
+        target="_blank"
+        rel="noreferrer"
+        className="mt-2 inline-flex items-center gap-1.5 text-[13px] text-muted transition-colors duration-300 ease-out hover:text-accent"
+      >
+        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#25D366]">
+          <WhatsAppIcon className="h-3 w-3 fill-white" />
+        </span>
+        {member.phoneDisplay}
+      </a>
     </article>
   );
 }
