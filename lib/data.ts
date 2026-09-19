@@ -668,13 +668,69 @@ export const news: NewsArticle[] = [
   },
 ];
 
+export const teamRowSizes = [2, 3, 2, 1] as const;
+
 export const team: TeamMember[] = [
-  { name: "Aqeel Abdullah Malik", role: "Sr. Sales Manager" },
-  { name: "Tahir Hassan Qureshi", role: "Sr. Manager Sales (Fleet)" },
-  { name: "Qasim Waleed", role: "Sales Executive" },
-  { name: "Sadaf Hafeez", role: "Customer Relations Officer" },
-  { name: "Syed Hasnain Ali Shah", role: "Sales Executive" },
-  { name: "Sikandar Babar Paracha", role: "Service Manager" },
+  // Row 1
+  {
+    name: "Ash Khawaja",
+    role: "General Sales Manager",
+    image: "/images/team/ash-khawaja.png",
+    whatsappHref: "https://wa.me/923305001902",
+    phoneDisplay: "+92 330 5001902",
+  },
+  {
+    name: "Ali Hassan",
+    role: "Assistant Sales Manager",
+    image: "/images/team/ali-hassan.png",
+    whatsappHref: "https://wa.me/923309138836",
+    phoneDisplay: "+92 330 9138836",
+  },
+  // Row 2
+  {
+    name: "Qasim Waleed",
+    role: "Fleet Manager",
+    image: "/images/team/qasim-waleed.png",
+    whatsappHref: "https://wa.me/923331150175",
+    phoneDisplay: "+92 333 1150175",
+  },
+  {
+    name: "Shahab Khan",
+    role: "Sales Executive",
+    image: "/images/team/shahab-khan.png",
+    whatsappHref: "https://wa.me/923309138843",
+    phoneDisplay: "+92 330 9138843",
+  },
+  {
+    name: "Muskaan Aga Khan",
+    role: "Sales Executive",
+    image: "/images/team/muskaan-aga-khan.png",
+    whatsappHref: "https://wa.me/923330106157",
+    phoneDisplay: "+92 333 0106157",
+  },
+  // Row 3
+  {
+    name: "Muhammad Ayaan Sultan",
+    role: "Sr. Admin",
+    image: "/images/team/ayaan-sultan.png",
+    whatsappHref: "https://wa.me/923330106225",
+    phoneDisplay: "+92 333 0106225",
+  },
+  {
+    name: "Raafia Nadeem",
+    role: "Admin",
+    image: "/images/team/raafia-nadeem.png",
+    whatsappHref: "https://wa.me/923331150179",
+    phoneDisplay: "+92 333 1150179",
+  },
+  // Row 4
+  {
+    name: "Mahnoor Fatima",
+    role: "Customer Relations Manager",
+    image: "/images/team/mahnoor-fatima.png",
+    whatsappHref: "https://wa.me/923331150172",
+    phoneDisplay: "+92 333 1150172",
+  },
 ];
 
 export const ownerManuals = [

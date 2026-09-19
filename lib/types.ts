@@ -91,6 +91,9 @@ export type NewsArticle = {
 export type TeamMember = {
   name: string;
   role: string;
+  image: string;
+  whatsappHref: string;
+  phoneDisplay: string;
 };
 
 export type FormOption = {
