@@ -29,6 +29,7 @@ export default function TeamPage() {
           { label: "Our Team" },
         ]}
         image="/images/team/group-photo.png"
+        imagePosition="object-top"
       />
       <section className="mx-auto max-w-6xl space-y-8 px-5 py-14 md:px-8">
         {rows.map((row, rowIndex) => (
