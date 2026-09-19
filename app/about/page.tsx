@@ -81,7 +81,7 @@ export default function AboutPage() {
               </span>
               <div>
                 <h2 className="text-2xl font-light">Our Mission</h2>
-                <p className="mt-3 max-w-2xl text-[15px] leading-7 text-muted italic">
+                <p className="mt-3 max-w-2xl font-[family-name:var(--font-cursive)] text-[22px] leading-8 text-muted">
                   Ittehad Automotive&rsquo;s mission is to provide quality vehicles at fair
                   prices. We take pride in serving any and all of our clients after purchasing
                   their vehicles from us, and as long as they own the vehicle, we stand right
