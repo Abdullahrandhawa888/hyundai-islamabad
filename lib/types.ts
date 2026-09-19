@@ -89,11 +89,13 @@ export type NewsArticle = {
 };
 
 export type TeamMember = {
+  slug: string;
   name: string;
   role: string;
   image: string;
   whatsappHref: string;
   phoneDisplay: string;
+  bio: string;
 };
 
 export type FormOption = {

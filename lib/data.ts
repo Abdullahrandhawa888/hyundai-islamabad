@@ -673,63 +673,79 @@ export const teamRowSizes = [2, 3, 2, 1] as const;
 export const team: TeamMember[] = [
   // Row 1
   {
+    slug: "ash-khawaja",
     name: "Ash Khawaja",
     role: "General Sales Manager",
     image: "/images/team/ash-khawaja.png",
     whatsappHref: "https://wa.me/923305001902",
     phoneDisplay: "+92 330 5001902",
+    bio: "Ash leads the sales team at Hyundai Islamabad, overseeing showroom operations and making sure every customer gets a smooth, transparent buying experience from first enquiry through to delivery.",
   },
   {
+    slug: "ali-hassan",
     name: "Ali Hassan",
     role: "Assistant Sales Manager",
     image: "/images/team/ali-hassan.png",
     whatsappHref: "https://wa.me/923309138836",
     phoneDisplay: "+92 330 9138836",
+    bio: "Ali supports the sales floor day to day, helping customers compare models, arrange test drives and find the right Hyundai for their needs and budget.",
   },
   // Row 2
   {
+    slug: "qasim-waleed",
     name: "Qasim Waleed",
     role: "Fleet Manager",
     image: "/images/team/qasim-waleed.png",
     whatsappHref: "https://wa.me/923331150175",
     phoneDisplay: "+92 333 1150175",
+    bio: "Qasim manages corporate and fleet sales at Hyundai Islamabad, working with businesses and government clients on bulk orders and long-term vehicle solutions.",
   },
   {
+    slug: "shahab-khan",
     name: "Shahab Khan",
     role: "Sales Executive",
     image: "/images/team/shahab-khan.png",
     whatsappHref: "https://wa.me/923309138843",
     phoneDisplay: "+92 330 9138843",
+    bio: "Shahab works directly with walk-in and online customers, guiding them through Hyundai's range and helping them book test drives and finalise their purchase.",
   },
   {
+    slug: "muskaan-aga-khan",
     name: "Muskaan Aga Khan",
     role: "Sales Executive",
     image: "/images/team/muskaan-aga-khan.png",
     whatsappHref: "https://wa.me/923330106157",
     phoneDisplay: "+92 333 0106157",
+    bio: "Muskaan assists customers throughout the sales journey, from answering model queries to coordinating paperwork and delivery timelines.",
   },
   // Row 3
   {
+    slug: "muhammad-ayaan-sultan",
     name: "Muhammad Ayaan Sultan",
     role: "Sr. Admin",
     image: "/images/team/ayaan-sultan.png",
     whatsappHref: "https://wa.me/923330106225",
     phoneDisplay: "+92 333 0106225",
+    bio: "Ayaan oversees administrative operations at the showroom, keeping documentation, records and day-to-day processes running smoothly for both staff and customers.",
   },
   {
+    slug: "raafia-nadeem",
     name: "Raafia Nadeem",
     role: "Admin",
     image: "/images/team/raafia-nadeem.png",
     whatsappHref: "https://wa.me/923331150179",
     phoneDisplay: "+92 333 1150179",
+    bio: "Raafia supports the administrative team, helping coordinate paperwork and front-desk operations to keep the showroom running efficiently.",
   },
   // Row 4
   {
+    slug: "mahnoor-fatima",
     name: "Mahnoor Fatima",
     role: "Customer Relations Manager",
     image: "/images/team/mahnoor-fatima.png",
     whatsappHref: "https://wa.me/923331150172",
     phoneDisplay: "+92 333 1150172",
+    bio: "Mahnoor looks after the customer experience at Hyundai Islamabad, following up after every visit and service to make sure customers feel supported long after they've driven off the lot.",
   },
 ];
 
@@ -878,6 +894,10 @@ export function getVehicle(slug: string) {
 
 export function getNews(slug: string) {
   return news.find((article) => article.slug === slug);
+}
+
+export function getTeamMember(slug: string) {
+  return team.find((member) => member.slug === slug);
 }
 
 export function vehiclesByRange(range: VehicleRange) {
