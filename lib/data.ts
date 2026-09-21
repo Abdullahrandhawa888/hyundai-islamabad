@@ -745,7 +745,7 @@ export const team: TeamMember[] = [
     image: "/images/team/mahnoor-fatima.png",
     whatsappHref: "https://wa.me/923331150172",
     phoneDisplay: "+92 333 1150172",
-    bio: "Mahnoor looks after the customer experience at Hyundai Islamabad, following up after every visit and service to make sure customers feel supported long after they've driven off the lot.",
+    bio: "I am Mahnoor Fatima, Customer Relations Manager at Hyundai. I am dedicated to ensuring every customer receives exceptional service and a seamless experience. My goal is to build lasting relationships based on trust, care, and customer satisfaction.",
   },
 ];
 
