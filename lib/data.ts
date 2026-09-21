@@ -735,7 +735,7 @@ export const team: TeamMember[] = [
     image: "/images/team/raafia-nadeem.png",
     whatsappHref: "https://wa.me/923331150179",
     phoneDisplay: "+92 333 1150179",
-    bio: "Raafia supports the administrative team, helping coordinate paperwork and front-desk operations to keep the showroom running efficiently.",
+    bio: "I'm Raafia Nadeem, working in Administration at Hyundai Islamabad, supporting the sales team with efficient coordination, customer handling, documentation, and smooth day-to-day operations.",
   },
   // Row 4
   {
