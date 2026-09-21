@@ -698,7 +698,7 @@ export const team: TeamMember[] = [
     image: "/images/team/qasim-waleed.png",
     whatsappHref: "https://wa.me/923331150175",
     phoneDisplay: "+92 333 1150175",
-    bio: "Qasim manages corporate and fleet sales at Hyundai Islamabad, working with businesses and government clients on bulk orders and long-term vehicle solutions.",
+    bio: "I am Qasim, the Fleet Manager at Hyundai Islamabad. I have been a member of Ittehad Automotive, and am enjoying it very much. I specialize in dealing with different banks, and the orders from banks go through me.",
   },
   {
     slug: "shahab-khan",
