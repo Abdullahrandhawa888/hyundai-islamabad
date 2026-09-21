@@ -688,7 +688,7 @@ export const team: TeamMember[] = [
     image: "/images/team/ali-hassan.png",
     whatsappHref: "https://wa.me/923309138836",
     phoneDisplay: "+92 330 9138836",
-    bio: "Ali supports the sales floor day to day, helping customers compare models, arrange test drives and find the right Hyundai for their needs and budget.",
+    bio: "I am Ali. I have been in management for the last year. It's challenging, it's fun, it allows me to use my people skills, and I am able to talk to clients from all walks of life.",
   },
   // Row 2
   {
