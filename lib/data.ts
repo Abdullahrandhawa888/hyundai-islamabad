@@ -707,7 +707,7 @@ export const team: TeamMember[] = [
     image: "/images/team/shahab-khan.png",
     whatsappHref: "https://wa.me/923309138843",
     phoneDisplay: "+92 330 9138843",
-    bio: "Shahab works directly with walk-in and online customers, guiding them through Hyundai's range and helping them book test drives and finalise their purchase.",
+    bio: "I am Shahab, a proud member of Ittehad Automotive for the last two and a half years. I am fluent in Urdu and Pushto. If your language preference is Pushto, I can definitely accommodate you.",
   },
   {
     slug: "muskaan-aga-khan",
