@@ -716,7 +716,7 @@ export const team: TeamMember[] = [
     image: "/images/team/muskaan-aga-khan.png",
     whatsappHref: "https://wa.me/923330106157",
     phoneDisplay: "+92 333 0106157",
-    bio: "Muskaan assists customers throughout the sales journey, from answering model queries to coordinating paperwork and delivery timelines.",
+    bio: "I am Muskaan. I joined Ittehad Automotive in mid-August of 2026. It's been nothing but fun. I had never been in this type of business before, but it's been lots of fun so far.",
   },
   // Row 3
   {
