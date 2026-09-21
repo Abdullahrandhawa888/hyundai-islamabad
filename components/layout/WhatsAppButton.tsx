@@ -1,12 +1,48 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { site } from "@/lib/data";
 
 export function WhatsAppButton() {
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  useEffect(() => {
+    lastY.current = window.scrollY;
+
+    const onScroll = () => {
+      const y = window.scrollY;
+      const goingDown = y > lastY.current + 4;
+      const goingUp = y < lastY.current - 4;
+
+      if (goingDown && y > 120) {
+        setHidden(true);
+        clearTimeout(hideTimer.current);
+        hideTimer.current = setTimeout(() => setHidden(false), 1500);
+      } else if (goingUp) {
+        setHidden(false);
+        clearTimeout(hideTimer.current);
+      }
+
+      lastY.current = y;
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      clearTimeout(hideTimer.current);
+    };
+  }, []);
+
   return (
     <a
       href={site.whatsapp}
       target="_blank"
       rel="noreferrer"
-      className="fixed bottom-5 left-5 z-40 flex items-center gap-2 transition-transform duration-300 ease-out hover:scale-105"
+      className={`fixed bottom-5 left-5 z-40 flex items-center gap-2 transition-all duration-300 ease-out hover:scale-105 ${
+        hidden ? "translate-y-24 opacity-0" : "translate-y-0 opacity-100"
+      }`}
       aria-label="Message us on WhatsApp"
     >
       <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg">
