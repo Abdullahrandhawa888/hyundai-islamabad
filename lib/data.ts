@@ -726,7 +726,7 @@ export const team: TeamMember[] = [
     image: "/images/team/ayaan-sultan.png",
     whatsappHref: "https://wa.me/923330106225",
     phoneDisplay: "+92 333 0106225",
-    bio: "Ayaan oversees administrative operations at the showroom, keeping documentation, records and day-to-day processes running smoothly for both staff and customers.",
+    bio: "I am passionate about delivering exceptional customer experiences, building lasting relationships, and turning every interaction into an opportunity to create value.",
   },
   {
     slug: "raafia-nadeem",
