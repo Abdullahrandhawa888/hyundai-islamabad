@@ -4,16 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { ChevronDown, Clock, MapPin, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, MapPin, Menu, Phone, X } from "lucide-react";
 import { navItems, site } from "@/lib/data";
 import { ContactDrawer } from "./ContactDrawer";
-
-function shorten(hours: string) {
-  return hours.replace(/:00/g, "").replace(/\b0(\d)/g, "$1").replace(/ (AM|PM)/g, "$1");
-}
-
-const salesHoursShort = shorten(site.hours.sales);
-const serviceHoursShort = shorten(site.hours.service);
 
 export function Header() {
   const pathname = usePathname();
@@ -30,26 +23,7 @@ export function Header() {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-accent to-navy lg:hidden">
-        <div className="mx-auto flex items-center justify-end gap-2 px-4 py-1.5 md:px-6">
-          <span className="relative flex h-1.5 w-1.5 shrink-0">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
-          </span>
-          <Clock size={12} className="shrink-0 text-white/85" />
-          <div className="text-right text-[10.5px] leading-tight text-white">
-            <p>
-              <span className="font-semibold">Sales</span>{" "}
-              <span className="text-white/80">{salesHoursShort}</span>
-            </p>
-            <p>
-              <span className="font-semibold">Service</span>{" "}
-              <span className="text-white/80">{serviceHoursShort}</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <header className="sticky top-0 z-40 border-b border-line bg-white">
+      <header className="border-b border-line bg-white">
         <div className="mx-auto flex h-[88px] max-w-[1400px] items-center gap-4 px-4 md:px-6">
           <Link href="/" className="flex shrink-0 items-center gap-3">
             <Image
@@ -133,23 +107,6 @@ export function Header() {
             >
               Enquire
             </Link>
-            <div className="hidden items-center gap-2 rounded-full bg-gradient-to-r from-accent to-navy py-1.5 pr-4 pl-3 shadow-[0_2px_10px_rgba(28,105,212,0.35)] lg:flex">
-              <span className="relative flex h-2 w-2 shrink-0">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
-              </span>
-              <Clock size={14} className="shrink-0 text-white/85" />
-              <div className="text-[10.5px] leading-tight text-white">
-                <p>
-                  <span className="font-semibold">Sales</span>{" "}
-                  <span className="text-white/80">{salesHoursShort}</span>
-                </p>
-                <p>
-                  <span className="font-semibold">Service</span>{" "}
-                  <span className="text-white/80">{serviceHoursShort}</span>
-                </p>
-              </div>
-            </div>
             <button
               type="button"
               className="p-1 text-foreground lg:hidden"

@@ -30,3 +30,18 @@ body {
   font-family: var(--font-inter), Arial, Verdana, Helvetica, sans-serif;
   margin: 0;
 }
+
+@keyframes timings-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-timings-in {
+  animation: timings-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
