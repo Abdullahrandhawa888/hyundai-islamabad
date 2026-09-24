@@ -19,6 +19,7 @@ export type HeroSlide = {
   subtitle: string;
   cta: { label: string; href: string };
   image: string;
+  imagePosition?: string;
 };
 
 export type FeatureTile = {

@@ -545,7 +545,8 @@ export const heroSlides: HeroSlide[] = [
     title: "The New Elantra Hybrid",
     subtitle: "Pakistan’s first hybrid sedan",
     cta: { label: "Find Out More", href: "/models/elantra-hybrid" },
-    image: "/images/hero/1.PNG",
+    image: "/images/hero/landing-hero.jpg",
+    imagePosition: "object-[62%_center]",
   },
   {
     id: "ioniq-5",
@@ -553,6 +554,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: "100% Electric",
     cta: { label: "Find Out More", href: "/models/ioniq-5" },
     image: "/images/hero/2.PNG",
+    imagePosition: "object-[center_78%]",
   },
   {
     id: "sonata-n-line",
@@ -560,6 +562,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: "Performance, dressed for the city",
     cta: { label: "Find Out More", href: "/models/sonata-n-line" },
     image: "/images/hero/sonata-n-line.png",
+    imagePosition: "object-[center_78%]",
   },
 ];
 

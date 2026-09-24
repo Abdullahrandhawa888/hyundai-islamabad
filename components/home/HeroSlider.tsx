@@ -21,7 +21,7 @@ export function HeroSlider() {
   }, [index]);
 
   return (
-    <section className="relative h-[calc(100vh-88px)] min-h-[520px] overflow-hidden bg-black">
+    <section className="relative h-[460px] overflow-hidden bg-black sm:h-[520px] md:h-[max(380px,33.333vw)]">
       {heroSlides.map((item, itemIndex) => {
         const active = itemIndex === index;
         return (
@@ -37,8 +37,8 @@ export function HeroSlider() {
               fill
               priority={itemIndex === 0}
               sizes="100vw"
-              className={`object-cover transition-transform duration-[8000ms] ease-out ${
-                active ? "scale-110" : "scale-100"
+              className={`object-cover ${item.imagePosition ?? "object-center"} transition-transform duration-[8000ms] ease-out ${
+                active ? "scale-[1.03]" : "scale-100"
               }`}
             />
             <div className="absolute inset-0 bg-black/25" />
