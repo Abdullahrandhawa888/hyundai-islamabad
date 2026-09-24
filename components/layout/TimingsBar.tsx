@@ -19,7 +19,7 @@ function LiveDot() {
 
 export function TimingsBar() {
   return (
-    <div className="animate-timings-in overflow-hidden bg-gradient-to-r from-accent to-navy shadow-[0_2px_14px_rgba(0,44,95,0.35)]">
+    <div className="animate-timings-in overflow-hidden bg-navy shadow-[0_2px_14px_rgba(0,44,95,0.35)]">
       {/* Mobile and tablet: two compact single-line rows */}
       <div className="flex flex-col items-center gap-0.5 px-3 py-1.5 text-center lg:hidden">
         <p className="flex items-center gap-1.5 text-[10.5px] leading-tight whitespace-nowrap text-white sm:text-[12px]">
