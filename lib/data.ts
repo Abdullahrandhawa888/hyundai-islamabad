@@ -545,8 +545,8 @@ export const heroSlides: HeroSlide[] = [
     title: "The New Elantra Hybrid",
     subtitle: "Pakistan’s first hybrid sedan",
     cta: { label: "Find Out More", href: "/models/elantra-hybrid" },
-    image: "/images/hero/landing-hero.jpg",
-    imagePosition: "object-[50%_center]",
+    image: "/images/hero/landing-hero-wide.jpg",
+    imagePosition: "object-[62%_center]",
   },
   {
     id: "ioniq-5",
