@@ -6,7 +6,7 @@ import { Breadcrumb } from "../shared/Breadcrumb";
 
 export function TeamHeroBanner() {
   return (
-    <section className="relative h-[380px] overflow-hidden md:h-[480px]">
+    <section className="relative h-[420px] overflow-hidden md:h-[760px]">
       <motion.div
         className="absolute inset-0"
         animate={{ scale: [1, 1.06, 1] }}
