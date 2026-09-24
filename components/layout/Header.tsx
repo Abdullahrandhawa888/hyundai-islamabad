@@ -47,7 +47,8 @@ export function Header() {
                 <Link
                   href={item.href}
                   className={`flex items-center gap-1 px-2.5 py-2 text-[13px] font-bold transition-colors duration-300 ease-out ${
-                    pathname.startsWith(item.href)
+                    pathname.startsWith(item.href) ||
+                    item.children?.some((child) => pathname.startsWith(child.href))
                       ? "text-foreground"
                       : "text-nav hover:text-foreground"
                   }`}

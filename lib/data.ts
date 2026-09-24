@@ -49,7 +49,14 @@ export const extraPhones = [
 
 export const navItems: NavItem[] = [
   { label: "Models", href: "/models" },
-  { label: "Offers", href: "/offers" },
+  {
+    label: "Offers",
+    href: "/offers",
+    children: [
+      { label: "Price List", href: "/prices" },
+      { label: "EMI Plans", href: "/emi-plans" },
+    ],
+  },
   { label: "Service", href: "/services" },
   { label: "Our Team", href: "/team" },
   { label: "Accessories", href: "/accessories" },
