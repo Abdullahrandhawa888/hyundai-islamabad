@@ -21,7 +21,7 @@ export function HeroSlider() {
   }, [index]);
 
   return (
-    <section className="relative h-[460px] overflow-hidden bg-black sm:h-[520px] md:h-[max(380px,33.333vw)]">
+    <section className="relative h-[calc(100svh-132px)] min-h-[520px] overflow-hidden bg-black lg:h-[calc(100svh-116px)]">
       {heroSlides.map((item, itemIndex) => {
         const active = itemIndex === index;
         return (

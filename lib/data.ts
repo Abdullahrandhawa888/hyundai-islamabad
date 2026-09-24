@@ -546,7 +546,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: "Pakistan’s first hybrid sedan",
     cta: { label: "Find Out More", href: "/models/elantra-hybrid" },
     image: "/images/hero/landing-hero.jpg",
-    imagePosition: "object-[62%_center]",
+    imagePosition: "object-[50%_center]",
   },
   {
     id: "ioniq-5",
