@@ -6,23 +6,17 @@ import { Breadcrumb } from "../shared/Breadcrumb";
 
 export function TeamHeroBanner() {
   return (
-    <section className="relative h-[420px] overflow-hidden md:h-[760px]">
-      <motion.div
-        className="absolute inset-0"
-        animate={{ scale: [1, 1.06, 1] }}
-        transition={{ duration: 24, ease: "easeInOut", repeat: Infinity }}
-      >
-        <Image
-          src="/images/team/group-photo-banner.png"
-          alt="The Hyundai Islamabad sales and service team"
-          fill
-          sizes="100vw"
-          priority
-          className="object-cover object-top"
-        />
-      </motion.div>
+    <section className="relative aspect-[1536/744] max-h-[440px] w-full overflow-hidden bg-navy">
+      <Image
+        src="/images/team/group-photo-banner.png"
+        alt="The Hyundai Islamabad sales and service team"
+        fill
+        sizes="100vw"
+        priority
+        className="object-contain"
+      />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/5" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/5" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-black/25" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-5 pb-10 md:px-8 md:pb-14">
