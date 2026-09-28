@@ -6,14 +6,14 @@ import { Breadcrumb } from "../shared/Breadcrumb";
 
 export function TeamHeroBanner() {
   return (
-    <section className="relative aspect-[1536/744] max-h-[440px] w-full overflow-hidden bg-navy">
+    <section className="relative aspect-[1536/744] w-full overflow-hidden">
       <Image
         src="/images/team/group-photo-banner.png"
         alt="The Hyundai Islamabad sales and service team"
         fill
         sizes="100vw"
         priority
-        className="object-contain"
+        className="object-cover"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/5" />
