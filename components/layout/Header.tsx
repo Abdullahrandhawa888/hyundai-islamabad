@@ -24,12 +24,12 @@ export function Header() {
   return (
     <>
       <header className="border-b border-line bg-white">
-        <div className="mx-auto flex h-[88px] max-w-[1400px] items-center gap-4 px-4 md:px-6">
+        <div className="flex h-[88px] items-center">
           <a
             href="https://ittehad.com.pk"
             target="_blank"
             rel="noreferrer"
-            className="hidden shrink-0 items-center border-r border-line pr-4 sm:flex"
+            className="hidden shrink-0 items-center border-r border-line py-3 pr-4 pl-4 sm:flex md:pr-6 md:pl-6"
             aria-label="Ittehad Motors"
           >
             <Image
@@ -37,22 +37,23 @@ export function Header() {
               alt="Ittehad Motors"
               width={936}
               height={572}
-              className="h-7 w-auto"
+              className="h-11 w-auto md:h-12"
             />
           </a>
 
-          <Link href="/" className="flex shrink-0 items-center gap-3">
-            <Image
-              src={site.logo}
-              alt={site.name}
-              width={140}
-              height={40}
-              className="h-9 w-auto"
-              priority
-            />
-          </Link>
+          <div className="mx-auto flex h-full max-w-[1400px] flex-1 items-center gap-4 px-4 md:px-6">
+            <Link href="/" className="flex shrink-0 items-center gap-3">
+              <Image
+                src={site.logo}
+                alt={site.name}
+                width={140}
+                height={40}
+                className="h-9 w-auto"
+                priority
+              />
+            </Link>
 
-          <nav className="hidden flex-1 items-center gap-1 lg:flex">
+            <nav className="hidden flex-1 items-center gap-1 lg:flex">
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -132,6 +133,7 @@ export function Header() {
             >
               <Menu size={22} />
             </button>
+          </div>
           </div>
         </div>
       </header>
