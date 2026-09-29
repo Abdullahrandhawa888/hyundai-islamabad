@@ -50,6 +50,40 @@ export default function AboutPage() {
       />
 
       <section className="mx-auto max-w-6xl px-5 pt-14 md:px-8">
+        <div className="max-w-3xl">
+          <h2 className="text-2xl font-light">Our Parent Company: Ittehad Steel</h2>
+          <p className="mt-4 text-[14px] leading-7 text-muted">
+            We are one of the largest private steel manufacturers in Pakistan with 500,000 M.T.
+            of annual capacity. Our manufacturing plants in Islamabad and Faisalabad produce the
+            highest quality rebars that meet international standards.
+          </p>
+          <p className="mt-4 text-[14px] leading-7 text-muted">
+            Our association with steel dates back to 1970 when our forefathers set up a timber
+            and steel trading establishment in Rawalpindi, Pakistan. The newly-established
+            capital city of Islamabad was beginning to take shape and the area was witnessing a
+            construction boom. However, it was not until 1978 that we first ventured into steel
+            manufacturing. Ittehad Steel was established in 1986 at our current location with a
+            new manufacturing plant with a capacity of 36,000&ndash;40,000 TPA.
+          </p>
+          <p className="mt-4 text-[14px] leading-7 text-muted">
+            We have since been growing and expanding our footprint across the country, with
+            manufacturing facilities in Islamabad and Faisalabad and a dealer presence across the
+            country. We now have a combined capacity of 500,000 MTA at our manufacturing plants
+            in Islamabad and Faisalabad. Over the years we have built a bond of trust with our
+            clients by following international industry standards, and the passing years have
+            mirrored our promise of reliability and longevity of products.
+          </p>
+          <p className="mt-4 text-[14px] leading-7 text-muted">
+            Our future plans include an increase in our current capacity to 1,000,000 MTA by
+            adding to our finishing bar mill capacity, and setting up a 30-MW power plant to be
+            fully self-sufficient in our power needs. In addition, we endeavor to diversify our
+            supply chain by securing global sources of raw material procurement and strengthening
+            our global supply chain.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pt-14 md:px-8">
         {aboutParagraphs.map((paragraph) => (
           <p key={paragraph.slice(0, 24)} className="max-w-3xl text-[15px] leading-8 text-[#444]">
             {paragraph}
@@ -114,20 +148,6 @@ export default function AboutPage() {
               <p className="mt-2 text-[13px] leading-6 text-muted">{dealership.detail}</p>
             </article>
           ))}
-        </div>
-
-        <div className="mt-14 max-w-3xl">
-          <h2 className="text-2xl font-light">Our parent company: Ittehad Steel</h2>
-          <p className="mt-4 text-[14px] leading-7 text-muted">
-            Ittehad Automotive is part of Ittehad Steel, a business whose roots go back to 1970
-            as a steel trading house in Rawalpindi. Ittehad Steel began manufacturing in 1978 and
-            has grown into one of Pakistan&rsquo;s leading private-sector steel producers, with
-            two manufacturing plants - in Islamabad&rsquo;s I-9 Industrial Area and in Faisalabad
-            - producing reinforcement bars and light-section steel to international standards at
-            a combined capacity of roughly 500,000 metric tons a year. That same manufacturing
-            discipline and long-term thinking carries over into how Ittehad Automotive runs its
-            dealerships.
-          </p>
         </div>
       </section>
 
