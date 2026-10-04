@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hyundai Islamabad
 
-## Getting Started
+The website for Hyundai Islamabad, a Hyundai dealership operated by Ittehad Automotive. Built with Next.js (App Router), TypeScript, and Tailwind CSS v4. Deployed on Vercel, auto-deploying on every push to `main`.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). Other scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # production build
+npm run start   # run the production build locally
+npm run lint    # eslint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Where things live
 
-## Learn More
+**`lib/data.ts`** is the single source of truth for almost everything on the site: vehicle models and pricing, the nav menu, team members, offers, news articles, service info, FAQ-style content, and the `site` object (phone number, address, hours, social links, etc.). Most day-to-day edits — a new price, a new team member, a new offer — happen in this one file. `lib/types.ts` defines the shapes that file's data must match.
 
-To learn more about Next.js, take a look at the following resources:
+**`app/`** is the Next.js App Router tree — one folder per route. Dynamic routes (`app/models/[slug]`, `app/news/[slug]`, `app/team/[slug]`) render from the data arrays in `lib/data.ts` via `generateStaticParams`, so adding a new vehicle, news article, or team member to that file is usually enough to get a new page without touching any route code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**`components/`** is organized by the area of the site that uses it:
+- `layout/` — header, footer, the sticky timings bar, the site shell that wraps every page, the WhatsApp button
+- `home/` — homepage-only sections (hero slider, model range, dealer intro, etc.)
+- `models/`, `team/`, `emi/` — components specific to those sections
+- `shared/` — reused across multiple pages (buttons, form fields, breadcrumbs, the generic page hero banner)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**`public/images/`** holds every image, grouped by use: `vehicles/`, `team/`, `news/`, `hero/`, plus a couple of top-level shared images (logo, dealer photo). Each vehicle typically has a `-card.png` (used in list/grid views) and a full-size image (used on its detail page).
 
-## Deploy on Vercel
+## Conventions worth knowing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Tailwind v4 is configured via CSS in `app/globals.css` (`@theme inline`), not a `tailwind.config.js`. Brand colors (`--accent`, `--navy`, etc.) are defined there.
+- Banner/hero images that must never crop awkwardly use the aspect-ratio-lock technique: `aspect-[W/H]` matching the image's exact pixel dimensions, with no fixed height. See `components/team/TeamHeroBanner.tsx` or `components/shared/PageHero.tsx` for examples.
+- After changing an image file in `public/images/`, clear `.next/cache/images` and restart the dev/prod server — Next's image optimizer can otherwise serve a stale cached version.

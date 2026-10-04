@@ -29,7 +29,7 @@ export function Header() {
             href="https://ittehad.com.pk"
             target="_blank"
             rel="noreferrer"
-            className="hidden shrink-0 items-center border-r border-line py-3 pr-4 pl-4 sm:flex md:pr-6 md:pl-6"
+            className="hidden shrink-0 items-center py-3 pr-4 pl-4 sm:flex md:pr-6 md:pl-6"
             aria-label="Ittehad Motors"
           >
             <Image
