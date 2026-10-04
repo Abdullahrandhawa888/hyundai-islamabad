@@ -50,9 +50,9 @@ export const extraPhones = [
 export const navItems: NavItem[] = [
   { label: "Models", href: "/models" },
   {
-    label: "Offers",
-    href: "/offers",
+    label: "Offers & Plans",
     children: [
+      { label: "Offers", href: "/offers" },
       { label: "Price List", href: "/prices" },
       { label: "EMI Plans", href: "/emi-plans" },
     ],

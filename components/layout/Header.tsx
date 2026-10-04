@@ -61,25 +61,37 @@ export function Header() {
                 onMouseEnter={() => item.children && setOpenMenu(item.label)}
                 onMouseLeave={() => setOpenMenu(null)}
               >
-                <Link
-                  href={item.href}
-                  className={`flex items-center gap-1 px-2.5 py-2 text-[13px] font-bold transition-colors duration-300 ease-out ${
-                    pathname.startsWith(item.href) ||
-                    item.children?.some((child) => pathname.startsWith(child.href))
-                      ? "text-foreground"
-                      : "text-nav hover:text-foreground"
-                  }`}
-                >
-                  {item.label}
-                  {item.children ? (
+                {item.children ? (
+                  <button
+                    type="button"
+                    onClick={() => setOpenMenu(item.label)}
+                    aria-expanded={openMenu === item.label}
+                    className={`flex items-center gap-1 px-2.5 py-2 text-[13px] font-bold transition-colors duration-300 ease-out ${
+                      item.children.some((child) => pathname.startsWith(child.href))
+                        ? "text-foreground"
+                        : "text-nav hover:text-foreground"
+                    }`}
+                  >
+                    {item.label}
                     <ChevronDown
                       size={12}
                       className={`transition-transform duration-300 ease-out ${
                         openMenu === item.label ? "rotate-180" : ""
                       }`}
                     />
-                  ) : null}
-                </Link>
+                  </button>
+                ) : (
+                  <Link
+                    href={item.href ?? "/"}
+                    className={`flex items-center gap-1 px-2.5 py-2 text-[13px] font-bold transition-colors duration-300 ease-out ${
+                      pathname.startsWith(item.href ?? "")
+                        ? "text-foreground"
+                        : "text-nav hover:text-foreground"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                )}
                 {item.children ? (
                   <div
                     className={`absolute top-full left-0 min-w-52 border border-line bg-white py-2 shadow-lg transition-all duration-200 ease-out ${
@@ -158,9 +170,15 @@ export function Header() {
         <nav className="flex flex-col p-3">
           {navItems.map((item) => (
             <div key={item.label} className="border-b border-line">
-              <Link href={item.href} className="block px-2 py-3 text-[14px] font-semibold">
-                {item.label}
-              </Link>
+              {item.children ? (
+                <p className="block px-2 py-3 text-[14px] font-semibold text-muted">
+                  {item.label}
+                </p>
+              ) : (
+                <Link href={item.href ?? "/"} className="block px-2 py-3 text-[14px] font-semibold">
+                  {item.label}
+                </Link>
+              )}
               {item.children?.map((child) => (
                 <Link
                   key={child.href}
