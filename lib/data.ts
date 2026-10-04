@@ -131,11 +131,10 @@ export const vehicles: Vehicle[] = [
       { label: "Warranty", value: "48 months / 100,000 km" },
     ],
     variants: [
-      {
-        name: "Elantra 1.6",
-        price: 0,
-        note: "Pricing to be announced",
-      },
+      { name: "Elantra 1.6 Fabric Seats", price: 6449000 },
+      { name: "Elantra 1.6 Beige", price: 6484000 },
+      { name: "Elantra 1.6 Burgundy", price: 6484000 },
+      { name: "Elantra 1.6 Cappuccino", price: 6484000 },
     ],
     brochure: "/enquiry?type=brochure&model=elantra-1-6",
   },
@@ -178,9 +177,7 @@ export const vehicles: Vehicle[] = [
     variants: [
       {
         name: "Elantra Hybrid Blue",
-        price: 11400000,
-        discountedPrice: 10761000,
-        note: "Promotional price valid until 31 Aug 2026",
+        price: 10761000,
       },
     ],
     brochure: "/enquiry?type=brochure&model=elantra-hybrid",
@@ -218,7 +215,7 @@ export const vehicles: Vehicle[] = [
     ],
     variants: [
       { name: "Sonata 2.0", price: 10385000 },
-      { name: "Sonata 2.5", price: 11205000 },
+      { name: "Sonata 2.5", price: 11545000 },
     ],
     brochure: "/enquiry?type=brochure&model=sonata",
   },
@@ -290,18 +287,8 @@ export const vehicles: Vehicle[] = [
       { label: "Warranty", value: "48 months / 100,000 km" },
     ],
     variants: [
-      {
-        name: "Santa Fe Hybrid Smart FWD",
-        price: 14574000,
-        discountedPrice: 13258000,
-        note: "Promotional price valid until 31 Aug 2026",
-      },
-      {
-        name: "Santa Fe Hybrid Signature AWD",
-        price: 16123000,
-        discountedPrice: 14720000,
-        note: "Promotional price valid until 31 Aug 2026",
-      },
+      { name: "Santa Fe Hybrid Smart FWD", price: 13258000 },
+      { name: "Santa Fe Hybrid Signature AWD", price: 14720000 },
     ],
     brochure: "/enquiry?type=brochure&model=santa-fe-hybrid",
   },
@@ -336,7 +323,7 @@ export const vehicles: Vehicle[] = [
     variants: [
       {
         name: "Sonata 2.5 N Line",
-        price: 15890000,
+        price: 16521000,
         note: "On-road figure may include freight, NEV levy and WHT",
       },
     ],
@@ -359,21 +346,20 @@ export const vehicles: Vehicle[] = [
     ranges: ["hyundai"],
     series: "P",
     category: "SUV",
-    fuel: "Petrol",
+    fuel: "Hybrid",
     cardImage: "/images/vehicles/palisade-card.png",
     heroImage: "/images/vehicles/palisade.png",
     gallery: ["/images/vehicles/palisade.png"],
     colors: suvColors,
     specs: [
-      { label: "Body", value: "Three-row flagship SUV" },
-      { label: "Warranty", value: "48 months / 100,000 km" },
+      { label: "Engine", value: "2.5L HEV" },
+      { label: "Combined power", value: "329 hp / 460 Nm" },
+      { label: "Battery warranty", value: "8 years / 160,000 km" },
+      { label: "Warranty", value: "4 years / 100,000 km" },
     ],
     variants: [
-      {
-        name: "Palisade",
-        price: 0,
-        note: "Pricing to be announced",
-      },
+      { name: "Palisade Smart (8-seater)", price: 22625000 },
+      { name: "Palisade Calligraphy (7-seater)", price: 24075000 },
     ],
     brochure: "/enquiry?type=brochure&model=palisade",
   },
@@ -410,18 +396,8 @@ export const vehicles: Vehicle[] = [
       { label: "Warranty", value: "48 months / 100,000 km" },
     ],
     variants: [
-      {
-        name: "Tucson Hybrid Smart FWD",
-        price: 12926000,
-        discountedPrice: 12202000,
-        note: "Promotional price valid until 31 Aug 2026",
-      },
-      {
-        name: "Tucson Hybrid Signature AWD",
-        price: 14101000,
-        discountedPrice: 13300000,
-        note: "Promotional price valid until 31 Aug 2026",
-      },
+      { name: "Tucson Hybrid Smart FWD", price: 12202000 },
+      { name: "Tucson Hybrid Signature AWD", price: 13300000 },
     ],
     brochure: "/enquiry?type=brochure&model=tucson-hybrid",
   },
@@ -520,7 +496,14 @@ export const vehicles: Vehicle[] = [
       { label: "Body", value: "Light commercial / H-100" },
       { label: "Warranty", value: "48 months / 100,000 km" },
     ],
-    variants: [{ name: "Porter H-100", price: 4500000 }],
+    variants: [
+      { name: "Porter H-100 Deckless (Without AC)", price: 4470000 },
+      { name: "Porter H-100 Deckless (With AC)", price: 4580000 },
+      { name: "Porter H-100 F/Deck (Without AC)", price: 4490000 },
+      { name: "Porter H-100 F/Deck (With AC)", price: 4600000 },
+      { name: "Porter H-100 H/Deck (Without AC)", price: 4510000 },
+      { name: "Porter H-100 H/Deck (With AC)", price: 4620000 },
+    ],
     brochure: "/enquiry?type=brochure&model=porter",
   },
 ];

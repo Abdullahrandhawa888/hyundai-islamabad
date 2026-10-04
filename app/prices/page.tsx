@@ -20,9 +20,9 @@ export default function PricesPage() {
       />
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
         <p className="max-w-3xl text-[14px] leading-7 text-muted">
-          Ex-factory figures compiled from Hyundai Islamabad / Hyundai Nishat published lists and
-          August 2026 hybrid revisions. Freight, insurance, NEV levy and withholding tax may apply.
-          Prices at invoice are final. Contact the showroom for a payable quotation.
+          Ex-factory figures from the Hyundai Islamabad / Hyundai Nishat September 2026 price
+          list. Freight, insurance, NEV levy and withholding tax may apply. Prices at invoice are
+          final. Contact the showroom for a payable quotation.
         </p>
         <p className="mt-6 text-[12px] text-muted sm:hidden">Swipe the table sideways to see all columns →</p>
         <div className="mt-3 overflow-x-auto sm:mt-8">
