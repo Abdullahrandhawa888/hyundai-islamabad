@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "ash-khawaja",
+    "name": "Ash Khawaja",
+    "role": "General Sales Manager",
+    "image": "/images/team/ash-khawaja.png",
+    "whatsappHref": "https://wa.me/923305001902",
+    "phoneDisplay": "+92 330 5001902",
+    "bio": "Ash leads the sales team at Hyundai Islamabad, overseeing showroom operations and making sure every customer gets a smooth, transparent buying experience from first enquiry through to delivery."
+  },
+  {
+    "slug": "ali-hassan",
+    "name": "Ali Hassan",
+    "role": "Assistant Sales Manager",
+    "image": "/images/team/ali-hassan.png",
+    "whatsappHref": "https://wa.me/923309138836",
+    "phoneDisplay": "+92 330 9138836",
+    "bio": "I am Ali. I have been in management for the last year. It's challenging, it's fun, it allows me to use my people skills, and I am able to talk to clients from all walks of life."
+  },
+  {
+    "slug": "qasim-waleed",
+    "name": "Qasim Waleed",
+    "role": "Fleet Manager",
+    "image": "/images/team/qasim-waleed.png",
+    "whatsappHref": "https://wa.me/923331150175",
+    "phoneDisplay": "+92 333 1150175",
+    "bio": "I am Qasim, the Fleet Manager at Hyundai Islamabad. I have been a member of Ittehad Automotive, and am enjoying it very much. I specialize in dealing with different banks, and the orders from banks go through me."
+  },
+  {
+    "slug": "shahab-khan",
+    "name": "Shahab Khan",
+    "role": "Sales Executive",
+    "image": "/images/team/shahab-khan.png",
+    "whatsappHref": "https://wa.me/923309138843",
+    "phoneDisplay": "+92 330 9138843",
+    "bio": "I am Shahab, a proud member of Ittehad Automotive for the last two and a half years. I am fluent in Urdu and Pushto. If your language preference is Pushto, I can definitely accommodate you."
+  },
+  {
+    "slug": "muskaan-aga-khan",
+    "name": "Muskaan Aga Khan",
+    "role": "Sales Executive",
+    "image": "/images/team/muskaan-aga-khan.png",
+    "whatsappHref": "https://wa.me/923330106157",
+    "phoneDisplay": "+92 333 0106157",
+    "bio": "I am Muskaan. I joined Ittehad Automotive in mid-August of 2026. It's been nothing but fun. I had never been in this type of business before, but it's been lots of fun so far."
+  },
+  {
+    "slug": "muhammad-ayaan-sultan",
+    "name": "Muhammad Ayaan Sultan",
+    "role": "Sr. Admin",
+    "image": "/images/team/ayaan-sultan.png",
+    "whatsappHref": "https://wa.me/923330106225",
+    "phoneDisplay": "+92 333 0106225",
+    "bio": "I am passionate about delivering exceptional customer experiences, building lasting relationships, and turning every interaction into an opportunity to create value."
+  },
+  {
+    "slug": "raafia-nadeem",
+    "name": "Raafia Nadeem",
+    "role": "Admin",
+    "image": "/images/team/raafia-nadeem.png",
+    "whatsappHref": "https://wa.me/923331150179",
+    "phoneDisplay": "+92 333 1150179",
+    "bio": "I'm Raafia Nadeem, working in Administration at Hyundai Islamabad, supporting the sales team with efficient coordination, customer handling, documentation, and smooth day-to-day operations."
+  },
+  {
+    "slug": "mahnoor-fatima",
+    "name": "Mahnoor Fatima",
+    "role": "Customer Relations Manager",
+    "image": "/images/team/mahnoor-fatima.png",
+    "whatsappHref": "https://wa.me/923331150172",
+    "phoneDisplay": "+92 333 1150172",
+    "bio": "I am Mahnoor Fatima, Customer Relations Manager at Hyundai. I am dedicated to ensuring every customer receives exceptional service and a seamless experience. My goal is to build lasting relationships based on trust, care, and customer satisfaction."
+  }
+]

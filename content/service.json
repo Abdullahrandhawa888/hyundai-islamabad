@@ -1,0 +1,77 @@
+{
+  "ownerManuals": [
+    { "name": "Elantra", "href": "/enquiry?type=brochure&model=elantra-hybrid" },
+    { "name": "Sonata", "href": "/enquiry?type=brochure&model=sonata" },
+    { "name": "Tucson", "href": "/enquiry?type=brochure&model=tucson" },
+    { "name": "Santa Fe Hybrid", "href": "/enquiry?type=brochure&model=santa-fe-hybrid" },
+    { "name": "Staria", "href": "/enquiry?type=brochure" },
+    { "name": "Porter", "href": "/enquiry?type=brochure&model=porter" }
+  ],
+  "customerPromise": {
+    "intro": "We pledge to provide outstanding service and go above and beyond to surpass your expectations.",
+    "pledges": [
+      "Listen attentively and actively follow through on your requests.",
+      "Uphold a clean, safe, and welcoming environment.",
+      "Schedule appointments at your convenience.",
+      "Greet you promptly upon arrival with a friendly and professional demeanor.",
+      "Provide precise time and cost estimates.",
+      "Seek your authorization before commencing any additional work.",
+      "Thoroughly explain all repairs performed and review all associated costs.",
+      "Ensure your vehicle is returned to you as agreed upon, in a clean and orderly condition.",
+      "Initiate contact within three business days to confirm your satisfaction with all the services provided."
+    ]
+  },
+  "maintenanceCharts": {
+    "intro": "Stay on top of your vehicle’s maintenance with Hyundai Islamabad’s periodic maintenance chart. Intervals below are a guide; always follow your owner’s manual.",
+    "columns": ["Elantra", "Sonata", "Tucson", "Santa Fe", "IONIQ", "Staria", "Grand Starex", "Porter"],
+    "items": [
+      { "item": "Engine oil", "values": ["5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "3,000 km"] },
+      { "item": "Oil filter", "values": ["5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "3,000 km"] },
+      { "item": "Element air cleaner", "values": ["20,000 km", "20,000 km", "20,000 km", "20,000 km", "20,000 km", "10,000 km", "10,000 km", "15,000 km"] },
+      { "item": "AC filter", "values": ["15,000 km", "15,000 km", "15,000 km", "15,000 km", "15,000 km", "20,000 km", "20,000 km", "-"] },
+      { "item": "Spark plugs", "values": ["100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km"] },
+      { "item": "Fuel filter", "values": ["40,000 km", "40,000 km", "40,000 km", "40,000 km", "40,000 km", "60,000 km", "60,000 km", "20,000 km"] },
+      { "item": "Brake fluid", "values": ["60,000 km", "60,000 km", "60,000 km", "60,000 km", "30,000 km", "60,000 km", "60,000 km", "60,000 km"] },
+      { "item": "Transmission oil", "values": ["100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "40,000 km"] },
+      { "item": "HSG belt", "values": ["-", "-", "-", "-", "10,000 km", "-", "-", "-"] },
+      { "item": "Engine clutch actuator fluid", "values": ["-", "-", "-", "-", "40,000 km", "-", "-", "-"] }
+    ]
+  },
+  "freeServices": [
+    {
+      "title": "First free service",
+      "detail": "Due at 1,000 kilometres or one month from purchase, whichever comes first. Labour is complimentary; parts, lubricants or accessories if required are charged separately."
+    },
+    {
+      "title": "Second free service",
+      "detail": "Due at 5,000 kilometres or three months from the previous service, whichever comes first."
+    },
+    {
+      "title": "Third free service",
+      "detail": "Due at 10,000 kilometres or six months from the previous service, whichever comes first."
+    }
+  ],
+  "warranty": {
+    "intro": "A written promise from Hyundai Nishat Motor Limited to repair or replace a vehicle component that experiences a fault due to material or workmanship issues within a specified time frame.",
+    "period": "Coverage for any component in your new Hyundai vehicle, with the exceptions listed below, extends for 48 months from the original retail delivery or first use, whichever occurs first, and up to 100,000 kilometres.",
+    "paint": "The paint warranty addresses paint defects and surface corrosion (excluding perforation) resulting from defects in paint material or workmanship. It lasts 24 months from original retail delivery or first use, and up to 50,000 kilometres.",
+    "oem": "Tires, batteries and audio navigation units are covered by the warranties offered by their respective manufacturers. Refer to the warranty condition card supplied with your vehicle.",
+    "service": "Authorised Hyundai distributors or dealers provide warranty services at no cost for parts and labour. Warranty work performed elsewhere is not covered.",
+    "covered": "Repair or replacement of any component originally manufactured by Hyundai that is found defective in material or workmanship during normal use and maintenance, except items listed as not covered.",
+    "notCovered": [
+      "Normal maintenance: tune-ups, alignments, lubrication, oil changes and fluid top-ups unless a replacement is required due to a defect",
+      "Wear items: spark plugs, brake pads, clutch linings, wiper blades, filters, bulbs, fuses and V-belts",
+      "Damage from neglect, misuse, overload, accident, theft, flooding or fire",
+      "Improper fuel, fluids or non-genuine parts",
+      "Modification, alteration, tampering or improper repair",
+      "Incidental costs: fuel, travel, rental, lodging or loss of use",
+      "Odometer alteration, airborne fallout, stone chips and similar paint or glass damage"
+    ],
+    "owner": [
+      "Follow the Owner’s Manual for use and maintenance, including severe-driving schedules.",
+      "Keep records of maintenance services.",
+      "Deliver the vehicle to an authorised Hyundai dealer during service hours for warranty work.",
+      "Inspect trim, paint and appearance at delivery."
+    ]
+  }
+}

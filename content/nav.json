@@ -1,0 +1,15 @@
+[
+  { "label": "Models", "href": "/models" },
+  {
+    "label": "Offers & Plans",
+    "children": [
+      { "label": "Offers", "href": "/offers" },
+      { "label": "Price List", "href": "/prices" },
+      { "label": "EMI Plans", "href": "/emi-plans" }
+    ]
+  },
+  { "label": "Service", "href": "/services" },
+  { "label": "Our Team", "href": "/team" },
+  { "label": "Accessories", "href": "/accessories" },
+  { "label": "About Us", "href": "/about" }
+]

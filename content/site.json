@@ -1,0 +1,51 @@
+{
+  "site": {
+    "name": "Hyundai Islamabad",
+    "dealer": "Hyundai Islamabad",
+    "group": "Ittehad Automotive",
+    "parent": "Hyundai Nishat Motor (Private) Limited",
+    "tagline": "Progress for Humanity",
+    "description": "Hyundai Islamabad is an authorised Hyundai dealership offering a wide selection of sedans, SUVs, hybrids and electric vehicles, with professional service and maintenance performed by Hyundai-trained technicians.",
+    "phoneDisplay": "051 111 500 200",
+    "phoneHref": "tel:+9251111500200",
+    "email": "info@hyundai-islamabad.com",
+    "whatsapp": "https://wa.me/9251111500200",
+    "address": "Off 9th Ave, I-9/3, Islamabad Capital Territory 44000",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hyundai+Islamabad+I-9/3",
+    "hours": {
+      "sales": "Mon–Fri: 10:00 AM – 06:00 PM · Sat: 11:00 AM – 07:00 PM",
+      "service": "Mon–Fri: 09:00 AM – 05:00 PM · Sat: 09:00 AM – 06:00 PM"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/",
+      "youtube": "https://www.youtube.com/",
+      "nishat": "https://hyundai-nishat.com/"
+    },
+    "logo": "/images/logo.png",
+    "dealerImage": "/images/vehicles/dealership-showroom.jpg"
+  },
+  "extraPhones": [
+    { "label": "Sales", "display": "051 444 4546", "href": "tel:+92514444546" },
+    { "label": "Sales", "display": "051 444 4547", "href": "tel:+92514444547" },
+    { "label": "Service", "display": "0304 111 1603", "href": "tel:+923041111603" }
+  ],
+  "locations": [
+    {
+      "id": "isb-sales",
+      "name": "Hyundai Showroom, Islamabad",
+      "type": "Sales",
+      "phone": "+92 51 111 500 200",
+      "phoneHref": "tel:+9251111500200",
+      "address": "Off 9th Ave, I-9/3, Islamabad Capital Territory 44000"
+    },
+    {
+      "id": "isb-service",
+      "name": "Hyundai Service, Islamabad",
+      "type": "Service",
+      "phone": "+92 304 111 1603",
+      "phoneHref": "tel:+923041111603",
+      "address": "Off 9th Ave, I-9/3, Islamabad Capital Territory 44000"
+    }
+  ]
+}

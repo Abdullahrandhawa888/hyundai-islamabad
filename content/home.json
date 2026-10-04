@@ -1,0 +1,47 @@
+{
+  "heroSlides": [
+    {
+      "id": "elantra",
+      "title": "The New Elantra Hybrid",
+      "subtitle": "Pakistan’s first hybrid sedan",
+      "cta": { "label": "Find Out More", "href": "/models/elantra-hybrid" },
+      "image": "/images/hero/landing-hero-wide.jpg",
+      "imagePosition": "object-[62%_center] md:object-[center_72%]"
+    },
+    {
+      "id": "ioniq-5",
+      "title": "The IONIQ 5",
+      "subtitle": "100% Electric",
+      "cta": { "label": "Find Out More", "href": "/models/ioniq-5" },
+      "image": "/images/hero/2.PNG",
+      "imagePosition": "object-[center_78%]"
+    },
+    {
+      "id": "sonata-n-line",
+      "title": "The Sonata N Line",
+      "subtitle": "Performance, dressed for the city",
+      "cta": { "label": "Find Out More", "href": "/models/sonata-n-line" },
+      "image": "/images/hero/sonata-n-line.png",
+      "imagePosition": "object-[center_78%]"
+    }
+  ],
+  "featureTiles": [
+    {
+      "id": "ioniq-5",
+      "title": "The IONIQ 5",
+      "href": "/models/ioniq-5",
+      "image": "/images/vehicles/ioniq-5-tile.jpg"
+    },
+    {
+      "id": "ioniq-6",
+      "title": "THE New IONIQ 6",
+      "href": "/models/ioniq-6",
+      "image": "/images/vehicles/ioniq-6-tile.jpg"
+    }
+  ],
+  "electricCopy": {
+    "heading": "HYUNDAI ELECTRIC & HYBRID",
+    "title": "IONIQ 5, IONIQ 6 AND THE HYBRID RANGE.",
+    "body": "Hyundai Islamabad offers the all-electric IONIQ 5 and IONIQ 6 alongside Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid. Enquire at the I-9/3 showroom for availability, pricing and a test drive."
+  }
+}

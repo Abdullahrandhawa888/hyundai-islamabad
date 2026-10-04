@@ -1,0 +1,182 @@
+[
+  {
+    "id": "elantra-hybrid",
+    "modelLabel": "Elantra Hybrid",
+    "vehicleSlug": "elantra-hybrid",
+    "variantName": "Elantra Hybrid Blue",
+    "tenures": [
+      {
+        "months": 18,
+        "advanceAmount": 4304400,
+        "transitFreightInsurance": 60000,
+        "advanceIncomeTaxFiler": 216420,
+        "insuranceAmountSGI": 282476,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 4902546,
+        "monthlyInstallment": 387589,
+        "adminCharges": 520000
+      },
+      {
+        "months": 24,
+        "advanceAmount": 6456000,
+        "transitFreightInsurance": 60000,
+        "advanceIncomeTaxFiler": 216420,
+        "insuranceAmountSGI": 376635,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 7148905,
+        "monthlyInstallment": 198100,
+        "adminCharges": 450000
+      }
+    ]
+  },
+  {
+    "id": "sonata-2-5",
+    "modelLabel": "Sonata 2.5",
+    "vehicleSlug": "sonata",
+    "variantName": "Sonata 2.5",
+    "tenures": [
+      {
+        "months": 12,
+        "advanceAmount": 5772500,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 812910,
+        "insuranceAmountSGI": 202038,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 6894698,
+        "monthlyInstallment": 497708,
+        "adminCharges": 200000
+      },
+      {
+        "months": 18,
+        "advanceAmount": 5772500,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 812910,
+        "insuranceAmountSGI": 303056,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 6995716,
+        "monthlyInstallment": 331806,
+        "adminCharges": 300000
+      },
+      {
+        "months": 24,
+        "advanceAmount": 5772500,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 812910,
+        "insuranceAmountSGI": 404075,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 7096735,
+        "monthlyInstallment": 253021,
+        "adminCharges": 300000
+      }
+    ]
+  },
+  {
+    "id": "tucson-hybrid-fwd",
+    "modelLabel": "Tucson Hybrid FWD",
+    "vehicleSlug": "tucson-hybrid",
+    "variantName": "Tucson Hybrid Smart FWD",
+    "tenures": [
+      {
+        "months": 18,
+        "advanceAmount": 6101000,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 245400,
+        "insuranceAmountSGI": 320303,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 6773953,
+        "monthlyInstallment": 363944,
+        "adminCharges": 450000
+      },
+      {
+        "months": 24,
+        "advanceAmount": 6101000,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 245400,
+        "insuranceAmountSGI": 427070,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 6880720,
+        "monthlyInstallment": 282125,
+        "adminCharges": 670000
+      }
+    ]
+  },
+  {
+    "id": "tucson-hybrid-awd",
+    "modelLabel": "Tucson Hybrid AWD",
+    "vehicleSlug": "tucson-hybrid",
+    "variantName": "Tucson Hybrid Signature AWD",
+    "tenures": [
+      {
+        "months": 18,
+        "advanceAmount": 6650000,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 267360,
+        "insuranceAmountSGI": 349125,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 7373735,
+        "monthlyInstallment": 404444,
+        "adminCharges": 630000
+      }
+    ]
+  },
+  {
+    "id": "santa-fe-hybrid-fwd",
+    "modelLabel": "Santa Fe Hybrid FWD",
+    "vehicleSlug": "santa-fe-hybrid",
+    "variantName": "Santa Fe Hybrid Smart FWD",
+    "tenures": [
+      {
+        "months": 18,
+        "advanceAmount": 5966100,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 266520,
+        "insuranceAmountSGI": 348023,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 6687893,
+        "monthlyInstallment": 421772,
+        "adminCharges": 300000
+      }
+    ]
+  },
+  {
+    "id": "santa-fe-hybrid-awd",
+    "modelLabel": "Santa Fe Hybrid AWD",
+    "vehicleSlug": "santa-fe-hybrid",
+    "variantName": "Santa Fe Hybrid Signature AWD",
+    "tenures": [
+      {
+        "months": 18,
+        "advanceAmount": 6624000,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 295760,
+        "insuranceAmountSGI": 386400,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 7413410,
+        "monthlyInstallment": 485333,
+        "adminCharges": 640000
+      },
+      {
+        "months": 24,
+        "advanceAmount": 6624000,
+        "transitFreightInsurance": 68000,
+        "advanceIncomeTaxFiler": 295760,
+        "insuranceAmountSGI": 515200,
+        "trackerChargesSGI": 14250,
+        "processingChargesSGI": 25000,
+        "totalAdvancePayment": 7542210,
+        "monthlyInstallment": 376083,
+        "adminCharges": 930000
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "hybrid-promo",
+    "title": "Hybrid range promotional pricing",
+    "summary": "Ex-factory promotional prices on Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid, valid until 31 August 2026.",
+    "validUntil": "31 August 2026",
+    "image": "/images/vehicles/elantra-hybrid.webp",
+    "href": "/prices",
+    "savings": "Save up to Rs 1,403,000"
+  },
+  {
+    "id": "elantra-limited",
+    "title": "All-new Elantra Hybrid - limited units",
+    "summary": "Pakistan’s first locally assembled hybrid sedan is available now at Hyundai Islamabad. Enquire for current allocation.",
+    "validUntil": "While stocks last",
+    "image": "/images/news/elantra-launch.jpg",
+    "href": "/models/elantra-hybrid"
+  },
+  {
+    "id": "test-drive",
+    "title": "Request a complimentary test drive",
+    "summary": "Experience the Hyundai range at our I-9/3 showroom. Book a test drive with our sales team.",
+    "validUntil": "Ongoing",
+    "image": "/images/vehicles/santa-fe.png",
+    "href": "/testdrive"
+  }
+]

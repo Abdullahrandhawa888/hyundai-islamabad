@@ -1,0 +1,426 @@
+[
+  {
+    "slug": "elantra-1-6",
+    "name": "THE Elantra 1.6",
+    "shortName": "Elantra 1.6",
+    "tagline": "Distinctive design, everyday efficiency.",
+    "description": "The Hyundai ELANTRA 1.6 pairs Hyundai’s parametric design language with a proven 1.6L Smartstream petrol engine, delivering a refined, fuel-efficient sedan for daily driving - assembled locally to global standards.",
+    "highlights": [
+      "1.6L Smartstream petrol engine",
+      "6-speed automatic transmission",
+      "10.25-inch TFT LCD cluster and infotainment",
+      "Wireless Android Auto and Apple CarPlay",
+      "Dual-zone automatic climate control",
+      "Electronic parking brake with Auto-Hold",
+      "LED headlamps, DRLs and tail lights"
+    ],
+    "ranges": ["hyundai"],
+    "series": "E",
+    "category": "Sedan",
+    "fuel": "Petrol",
+    "cardImage": "/images/vehicles/elantra-1-6-card.png",
+    "heroImage": "/images/vehicles/elantra-1-6.png",
+    "gallery": ["/images/vehicles/elantra-1-6.png"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "1.6 Smartstream petrol" },
+      { "label": "Drivetrain", "value": "FWD" },
+      { "label": "Transmission", "value": "6-speed automatic" },
+      { "label": "Wheels", "value": "16-inch alloy" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [
+      { "name": "Elantra 1.6 Fabric Seats", "price": 6449000 },
+      { "name": "Elantra 1.6 Beige", "price": 6484000 },
+      { "name": "Elantra 1.6 Burgundy", "price": 6484000 },
+      { "name": "Elantra 1.6 Cappuccino", "price": 6484000 }
+    ],
+    "brochure": "/enquiry?type=brochure&model=elantra-1-6"
+  },
+  {
+    "slug": "elantra-hybrid",
+    "name": "THE Elantra Hybrid",
+    "shortName": "Elantra Hybrid",
+    "tagline": "Pakistan’s first hybrid sedan.",
+    "description": "The all-new Hyundai ELANTRA Hybrid embodies the spirit of innovation through parametric design. Powered by a Smartstream GDi HEV engine and EcoShift dual-clutch transmission, it blends petrol and electric power for a smoother, more economical drive - assembled locally to global standards.",
+    "highlights": [
+      "1.6L Smartstream GDi HEV engine",
+      "EcoShift 6-speed dual-clutch transmission",
+      "10.25-inch TFT LCD cluster and infotainment",
+      "Wireless Android Auto and Apple CarPlay",
+      "Heated and ventilated seats",
+      "Dual-zone automatic climate control",
+      "Electronic parking brake with Auto-Hold",
+      "LED headlamps, DRLs and tail lights"
+    ],
+    "ranges": ["hyundai", "ioniq"],
+    "series": "E",
+    "category": "Sedan",
+    "fuel": "Hybrid",
+    "cardImage": "/images/vehicles/elantra-hybrid-card.png",
+    "heroImage": "/images/vehicles/elantra-hybrid.webp",
+    "gallery": [
+      "/images/vehicles/elantra-hybrid.webp",
+      "/images/vehicles/elantra-hybrid.webp",
+      "/images/news/elantra-launch.jpg"
+    ],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "1.6 Smartstream GDi HEV" },
+      { "label": "Drivetrain", "value": "FWD" },
+      { "label": "Transmission", "value": "6-speed EcoShift DCT" },
+      { "label": "Wheels", "value": "16-inch alloy" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [{ "name": "Elantra Hybrid Blue", "price": 10761000 }],
+    "brochure": "/enquiry?type=brochure&model=elantra-hybrid"
+  },
+  {
+    "slug": "sonata",
+    "name": "THE Sonata",
+    "shortName": "Sonata",
+    "tagline": "A refined business sedan.",
+    "description": "The Hyundai Sonata is a spacious, well-equipped sedan designed for comfort on long motorway runs and daily city driving. Available in 2.0L and 2.5L petrol variants with a premium cabin, dual-zone climate control and Hyundai safety systems.",
+    "highlights": [
+      "2.0L and 2.5L petrol options",
+      "Push-button start and smart entry",
+      "Cruise control",
+      "Leather interior",
+      "Powered driver’s seat with lumbar support",
+      "Wireless charging",
+      "Dual-zone automatic climate control",
+      "ESC and traction control"
+    ],
+    "ranges": ["hyundai"],
+    "series": "S",
+    "category": "Sedan",
+    "fuel": "Petrol",
+    "cardImage": "/images/vehicles/sonata-card.png",
+    "heroImage": "/images/vehicles/sonata.webp",
+    "gallery": ["/images/vehicles/sonata.webp"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "2.0L / 2.5L GDi" },
+      { "label": "Drivetrain", "value": "FWD" },
+      { "label": "Transmission", "value": "Automatic" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [{ "name": "Sonata 2.5", "price": 11545000 }],
+    "brochure": "/enquiry?type=brochure&model=sonata"
+  },
+  {
+    "slug": "santa-fe-hybrid",
+    "name": "THE Santa Fe Hybrid",
+    "shortName": "Santa Fe Hybrid",
+    "tagline": "Experience everything.",
+    "description": "The all-new Hyundai SANTA FE Hybrid is a leap towards sustainable mobility - a three-row hybrid SUV with presence, space and a 1.6 T-GDi HEV powertrain in Smart FWD and Signature AWD.",
+    "highlights": [
+      "1.6 T-GDi HEV",
+      "Three-row family SUV",
+      "Smart FWD and Signature AWD",
+      "6-speed EcoShift DCT",
+      "Commanding road presence"
+    ],
+    "ranges": ["hyundai", "ioniq"],
+    "series": "S",
+    "category": "SUV",
+    "fuel": "Hybrid",
+    "cardImage": "/images/vehicles/santa-fe-card.png",
+    "heroImage": "/images/vehicles/santa-fe.png",
+    "gallery": [
+      "/images/vehicles/santa-fe.png",
+      "/images/vehicles/santa-fe.png",
+      "/images/news/santa-fe.jpg"
+    ],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" },
+      { "name": "Rain Forest", "hex": "#2F4A3C" },
+      { "name": "Hampton Grey", "hex": "#6E7278" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "1.6 T-GDi HEV" },
+      { "label": "Drivetrain", "value": "FWD or AWD" },
+      { "label": "Transmission", "value": "6-speed EcoShift DCT" },
+      { "label": "Seating", "value": "Three-row" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [
+      { "name": "Santa Fe Hybrid Smart FWD", "price": 13258000 },
+      { "name": "Santa Fe Hybrid Signature AWD", "price": 14720000 }
+    ],
+    "brochure": "/enquiry?type=brochure&model=santa-fe-hybrid"
+  },
+  {
+    "slug": "sonata-n-line",
+    "name": "THE Sonata N Line",
+    "shortName": "Sonata N Line",
+    "tagline": "Performance, dressed for the city.",
+    "description": "Sonata N Line brings Hyundai N performance cues to the executive sedan: a 2.5 turbo GDi engine, sport-tuned presence and a cabin finished for drivers who want more than a commute.",
+    "highlights": [
+      "2.5 Turbo GDi",
+      "N Line exterior and interior styling",
+      "Sport-focused driving modes",
+      "Premium infotainment",
+      "Performance-oriented design"
+    ],
+    "ranges": ["hyundai", "n"],
+    "series": "S",
+    "category": "Sedan",
+    "fuel": "Petrol",
+    "cardImage": "/images/vehicles/sonata-n-line-card.png",
+    "heroImage": "/images/vehicles/sonata-n-line.webp",
+    "gallery": ["/images/vehicles/sonata-n-line.webp"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "2.5 Turbo GDi" },
+      { "label": "Drivetrain", "value": "FWD" },
+      { "label": "Transmission", "value": "Automatic" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [
+      {
+        "name": "Sonata 2.5 N Line",
+        "price": 16521000,
+        "note": "On-road figure may include freight, NEV levy and WHT"
+      }
+    ],
+    "brochure": "/enquiry?type=brochure&model=sonata-n-line"
+  },
+  {
+    "slug": "palisade",
+    "name": "THE Palisade",
+    "shortName": "Palisade",
+    "tagline": "Command the road, three rows deep.",
+    "description": "The Hyundai PALISADE is a flagship three-row SUV built for large families - bold presence, a premium cabin and long-distance comfort for Pakistan’s motorways.",
+    "highlights": [
+      "Flagship three-row SUV",
+      "Premium, tech-forward cabin",
+      "Advanced driver assistance suite",
+      "Commanding road presence",
+      "Generous cargo and passenger space"
+    ],
+    "ranges": ["hyundai"],
+    "series": "P",
+    "category": "SUV",
+    "fuel": "Hybrid",
+    "cardImage": "/images/vehicles/palisade-card.png",
+    "heroImage": "/images/vehicles/palisade.png",
+    "gallery": ["/images/vehicles/palisade.png"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" },
+      { "name": "Rain Forest", "hex": "#2F4A3C" },
+      { "name": "Hampton Grey", "hex": "#6E7278" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "2.5L HEV" },
+      { "label": "Combined power", "value": "329 hp / 460 Nm" },
+      { "label": "Battery warranty", "value": "8 years / 160,000 km" },
+      { "label": "Warranty", "value": "4 years / 100,000 km" }
+    ],
+    "variants": [
+      { "name": "Palisade Smart (8-seater)", "price": 22625000 },
+      { "name": "Palisade Calligraphy (7-seater)", "price": 24075000 }
+    ],
+    "brochure": "/enquiry?type=brochure&model=palisade"
+  },
+  {
+    "slug": "tucson-hybrid",
+    "name": "THE Tucson Hybrid",
+    "shortName": "Tucson Hybrid",
+    "tagline": "The hybrid SUV for every journey.",
+    "description": "Tucson Hybrid pairs Hyundai’s parametric SUV design with a 1.6 GDi hybrid powertrain. Choose Smart FWD or Signature AWD - both with an 8-speed DCT and a cabin built for family miles.",
+    "highlights": [
+      "1.6 GDi HEV powertrain",
+      "Smart FWD or Signature AWD",
+      "8-speed EcoShift DCT",
+      "Panoramic presence and LED lighting",
+      "Advanced driver assistance",
+      "Family-ready cargo space"
+    ],
+    "ranges": ["hyundai", "ioniq"],
+    "series": "T",
+    "category": "SUV",
+    "fuel": "Hybrid",
+    "cardImage": "/images/vehicles/tucson-hybrid-card.png",
+    "heroImage": "/images/vehicles/tucson-hybrid.webp",
+    "gallery": [
+      "/images/vehicles/tucson-hybrid.webp",
+      "/images/vehicles/tucson-hybrid.webp"
+    ],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" },
+      { "name": "Rain Forest", "hex": "#2F4A3C" },
+      { "name": "Hampton Grey", "hex": "#6E7278" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "1.6 GDi HEV" },
+      { "label": "Drivetrain", "value": "FWD or AWD" },
+      { "label": "Transmission", "value": "8-speed DCT" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [
+      { "name": "Tucson Hybrid Smart FWD", "price": 12202000 },
+      { "name": "Tucson Hybrid Signature AWD", "price": 13300000 }
+    ],
+    "brochure": "/enquiry?type=brochure&model=tucson-hybrid"
+  },
+  {
+    "slug": "ioniq-5",
+    "name": "THE IONIQ 5",
+    "shortName": "IONIQ 5",
+    "tagline": "Lead the charge.",
+    "description": "Breathtakingly beautiful and amazingly advanced, the IONIQ 5 is redefining the way people look at electric cars. Concept-car design, environmentally friendly materials and an astonishing array of smart tech - this all-electric midsize CUV is a game changer.",
+    "highlights": [
+      "Parametric Pixel dual LED DRLs",
+      "20-inch alloy rims",
+      "Auto-flush door handles",
+      "Panoramic sunroof",
+      "12.25-inch dual displays",
+      "Vehicle-to-Load (V2L)",
+      "Premium Bose sound system",
+      "360° surround view monitor",
+      "Heated and ventilated front seats"
+    ],
+    "ranges": ["ioniq"],
+    "series": "I",
+    "category": "Electric",
+    "fuel": "Electric",
+    "cardImage": "/images/vehicles/ioniq-5-card.png",
+    "heroImage": "/images/vehicles/ioniq-5.webp",
+    "gallery": ["/images/vehicles/ioniq-5.webp", "/images/vehicles/ioniq-5.webp"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" }
+    ],
+    "specs": [
+      { "label": "Powertrain", "value": "100% Electric" },
+      { "label": "Displays", "value": "12.25\" cluster + 12.25\" infotainment" },
+      { "label": "Audio", "value": "Premium Bose" },
+      { "label": "V2L", "value": "Vehicle-to-Load equipped" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [{ "name": "IONIQ 5", "price": 22540000 }],
+    "brochure": "/enquiry?type=brochure&model=ioniq-5"
+  },
+  {
+    "slug": "ioniq-6",
+    "name": "THE IONIQ 6",
+    "shortName": "IONIQ 6",
+    "tagline": "Electrified streamliner.",
+    "description": "IONIQ 6 is Hyundai’s electric streamliner - a sleek, aerodynamic sedan with pixel lighting, a digital cockpit and long-distance EV comfort for Pakistan’s motorways.",
+    "highlights": [
+      "100% electric streamliner",
+      "Parametric Pixel lighting",
+      "Digital cockpit",
+      "Aerodynamic silhouette",
+      "Hyundai SmartSense safety"
+    ],
+    "ranges": ["ioniq"],
+    "series": "I",
+    "category": "Electric",
+    "fuel": "Electric",
+    "cardImage": "/images/vehicles/ioniq-6-card.png",
+    "heroImage": "/images/vehicles/ioniq-6.webp",
+    "gallery": ["/images/vehicles/ioniq-6.webp", "/images/vehicles/ioniq-6.webp"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" },
+      { "name": "Magnetic Force", "hex": "#4A4E55" },
+      { "name": "Phantom Black", "hex": "#111111" },
+      { "name": "Oxford Blue", "hex": "#1B3A6B" },
+      { "name": "Fiery Red", "hex": "#B3121B" }
+    ],
+    "specs": [
+      { "label": "Powertrain", "value": "100% Electric" },
+      { "label": "Body", "value": "Streamliner sedan" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [{ "name": "IONIQ 6", "price": 22540000 }],
+    "brochure": "/enquiry?type=brochure&model=ioniq-6"
+  },
+  {
+    "slug": "porter",
+    "name": "THE Porter",
+    "shortName": "Porter",
+    "tagline": "The commercial workhorse.",
+    "description": "The Hyundai Porter (H-100) is built for business - a durable light commercial vehicle trusted by fleets and family enterprises across Islamabad and beyond.",
+    "highlights": [
+      "Light commercial payload",
+      "Durable workhorse platform",
+      "Practical cargo bed",
+      "Trusted by Pakistani fleets"
+    ],
+    "ranges": ["hyundai"],
+    "series": "C",
+    "category": "Commercial",
+    "fuel": "Diesel",
+    "cardImage": "/images/vehicles/porter-card.png",
+    "heroImage": "/images/vehicles/porter.webp",
+    "gallery": ["/images/vehicles/porter.webp", "/images/vehicles/porter.webp"],
+    "colors": [
+      { "name": "Polar White", "hex": "#F4F4F2" },
+      { "name": "Silver Metallic", "hex": "#A8ADB3" }
+    ],
+    "specs": [
+      { "label": "Engine", "value": "2.6L diesel" },
+      { "label": "Body", "value": "Light commercial / H-100" },
+      { "label": "Warranty", "value": "48 months / 100,000 km" }
+    ],
+    "variants": [
+      { "name": "Porter H-100 Deckless (Without AC)", "price": 4470000 },
+      { "name": "Porter H-100 Deckless (With AC)", "price": 4580000 },
+      { "name": "Porter H-100 F/Deck (Without AC)", "price": 4490000 },
+      { "name": "Porter H-100 F/Deck (With AC)", "price": 4600000 },
+      { "name": "Porter H-100 H/Deck (Without AC)", "price": 4510000 },
+      { "name": "Porter H-100 H/Deck (With AC)", "price": 4620000 }
+    ],
+    "brochure": "/enquiry?type=brochure&model=porter"
+  }
+]
