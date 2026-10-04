@@ -617,20 +617,23 @@ export const offers: Offer[] = [
   },
 ];
 
-// Interest-free installment plans. Figures come from bank/leasing partner
-// flyers supplied by the dealership and are specific to this financing
-// program - they are not derived from the ex-factory prices on /prices,
-// which may differ. Update this list when a new flyer is issued.
+// Interest-free installment plans. Figures (advance amount, freight,
+// insurance, tax, admin charges, monthly cheque) come from bank/leasing
+// partner flyers supplied by the dealership and are set by them, not
+// computed here - update a plan's tenures when a new flyer is issued.
+// The ex-factory price shown is NOT stored here: it's read live from the
+// matching vehicle/variant in `vehicles` via getEmiExFactoryPrice, so it
+// always matches the Price List page and stays correct if that price
+// changes.
 export const emiPlans: EmiPlan[] = [
   {
     id: "elantra-hybrid",
     modelLabel: "Elantra Hybrid",
     vehicleSlug: "elantra-hybrid",
-    exFactoryPrice: 10761000,
+    variantName: "Elantra Hybrid Blue",
     tenures: [
       {
         months: 18,
-        advancePercent: 40,
         advanceAmount: 4304400,
         transitFreightInsurance: 60000,
         advanceIncomeTaxFiler: 216420,
@@ -643,7 +646,6 @@ export const emiPlans: EmiPlan[] = [
       },
       {
         months: 24,
-        advancePercent: 60,
         advanceAmount: 6456000,
         transitFreightInsurance: 60000,
         advanceIncomeTaxFiler: 216420,
@@ -660,11 +662,10 @@ export const emiPlans: EmiPlan[] = [
     id: "sonata-2-5",
     modelLabel: "Sonata 2.5",
     vehicleSlug: "sonata",
-    exFactoryPrice: 11545000,
+    variantName: "Sonata 2.5",
     tenures: [
       {
         months: 12,
-        advancePercent: 50,
         advanceAmount: 5772500,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 812910,
@@ -677,7 +678,6 @@ export const emiPlans: EmiPlan[] = [
       },
       {
         months: 18,
-        advancePercent: 50,
         advanceAmount: 5772500,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 812910,
@@ -690,7 +690,6 @@ export const emiPlans: EmiPlan[] = [
       },
       {
         months: 24,
-        advancePercent: 50,
         advanceAmount: 5772500,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 812910,
@@ -707,11 +706,10 @@ export const emiPlans: EmiPlan[] = [
     id: "tucson-hybrid-fwd",
     modelLabel: "Tucson Hybrid FWD",
     vehicleSlug: "tucson-hybrid",
-    exFactoryPrice: 12202000,
+    variantName: "Tucson Hybrid Smart FWD",
     tenures: [
       {
         months: 18,
-        advancePercent: 50,
         advanceAmount: 6101000,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 245400,
@@ -724,7 +722,6 @@ export const emiPlans: EmiPlan[] = [
       },
       {
         months: 24,
-        advancePercent: 50,
         advanceAmount: 6101000,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 245400,
@@ -741,11 +738,10 @@ export const emiPlans: EmiPlan[] = [
     id: "tucson-hybrid-awd",
     modelLabel: "Tucson Hybrid AWD",
     vehicleSlug: "tucson-hybrid",
-    exFactoryPrice: 13300000,
+    variantName: "Tucson Hybrid Signature AWD",
     tenures: [
       {
         months: 18,
-        advancePercent: 50,
         advanceAmount: 6650000,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 267360,
@@ -762,11 +758,10 @@ export const emiPlans: EmiPlan[] = [
     id: "santa-fe-hybrid-fwd",
     modelLabel: "Santa Fe Hybrid FWD",
     vehicleSlug: "santa-fe-hybrid",
-    exFactoryPrice: 13258000,
+    variantName: "Santa Fe Hybrid Smart FWD",
     tenures: [
       {
         months: 18,
-        advancePercent: 45,
         advanceAmount: 5966100,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 266520,
@@ -783,11 +778,10 @@ export const emiPlans: EmiPlan[] = [
     id: "santa-fe-hybrid-awd",
     modelLabel: "Santa Fe Hybrid AWD",
     vehicleSlug: "santa-fe-hybrid",
-    exFactoryPrice: 14720000,
+    variantName: "Santa Fe Hybrid Signature AWD",
     tenures: [
       {
         months: 18,
-        advancePercent: 45,
         advanceAmount: 6624000,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 295760,
@@ -800,7 +794,6 @@ export const emiPlans: EmiPlan[] = [
       },
       {
         months: 24,
-        advancePercent: 45,
         advanceAmount: 6624000,
         transitFreightInsurance: 68000,
         advanceIncomeTaxFiler: 295760,
@@ -1099,6 +1092,19 @@ export const feedbackTypes: FormOption[] = [
 
 export function getVehicle(slug: string) {
   return vehicles.find((vehicle) => vehicle.slug === slug);
+}
+
+/** The live price for an EMI plan's vehicle/variant - whatever the Price
+ * List page shows for it right now (promotional price if one is set). */
+export function getEmiExFactoryPrice(plan: EmiPlan) {
+  const vehicle = getVehicle(plan.vehicleSlug);
+  const variant = vehicle?.variants.find((item) => item.name === plan.variantName);
+  if (!variant) {
+    throw new Error(
+      `EMI plan "${plan.id}" references vehicle "${plan.vehicleSlug}" variant "${plan.variantName}", which no longer exists in \`vehicles\`. Update the plan's vehicleSlug/variantName.`,
+    );
+  }
+  return variant.discountedPrice ?? variant.price;
 }
 
 export function getNews(slug: string) {

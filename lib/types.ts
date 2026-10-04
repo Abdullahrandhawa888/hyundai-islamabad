@@ -106,7 +106,6 @@ export type FormOption = {
 
 export type EmiTenure = {
   months: number;
-  advancePercent: number;
   advanceAmount: number;
   transitFreightInsurance: number;
   advanceIncomeTaxFiler: number;
@@ -121,7 +120,11 @@ export type EmiTenure = {
 export type EmiPlan = {
   id: string;
   modelLabel: string;
-  vehicleSlug?: string;
-  exFactoryPrice: number;
+  /** Must match a Vehicle.slug in `vehicles` - the ex-factory price is read
+   * live from that vehicle's variant, never stored here, so it can never
+   * drift from the Price List page. */
+  vehicleSlug: string;
+  /** Must match a VehicleVariant.name on that vehicle. */
+  variantName: string;
   tenures: EmiTenure[];
 };

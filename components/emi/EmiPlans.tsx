@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/shared/Button";
-import { emiPlans, formatPrice } from "@/lib/data";
+import { emiPlans, formatPrice, getEmiExFactoryPrice } from "@/lib/data";
+import type { EmiTenure } from "@/lib/types";
 
-const rows: { key: keyof (typeof emiPlans)[number]["tenures"][number]; label: string }[] = [
-  { key: "advancePercent", label: "Advance" },
+const rows: { key: keyof EmiTenure; label: string }[] = [
   { key: "advanceAmount", label: "Advance amount" },
   { key: "transitFreightInsurance", label: "Transit freight & insurance" },
   { key: "advanceIncomeTaxFiler", label: "Advance income tax (filer)" },
@@ -15,9 +15,14 @@ const rows: { key: keyof (typeof emiPlans)[number]["tenures"][number]; label: st
   { key: "processingChargesSGI", label: "Processing charges" },
 ];
 
+function advancePercent(tenure: EmiTenure, exFactoryPrice: number) {
+  return Math.round((tenure.advanceAmount / exFactoryPrice) * 1000) / 10;
+}
+
 export function EmiPlans() {
   const [planId, setPlanId] = useState(emiPlans[0].id);
   const plan = emiPlans.find((item) => item.id === planId) ?? emiPlans[0];
+  const exFactoryPrice = getEmiExFactoryPrice(plan);
 
   return (
     <div>
@@ -42,7 +47,7 @@ export function EmiPlans() {
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 className="text-xl font-light md:text-2xl">{plan.modelLabel}</h2>
           <p className="text-[13px] text-muted">
-            Ex-Factory <span className="font-semibold text-foreground">{formatPrice(plan.exFactoryPrice)}</span>
+            Ex-Factory <span className="font-semibold text-foreground">{formatPrice(exFactoryPrice)}</span>
           </p>
         </div>
 
@@ -64,14 +69,20 @@ export function EmiPlans() {
               </tr>
             </thead>
             <tbody>
+              <tr className="border-b border-line">
+                <td className="py-2.5 pr-4 text-muted">Advance</td>
+                {plan.tenures.map((tenure) => (
+                  <td key={tenure.months} className="py-2.5 pr-4">
+                    {advancePercent(tenure, exFactoryPrice)}%
+                  </td>
+                ))}
+              </tr>
               {rows.map((row) => (
                 <tr key={row.label} className="border-b border-line">
                   <td className="py-2.5 pr-4 text-muted">{row.label}</td>
                   {plan.tenures.map((tenure) => (
                     <td key={tenure.months} className="py-2.5 pr-4">
-                      {row.key === "advancePercent"
-                        ? `${tenure[row.key]}%`
-                        : formatPrice(tenure[row.key] as number)}
+                      {formatPrice(tenure[row.key] as number)}
                     </td>
                   ))}
                 </tr>
@@ -105,33 +116,26 @@ export function EmiPlans() {
           </table>
         </div>
 
-        <p className="mt-6 text-[13px] font-semibold">
-          {plan.tenures.every((t) => t.advancePercent === plan.tenures[0].advancePercent)
-            ? `${plan.tenures[0].advancePercent}% down, interest-free installments`
-            : "Interest-free installments; advance varies by tenure"}
-        </p>
+        <p className="mt-6 text-[13px] font-semibold">Interest-free installments</p>
 
         <div className="mt-6 flex flex-wrap gap-3">
           <Button href="/enquiry" variant="primary">
             Request a financing quotation
           </Button>
-          {plan.vehicleSlug ? (
-            <Button href={`/models/${plan.vehicleSlug}`} variant="outline">
-              View {plan.modelLabel.replace(/ (FWD|AWD)$/, "")} model
-            </Button>
-          ) : null}
+          <Button href={`/models/${plan.vehicleSlug}`} variant="outline">
+            View {plan.modelLabel.replace(/ (FWD|AWD)$/, "")} model
+          </Button>
         </div>
       </div>
 
       <p className="mt-6 text-[12px] leading-6 text-muted">
-        Figures shown are for filers under the current interest-free installment program and are
-        provided by our financing partner; they may change without notice and can differ from the
-        cash ex-factory price on our{" "}
+        The ex-factory price above matches our{" "}
         <Link href="/prices" className="text-accent hover:text-[#1557b0]">
           price list
         </Link>
-        . Insurance, tracker and processing charges are set by the insurer/leasing company.
-        Contact the showroom to confirm current terms before booking.
+        . Freight, tax, insurance, tracker and processing charges are set by our financing and
+        insurance partners for this interest-free installment program and may change without
+        notice. Contact the showroom to confirm current terms before booking.
       </p>
     </div>
   );
