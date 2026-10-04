@@ -35,9 +35,9 @@ export function Header() {
             <Image
               src="/images/ittehad-motors-logo.png"
               alt="Ittehad Motors"
-              width={936}
-              height={572}
-              className="h-11 w-auto md:h-12"
+              width={1854}
+              height={618}
+              className="h-8 w-auto md:h-9"
             />
           </a>
 
