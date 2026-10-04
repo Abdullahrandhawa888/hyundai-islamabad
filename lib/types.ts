@@ -103,3 +103,25 @@ export type FormOption = {
   label: string;
   value: string;
 };
+
+export type EmiTenure = {
+  months: number;
+  advancePercent: number;
+  advanceAmount: number;
+  transitFreightInsurance: number;
+  advanceIncomeTaxFiler: number;
+  insuranceAmountSGI: number;
+  trackerChargesSGI: number;
+  processingChargesSGI: number;
+  totalAdvancePayment: number;
+  monthlyInstallment: number;
+  adminCharges: number;
+};
+
+export type EmiPlan = {
+  id: string;
+  modelLabel: string;
+  vehicleSlug?: string;
+  exFactoryPrice: number;
+  tenures: EmiTenure[];
+};

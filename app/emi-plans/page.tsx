@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { EmiCalculator } from "@/components/emi/EmiCalculator";
+import { EmiPlans } from "@/components/emi/EmiPlans";
 import { PageHero } from "@/components/shared/PageHero";
 
 export const metadata: Metadata = {
   title: "EMI Plans",
   description:
-    "Estimate your monthly Hyundai instalment by model, down payment and tenure, then get a financing quotation from Hyundai Islamabad.",
+    "Interest-free installment plans for select Hyundai models at Hyundai Islamabad, with tenure, advance and monthly cheque amounts.",
 };
 
 export default function EmiPlansPage() {
@@ -22,18 +22,12 @@ export default function EmiPlansPage() {
       />
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
         <p className="max-w-3xl text-[14px] leading-7 text-muted">
-          Choose a model, set your down payment and tenure, and see an estimated monthly
-          instalment. Figures use the ex-factory prices on our price list and a standard
-          reducing-balance calculation.
+          Choose a model below to see its current interest-free installment plan: advance
+          payment, monthly cheque amount and one-time charges for each available tenure.
         </p>
         <div className="mt-8">
-          <EmiCalculator />
+          <EmiPlans />
         </div>
-        <p className="mt-8 max-w-3xl text-[12px] leading-6 text-muted">
-          This calculator is an estimate only. The actual profit rate, minimum down payment,
-          tenure, processing fee, insurance and takaful are set by the financing bank and may
-          differ. Contact the showroom for a payable quotation and current bank offers.
-        </p>
       </section>
     </>
   );

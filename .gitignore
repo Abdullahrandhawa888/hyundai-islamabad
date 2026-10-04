@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# internal reference material (not a site asset, not deployed)
+/reference-docs/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
