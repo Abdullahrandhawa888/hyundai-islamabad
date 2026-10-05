@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Dancing_Script, Inter } from "next/font/google";
-import { SiteShell } from "@/components/layout/SiteShell";
 import { site } from "@/lib/data";
 import "./globals.css";
 
@@ -31,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${dancingScript.variable} h-full scroll-smooth antialiased`}
     >
       <body className={`${inter.className} flex min-h-full flex-col bg-white text-foreground`}>
-        <SiteShell>{children}</SiteShell>
+        {children}
       </body>
     </html>
   );

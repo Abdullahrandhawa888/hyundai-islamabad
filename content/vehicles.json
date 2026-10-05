@@ -14,33 +14,82 @@
       "Electronic parking brake with Auto-Hold",
       "LED headlamps, DRLs and tail lights"
     ],
-    "ranges": ["hyundai"],
+    "ranges": [
+      "hyundai"
+    ],
     "series": "E",
     "category": "Sedan",
     "fuel": "Petrol",
     "cardImage": "/images/vehicles/elantra-1-6-card.png",
     "heroImage": "/images/vehicles/elantra-1-6.png",
-    "gallery": ["/images/vehicles/elantra-1-6.png"],
+    "gallery": [
+      "/images/vehicles/elantra-1-6.png"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "1.6 Smartstream petrol" },
-      { "label": "Drivetrain", "value": "FWD" },
-      { "label": "Transmission", "value": "6-speed automatic" },
-      { "label": "Wheels", "value": "16-inch alloy" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "1.6 Smartstream petrol"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "FWD"
+      },
+      {
+        "label": "Transmission",
+        "value": "6-speed automatic"
+      },
+      {
+        "label": "Wheels",
+        "value": "16-inch alloy"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
     "variants": [
-      { "name": "Elantra 1.6 Fabric Seats", "price": 6449000 },
-      { "name": "Elantra 1.6 Beige", "price": 6484000 },
-      { "name": "Elantra 1.6 Burgundy", "price": 6484000 },
-      { "name": "Elantra 1.6 Cappuccino", "price": 6484000 }
+      {
+        "name": "Elantra 1.6 Fabric Seats",
+        "price": 6449000
+      },
+      {
+        "name": "Elantra 1.6 Beige",
+        "price": 6484000
+      },
+      {
+        "name": "Elantra 1.6 Burgundy",
+        "price": 6484000
+      },
+      {
+        "name": "Elantra 1.6 Cappuccino",
+        "price": 6484000
+      }
     ],
     "brochure": "/enquiry?type=brochure&model=elantra-1-6"
   },
@@ -60,7 +109,10 @@
       "Electronic parking brake with Auto-Hold",
       "LED headlamps, DRLs and tail lights"
     ],
-    "ranges": ["hyundai", "ioniq"],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
     "series": "E",
     "category": "Sedan",
     "fuel": "Hybrid",
@@ -72,21 +124,59 @@
       "/images/news/elantra-launch.jpg"
     ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "1.6 Smartstream GDi HEV" },
-      { "label": "Drivetrain", "value": "FWD" },
-      { "label": "Transmission", "value": "6-speed EcoShift DCT" },
-      { "label": "Wheels", "value": "16-inch alloy" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "1.6 Smartstream GDi HEV"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "FWD"
+      },
+      {
+        "label": "Transmission",
+        "value": "6-speed EcoShift DCT"
+      },
+      {
+        "label": "Wheels",
+        "value": "16-inch alloy"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
-    "variants": [{ "name": "Elantra Hybrid Blue", "price": 10761000 }],
+    "variants": [
+      {
+        "name": "Elantra Hybrid Blue",
+        "price": 10761000
+      }
+    ],
     "brochure": "/enquiry?type=brochure&model=elantra-hybrid"
   },
   {
@@ -105,28 +195,67 @@
       "Dual-zone automatic climate control",
       "ESC and traction control"
     ],
-    "ranges": ["hyundai"],
+    "ranges": [
+      "hyundai"
+    ],
     "series": "S",
     "category": "Sedan",
     "fuel": "Petrol",
     "cardImage": "/images/vehicles/sonata-card.png",
     "heroImage": "/images/vehicles/sonata.webp",
-    "gallery": ["/images/vehicles/sonata.webp"],
+    "gallery": [
+      "/images/vehicles/sonata.webp"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "2.0L / 2.5L GDi" },
-      { "label": "Drivetrain", "value": "FWD" },
-      { "label": "Transmission", "value": "Automatic" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "2.0L / 2.5L GDi"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "FWD"
+      },
+      {
+        "label": "Transmission",
+        "value": "Automatic"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
-    "variants": [{ "name": "Sonata 2.5", "price": 11545000 }],
+    "variants": [
+      {
+        "name": "Sonata 2.5",
+        "price": 11545000
+      }
+    ],
     "brochure": "/enquiry?type=brochure&model=sonata"
   },
   {
@@ -142,7 +271,10 @@
       "6-speed EcoShift DCT",
       "Commanding road presence"
     ],
-    "ranges": ["hyundai", "ioniq"],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
     "series": "S",
     "category": "SUV",
     "fuel": "Hybrid",
@@ -154,25 +286,70 @@
       "/images/news/santa-fe.jpg"
     ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" },
-      { "name": "Rain Forest", "hex": "#2F4A3C" },
-      { "name": "Hampton Grey", "hex": "#6E7278" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      },
+      {
+        "name": "Rain Forest",
+        "hex": "#2F4A3C"
+      },
+      {
+        "name": "Hampton Grey",
+        "hex": "#6E7278"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "1.6 T-GDi HEV" },
-      { "label": "Drivetrain", "value": "FWD or AWD" },
-      { "label": "Transmission", "value": "6-speed EcoShift DCT" },
-      { "label": "Seating", "value": "Three-row" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "1.6 T-GDi HEV"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "FWD or AWD"
+      },
+      {
+        "label": "Transmission",
+        "value": "6-speed EcoShift DCT"
+      },
+      {
+        "label": "Seating",
+        "value": "Three-row"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
     "variants": [
-      { "name": "Santa Fe Hybrid Smart FWD", "price": 13258000 },
-      { "name": "Santa Fe Hybrid Signature AWD", "price": 14720000 }
+      {
+        "name": "Santa Fe Hybrid Smart FWD",
+        "price": 13258000
+      },
+      {
+        "name": "Santa Fe Hybrid Signature AWD",
+        "price": 14720000
+      }
     ],
     "brochure": "/enquiry?type=brochure&model=santa-fe-hybrid"
   },
@@ -189,26 +366,61 @@
       "Premium infotainment",
       "Performance-oriented design"
     ],
-    "ranges": ["hyundai", "n"],
+    "ranges": [
+      "hyundai",
+      "n"
+    ],
     "series": "S",
     "category": "Sedan",
     "fuel": "Petrol",
     "cardImage": "/images/vehicles/sonata-n-line-card.png",
     "heroImage": "/images/vehicles/sonata-n-line.webp",
-    "gallery": ["/images/vehicles/sonata-n-line.webp"],
+    "gallery": [
+      "/images/vehicles/sonata-n-line.webp"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "2.5 Turbo GDi" },
-      { "label": "Drivetrain", "value": "FWD" },
-      { "label": "Transmission", "value": "Automatic" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "2.5 Turbo GDi"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "FWD"
+      },
+      {
+        "label": "Transmission",
+        "value": "Automatic"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
     "variants": [
       {
@@ -232,32 +444,78 @@
       "Commanding road presence",
       "Generous cargo and passenger space"
     ],
-    "ranges": ["hyundai"],
+    "ranges": [
+      "hyundai"
+    ],
     "series": "P",
     "category": "SUV",
     "fuel": "Hybrid",
     "cardImage": "/images/vehicles/palisade-card.png",
     "heroImage": "/images/vehicles/palisade.png",
-    "gallery": ["/images/vehicles/palisade.png"],
+    "gallery": [
+      "/images/vehicles/palisade.png"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" },
-      { "name": "Rain Forest", "hex": "#2F4A3C" },
-      { "name": "Hampton Grey", "hex": "#6E7278" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      },
+      {
+        "name": "Rain Forest",
+        "hex": "#2F4A3C"
+      },
+      {
+        "name": "Hampton Grey",
+        "hex": "#6E7278"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "2.5L HEV" },
-      { "label": "Combined power", "value": "329 hp / 460 Nm" },
-      { "label": "Battery warranty", "value": "8 years / 160,000 km" },
-      { "label": "Warranty", "value": "4 years / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "2.5L HEV"
+      },
+      {
+        "label": "Combined power",
+        "value": "329 hp / 460 Nm"
+      },
+      {
+        "label": "Battery warranty",
+        "value": "8 years / 160,000 km"
+      },
+      {
+        "label": "Warranty",
+        "value": "4 years / 100,000 km"
+      }
     ],
     "variants": [
-      { "name": "Palisade Smart (8-seater)", "price": 22625000 },
-      { "name": "Palisade Calligraphy (7-seater)", "price": 24075000 }
+      {
+        "name": "Palisade Smart (8-seater)",
+        "price": 22625000
+      },
+      {
+        "name": "Palisade Calligraphy (7-seater)",
+        "price": 24075000
+      }
     ],
     "brochure": "/enquiry?type=brochure&model=palisade"
   },
@@ -275,7 +533,10 @@
       "Advanced driver assistance",
       "Family-ready cargo space"
     ],
-    "ranges": ["hyundai", "ioniq"],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
     "series": "T",
     "category": "SUV",
     "fuel": "Hybrid",
@@ -286,24 +547,66 @@
       "/images/vehicles/tucson-hybrid.webp"
     ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" },
-      { "name": "Rain Forest", "hex": "#2F4A3C" },
-      { "name": "Hampton Grey", "hex": "#6E7278" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      },
+      {
+        "name": "Rain Forest",
+        "hex": "#2F4A3C"
+      },
+      {
+        "name": "Hampton Grey",
+        "hex": "#6E7278"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "1.6 GDi HEV" },
-      { "label": "Drivetrain", "value": "FWD or AWD" },
-      { "label": "Transmission", "value": "8-speed DCT" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "1.6 GDi HEV"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "FWD or AWD"
+      },
+      {
+        "label": "Transmission",
+        "value": "8-speed DCT"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
     "variants": [
-      { "name": "Tucson Hybrid Smart FWD", "price": 12202000 },
-      { "name": "Tucson Hybrid Signature AWD", "price": 13300000 }
+      {
+        "name": "Tucson Hybrid Smart FWD",
+        "price": 12202000
+      },
+      {
+        "name": "Tucson Hybrid Signature AWD",
+        "price": 13300000
+      }
     ],
     "brochure": "/enquiry?type=brochure&model=tucson-hybrid"
   },
@@ -324,29 +627,72 @@
       "360° surround view monitor",
       "Heated and ventilated front seats"
     ],
-    "ranges": ["ioniq"],
+    "ranges": [
+      "ioniq"
+    ],
     "series": "I",
     "category": "Electric",
     "fuel": "Electric",
     "cardImage": "/images/vehicles/ioniq-5-card.png",
     "heroImage": "/images/vehicles/ioniq-5.webp",
-    "gallery": ["/images/vehicles/ioniq-5.webp", "/images/vehicles/ioniq-5.webp"],
+    "gallery": [
+      "/images/vehicles/ioniq-5.webp",
+      "/images/vehicles/ioniq-5.webp"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
     ],
     "specs": [
-      { "label": "Powertrain", "value": "100% Electric" },
-      { "label": "Displays", "value": "12.25\" cluster + 12.25\" infotainment" },
-      { "label": "Audio", "value": "Premium Bose" },
-      { "label": "V2L", "value": "Vehicle-to-Load equipped" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Powertrain",
+        "value": "100% Electric"
+      },
+      {
+        "label": "Displays",
+        "value": "12.25\" cluster + 12.25\" infotainment"
+      },
+      {
+        "label": "Audio",
+        "value": "Premium Bose"
+      },
+      {
+        "label": "V2L",
+        "value": "Vehicle-to-Load equipped"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
-    "variants": [{ "name": "IONIQ 5", "price": 22540000 }],
+    "variants": [
+      {
+        "name": "IONIQ 5",
+        "price": 22540000
+      }
+    ],
     "brochure": "/enquiry?type=brochure&model=ioniq-5"
   },
   {
@@ -362,27 +708,64 @@
       "Aerodynamic silhouette",
       "Hyundai SmartSense safety"
     ],
-    "ranges": ["ioniq"],
+    "ranges": [
+      "ioniq"
+    ],
     "series": "I",
     "category": "Electric",
     "fuel": "Electric",
     "cardImage": "/images/vehicles/ioniq-6-card.png",
     "heroImage": "/images/vehicles/ioniq-6.webp",
-    "gallery": ["/images/vehicles/ioniq-6.webp", "/images/vehicles/ioniq-6.webp"],
+    "gallery": [
+      "/images/vehicles/ioniq-6.webp",
+      "/images/vehicles/ioniq-6.webp"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" },
-      { "name": "Magnetic Force", "hex": "#4A4E55" },
-      { "name": "Phantom Black", "hex": "#111111" },
-      { "name": "Oxford Blue", "hex": "#1B3A6B" },
-      { "name": "Fiery Red", "hex": "#B3121B" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
     ],
     "specs": [
-      { "label": "Powertrain", "value": "100% Electric" },
-      { "label": "Body", "value": "Streamliner sedan" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Powertrain",
+        "value": "100% Electric"
+      },
+      {
+        "label": "Body",
+        "value": "Streamliner sedan"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
-    "variants": [{ "name": "IONIQ 6", "price": 22540000 }],
+    "variants": [
+      {
+        "name": "IONIQ 6",
+        "price": 22540000
+      }
+    ],
     "brochure": "/enquiry?type=brochure&model=ioniq-6"
   },
   {
@@ -397,29 +780,67 @@
       "Practical cargo bed",
       "Trusted by Pakistani fleets"
     ],
-    "ranges": ["hyundai"],
+    "ranges": [
+      "hyundai"
+    ],
     "series": "C",
     "category": "Commercial",
     "fuel": "Diesel",
     "cardImage": "/images/vehicles/porter-card.png",
     "heroImage": "/images/vehicles/porter.webp",
-    "gallery": ["/images/vehicles/porter.webp", "/images/vehicles/porter.webp"],
+    "gallery": [
+      "/images/vehicles/porter.webp",
+      "/images/vehicles/porter.webp"
+    ],
     "colors": [
-      { "name": "Polar White", "hex": "#F4F4F2" },
-      { "name": "Silver Metallic", "hex": "#A8ADB3" }
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      }
     ],
     "specs": [
-      { "label": "Engine", "value": "2.6L diesel" },
-      { "label": "Body", "value": "Light commercial / H-100" },
-      { "label": "Warranty", "value": "48 months / 100,000 km" }
+      {
+        "label": "Engine",
+        "value": "2.6L diesel"
+      },
+      {
+        "label": "Body",
+        "value": "Light commercial / H-100"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
     ],
     "variants": [
-      { "name": "Porter H-100 Deckless (Without AC)", "price": 4470000 },
-      { "name": "Porter H-100 Deckless (With AC)", "price": 4580000 },
-      { "name": "Porter H-100 F/Deck (Without AC)", "price": 4490000 },
-      { "name": "Porter H-100 F/Deck (With AC)", "price": 4600000 },
-      { "name": "Porter H-100 H/Deck (Without AC)", "price": 4510000 },
-      { "name": "Porter H-100 H/Deck (With AC)", "price": 4620000 }
+      {
+        "name": "Porter H-100 Deckless (Without AC)",
+        "price": 4470000
+      },
+      {
+        "name": "Porter H-100 Deckless (With AC)",
+        "price": 4580000
+      },
+      {
+        "name": "Porter H-100 F/Deck (Without AC)",
+        "price": 4490000
+      },
+      {
+        "name": "Porter H-100 F/Deck (With AC)",
+        "price": 4600000
+      },
+      {
+        "name": "Porter H-100 H/Deck (Without AC)",
+        "price": 4510000
+      },
+      {
+        "name": "Porter H-100 H/Deck (With AC)",
+        "price": 4620000
+      }
     ],
     "brochure": "/enquiry?type=brochure&model=porter"
   }
