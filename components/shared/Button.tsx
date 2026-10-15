@@ -32,6 +32,15 @@ export function Button({
 }: ButtonProps) {
   const cls = `inline-flex items-center justify-center px-5 py-2.5 text-[13px] font-semibold tracking-wide transition-all duration-300 ease-out ${styles[variant]} ${className}`;
 
+  // Phone, email and off-site links aren't app routes, so skip next/link.
+  if (href && /^(tel:|mailto:|https?:)/.test(href)) {
+    return (
+      <a href={href} className={cls}>
+        {children}
+      </a>
+    );
+  }
+
   if (href) {
     return (
       <Link href={href} className={cls}>

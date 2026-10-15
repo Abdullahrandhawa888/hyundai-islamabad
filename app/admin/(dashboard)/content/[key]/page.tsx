@@ -8,6 +8,9 @@ const IMAGE_FOLDERS: Record<string, string> = {
   news: "news",
   home: "hero",
   site: "misc",
+  service: "after-sales",
+  nav: "after-sales",
+  "price-list": "pricelist",
 };
 
 export default async function AdminContentPage({ params }: { params: Promise<{ key: string }> }) {

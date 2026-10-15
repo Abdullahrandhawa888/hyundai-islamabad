@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EnquiryForm } from "@/components/shared/EnquiryForm";
+import { MapCard } from "@/components/shared/MapCard";
 import { PageHero } from "@/components/shared/PageHero";
 import { extraPhones, locations, site } from "@/lib/data";
 
@@ -67,6 +68,11 @@ export default function ContactPage() {
           </a>
         </div>
         <EnquiryForm intent="contact" />
+      </section>
+      <section id="map" className="mx-auto max-w-6xl scroll-mt-36 px-5 pb-16 md:px-8">
+        <h2 className="text-2xl font-light">Find us on the map</h2>
+        <p className="mt-2 text-[14px] text-muted">Tap the map for directions in Google Maps.</p>
+        <MapCard className="mt-6" />
       </section>
     </>
   );

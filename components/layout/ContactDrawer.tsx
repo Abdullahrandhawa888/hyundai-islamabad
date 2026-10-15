@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { extraPhones, locations, site } from "@/lib/data";
 import { X } from "lucide-react";
+import { MapCard } from "../shared/MapCard";
 
 export function ContactDrawer({
   open,
@@ -10,6 +12,11 @@ export function ContactDrawer({
   open: boolean;
   onClose: () => void;
 }) {
+  // The panel is on every page, so only load the Google map once someone
+  // actually opens it - then keep it, so it doesn't reload each time.
+  const [showMap, setShowMap] = useState(open);
+  if (open && !showMap) setShowMap(true);
+
   return (
     <>
       <div
@@ -19,11 +26,12 @@ export function ContactDrawer({
         onClick={onClose}
       />
       <aside
-        className={`fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl transition-transform duration-500 ease-out ${
+        inert={!open}
+        className={`fixed top-0 right-0 z-50 flex h-full w-full max-w-md flex-col bg-white shadow-2xl transition-transform duration-500 ease-out ${
           open ? "translate-x-0" : "pointer-events-none translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b border-line px-6 py-5">
+        <div className="flex shrink-0 items-center justify-between border-b border-line px-6 py-5">
           <h2 className="text-lg font-light tracking-wide">Contact</h2>
           <button
             type="button"
@@ -34,7 +42,15 @@ export function ContactDrawer({
             <X size={20} />
           </button>
         </div>
-        <div className="space-y-6 overflow-y-auto px-6 py-6">
+        <div className="min-h-0 flex-1 space-y-6 overflow-y-auto overscroll-contain px-6 py-6">
+          <div>
+            <p className="text-[11px] font-semibold tracking-[0.16em] text-accent uppercase">Find us</p>
+            {showMap ? (
+              <MapCard compact className="mt-3" />
+            ) : (
+              <div className="mt-3 h-[280px] border border-line bg-[#eef1f5]" aria-hidden />
+            )}
+          </div>
           {locations.map((location) => (
             <div key={location.id} className="border-b border-line pb-5">
               <p className="text-[11px] font-semibold tracking-[0.16em] text-accent uppercase">

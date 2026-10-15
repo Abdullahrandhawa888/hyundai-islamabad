@@ -12,8 +12,23 @@ function titleCase(key: string) {
 
 function isImageKey(key: string, value: unknown) {
   if (typeof value !== "string") return false;
+  // PDFs (e.g. the price list) can live under /images/ too, but aren't images.
+  if (/pdf/i.test(key) || /\.pdf([?#]|$)/i.test(value)) return false;
   if (value.startsWith("/images/")) return true;
   return /image|logo|photo/i.test(key);
+}
+
+/** Shape for a new item in an empty list, borrowed from the same list on a
+ * sibling (e.g. another vehicle's variants), so "Add" creates a full entry
+ * instead of a bare string. */
+function siblingTemplate(siblings: Json[] | undefined, key: string): Json | undefined {
+  for (const sibling of siblings ?? []) {
+    if (sibling && typeof sibling === "object" && !Array.isArray(sibling)) {
+      const list = sibling[key];
+      if (Array.isArray(list) && list.length > 0) return list[0];
+    }
+  }
+  return undefined;
 }
 
 function emptyLike(value: Json): Json {
@@ -69,12 +84,14 @@ function ArrayEditor({
   fieldKey,
   imageFolder,
   depth,
+  itemTemplate,
 }: {
   value: Json[];
   onChange: (next: Json[]) => void;
   fieldKey: string;
   imageFolder: string;
   depth: number;
+  itemTemplate?: Json;
 }) {
   const itemsAreObjects = value.length > 0 && value.every((v) => v && typeof v === "object" && !Array.isArray(v));
   const collapsible = itemsAreObjects && depth === 0;
@@ -162,6 +179,7 @@ function ArrayEditor({
                   fieldKey={fieldKey}
                   imageFolder={imageFolder}
                   depth={depth + 1}
+                  siblings={value}
                 />
               </div>
             ) : null}
@@ -171,7 +189,8 @@ function ArrayEditor({
       <button
         type="button"
         onClick={() => {
-          const next = [...value, value.length > 0 ? emptyLike(value[0]) : ""];
+          const template = value.length > 0 ? value[0] : itemTemplate;
+          const next = [...value, template !== undefined ? emptyLike(template) : ""];
           onChange(next);
           if (collapsible) setExpanded((prev) => new Set(prev).add(next.length - 1));
         }}
@@ -189,12 +208,18 @@ export function JsonEditor({
   fieldKey = "",
   imageFolder = "misc",
   depth = 0,
+  siblings,
+  itemTemplate,
 }: {
   value: Json;
   onChange: (next: Json) => void;
   fieldKey?: string;
   imageFolder?: string;
   depth?: number;
+  /** The other items of the list this value belongs to (for siblingTemplate). */
+  siblings?: Json[];
+  /** Shape for "Add" when this value is an empty list. */
+  itemTemplate?: Json;
 }) {
   if (typeof value === "string") {
     if (isImageKey(fieldKey, value)) {
@@ -251,6 +276,7 @@ export function JsonEditor({
         fieldKey={fieldKey}
         imageFolder={imageFolder}
         depth={depth}
+        itemTemplate={itemTemplate}
       />
     );
   }
@@ -268,6 +294,9 @@ export function JsonEditor({
             fieldKey={key}
             imageFolder={imageFolder}
             depth={depth + 1}
+            itemTemplate={
+              Array.isArray(val) && val.length === 0 ? siblingTemplate(siblings, key) : undefined
+            }
           />
         </div>
       ))}

@@ -45,3 +45,26 @@ body {
 .animate-timings-in {
   animation: timings-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
+/* Homepage model carousel: the active page indicator fills up, then the
+   carousel advances (see ModelRange). Duration is set inline. */
+@keyframes carousel-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-carousel-progress {
+  animation: carousel-progress 6s linear forwards;
+}
+
+/* No auto-advance for visitors who ask for reduced motion: the indicator just
+   shows as full and the carousel only moves when they use the arrows. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-carousel-progress {
+    animation: none;
+  }
+}

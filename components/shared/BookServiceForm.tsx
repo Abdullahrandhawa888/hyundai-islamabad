@@ -1,11 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { serviceModelOptions, serviceTypes, serviceYearOptions } from "@/lib/data";
+import { serviceModelOptions, serviceTypes } from "@/lib/data";
+import type { FormOption } from "@/lib/types";
 import { Button } from "./Button";
 import { FormField } from "./FormField";
 
-export function BookServiceForm() {
+export function BookServiceForm({
+  yearOptions,
+  defaultType,
+}: {
+  /** Built by the page on the server (see getServiceYearOptions) so the list
+   * is always current and matches between server and browser render. */
+  yearOptions: FormOption[];
+  defaultType?: string;
+}) {
   const [sent, setSent] = useState(false);
 
   if (sent) {
@@ -31,13 +40,7 @@ export function BookServiceForm() {
         <FormField label="Name" name="name" required />
         <FormField label="Email" name="email" type="email" required />
         <FormField label="Mobile" name="mobile" type="tel" required />
-        <FormField
-          label="Model year"
-          name="year"
-          as="select"
-          required
-          options={serviceYearOptions}
-        />
+        <FormField label="Model year" name="year" as="select" required options={yearOptions} />
         <FormField
           label="Model name"
           name="model"
@@ -45,7 +48,14 @@ export function BookServiceForm() {
           required
           options={serviceModelOptions}
         />
-        <FormField label="Service type" name="type" as="select" required options={serviceTypes} />
+        <FormField
+          label="Service type"
+          name="type"
+          as="select"
+          required
+          options={serviceTypes}
+          defaultValue={defaultType}
+        />
         <FormField label="Registration no" name="reg" required />
         <FormField label="Odometer (KM)" name="odo" required />
         <FormField label="Appointment date" name="date" type="date" />

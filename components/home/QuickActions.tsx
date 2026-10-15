@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const actions = [
-  { label: "Book A Service", href: "/services/book" },
+  { label: "Book A Service", href: "/after-sales/book-a-service" },
   { label: "Make an Enquiry", href: "/enquiry" },
   { label: "View Our Offers", href: "/offers" },
 ];

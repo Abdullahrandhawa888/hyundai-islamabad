@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { formatPrice } from "@/lib/data";
+import { formatPrice, fromPrice } from "@/lib/data";
 import type { Vehicle } from "@/lib/types";
 import { DiscoverLink } from "../shared/Button";
 
 export function ModelCard({ vehicle }: { vehicle: Vehicle }) {
-  const from = vehicle.variants[0];
+  const from = fromPrice(vehicle);
 
   return (
     <article className="group border border-line bg-white p-6 text-center transition-shadow duration-500 ease-out hover:shadow-md">
@@ -20,12 +20,8 @@ export function ModelCard({ vehicle }: { vehicle: Vehicle }) {
       <p className="mt-4 text-[11px] tracking-[0.16em] text-muted uppercase">{vehicle.fuel}</p>
       <h3 className="mt-1 text-[16px] font-semibold tracking-wide uppercase">{vehicle.name}</h3>
       <p className="mt-2 text-[13px] text-muted">{vehicle.tagline}</p>
-      {from ? (
-        <p className="mt-3 text-[14px]">
-          {(from.discountedPrice ?? from.price) > 0
-            ? `From ${formatPrice(from.discountedPrice ?? from.price)}`
-            : formatPrice(from.price)}
-        </p>
+      {vehicle.variants.length > 0 ? (
+        <p className="mt-3 text-[14px]">{from > 0 ? `From ${formatPrice(from)}` : formatPrice(0)}</p>
       ) : null}
       <div className="mt-4 flex justify-center">
         <DiscoverLink href={`/models/${vehicle.slug}`} />

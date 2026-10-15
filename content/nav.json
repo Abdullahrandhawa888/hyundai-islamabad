@@ -8,7 +8,20 @@
       { "label": "EMI Plans", "href": "/emi-plans" }
     ]
   },
-  { "label": "Service", "href": "/services" },
+  {
+    "label": "After Sales",
+    "href": "/after-sales",
+    "image": "/images/after-sales/manual-santa-fe-hybrid.png",
+    "children": [
+      { "label": "Warranty T&Cs", "href": "/after-sales/warranty", "group": "Warranty Terms & Conditions" },
+      { "label": "Customer Promise", "href": "/after-sales/customer-promise", "group": "Hyundai ISB Service" },
+      { "label": "Dealership Facility", "href": "/after-sales/dealership-facility", "group": "Hyundai ISB Service" },
+      { "label": "Free Services", "href": "/after-sales/free-services", "group": "Hyundai ISB Service" },
+      { "label": "Periodic Maintenance Charts", "href": "/after-sales/maintenance-charts", "group": "Hyundai ISB Service" },
+      { "label": "Owner’s Manual", "href": "/after-sales/owners-manual", "group": "Hyundai ISB Service" },
+      { "label": "Book a Service", "href": "/after-sales/book-a-service", "group": "Service Appointment" }
+    ]
+  },
   { "label": "Our Team", "href": "/team" },
   { "label": "Accessories", "href": "/accessories" },
   { "label": "About Us", "href": "/about" }

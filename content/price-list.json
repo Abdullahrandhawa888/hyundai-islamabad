@@ -1,0 +1,143 @@
+{
+  "edition": "September 2026",
+  "issuer": "Ittehad Automotive",
+  "issuerTagline": "An Ittehad Steel Company",
+  "intro": "Official prices for September 2026, with transportation charges and applicable taxes. Prices are provisional; the price at the time of delivery applies.",
+  "pdfDownloadName": "Hyundai Islamabad Price List - September 2026.pdf",
+  "pdfPagesAfterPriceList": [
+    "/images/pricelist/ppf-protection-packages.jpg"
+  ],
+  "pdfPagesAtEnd": [
+    "/images/pricelist/payment-guide.jpg"
+  ],
+  "columns": {
+    "price": "Price",
+    "transportation": "Transportation Charges",
+    "nevLevy": "NEV Levy",
+    "whtTax": "WHT Tax",
+    "cvt": "CVT (1%)",
+    "total": "Total Charges"
+  },
+  "models": [
+    {
+      "vehicleSlug": "elantra-1-6",
+      "label": "Elantra 1.6 Special Edition",
+      "image": "/images/pricelist/elantra-1-6.png",
+      "spec": {
+        "title": "",
+        "text": ""
+      },
+      "badges": [],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "elantra-hybrid",
+      "label": "Elantra (Hybrid)",
+      "image": "/images/pricelist/elantra-hybrid.png",
+      "spec": {
+        "title": "",
+        "text": ""
+      },
+      "badges": [],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "sonata",
+      "label": "Sonata",
+      "image": "/images/pricelist/sonata.png",
+      "spec": {
+        "title": "",
+        "text": ""
+      },
+      "badges": [],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "sonata-n-line",
+      "label": "Sonata N-Line",
+      "image": "/images/pricelist/sonata-n-line.png",
+      "spec": {
+        "title": "",
+        "text": ""
+      },
+      "badges": [],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "tucson-hybrid",
+      "label": "Tucson Hybrid",
+      "image": "/images/pricelist/tucson-hybrid.png",
+      "spec": {
+        "title": "",
+        "text": ""
+      },
+      "badges": [],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "santa-fe-hybrid",
+      "label": "Santa Fe (Hybrid)",
+      "image": "/images/pricelist/santa-fe-hybrid.png",
+      "spec": {
+        "title": "",
+        "text": ""
+      },
+      "badges": [],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "palisade",
+      "label": "Palisade (HEV)",
+      "image": "/images/pricelist/palisade.png",
+      "spec": {
+        "title": "Combined Max.",
+        "text": "Power (HP) 329 | Torque (Nm) 460"
+      },
+      "badges": [
+        {
+          "years": "8",
+          "title": "160,000 Km",
+          "text": "Battery Warranty"
+        },
+        {
+          "years": "4",
+          "title": "100,000 Km",
+          "text": "Warranty Coverage"
+        }
+      ],
+      "showExFactoryPrice": false
+    },
+    {
+      "vehicleSlug": "porter",
+      "label": "Porter H-100",
+      "image": "/images/pricelist/porter.png",
+      "spec": {
+        "title": "2.6L Diesel Engine",
+        "text": "5-Speed Gearbox"
+      },
+      "badges": [
+        {
+          "years": "4",
+          "title": "100,000 Km",
+          "text": "Warranty Coverage"
+        }
+      ],
+      "showExFactoryPrice": true
+    }
+  ],
+  "paymentTerms": {
+    "title": "Payment terms & conditions",
+    "left": [
+      "Payments in the form of Pay Order to be made payable to ‘Hyundai Nishat Motor (Pvt) Ltd., NTN # 7432849-1’ on A/C Customer Name.",
+      "Copy of CNIC for Individual Customers.",
+      "In Case of Filer, Status should remain same throughout.",
+      "Purchase Order + NTN certificate for Corporate Customers."
+    ],
+    "right": [
+      "All Prices are Provisional and Subject to change without any prior notice, any increase in Price will be on account of Customer.",
+      "Price(s) at the Time of Delivery will be applicable.",
+      "Force Majeure Clause is applicable.",
+      "Other Terms and Conditions apply."
+    ]
+  }
+}

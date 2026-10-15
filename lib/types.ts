@@ -1,7 +1,19 @@
+export type NavLink = {
+  label: string;
+  href: string;
+  /** Heading this link is listed under in its dropdown. Links with no group
+   * render as a plain list, like the Offers & Plans menu. */
+  group?: string;
+};
+
 export type NavItem = {
   label: string;
+  /** On an item with children, clicking the label opens this page and
+   * hovering shows the dropdown. */
   href?: string;
-  children?: { label: string; href: string }[];
+  children?: NavLink[];
+  /** Faded picture behind a grouped dropdown's columns. */
+  image?: string;
 };
 
 export type Location = {
@@ -47,6 +59,18 @@ export type VehicleVariant = {
   price: number;
   discountedPrice?: number;
   note?: string;
+  // Price list columns. A variant's total is never stored: it is always
+  // price + transportation + nevLevy + whtTax + cvt (see variantTotal).
+  grade: string;
+  /** The price list's "Variant" column, e.g. "1.6(T-GDI) HEV" or "Beige". */
+  variantLabel: string;
+  /** e.g. "With AC". Consecutive variants with the same grade and variant
+   * label share one price list row, one line per option. */
+  option: string;
+  transportation: number;
+  nevLevy: number;
+  whtTax: number;
+  cvt: number;
 };
 
 export type Vehicle = {
@@ -104,6 +128,58 @@ export type FormOption = {
   value: string;
 };
 
+export type PriceListBadge = {
+  /** Big number on the badge, e.g. "8" for an 8-year warranty. */
+  years: string;
+  title: string;
+  text: string;
+};
+
+export type PriceListModel = {
+  /** Must match a Vehicle.slug; the rows and colours come from that vehicle. */
+  vehicleSlug: string;
+  label: string;
+  image: string;
+  spec: { title: string; text: string };
+  badges: PriceListBadge[];
+  showExFactoryPrice: boolean;
+};
+
+export type PriceList = {
+  edition: string;
+  issuer: string;
+  issuerTagline: string;
+  intro: string;
+  /** File name for the generated PDF (/price-list.pdf), which is built from
+   * these same prices whenever the site rebuilds. */
+  pdfDownloadName: string;
+  /** Extra full-page images in the PDF, e.g. the PPF packages page, placed
+   * straight after the main price list page... */
+  pdfPagesAfterPriceList: string[];
+  /** ...and at the very end, e.g. the payment guide. */
+  pdfPagesAtEnd: string[];
+  columns: {
+    price: string;
+    transportation: string;
+    nevLevy: string;
+    whtTax: string;
+    cvt: string;
+    total: string;
+  };
+  models: PriceListModel[];
+  paymentTerms: { title: string; left: string[]; right: string[] };
+};
+
+export type EmiPage = {
+  title: string;
+  subtitle: string;
+  edition: string;
+  intro: string;
+  /** File name for the generated PDF (/emi-plans.pdf). */
+  pdfDownloadName: string;
+  notes: string[];
+};
+
 export type EmiTenure = {
   months: number;
   advanceAmount: number;
@@ -112,7 +188,8 @@ export type EmiTenure = {
   insuranceAmountSGI: number;
   trackerChargesSGI: number;
   processingChargesSGI: number;
-  totalAdvancePayment: number;
+  // "Total advance payment" is never stored: it is always the sum of the six
+  // amounts above (see emiTotalAdvance), like the price list's Total Charges.
   monthlyInstallment: number;
   adminCharges: number;
 };

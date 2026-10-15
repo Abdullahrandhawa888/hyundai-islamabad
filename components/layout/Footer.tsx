@@ -14,7 +14,7 @@ const columns = [
       { label: "About Us", href: "/about" },
       { label: "Find Us", href: "/contact" },
       { label: "Make an Enquiry", href: "/enquiry" },
-      { label: "Book a Service", href: "/services/book" },
+      { label: "Book a Service", href: "/after-sales/book-a-service" },
     ],
   },
   {
@@ -28,12 +28,13 @@ const columns = [
     ],
   },
   {
-    title: "Explore Hyundai",
+    title: "After Sales",
     links: [
-      { label: "Service", href: "/services" },
-      { label: "Warranty T&C", href: "/warranty" },
-      { label: "Owner's Manual", href: "/owners-manual" },
-      { label: "Book a Service", href: "/services/book" },
+      { label: "Warranty T&C", href: "/after-sales/warranty" },
+      { label: "Free Services", href: "/after-sales/free-services" },
+      { label: "Maintenance Charts", href: "/after-sales/maintenance-charts" },
+      { label: "Owner's Manual", href: "/after-sales/owners-manual" },
+      { label: "Customer Promise", href: "/after-sales/customer-promise" },
     ],
   },
 ];
@@ -56,7 +57,7 @@ export function Footer() {
               Contact Us
             </Link>
             <Link
-              href="/contact"
+              href="/contact#map"
               className="border border-white/40 px-5 py-2 text-[13px] font-semibold transition-colors duration-300 ease-out hover:border-white"
             >
               Our Locations

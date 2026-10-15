@@ -1,12 +1,60 @@
 {
-  "ownerManuals": [
-    { "name": "Elantra", "href": "/enquiry?type=brochure&model=elantra-hybrid" },
-    { "name": "Sonata", "href": "/enquiry?type=brochure&model=sonata" },
-    { "name": "Tucson", "href": "/enquiry?type=brochure&model=tucson" },
-    { "name": "Santa Fe Hybrid", "href": "/enquiry?type=brochure&model=santa-fe-hybrid" },
-    { "name": "Staria", "href": "/enquiry?type=brochure" },
-    { "name": "Porter", "href": "/enquiry?type=brochure&model=porter" }
-  ],
+  "overview": {
+    "intro": "From your first free service to warranty repairs and periodic maintenance, our I-9/3 workshop keeps your Hyundai running the way it left the factory. Hyundai-trained technicians, genuine parts, and a clear estimate before any work begins."
+  },
+  "facility": {
+    "intro": "Hyundai Islamabad’s showroom and service workshop share one site off 9th Avenue in I-9/3, so you can choose, buy and look after your Hyundai in one place.",
+    "showroom": "Explore the current Hyundai line-up, take a test drive, and talk through prices and EMI plans with our sales team.",
+    "workshop": "Free services, periodic maintenance, mechanical repairs and body & paint work, carried out by Hyundai-trained technicians.",
+    "gallery": [
+      "/images/vehicles/dealership-showroom.jpg",
+      "/images/after-sales/workshop-technician.webp",
+      "/images/after-sales/workshop-lift.jpg",
+      "/images/after-sales/workshop-oil-change.jpg"
+    ]
+  },
+  "ownerManuals": {
+    "intro": "Get to know your Hyundai inside out. Each Owner’s Manual covers controls and features, driving tips, the maintenance schedule and warranty information for your model.",
+    "note": "Manuals are large PDF files, so we recommend downloading them over Wi-Fi.",
+    "manuals": [
+      {
+        "name": "Elantra",
+        "image": "/images/after-sales/manual-elantra.png",
+        "pdf": "https://hyundai-islamabad.com/wp-content/uploads/2023/10/Elantra-Owner-Manual.pdf",
+        "size": "72 MB"
+      },
+      {
+        "name": "Sonata",
+        "image": "/images/after-sales/manual-sonata.png",
+        "pdf": "https://hyundai-islamabad.com/wp-content/uploads/2023/10/Sonata-Owner-Manual.pdf",
+        "size": "293 MB"
+      },
+      {
+        "name": "Tucson",
+        "image": "/images/after-sales/manual-tucson.png",
+        "pdf": "https://hyundai-islamabad.com/wp-content/uploads/2023/10/Tucson-Owner-Manual.pdf",
+        "size": "15 MB"
+      },
+      {
+        "name": "Santa Fe Hybrid",
+        "image": "/images/after-sales/manual-santa-fe-hybrid.png",
+        "pdf": "",
+        "size": ""
+      },
+      {
+        "name": "Staria",
+        "image": "/images/after-sales/manual-staria.png",
+        "pdf": "https://hyundai-islamabad.com/wp-content/uploads/2023/10/Staria-Owner-Manual.pdf",
+        "size": "24 MB"
+      },
+      {
+        "name": "Porter H-100",
+        "image": "/images/after-sales/manual-porter.png",
+        "pdf": "https://hyundai-islamabad.com/wp-content/uploads/2023/10/Porter-H-100-Owner-Manual.pdf",
+        "size": "76 MB"
+      }
+    ]
+  },
   "customerPromise": {
     "intro": "We pledge to provide outstanding service and go above and beyond to surpass your expectations.",
     "pledges": [
@@ -22,8 +70,9 @@
     ]
   },
   "maintenanceCharts": {
-    "intro": "Stay on top of your vehicle’s maintenance with Hyundai Islamabad’s periodic maintenance chart. Intervals below are a guide; always follow your owner’s manual.",
-    "columns": ["Elantra", "Sonata", "Tucson", "Santa Fe", "IONIQ", "Staria", "Grand Starex", "Porter"],
+    "intro": "Stay on top of your Hyundai’s upkeep with our periodic maintenance chart. It shows how often each item should be replaced, model by model.",
+    "note": "Intervals are a guide for normal driving. If you drive in severe conditions, follow the shorter schedule in your Owner’s Manual, or ask our service advisors.",
+    "columns": ["Elantra", "Sonata", "Tucson", "Santa Fe", "IONIQ Hybrid", "Staria", "Grand Starex", "Porter H-100"],
     "items": [
       { "item": "Engine oil", "values": ["5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "3,000 km"] },
       { "item": "Oil filter", "values": ["5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "3,000 km"] },
@@ -37,41 +86,125 @@
       { "item": "Engine clutch actuator fluid", "values": ["-", "-", "-", "-", "40,000 km", "-", "-", "-"] }
     ]
   },
-  "freeServices": [
-    {
-      "title": "First free service",
-      "detail": "Due at 1,000 kilometres or one month from purchase, whichever comes first. Labour is complimentary; parts, lubricants or accessories if required are charged separately."
-    },
-    {
-      "title": "Second free service",
-      "detail": "Due at 5,000 kilometres or three months from the previous service, whichever comes first."
-    },
-    {
-      "title": "Third free service",
-      "detail": "Due at 10,000 kilometres or six months from the previous service, whichever comes first."
-    }
-  ],
+  "freeServices": {
+    "intro": "Every new Hyundai comes with three free scheduled services at an authorised Hyundai dealership. The labour is free; you only pay for any parts, lubricants or accessories that are needed.",
+    "services": [
+      {
+        "title": "First free service",
+        "distance": "1,000 km",
+        "time": "1 month after purchase",
+        "detail": "Your first check-up, carried out to the schedule in your Owner’s Manual. Our technicians inspect the vehicle after its running-in period and make any adjustments it needs.",
+        "image": "/images/after-sales/workshop-technician.webp"
+      },
+      {
+        "title": "Second free service",
+        "distance": "5,000 km",
+        "time": "3 months after your first service",
+        "detail": "A scheduled service following the Owner’s Manual guidelines. Labour is free; parts, lubricants or accessories are charged only if they are required.",
+        "image": "/images/after-sales/workshop-lift.jpg"
+      },
+      {
+        "title": "Third free service",
+        "distance": "10,000 km",
+        "time": "6 months after your second service",
+        "detail": "Your last complimentary service, again carried out to the Owner’s Manual. You only pay for parts, lubricants or accessories that are used or needed during the service.",
+        "image": "/images/after-sales/workshop-oil-change.jpg"
+      }
+    ]
+  },
   "warranty": {
-    "intro": "A written promise from Hyundai Nishat Motor Limited to repair or replace a vehicle component that experiences a fault due to material or workmanship issues within a specified time frame.",
-    "period": "Coverage for any component in your new Hyundai vehicle, with the exceptions listed below, extends for 48 months from the original retail delivery or first use, whichever occurs first, and up to 100,000 kilometres.",
-    "paint": "The paint warranty addresses paint defects and surface corrosion (excluding perforation) resulting from defects in paint material or workmanship. It lasts 24 months from original retail delivery or first use, and up to 50,000 kilometres.",
-    "oem": "Tires, batteries and audio navigation units are covered by the warranties offered by their respective manufacturers. Refer to the warranty condition card supplied with your vehicle.",
-    "service": "Authorised Hyundai distributors or dealers provide warranty services at no cost for parts and labour. Warranty work performed elsewhere is not covered.",
-    "covered": "Repair or replacement of any component originally manufactured by Hyundai that is found defective in material or workmanship during normal use and maintenance, except items listed as not covered.",
+    "intro": "A written promise from Hyundai Nishat Motor to repair or replace any component that develops a fault because of a defect in material or workmanship, within the warranty period.",
+    "coverage": [
+      {
+        "title": "New vehicle limited warranty",
+        "term": "48 months",
+        "distance": "100,000 km",
+        "detail": "Covers every component of your new Hyundai, apart from the exclusions below, for 48 months from original retail delivery or first use, whichever comes first, up to 100,000 kilometres."
+      },
+      {
+        "title": "Paint warranty",
+        "term": "24 months",
+        "distance": "50,000 km",
+        "detail": "Covers paint defects and surface corrosion (not perforation) caused by faulty paint material or workmanship, for 24 months from original retail delivery or first use, up to 50,000 kilometres."
+      },
+      {
+        "title": "OEM warranty",
+        "term": "Maker’s terms",
+        "distance": "",
+        "detail": "Tyres, batteries and audio-navigation units are covered by their own manufacturers’ warranties. See the warranty condition card supplied with your vehicle for details."
+      }
+    ],
+    "service": "Authorised Hyundai distributors and dealers carry out warranty repairs free of charge for both parts and labour. Warranty work done anywhere else is not covered.",
+    "claims": "Hyundai makes the final decision on all warranty claims.",
+    "covered": "Repair or replacement of any component originally manufactured by Hyundai that proves defective in material or workmanship under normal use and maintenance, except for the items listed under What is not covered.",
     "notCovered": [
-      "Normal maintenance: tune-ups, alignments, lubrication, oil changes and fluid top-ups unless a replacement is required due to a defect",
-      "Wear items: spark plugs, brake pads, clutch linings, wiper blades, filters, bulbs, fuses and V-belts",
-      "Damage from neglect, misuse, overload, accident, theft, flooding or fire",
-      "Improper fuel, fluids or non-genuine parts",
-      "Modification, alteration, tampering or improper repair",
-      "Incidental costs: fuel, travel, rental, lodging or loss of use",
-      "Odometer alteration, airborne fallout, stone chips and similar paint or glass damage"
+      {
+        "title": "Normal maintenance",
+        "detail": "Routine servicing is not covered: inspections, tightening and adjustments, engine tune-ups, fuel-system adjustments, wheel alignment and balancing, cleaning, lubrication, oil changes, tyre rotation, and topping up fuel, oils, fluids, coolant, refrigerant or washer fluid. These are covered only when a replacement is needed because of a defect in material or workmanship.",
+        "items": []
+      },
+      {
+        "title": "Normal wear and deterioration",
+        "detail": "Wear and consumable items are covered only when their replacement is caused by a defect in material or workmanship.",
+        "items": [
+          "Spark plugs",
+          "Brake pads and linings",
+          "Clutch linings and discs",
+          "Wiper blades",
+          "Filters",
+          "Bulbs and fuses",
+          "V-belts"
+        ]
+      },
+      {
+        "title": "Damage or failure caused by",
+        "detail": "",
+        "items": [
+          "Not carrying out the maintenance required in the Owner’s Manual",
+          "Misuse, abuse, overloading, accident or theft",
+          "Flooding or fire",
+          "Incorrect or insufficient fuel, fluids or lubricants",
+          "Parts that are not Hyundai Genuine Parts",
+          "Devices or accessories not supplied by Hyundai",
+          "Modification, alteration, tampering or improper repair",
+          "Normal ageing of rubber parts, upholstery and soft trim",
+          "Minor irregularities that do not affect quality or function, such as slight noise or vibration, or traits characteristic of the vehicle"
+        ]
+      },
+      {
+        "title": "Incidental and consequential costs",
+        "detail": "Costs that follow from a fault are not covered, for example fuel, phone calls, travel, lodging, meals, vehicle rental, storage, lost time or pay, inconvenience, commercial loss, or loss of use of the vehicle.",
+        "items": []
+      },
+      {
+        "title": "Other exclusions",
+        "detail": "",
+        "items": [
+          "Any vehicle whose odometer reading has been altered",
+          "Airborne or industrial fallout, acid rain, salt, hail, sandstorms and other natural events",
+          "Paint scratches, dents and similar paint or body damage",
+          "Stone chips in paint or glass from sand, gravel, dust or road debris",
+          "Paint defects caused by the cargo compartment (trucks only)"
+        ]
+      }
     ],
     "owner": [
-      "Follow the Owner’s Manual for use and maintenance, including severe-driving schedules.",
-      "Keep records of maintenance services.",
-      "Deliver the vehicle to an authorised Hyundai dealer during service hours for warranty work.",
-      "Inspect trim, paint and appearance at delivery."
+      {
+        "title": "Use and maintain it properly",
+        "detail": "Follow the Owner’s Manual for use, maintenance and care, including the severe-driving maintenance schedule if it applies to how you drive."
+      },
+      {
+        "title": "Keep your service records",
+        "detail": "Keep a record of every scheduled service. You may need it to show that the required maintenance was carried out."
+      },
+      {
+        "title": "Use an authorised Hyundai dealer",
+        "detail": "For warranty work, bring your vehicle to an authorised Hyundai dealer during regular service hours."
+      },
+      {
+        "title": "Inspect it at delivery",
+        "detail": "Check the trim, paint and overall appearance when you take delivery of your new vehicle."
+      }
     ]
   }
 }

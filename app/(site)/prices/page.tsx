@@ -1,61 +1,74 @@
 import type { Metadata } from "next";
+import { DownloadPdfButton, FlyerHeader } from "@/components/prices/FlyerHeader";
+import { PriceListModel } from "@/components/prices/PriceListModel";
 import { Button } from "@/components/shared/Button";
-import { PageHero } from "@/components/shared/PageHero";
-import { formatPrice, vehicles } from "@/lib/data";
+import { getPriceListSections, priceList } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Price List",
+  description: `Hyundai Islamabad price list for ${priceList.edition}: prices, transportation charges and taxes for every model.`,
+};
+
+// Built from the same data as this page every time the site rebuilds, so it
+// always matches (see app/price-list.pdf/route.ts).
+const download = {
+  href: "/price-list.pdf",
+  label: "Download Price List (PDF)",
+  fileName: priceList.pdfDownloadName,
 };
 
 export default function PricesPage() {
+  const sections = getPriceListSections();
+
   return (
     <>
-      <PageHero
-        title="Updated price list"
-        crumbs={[
-          { label: "Homepage", href: "/" },
-          { label: "Price List" },
-        ]}
-        image="/images/vehicles/tucson-hybrid.webp"
+      <FlyerHeader
+        title="Price List"
+        edition={priceList.edition}
+        issuer={priceList.issuer}
+        issuerTagline={priceList.issuerTagline}
+        crumbs={[{ label: "Homepage", href: "/" }, { label: "Price List" }]}
+        intro={priceList.intro}
+        download={download}
+        jumpLinks={sections.map(({ model, vehicle }) => ({ href: `#${vehicle.slug}`, label: model.label }))}
       />
-      <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
-        <p className="max-w-3xl text-[14px] leading-7 text-muted">
-          Ex-factory figures from the Hyundai Islamabad / Hyundai Nishat September 2026 price
-          list. Freight, insurance, NEV levy and withholding tax may apply. Prices at invoice are
-          final. Contact the showroom for a payable quotation.
-        </p>
-        <p className="mt-6 text-[12px] text-muted sm:hidden">Swipe the table sideways to see all columns →</p>
-        <div className="mt-3 overflow-x-auto sm:mt-8">
-          <table className="w-full min-w-[720px] border-collapse text-left text-[14px]">
-            <thead>
-              <tr className="border-b border-foreground text-[12px] tracking-wide uppercase">
-                <th className="py-3 pr-4">Model</th>
-                <th className="py-3 pr-4">Variant</th>
-                <th className="py-3 pr-4">Ex-factory</th>
-                <th className="py-3">Promotional</th>
-              </tr>
-            </thead>
-            <tbody>
-              {vehicles.flatMap((vehicle) =>
-                vehicle.variants.map((variant) => (
-                  <tr key={`${vehicle.slug}-${variant.name}`} className="border-b border-line">
-                    <td className="py-3 pr-4 font-medium">{vehicle.shortName}</td>
-                    <td className="py-3 pr-4">{variant.name}</td>
-                    <td className="py-3 pr-4">{formatPrice(variant.price)}</td>
-                    <td className="py-3">
-                      {variant.discountedPrice
-                        ? `${formatPrice(variant.discountedPrice)} · ${variant.note ?? ""}`
-                        : "-"}
-                    </td>
-                  </tr>
-                )),
-              )}
-            </tbody>
-          </table>
+
+      <section className="mx-auto max-w-6xl px-5 md:px-8">
+        {sections.map(({ model, vehicle, rows }) => (
+          <PriceListModel
+            key={vehicle.slug}
+            model={model}
+            vehicle={vehicle}
+            rows={rows}
+            columns={priceList.columns}
+          />
+        ))}
+      </section>
+
+      <section className="border-t border-line bg-[#f7f9fc]">
+        <div className="mx-auto max-w-6xl px-5 py-14 md:px-8">
+          <h2 className="text-[22px] font-bold text-[#0a2a8a]">{priceList.paymentTerms.title}</h2>
+          <div className="mt-6 grid gap-8 md:grid-cols-2 md:gap-0">
+            {[priceList.paymentTerms.left, priceList.paymentTerms.right].map((terms, index) => (
+              <ul
+                key={index}
+                className={`space-y-3 text-[14px] leading-6 text-[#333] ${
+                  index === 1 ? "md:border-l md:border-line md:pl-10" : "md:pr-10"
+                }`}
+              >
+                {terms.map((term) => (
+                  <li key={term}>{term}</li>
+                ))}
+              </ul>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <DownloadPdfButton {...download} />
+            <Button href="/emi-plans" variant="outline">
+              View EMI plans
+            </Button>
+          </div>
         </div>
-        <Button href="/enquiry" variant="primary" className="mt-8">
-          Request an online quotation
-        </Button>
       </section>
     </>
   );

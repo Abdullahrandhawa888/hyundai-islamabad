@@ -28,27 +28,35 @@
     "colors": [
       {
         "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
+        "hex": "#F6FBFE"
       },
       {
         "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#5D5D5D"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#949596"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#5E5F5E"
       },
       {
         "name": "Oxford Blue",
-        "hex": "#1B3A6B"
+        "hex": "#022554"
       },
       {
         "name": "Fiery Red",
-        "hex": "#B3121B"
+        "hex": "#CB0202"
+      },
+      {
+        "name": "Ultimate Red Metallic",
+        "hex": "#3D0201"
+      },
+      {
+        "name": "Hampton Grey",
+        "hex": "#54585B"
       }
     ],
     "specs": [
@@ -76,19 +84,47 @@
     "variants": [
       {
         "name": "Elantra 1.6 Fabric Seats",
-        "price": 6449000
+        "price": 6449000,
+        "grade": "Elantra 1591cc 6AT SR",
+        "variantLabel": "Fabric Seats",
+        "option": "",
+        "transportation": 60000,
+        "nevLevy": 0,
+        "whtTax": 130180,
+        "cvt": 0
       },
       {
         "name": "Elantra 1.6 Beige",
-        "price": 6484000
+        "price": 6484000,
+        "grade": "Elantra 1591cc 6AT SR",
+        "variantLabel": "Beige",
+        "option": "",
+        "transportation": 60000,
+        "nevLevy": 0,
+        "whtTax": 130880,
+        "cvt": 0
       },
       {
         "name": "Elantra 1.6 Burgundy",
-        "price": 6484000
+        "price": 6484000,
+        "grade": "Elantra 1591cc 6AT SR",
+        "variantLabel": "Burgundy",
+        "option": "",
+        "transportation": 60000,
+        "nevLevy": 0,
+        "whtTax": 130880,
+        "cvt": 0
       },
       {
         "name": "Elantra 1.6 Cappuccino",
-        "price": 6484000
+        "price": 6484000,
+        "grade": "Elantra 1591cc 6AT SR",
+        "variantLabel": "Cappuccino",
+        "option": "",
+        "transportation": 60000,
+        "nevLevy": 0,
+        "whtTax": 130880,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=elantra-1-6"
@@ -126,27 +162,27 @@
     "colors": [
       {
         "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
+        "hex": "#F5FAFE"
       },
       {
         "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#5B5C5B"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#98999B"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#5E5E5E"
       },
       {
         "name": "Oxford Blue",
-        "hex": "#1B3A6B"
+        "hex": "#002251"
       },
       {
         "name": "Fiery Red",
-        "hex": "#B3121B"
+        "hex": "#CC0101"
       }
     ],
     "specs": [
@@ -174,7 +210,14 @@
     "variants": [
       {
         "name": "Elantra Hybrid Blue",
-        "price": 10761000
+        "price": 10761000,
+        "grade": "HEV 6-Speed EcoShift DCT",
+        "variantLabel": "1.6 GDI",
+        "option": "",
+        "transportation": 60000,
+        "nevLevy": 0,
+        "whtTax": 216420,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=elantra-hybrid"
@@ -208,28 +251,24 @@
     ],
     "colors": [
       {
+        "name": "Hampton Gray",
+        "hex": "#505558"
+      },
+      {
+        "name": "Metallic Silver",
+        "hex": "#6A6B6B"
+      },
+      {
         "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#FEFEFE"
       },
       {
         "name": "Oxford Blue",
-        "hex": "#1B3A6B"
+        "hex": "#01275B"
       },
       {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
+        "name": "Diamond Black Metallic",
+        "hex": "#272E3D"
       }
     ],
     "specs": [
@@ -253,7 +292,14 @@
     "variants": [
       {
         "name": "Sonata 2.5",
-        "price": 11545000
+        "price": 11545000,
+        "grade": "Sonata 2.5",
+        "variantLabel": "2.5",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 812910,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=sonata"
@@ -288,35 +334,27 @@
     "colors": [
       {
         "name": "Polar White",
-        "hex": "#F4F4F2"
+        "hex": "#F5FAFE"
       },
       {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
+        "name": "Metallic Silver",
+        "hex": "#959597"
       },
       {
         "name": "Magnetic Force",
-        "hex": "#4A4E55"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#676868"
       },
       {
         "name": "Oxford Blue",
-        "hex": "#1B3A6B"
+        "hex": "#012659"
       },
       {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
+        "name": "Diamond Black Metallic",
+        "hex": "#242B3A"
       },
       {
         "name": "Rain Forest",
-        "hex": "#2F4A3C"
-      },
-      {
-        "name": "Hampton Grey",
-        "hex": "#6E7278"
+        "hex": "#015D5A"
       }
     ],
     "specs": [
@@ -343,12 +381,26 @@
     ],
     "variants": [
       {
-        "name": "Santa Fe Hybrid Smart FWD",
-        "price": 13258000
+        "name": "Santa Fe Hybrid Signature AWD",
+        "price": 14720000,
+        "grade": "Signature AWD",
+        "variantLabel": "1.6(T-GDI) HEV",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 295760,
+        "cvt": 0
       },
       {
-        "name": "Santa Fe Hybrid Signature AWD",
-        "price": 14720000
+        "name": "Santa Fe Hybrid Smart FWD",
+        "price": 13258000,
+        "grade": "Smart FWD",
+        "variantLabel": "1.6(T-GDI) HEV",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 266520,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=santa-fe-hybrid"
@@ -381,27 +433,35 @@
     "colors": [
       {
         "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
+        "hex": "#F6FBFE"
       },
       {
         "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#606160"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#979798"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#5E5F5E"
       },
       {
         "name": "Oxford Blue",
-        "hex": "#1B3A6B"
+        "hex": "#012355"
       },
       {
         "name": "Fiery Red",
-        "hex": "#B3121B"
+        "hex": "#C80202"
+      },
+      {
+        "name": "Ultimate Red Metallic",
+        "hex": "#3A0101"
+      },
+      {
+        "name": "Hampton Grey",
+        "hex": "#505558"
       }
     ],
     "specs": [
@@ -426,7 +486,13 @@
       {
         "name": "Sonata 2.5 N Line",
         "price": 16521000,
-        "note": "On-road figure may include freight, NEV levy and WHT"
+        "grade": "8 Speed DCT",
+        "variantLabel": "2.5 Turbo GDI",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 1161230,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=sonata-n-line"
@@ -458,35 +524,23 @@
     "colors": [
       {
         "name": "Polar White",
-        "hex": "#F4F4F2"
+        "hex": "#F0F5FC"
       },
       {
         "name": "Silver Metallic",
-        "hex": "#A8ADB3"
+        "hex": "#A1A5A8"
       },
       {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
+        "name": "Hampton Gray",
+        "hex": "#686B6D"
       },
       {
         "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#242525"
       },
       {
-        "name": "Oxford Blue",
-        "hex": "#1B3A6B"
-      },
-      {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
-      },
-      {
-        "name": "Rain Forest",
-        "hex": "#2F4A3C"
-      },
-      {
-        "name": "Hampton Grey",
-        "hex": "#6E7278"
+        "name": "Robust Emerald Green",
+        "hex": "#13372E"
       }
     ],
     "specs": [
@@ -510,11 +564,25 @@
     "variants": [
       {
         "name": "Palisade Smart (8-seater)",
-        "price": 22625000
+        "price": 22625000,
+        "grade": "2.5 HEV",
+        "variantLabel": "Smart (8-seater)",
+        "option": "",
+        "transportation": 76000,
+        "nevLevy": 684169,
+        "whtTax": 1649607,
+        "cvt": 180639
       },
       {
         "name": "Palisade Calligraphy (7-seater)",
-        "price": 24075000
+        "price": 24075000,
+        "grade": "2.5 HEV",
+        "variantLabel": "Calligraphy (7-seater)",
+        "option": "",
+        "transportation": 76000,
+        "nevLevy": 728016,
+        "whtTax": 1754986,
+        "cvt": 192216
       }
     ],
     "brochure": "/enquiry?type=brochure&model=palisade"
@@ -549,35 +617,35 @@
     "colors": [
       {
         "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
+        "hex": "#F5FAFE"
       },
       {
         "name": "Phantom Black",
-        "hex": "#111111"
+        "hex": "#4F4F4F"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#999A9C"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#5C5C5C"
       },
       {
         "name": "Oxford Blue",
-        "hex": "#1B3A6B"
-      },
-      {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
+        "hex": "#012354"
       },
       {
         "name": "Rain Forest",
-        "hex": "#2F4A3C"
+        "hex": "#025F5D"
+      },
+      {
+        "name": "Ultimate Red Metallic",
+        "hex": "#3D0101"
       },
       {
         "name": "Hampton Grey",
-        "hex": "#6E7278"
+        "hex": "#505559"
       }
     ],
     "specs": [
@@ -600,12 +668,26 @@
     ],
     "variants": [
       {
-        "name": "Tucson Hybrid Smart FWD",
-        "price": 12202000
+        "name": "Tucson Hybrid Signature AWD",
+        "price": 13300000,
+        "grade": "AWD Signature",
+        "variantLabel": "1.6 GDI HEV",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 267360,
+        "cvt": 0
       },
       {
-        "name": "Tucson Hybrid Signature AWD",
-        "price": 13300000
+        "name": "Tucson Hybrid Smart FWD",
+        "price": 12202000,
+        "grade": "FWD Smart",
+        "variantLabel": "1.6 GDI HEV",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 245400,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=tucson-hybrid"
@@ -690,7 +772,14 @@
     "variants": [
       {
         "name": "IONIQ 5",
-        "price": 22540000
+        "price": 22540000,
+        "grade": "",
+        "variantLabel": "",
+        "option": "",
+        "transportation": 0,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=ioniq-5"
@@ -763,7 +852,14 @@
     "variants": [
       {
         "name": "IONIQ 6",
-        "price": 22540000
+        "price": 22540000,
+        "grade": "",
+        "variantLabel": "",
+        "option": "",
+        "transportation": 0,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=ioniq-6"
@@ -794,12 +890,8 @@
     ],
     "colors": [
       {
-        "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
+        "name": "White - H100",
+        "hex": "#F8F8F8"
       }
     ],
     "specs": [
@@ -818,28 +910,70 @@
     ],
     "variants": [
       {
-        "name": "Porter H-100 Deckless (Without AC)",
-        "price": 4470000
-      },
-      {
         "name": "Porter H-100 Deckless (With AC)",
-        "price": 4580000
+        "price": 4580000,
+        "grade": "Deckless",
+        "variantLabel": "2.6L Diesel",
+        "option": "With AC",
+        "transportation": 57000,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       },
       {
-        "name": "Porter H-100 F/Deck (Without AC)",
-        "price": 4490000
+        "name": "Porter H-100 Deckless (Without AC)",
+        "price": 4470000,
+        "grade": "Deckless",
+        "variantLabel": "2.6L Diesel",
+        "option": "Without AC",
+        "transportation": 57000,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       },
       {
         "name": "Porter H-100 F/Deck (With AC)",
-        "price": 4600000
+        "price": 4600000,
+        "grade": "F/Deck",
+        "variantLabel": "2.6L Diesel",
+        "option": "With AC",
+        "transportation": 57000,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       },
       {
-        "name": "Porter H-100 H/Deck (Without AC)",
-        "price": 4510000
+        "name": "Porter H-100 F/Deck (Without AC)",
+        "price": 4490000,
+        "grade": "F/Deck",
+        "variantLabel": "2.6L Diesel",
+        "option": "Without AC",
+        "transportation": 57000,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       },
       {
         "name": "Porter H-100 H/Deck (With AC)",
-        "price": 4620000
+        "price": 4620000,
+        "grade": "H/Deck",
+        "variantLabel": "2.6L Diesel",
+        "option": "With AC",
+        "transportation": 57000,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
+      },
+      {
+        "name": "Porter H-100 H/Deck (Without AC)",
+        "price": 4510000,
+        "grade": "H/Deck",
+        "variantLabel": "2.6L Diesel",
+        "option": "Without AC",
+        "transportation": 57000,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
       }
     ],
     "brochure": "/enquiry?type=brochure&model=porter"

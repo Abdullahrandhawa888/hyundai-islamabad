@@ -3,6 +3,7 @@ import { Breadcrumb } from "./Breadcrumb";
 
 type PageHeroProps = {
   title: string;
+  subtitle?: string;
   crumbs: { label: string; href?: string }[];
   image?: string;
   compact?: boolean;
@@ -11,6 +12,7 @@ type PageHeroProps = {
 
 export function PageHero({
   title,
+  subtitle,
   crumbs,
   image = "/images/vehicles/elantra-hybrid.webp",
   compact = false,
@@ -34,6 +36,11 @@ export function PageHero({
         <h1 className="mt-3 text-3xl font-light tracking-wide text-white md:text-5xl">
           {title}
         </h1>
+        {subtitle ? (
+          <p className="mt-3 max-w-2xl text-[14px] leading-6 text-white/85 md:text-[15px]">
+            {subtitle}
+          </p>
+        ) : null}
       </div>
     </section>
   );
