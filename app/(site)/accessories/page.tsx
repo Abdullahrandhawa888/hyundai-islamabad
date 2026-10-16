@@ -64,7 +64,7 @@ export default function AccessoriesPage() {
             our team will confirm availability and pricing.
           </p>
           <div className="mt-6">
-            <EnquiryForm intent="contact" />
+            <EnquiryForm intent="contact" defaultTopic="accessories" />
           </div>
         </div>
       </section>

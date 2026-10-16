@@ -1,13 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { feedbackTypes, modelOptions } from "@/lib/data";
+import { contactTopics, modelOptions } from "@/lib/data";
 import { Button } from "./Button";
 import { FormField } from "./FormField";
 
 type EnquiryFormProps = {
   intent?: "enquiry" | "testdrive" | "brochure" | "contact";
   defaultModel?: string;
+  /** contact only: pre-selects "What can we help with?" (a contactTopics value). */
+  defaultTopic?: string;
+  /** contact only: show the optional model picker. */
+  showModel?: boolean;
+  /** Override the form heading. */
+  title?: string;
 };
 
 const titles: Record<NonNullable<EnquiryFormProps["intent"]>, string> = {
@@ -20,6 +26,9 @@ const titles: Record<NonNullable<EnquiryFormProps["intent"]>, string> = {
 export function EnquiryForm({
   intent = "enquiry",
   defaultModel,
+  defaultTopic,
+  showModel = true,
+  title,
 }: EnquiryFormProps) {
   const [sent, setSent] = useState(false);
 
@@ -41,7 +50,7 @@ export function EnquiryForm({
 
   return (
     <form onSubmit={onSubmit} className="space-y-4">
-      <h3 className="text-xl font-light">{titles[intent]}</h3>
+      <h3 className="text-xl font-light">{title ?? titles[intent]}</h3>
       <input type="hidden" name="intent" value={intent} />
       <div className="grid gap-4 md:grid-cols-2">
         <FormField label="Name" name="name" required />
@@ -49,11 +58,12 @@ export function EnquiryForm({
         <FormField label="Email" name="email" type="email" required />
         {intent === "contact" ? (
           <FormField
-            label="Feedback type"
-            name="feedback"
+            label="What can we help with?"
+            name="topic"
             as="select"
             required
-            options={feedbackTypes}
+            options={contactTopics}
+            defaultValue={defaultTopic}
           />
         ) : (
           <FormField
@@ -65,6 +75,15 @@ export function EnquiryForm({
             defaultValue={defaultModel}
           />
         )}
+        {intent === "contact" && showModel ? (
+          <FormField
+            label="Model (optional)"
+            name="model"
+            as="select"
+            options={modelOptions}
+            defaultValue={defaultModel}
+          />
+        ) : null}
       </div>
       {intent === "testdrive" ? (
         <div className="grid gap-4 md:grid-cols-2">
@@ -73,13 +92,13 @@ export function EnquiryForm({
         </div>
       ) : null}
       <FormField
-        label={intent === "contact" ? "Write your queries" : "Comments"}
+        label={intent === "contact" ? "Your message" : "Comments"}
         name="message"
         as="textarea"
         placeholder="Tell us how we can help"
       />
       <Button type="submit" variant="primary">
-        Submit
+        {intent === "contact" ? "Send message" : "Submit"}
       </Button>
     </form>
   );

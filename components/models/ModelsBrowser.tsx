@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { rangeTabs, seriesFilters, vehicles } from "@/lib/data";
+import { rangeTabs, seriesFiltersFor, vehicles } from "@/lib/data";
 import type { VehicleRange, VehicleSeries } from "@/lib/types";
 import { ModelCard } from "./ModelCard";
 
@@ -16,6 +16,12 @@ export function ModelsBrowser() {
       return matchesRange && matchesSeries;
     });
   }, [range, series]);
+
+  // Only letters that have a model in the selected range.
+  const letters = useMemo(
+    () => seriesFiltersFor(vehicles.filter((vehicle) => range === "all" || vehicle.ranges.includes(range))),
+    [range],
+  );
 
   function changeRange(next: VehicleRange | "all") {
     setRange(next);
@@ -62,11 +68,12 @@ export function ModelsBrowser() {
         >
           All
         </button>
-        {seriesFilters.map((filter) => (
+        {letters.map((filter) => (
           <button
             key={filter.id}
             type="button"
             onClick={() => setSeries(filter.id)}
+            title={filter.models.join(", ")}
             className={`border-b-2 pb-1 transition-colors duration-300 ease-out ${
               series === filter.id
                 ? "border-accent text-foreground"

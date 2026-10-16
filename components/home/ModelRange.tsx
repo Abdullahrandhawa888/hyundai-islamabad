@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatePresence, MotionConfig, motion } from "framer-motion";
-import { rangeTabs, seriesFilters, vehiclesByRange } from "@/lib/data";
+import { rangeTabs, seriesFiltersFor, vehiclesByRange } from "@/lib/data";
 import type { Vehicle, VehicleRange, VehicleSeries } from "@/lib/types";
 import { Button, DiscoverLink } from "../shared/Button";
 
@@ -32,7 +32,7 @@ function useItemsPerView() {
 }
 
 /** How long each set of models stays on screen before sliding to the next. */
-const AUTO_ADVANCE_MS = 6000;
+const AUTO_ADVANCE_MS = 4000;
 
 function chunk(list: Vehicle[], size: number) {
   const pages: Vehicle[][] = [];
@@ -98,9 +98,10 @@ export function ModelRange() {
     setPage((next + pages.length) % pages.length);
   }
 
-  const seriesOptions: { id: VehicleSeries | "all"; label: string }[] = [
-    { id: "all", label: "All" },
-    ...seriesFilters,
+  // Only letters that have a model in the selected tab.
+  const seriesOptions: { id: VehicleSeries | "all"; label: string; models: string[] }[] = [
+    { id: "all", label: "All", models: [] },
+    ...seriesFiltersFor(vehiclesByRange(range)),
   ];
 
   return (
@@ -149,6 +150,7 @@ export function ModelRange() {
                 type="button"
                 onClick={() => setSeries(filter.id)}
                 aria-pressed={active}
+                title={filter.models.length ? filter.models.join(", ") : "All models"}
                 className={`relative px-3 pt-1 pb-3 transition-colors duration-300 ease-out focus-visible:outline-2 focus-visible:outline-accent ${
                   active ? "text-foreground" : "text-muted hover:text-foreground"
                 }`}

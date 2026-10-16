@@ -18,18 +18,30 @@
       "service": "Mon–Fri: 09:00 AM – 05:00 PM · Sat: 09:00 AM – 06:00 PM"
     },
     "social": {
-      "facebook": "https://www.facebook.com/",
-      "instagram": "https://www.instagram.com/",
-      "youtube": "https://www.youtube.com/",
+      "facebook": "https://www.facebook.com/HyundaiIslamabad/",
+      "instagram": "https://www.instagram.com/hyundaiislamabad/",
+      "youtube": "https://www.youtube.com/channel/UCdfohfP_GEINPn0yIlex1Fw",
       "nishat": "https://hyundai-nishat.com/"
     },
     "logo": "/images/logo.png",
     "dealerImage": "/images/vehicles/dealership-showroom.jpg"
   },
   "extraPhones": [
-    { "label": "Sales", "display": "051 444 4546", "href": "tel:+92514444546" },
-    { "label": "Sales", "display": "051 444 4547", "href": "tel:+92514444547" },
-    { "label": "Service", "display": "0304 111 1603", "href": "tel:+923041111603" }
+    {
+      "label": "Sales",
+      "display": "051 444 4546",
+      "href": "tel:+92514444546"
+    },
+    {
+      "label": "Sales",
+      "display": "051 444 4547",
+      "href": "tel:+92514444547"
+    },
+    {
+      "label": "Service",
+      "display": "0304 111 1603",
+      "href": "tel:+923041111603"
+    }
   ],
   "locations": [
     {

@@ -21,7 +21,7 @@ export default function CareersPage() {
           Interested in joining Hyundai Islamabad? Send your details and our team will be in
           touch when a suitable role opens.
         </p>
-        <EnquiryForm intent="contact" />
+        <EnquiryForm intent="contact" defaultTopic="careers" showModel={false} />
       </section>
     </>
   );

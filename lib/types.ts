@@ -42,7 +42,8 @@ export type FeatureTile = {
 };
 
 export type VehicleRange = "hyundai" | "n" | "ioniq";
-export type VehicleSeries = "E" | "S" | "T" | "I" | "C" | "P";
+/** First letter of the model name, for the homepage letter filter. */
+export type VehicleSeries = "E" | "S" | "T" | "I" | "P";
 
 export type VehicleColor = {
   name: string;

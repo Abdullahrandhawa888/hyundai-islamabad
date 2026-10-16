@@ -69,7 +69,7 @@ body {
 }
 
 .animate-carousel-progress {
-  animation: carousel-progress 6s linear forwards;
+  animation: carousel-progress 4s linear forwards;
 }
 
 /* No auto-advance for visitors who ask for reduced motion: the indicator just

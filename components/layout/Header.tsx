@@ -219,10 +219,10 @@ export function Header() {
                 <MapPin size={18} />
               </button>
               <Link
-                href="/enquiry"
-                className="hidden border border-line px-3 py-1.5 text-[12px] font-semibold text-nav transition-colors duration-300 ease-out hover:border-foreground hover:text-foreground xl:inline-block"
+                href="/contact"
+                className="hidden border border-accent bg-accent px-3.5 py-1.5 text-[12px] font-semibold whitespace-nowrap text-white transition-all duration-300 ease-out hover:-translate-y-px hover:border-[#1557b0] hover:bg-[#1557b0] hover:shadow-md xl:inline-block"
               >
-                Enquire
+                Contact Us
               </Link>
               <button
                 type="button"
@@ -353,8 +353,8 @@ export function Header() {
                     </div>
                   );
                 })}
-                <Link href="/enquiry" className="px-2 py-3 text-[14px] font-semibold">
-                  Enquire
+                <Link href="/contact" className="px-2 py-3 text-[14px] font-semibold">
+                  Contact Us
                 </Link>
                 <Link href="/testdrive" className="px-2 py-3 text-[14px] font-semibold">
                   Request a Test Drive

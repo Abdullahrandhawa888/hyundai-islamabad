@@ -146,8 +146,7 @@
       "LED headlamps, DRLs and tail lights"
     ],
     "ranges": [
-      "hyundai",
-      "ioniq"
+      "hyundai"
     ],
     "series": "E",
     "category": "Sedan",
@@ -318,8 +317,7 @@
       "Commanding road presence"
     ],
     "ranges": [
-      "hyundai",
-      "ioniq"
+      "hyundai"
     ],
     "series": "S",
     "category": "SUV",
@@ -602,8 +600,7 @@
       "Family-ready cargo space"
     ],
     "ranges": [
-      "hyundai",
-      "ioniq"
+      "hyundai"
     ],
     "series": "T",
     "category": "SUV",
@@ -693,178 +690,6 @@
     "brochure": "/enquiry?type=brochure&model=tucson-hybrid"
   },
   {
-    "slug": "ioniq-5",
-    "name": "THE IONIQ 5",
-    "shortName": "IONIQ 5",
-    "tagline": "Lead the charge.",
-    "description": "Breathtakingly beautiful and amazingly advanced, the IONIQ 5 is redefining the way people look at electric cars. Concept-car design, environmentally friendly materials and an astonishing array of smart tech - this all-electric midsize CUV is a game changer.",
-    "highlights": [
-      "Parametric Pixel dual LED DRLs",
-      "20-inch alloy rims",
-      "Auto-flush door handles",
-      "Panoramic sunroof",
-      "12.25-inch dual displays",
-      "Vehicle-to-Load (V2L)",
-      "Premium Bose sound system",
-      "360° surround view monitor",
-      "Heated and ventilated front seats"
-    ],
-    "ranges": [
-      "ioniq"
-    ],
-    "series": "I",
-    "category": "Electric",
-    "fuel": "Electric",
-    "cardImage": "/images/vehicles/ioniq-5-card.png",
-    "heroImage": "/images/vehicles/ioniq-5.webp",
-    "gallery": [
-      "/images/vehicles/ioniq-5.webp",
-      "/images/vehicles/ioniq-5.webp"
-    ],
-    "colors": [
-      {
-        "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#111111"
-      },
-      {
-        "name": "Oxford Blue",
-        "hex": "#1B3A6B"
-      },
-      {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
-      }
-    ],
-    "specs": [
-      {
-        "label": "Powertrain",
-        "value": "100% Electric"
-      },
-      {
-        "label": "Displays",
-        "value": "12.25\" cluster + 12.25\" infotainment"
-      },
-      {
-        "label": "Audio",
-        "value": "Premium Bose"
-      },
-      {
-        "label": "V2L",
-        "value": "Vehicle-to-Load equipped"
-      },
-      {
-        "label": "Warranty",
-        "value": "48 months / 100,000 km"
-      }
-    ],
-    "variants": [
-      {
-        "name": "IONIQ 5",
-        "price": 22540000,
-        "grade": "",
-        "variantLabel": "",
-        "option": "",
-        "transportation": 0,
-        "nevLevy": 0,
-        "whtTax": 0,
-        "cvt": 0
-      }
-    ],
-    "brochure": "/enquiry?type=brochure&model=ioniq-5"
-  },
-  {
-    "slug": "ioniq-6",
-    "name": "THE IONIQ 6",
-    "shortName": "IONIQ 6",
-    "tagline": "Electrified streamliner.",
-    "description": "IONIQ 6 is Hyundai’s electric streamliner - a sleek, aerodynamic sedan with pixel lighting, a digital cockpit and long-distance EV comfort for Pakistan’s motorways.",
-    "highlights": [
-      "100% electric streamliner",
-      "Parametric Pixel lighting",
-      "Digital cockpit",
-      "Aerodynamic silhouette",
-      "Hyundai SmartSense safety"
-    ],
-    "ranges": [
-      "ioniq"
-    ],
-    "series": "I",
-    "category": "Electric",
-    "fuel": "Electric",
-    "cardImage": "/images/vehicles/ioniq-6-card.png",
-    "heroImage": "/images/vehicles/ioniq-6.webp",
-    "gallery": [
-      "/images/vehicles/ioniq-6.webp",
-      "/images/vehicles/ioniq-6.webp"
-    ],
-    "colors": [
-      {
-        "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#111111"
-      },
-      {
-        "name": "Oxford Blue",
-        "hex": "#1B3A6B"
-      },
-      {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
-      }
-    ],
-    "specs": [
-      {
-        "label": "Powertrain",
-        "value": "100% Electric"
-      },
-      {
-        "label": "Body",
-        "value": "Streamliner sedan"
-      },
-      {
-        "label": "Warranty",
-        "value": "48 months / 100,000 km"
-      }
-    ],
-    "variants": [
-      {
-        "name": "IONIQ 6",
-        "price": 22540000,
-        "grade": "",
-        "variantLabel": "",
-        "option": "",
-        "transportation": 0,
-        "nevLevy": 0,
-        "whtTax": 0,
-        "cvt": 0
-      }
-    ],
-    "brochure": "/enquiry?type=brochure&model=ioniq-6"
-  },
-  {
     "slug": "porter",
     "name": "THE Porter",
     "shortName": "Porter",
@@ -879,7 +704,7 @@
     "ranges": [
       "hyundai"
     ],
-    "series": "C",
+    "series": "P",
     "category": "Commercial",
     "fuel": "Diesel",
     "cardImage": "/images/vehicles/porter-card.png",
@@ -977,5 +802,179 @@
       }
     ],
     "brochure": "/enquiry?type=brochure&model=porter"
+  },
+  {
+    "slug": "ioniq-5",
+    "name": "THE IONIQ 5",
+    "shortName": "IONIQ 5",
+    "tagline": "Lead the charge.",
+    "description": "Breathtakingly beautiful and amazingly advanced, the IONIQ 5 is redefining the way people look at electric cars. Concept-car design, environmentally friendly materials and an astonishing array of smart tech - this all-electric midsize CUV is a game changer.",
+    "highlights": [
+      "Parametric Pixel dual LED DRLs",
+      "20-inch alloy rims",
+      "Auto-flush door handles",
+      "Panoramic sunroof",
+      "12.25-inch dual displays",
+      "Vehicle-to-Load (V2L)",
+      "Premium Bose sound system",
+      "360° surround view monitor",
+      "Heated and ventilated front seats"
+    ],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
+    "series": "I",
+    "category": "Electric",
+    "fuel": "Electric",
+    "cardImage": "/images/vehicles/ioniq-5-card.png",
+    "heroImage": "/images/vehicles/ioniq-5.webp",
+    "gallery": [
+      "/images/vehicles/ioniq-5.webp",
+      "/images/vehicles/ioniq-5.webp"
+    ],
+    "colors": [
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Powertrain",
+        "value": "100% Electric"
+      },
+      {
+        "label": "Displays",
+        "value": "12.25\" cluster + 12.25\" infotainment"
+      },
+      {
+        "label": "Audio",
+        "value": "Premium Bose"
+      },
+      {
+        "label": "V2L",
+        "value": "Vehicle-to-Load equipped"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
+    ],
+    "variants": [
+      {
+        "name": "IONIQ 5",
+        "price": 22540000,
+        "grade": "",
+        "variantLabel": "",
+        "option": "",
+        "transportation": 0,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
+      }
+    ],
+    "brochure": "/enquiry?type=brochure&model=ioniq-5"
+  },
+  {
+    "slug": "ioniq-6",
+    "name": "THE IONIQ 6",
+    "shortName": "IONIQ 6",
+    "tagline": "Electrified streamliner.",
+    "description": "IONIQ 6 is Hyundai’s electric streamliner - a sleek, aerodynamic sedan with pixel lighting, a digital cockpit and long-distance EV comfort for Pakistan’s motorways.",
+    "highlights": [
+      "100% electric streamliner",
+      "Parametric Pixel lighting",
+      "Digital cockpit",
+      "Aerodynamic silhouette",
+      "Hyundai SmartSense safety"
+    ],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
+    "series": "I",
+    "category": "Electric",
+    "fuel": "Electric",
+    "cardImage": "/images/vehicles/ioniq-6-card.png",
+    "heroImage": "/images/vehicles/ioniq-6.webp",
+    "gallery": [
+      "/images/vehicles/ioniq-6.webp",
+      "/images/vehicles/ioniq-6.webp"
+    ],
+    "colors": [
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Powertrain",
+        "value": "100% Electric"
+      },
+      {
+        "label": "Body",
+        "value": "Streamliner sedan"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
+    ],
+    "variants": [
+      {
+        "name": "IONIQ 6",
+        "price": 22540000,
+        "grade": "",
+        "variantLabel": "",
+        "option": "",
+        "transportation": 0,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
+      }
+    ],
+    "brochure": "/enquiry?type=brochure&model=ioniq-6"
   }
 ]

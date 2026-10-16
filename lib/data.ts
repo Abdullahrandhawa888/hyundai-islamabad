@@ -54,21 +54,36 @@ export const rangeTabs: { id: VehicleRange; label: string }[] = [
   { id: "ioniq", label: "Hyundai IONIQ" },
 ];
 
+// Letter filter on the homepage and Models page: the first letter of the
+// model name (E = Elantra, S = Sonata / Santa Fe, T = Tucson, I = IONIQ,
+// P = Palisade / Porter). Each vehicle's letter is its `series`.
 export const seriesFilters: { id: VehicleSeries; label: string }[] = [
   { id: "E", label: "E" },
   { id: "S", label: "S" },
   { id: "T", label: "T" },
   { id: "I", label: "I" },
-  { id: "C", label: "C" },
   { id: "P", label: "P" },
 ];
+
+/** The letters that have at least one of these vehicles, each with the model
+ * names it covers (shown as a tooltip), so no letter ever leads to nothing. */
+export function seriesFiltersFor(list: Vehicle[]) {
+  return seriesFilters
+    .map((filter) => ({
+      ...filter,
+      models: list.filter((vehicle) => vehicle.series === filter.id).map((vehicle) => vehicle.shortName),
+    }))
+    .filter((filter) => filter.models.length > 0);
+}
 
 export const heroSlides = homeData.heroSlides;
 export const featureTiles = homeData.featureTiles;
 export const electricCopy = homeData.electricCopy;
 
-export const electricModels = vehicles.filter((vehicle) =>
-  vehicle.ranges.includes("ioniq"),
+// The homepage "Electric & Hybrid" banner. Based on fuel, not on the IONIQ
+// homepage tab, so the tabs can be arranged freely without changing it.
+export const electricModels = vehicles.filter(
+  (vehicle) => vehicle.fuel === "Electric" || vehicle.fuel === "Hybrid",
 );
 
 export const offers = offersData as Offer[];
@@ -158,11 +173,34 @@ export const serviceTypes: FormOption[] = [
   { label: "Free Service", value: "free" },
 ];
 
-export const feedbackTypes: FormOption[] = [
-  { label: "Query", value: "query" },
-  { label: "Complaint", value: "complaint" },
-  { label: "Suggestion", value: "suggestion" },
+/** "What can we help with?" on the contact form. Pages can pre-select one,
+ * e.g. the Accessories page opens the form on "accessories". */
+export const contactTopics: FormOption[] = [
+  { label: "New vehicle enquiry", value: "vehicle" },
+  { label: "Test drive", value: "testdrive" },
+  { label: "Price list & EMI plans", value: "prices" },
+  { label: "Service & maintenance", value: "service" },
+  { label: "Accessories", value: "accessories" },
+  { label: "Corporate & fleet sales", value: "corporate" },
+  { label: "Careers", value: "careers" },
+  { label: "Feedback or complaint", value: "feedback" },
+  { label: "Something else", value: "other" },
 ];
+
+/** A wa.me link's number in a readable form, e.g. "https://wa.me/923309138835"
+ * becomes "+92 330 9138835" and a UAN like 9251111500200 "+92 51 111 500 200".
+ * Read from the link itself so the two can never disagree. */
+export function formatWhatsAppNumber(url: string) {
+  const digits = url.match(/(\d{8,15})/)?.[1];
+  if (!digits) return url;
+  if (!digits.startsWith("92")) return `+${digits}`;
+  const local = digits.slice(2);
+  if (local.startsWith("3") && local.length === 10) return `+92 ${local.slice(0, 3)} ${local.slice(3)}`;
+  if (local.length === 11 && local.slice(2, 5) === "111") {
+    return `+92 ${local.slice(0, 2)} ${local.slice(2, 5)} ${local.slice(5, 8)} ${local.slice(8)}`;
+  }
+  return `+92 ${local}`;
+}
 
 export function getVehicle(slug: string) {
   return vehicles.find((vehicle) => vehicle.slug === slug);

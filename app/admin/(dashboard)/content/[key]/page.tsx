@@ -16,11 +16,14 @@ const IMAGE_FOLDERS: Record<string, string> = {
 export default async function AdminContentPage({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params;
   if (!isContentKey(key)) notFound();
+  const entry = CONTENT_REGISTRY[key];
 
   return (
     <ContentEditorPage
       contentKey={key}
-      title={CONTENT_REGISTRY[key].label}
+      title={entry.label}
+      description={entry.description}
+      viewHref={entry.viewHref}
       imageFolder={IMAGE_FOLDERS[key] ?? "misc"}
     />
   );
