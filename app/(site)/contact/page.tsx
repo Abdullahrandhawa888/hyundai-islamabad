@@ -117,6 +117,8 @@ export default async function ContactPage({
           { label: "Contact Us" },
         ]}
         image="/images/dealer.jpg"
+        imagePosition="object-[center_86%]"
+        imageRight
       />
 
       <section className="mx-auto max-w-6xl px-5 pt-12 md:px-8">

@@ -92,10 +92,16 @@ export function PriceListModel({
       className={`grid scroll-mt-36 gap-6 border-b border-line py-10 last:border-b-0 ${
         featured
           ? "lg:gap-8"
-          : "lg:grid-cols-[300px_1fr] lg:items-start lg:gap-10"
+          : "lg:grid-cols-[300px_1fr] lg:items-start lg:gap-x-10 lg:gap-y-4"
       }`}
     >
-      <div className={featured ? "grid items-center gap-6 md:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] md:gap-10" : ""}>
+      <div
+        className={
+          featured
+            ? "grid items-center gap-6 md:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] md:gap-10"
+            : "lg:col-start-1 lg:row-start-1 lg:self-center"
+        }
+      >
         <div
           className={`group relative mx-auto aspect-[17/10] w-full overflow-hidden ${
             featured ? "max-w-[620px]" : "max-w-[380px]"
@@ -146,9 +152,11 @@ export function PriceListModel({
         </div>
       </div>
 
-      <div className="min-w-0">
+      {/* On wide screens (standard layout) this wrapper dissolves so the table and
+          chips can sit in separate grid rows, keeping the picture centred on the table. */}
+      <div className={featured ? "min-w-0" : "min-w-0 lg:contents"}>
         <p className="mb-2 text-[12px] text-muted sm:hidden">Swipe the table sideways to see all columns →</p>
-        <div className="overflow-x-auto">
+        <div className={`min-w-0 overflow-x-auto ${featured ? "" : "lg:col-start-2 lg:row-start-1 lg:self-center"}`}>
           <table className="w-full min-w-[680px] border-collapse text-center text-[13px] tabular-nums">
             <caption className="sr-only">{model.label} prices</caption>
             <thead>
@@ -210,7 +218,10 @@ export function PriceListModel({
         </div>
 
         {vehicle.colors.length > 0 ? (
-          <ul className="mt-4 flex flex-wrap gap-x-2 gap-y-3" aria-label={`${model.label} colours`}>
+          <ul
+            className={`mt-4 flex flex-wrap gap-x-2 gap-y-3 ${featured ? "" : "lg:col-start-2 lg:row-start-2 lg:mt-0"}`}
+            aria-label={`${model.label} colours`}
+          >
             {vehicle.colors.map((color) => (
               <li key={color.name} className="w-[68px] text-center">
                 <span

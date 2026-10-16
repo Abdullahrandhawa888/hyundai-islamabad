@@ -33,6 +33,8 @@ export default function AccessoriesPage() {
           { label: "Accessories" },
         ]}
         image="/images/vehicles/accessories-rack.png"
+        imagePosition="object-[75%_center]"
+        imageRight
       />
       <section className="mx-auto max-w-6xl px-5 py-14 md:px-8">
         <p className="max-w-2xl text-[14px] leading-7 text-muted">

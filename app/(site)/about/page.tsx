@@ -47,6 +47,8 @@ export default function AboutPage() {
           { label: "About Us" },
         ]}
         image="/images/vehicles/dealership-showroom.jpg"
+        imagePosition="object-[center_80%]"
+        imageRight
       />
 
       <section className="mx-auto max-w-6xl px-5 pt-14 md:px-8">
