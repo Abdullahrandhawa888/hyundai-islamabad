@@ -24,6 +24,17 @@
   --font-sans: var(--font-inter);
 }
 
+/* How much of the top of the screen the pinned header currently covers:
+   its full height while showing, 0 once it slides away on scroll. Set by
+   components/layout/StickyHeader; use it to place other sticky elements. */
+:root {
+  --site-header-offset: var(--site-header-height, 7.25rem);
+}
+
+:root[data-site-header="hidden"] {
+  --site-header-offset: 0px;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

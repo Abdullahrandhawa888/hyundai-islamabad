@@ -20,7 +20,10 @@ export default function WarrantyPage() {
     <AfterSalesPage slug="warranty">
       <div className="mx-auto max-w-6xl px-5 py-14 md:px-8 lg:grid lg:grid-cols-[190px_1fr] lg:gap-14">
         <aside className="hidden lg:block">
-          <nav aria-label="On this page" className="sticky top-36">
+          <nav
+            aria-label="On this page"
+            className="sticky top-[calc(var(--site-header-offset)+1.75rem)] transition-[top] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
+          >
             <p className="text-[11px] font-semibold tracking-[0.16em] text-muted uppercase">
               On this page
             </p>

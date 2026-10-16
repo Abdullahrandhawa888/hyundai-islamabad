@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import { ChevronDown, MapPin, Menu, Phone, X } from "lucide-react";
 import { navItems, site } from "@/lib/data";
 import type { NavItem, NavLink } from "@/lib/types";
@@ -40,6 +41,12 @@ function activeSection(pathname: string) {
   return navItems.find((item) => item.children && isItemActive(pathname, item))?.label ?? null;
 }
 
+/** true once running in the browser (false during server render), so the
+ * portal below only renders where document.body exists. */
+function subscribeNever() {
+  return () => {};
+}
+
 function slugify(label: string) {
   return label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 }
@@ -53,6 +60,7 @@ export function Header() {
   const [mobileSection, setMobileSection] = useState(() => activeSection(pathname));
   const [contactOpen, setContactOpen] = useState(false);
   const [prevPathname, setPrevPathname] = useState(pathname);
+  const mounted = useSyncExternalStore(subscribeNever, () => true, () => false);
 
   if (pathname !== prevPathname) {
     setPrevPathname(pathname);
@@ -229,126 +237,136 @@ export function Header() {
         </div>
       </header>
 
-      <div
-        className={`fixed inset-0 z-50 bg-black/40 transition-opacity duration-500 ease-out lg:hidden ${
-          mobileOpen ? "opacity-100" : "pointer-events-none opacity-0"
-        }`}
-        onClick={() => setMobileOpen(false)}
-      />
-      <aside
-        inert={!mobileOpen}
-        className={`fixed top-0 left-0 z-50 flex h-full w-[86%] max-w-sm flex-col bg-white transition-transform duration-500 ease-out lg:hidden ${
-          mobileOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <div className="flex shrink-0 items-center justify-between border-b border-line px-5 py-5">
-          <span className="text-[15px] font-medium">{site.name}</span>
-          <button type="button" onClick={() => setMobileOpen(false)} aria-label="Close menu">
-            <X size={20} />
-          </button>
-        </div>
-        <nav className="flex flex-1 flex-col overflow-y-auto overscroll-contain p-3">
-          {navItems.map((item) => {
-            const active = isItemActive(pathname, item);
-            if (!item.children) {
-              return (
-                <div key={item.label} className="border-b border-line">
-                  <Link
-                    href={item.href ?? "/"}
-                    className={`block px-2 py-3 text-[14px] font-semibold ${active ? "text-accent" : ""}`}
-                  >
-                    {item.label}
-                  </Link>
-                </div>
-              );
-            }
-
-            const expanded = mobileSection === item.label;
-            const panelId = `mobile-nav-${slugify(item.label)}`;
-            const toggle = () => setMobileSection(expanded ? null : item.label);
-            const chevron = (
-              <ChevronDown
-                size={16}
-                className={`text-muted transition-transform duration-300 ease-out ${expanded ? "rotate-180" : ""}`}
-              />
-            );
-            return (
-              <div key={item.label} className="border-b border-line">
-                {item.href ? (
-                  <div className="flex items-center">
-                    <Link
-                      href={item.href}
-                      aria-current={pathname === item.href ? "page" : undefined}
-                      className={`flex-1 px-2 py-3 text-[14px] font-semibold ${active ? "text-accent" : ""}`}
-                    >
-                      {item.label}
-                    </Link>
-                    <button
-                      type="button"
-                      onClick={toggle}
-                      aria-expanded={expanded}
-                      aria-controls={panelId}
-                      aria-label={`${item.label} menu`}
-                      className="px-3 py-3"
-                    >
-                      {chevron}
-                    </button>
-                  </div>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={toggle}
-                    aria-expanded={expanded}
-                    aria-controls={panelId}
-                    className="flex w-full items-center justify-between px-2 py-3 text-left text-[14px] font-semibold"
-                  >
-                    {item.label}
-                    {chevron}
-                  </button>
-                )}
-                <div
-                  id={panelId}
-                  inert={!expanded}
-                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${
-                    expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <div className="pb-3">
-                      {groupLinks(item.children).map((group) => (
-                        <div key={group.title || "links"}>
-                          {group.title ? (
-                            <p className="px-4 pt-3 pb-1 text-[10.5px] font-semibold tracking-[0.16em] text-muted uppercase">
-                              {group.title}
-                            </p>
-                          ) : null}
-                          {group.links.map((link) => (
-                            <MobileLink
-                              key={link.href}
-                              href={link.href}
-                              current={isWithin(pathname, link.href)}
-                            >
-                              {link.label}
-                            </MobileLink>
-                          ))}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+      {/* Rendered into <body>: the header slides out of view on scroll
+          (StickyHeader), and a fixed overlay inside a moved element would
+          be moved with it. */}
+      {mounted
+        ? createPortal(
+            <>
+            <div
+              className={`fixed inset-0 z-50 bg-black/40 transition-opacity duration-500 ease-out lg:hidden ${
+                mobileOpen ? "opacity-100" : "pointer-events-none opacity-0"
+              }`}
+              onClick={() => setMobileOpen(false)}
+            />
+            <aside
+              inert={!mobileOpen}
+              className={`fixed top-0 left-0 z-50 flex h-full w-[86%] max-w-sm flex-col bg-white transition-transform duration-500 ease-out lg:hidden ${
+                mobileOpen ? "translate-x-0" : "-translate-x-full"
+              }`}
+            >
+              <div className="flex shrink-0 items-center justify-between border-b border-line px-5 py-5">
+                <span className="text-[15px] font-medium">{site.name}</span>
+                <button type="button" onClick={() => setMobileOpen(false)} aria-label="Close menu">
+                  <X size={20} />
+                </button>
               </div>
-            );
-          })}
-          <Link href="/enquiry" className="px-2 py-3 text-[14px] font-semibold">
-            Enquire
-          </Link>
-          <Link href="/testdrive" className="px-2 py-3 text-[14px] font-semibold">
-            Request a Test Drive
-          </Link>
-        </nav>
-      </aside>
+              <nav className="flex flex-1 flex-col overflow-y-auto overscroll-contain p-3">
+                {navItems.map((item) => {
+                  const active = isItemActive(pathname, item);
+                  if (!item.children) {
+                    return (
+                      <div key={item.label} className="border-b border-line">
+                        <Link
+                          href={item.href ?? "/"}
+                          className={`block px-2 py-3 text-[14px] font-semibold ${active ? "text-accent" : ""}`}
+                        >
+                          {item.label}
+                        </Link>
+                      </div>
+                    );
+                  }
 
-      <ContactDrawer open={contactOpen} onClose={() => setContactOpen(false)} />
+                  const expanded = mobileSection === item.label;
+                  const panelId = `mobile-nav-${slugify(item.label)}`;
+                  const toggle = () => setMobileSection(expanded ? null : item.label);
+                  const chevron = (
+                    <ChevronDown
+                      size={16}
+                      className={`text-muted transition-transform duration-300 ease-out ${expanded ? "rotate-180" : ""}`}
+                    />
+                  );
+                  return (
+                    <div key={item.label} className="border-b border-line">
+                      {item.href ? (
+                        <div className="flex items-center">
+                          <Link
+                            href={item.href}
+                            aria-current={pathname === item.href ? "page" : undefined}
+                            className={`flex-1 px-2 py-3 text-[14px] font-semibold ${active ? "text-accent" : ""}`}
+                          >
+                            {item.label}
+                          </Link>
+                          <button
+                            type="button"
+                            onClick={toggle}
+                            aria-expanded={expanded}
+                            aria-controls={panelId}
+                            aria-label={`${item.label} menu`}
+                            className="px-3 py-3"
+                          >
+                            {chevron}
+                          </button>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={toggle}
+                          aria-expanded={expanded}
+                          aria-controls={panelId}
+                          className="flex w-full items-center justify-between px-2 py-3 text-left text-[14px] font-semibold"
+                        >
+                          {item.label}
+                          {chevron}
+                        </button>
+                      )}
+                      <div
+                        id={panelId}
+                        inert={!expanded}
+                        className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                          expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                        }`}
+                      >
+                        <div className="overflow-hidden">
+                          <div className="pb-3">
+                            {groupLinks(item.children).map((group) => (
+                              <div key={group.title || "links"}>
+                                {group.title ? (
+                                  <p className="px-4 pt-3 pb-1 text-[10.5px] font-semibold tracking-[0.16em] text-muted uppercase">
+                                    {group.title}
+                                  </p>
+                                ) : null}
+                                {group.links.map((link) => (
+                                  <MobileLink
+                                    key={link.href}
+                                    href={link.href}
+                                    current={isWithin(pathname, link.href)}
+                                  >
+                                    {link.label}
+                                  </MobileLink>
+                                ))}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+                <Link href="/enquiry" className="px-2 py-3 text-[14px] font-semibold">
+                  Enquire
+                </Link>
+                <Link href="/testdrive" className="px-2 py-3 text-[14px] font-semibold">
+                  Request a Test Drive
+                </Link>
+              </nav>
+            </aside>
+
+            <ContactDrawer open={contactOpen} onClose={() => setContactOpen(false)} />
+            </>,
+            document.body,
+          )
+        : null}
     </>
   );
 }
