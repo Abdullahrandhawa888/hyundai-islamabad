@@ -13,8 +13,8 @@
         "insuranceAmountSGI": 282476,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 387589,
-        "adminCharges": 520000
+        "monthlyInstallment": 378144,
+        "adminCharges": 350000
       },
       {
         "months": 24,
@@ -24,8 +24,8 @@
         "insuranceAmountSGI": 376635,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 198100,
-        "adminCharges": 450000
+        "monthlyInstallment": 193933,
+        "adminCharges": 350000
       }
     ]
   },
@@ -81,22 +81,22 @@
         "advanceAmount": 6101000,
         "transitFreightInsurance": 68000,
         "advanceIncomeTaxFiler": 245400,
-        "insuranceAmountSGI": 320303,
+        "insuranceAmountSGI": 274545,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 363944,
-        "adminCharges": 450000
+        "monthlyInstallment": 358389,
+        "adminCharges": 350000
       },
       {
         "months": 24,
         "advanceAmount": 6101000,
         "transitFreightInsurance": 68000,
         "advanceIncomeTaxFiler": 245400,
-        "insuranceAmountSGI": 427070,
+        "insuranceAmountSGI": 366060,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 282125,
-        "adminCharges": 670000
+        "monthlyInstallment": 270875,
+        "adminCharges": 400000
       }
     ]
   },
@@ -114,8 +114,8 @@
         "insuranceAmountSGI": 349125,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 404444,
-        "adminCharges": 630000
+        "monthlyInstallment": 388889,
+        "adminCharges": 350000
       }
     ]
   },
@@ -152,8 +152,8 @@
         "insuranceAmountSGI": 386400,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 485333,
-        "adminCharges": 640000
+        "monthlyInstallment": 469222,
+        "adminCharges": 350000
       },
       {
         "months": 24,
@@ -163,8 +163,8 @@
         "insuranceAmountSGI": 515200,
         "trackerChargesSGI": 14250,
         "processingChargesSGI": 25000,
-        "monthlyInstallment": 376083,
-        "adminCharges": 930000
+        "monthlyInstallment": 360250,
+        "adminCharges": 550000
       }
     ]
   }
