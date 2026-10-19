@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 // Aliased: react-pdf's Image is a PDF primitive (no alt text), not an HTML <img>.
 import { Font, Image as PdfImageElement, StyleSheet, Text, View } from "@react-pdf/renderer";
-import { site } from "@/lib/data";
+import { formatWhatsAppNumber, site } from "@/lib/data";
 import type { VehicleColor } from "@/lib/types";
 
 // Building blocks shared by the generated price list and EMI PDFs. These run
@@ -210,6 +210,42 @@ export function PdfImagePage({ image }: { image: PdfImage }) {
   return (
     <View style={{ width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }}>
       <PdfImageElement src={{ data: image.data, format: image.format }} style={size} />
+    </View>
+  );
+}
+
+/** Where to find us, pinned to the bottom of a page: showroom address on one
+ * line, phone / WhatsApp / email on the next. */
+export function PdfContactFooter({ extra }: { extra?: (page: { pageNumber: number; totalPages: number }) => string }) {
+  const contact = [
+    `Sales ${site.phoneDisplay}`,
+    `WhatsApp ${formatWhatsAppNumber(site.whatsapp)}`,
+    site.email,
+  ].join("   |   ");
+  return (
+    <View
+      fixed
+      style={{
+        position: "absolute",
+        bottom: 12,
+        left: 26,
+        right: 26,
+        borderTopWidth: 0.8,
+        borderTopColor: NAVY,
+        paddingTop: 4,
+        alignItems: "center",
+      }}
+    >
+      <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 7, color: NAVY }}>
+        {site.name} · {site.address}
+      </Text>
+      <Text style={{ fontSize: 6.8, color: "#333333", marginTop: 1.5 }}>{contact}</Text>
+      {extra ? (
+        <Text
+          style={{ fontSize: 5.5, color: MUTED, marginTop: 1.5 }}
+          render={({ pageNumber, totalPages }) => extra({ pageNumber, totalPages })}
+        />
+      ) : null}
     </View>
   );
 }

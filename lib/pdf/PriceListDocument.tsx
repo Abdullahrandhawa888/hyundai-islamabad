@@ -13,6 +13,7 @@ import type { PriceListBadge, PriceListModel, Vehicle, VehicleVariant } from "@/
 import {
   MUTED,
   NAVY,
+  PdfContactFooter,
   PdfHeader,
   PdfImagePage,
   PdfPicture,
@@ -202,7 +203,7 @@ export function PriceListDocument() {
       subject={`Hyundai prices, transportation charges and taxes - ${priceList.edition}`}
       creator={site.name}
     >
-      <Page size="A4" style={styles.page}>
+      <Page size="A4" style={[styles.page, { paddingBottom: 50 }]}>
         <PdfHeader
           title="Price List"
           edition={priceList.edition}
@@ -221,6 +222,7 @@ export function PriceListDocument() {
           </View>
         ))}
         <Terms />
+        <PdfContactFooter />
       </Page>
 
       {pagesAfter.map((image, index) => (
@@ -232,7 +234,7 @@ export function PriceListDocument() {
       {featured.map(({ model, vehicle, rows }) => {
         const badges = model.badges.filter((badge) => badge && typeof badge === "object" && badge.title);
         return (
-          <Page key={vehicle.slug} size="A4" style={[styles.page, { paddingTop: 28 }]}>
+          <Page key={vehicle.slug} size="A4" style={[styles.page, { paddingTop: 28, paddingBottom: 50 }]}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
               <Text style={{ flex: 1, fontFamily: "Helvetica-Bold", fontSize: 40, color: NAVY, letterSpacing: 1.2 }}>
                 {model.label.toUpperCase()}
@@ -275,6 +277,7 @@ export function PriceListDocument() {
 
             <View style={{ flexGrow: 1 }} />
             <Terms />
+            <PdfContactFooter />
           </Page>
         );
       })}

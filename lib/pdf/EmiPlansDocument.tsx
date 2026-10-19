@@ -12,7 +12,7 @@ import {
   site,
 } from "@/lib/data";
 import type { EmiPlan } from "@/lib/types";
-import { MUTED, NAVY, PdfHeader, PdfPicture, TINT, publicImage, styles } from "./shared";
+import { MUTED, NAVY, PdfContactFooter, PdfHeader, PdfPicture, TINT, publicImage, styles } from "./shared";
 
 // The downloadable EMI plans (/emi-plans.pdf), in the price list's style.
 
@@ -132,7 +132,7 @@ export function EmiPlansDocument() {
       subject={`${emiPage.subtitle} - ${emiPage.edition}`}
       creator={site.name}
     >
-      <Page size="A4" style={[styles.page, { paddingBottom: 34 }]}>
+      <Page size="A4" style={[styles.page, { paddingBottom: 50 }]}>
         <PdfHeader
           title={emiPage.title}
           edition={`${emiPage.subtitle} · ${emiPage.edition}`}
@@ -150,11 +150,9 @@ export function EmiPlansDocument() {
             </Text>
           ))}
         </View>
-        <Text
-          fixed
-          style={{ position: "absolute", bottom: 14, left: 26, right: 26, fontSize: 6, color: MUTED, textAlign: "center" }}
-          render={({ pageNumber, totalPages }) =>
-            `${site.name} · ${emiPage.title} · ${emiPage.edition} · ${site.phoneDisplay} · Page ${pageNumber} of ${totalPages}`
+        <PdfContactFooter
+          extra={({ pageNumber, totalPages }) =>
+            `${emiPage.title} · ${emiPage.edition} · Page ${pageNumber} of ${totalPages}`
           }
         />
       </Page>
