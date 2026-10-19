@@ -356,9 +356,6 @@ export function Header() {
                 <Link href="/contact" className="px-2 py-3 text-[14px] font-semibold">
                   Contact Us
                 </Link>
-                <Link href="/testdrive" className="px-2 py-3 text-[14px] font-semibold">
-                  Request a Test Drive
-                </Link>
               </nav>
             </aside>
 

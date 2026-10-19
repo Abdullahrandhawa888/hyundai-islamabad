@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       { source: "/owners-manual", destination: "/after-sales/owners-manual", permanent: false },
       { source: "/charging", destination: "/after-sales", permanent: false },
       { source: "/owners", destination: "/after-sales", permanent: false },
+      { source: "/testdrive", destination: "/enquiry", permanent: false },
 
       // After Sales URLs from the previous WordPress site (hyundai-islamabad.com),
       // so old links and search results keep working once the domain points here.

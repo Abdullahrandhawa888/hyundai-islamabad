@@ -56,11 +56,13 @@ const vehicleHints: FieldHints = {
   "[]": {
     groups: [
       { title: "Prices", fields: ["variants"] },
-      { title: "Details", fields: ["name", "shortName", "tagline", "description", "highlights"] },
-      { title: "Pictures", fields: ["cardImage", "heroImage", "gallery"] },
+      { title: "Details", fields: ["name", "shortName", "tagline", "description", "highlights", "brochure"] },
+      { title: "Highlights", fields: ["stories"] },
+      { title: "Features", fields: ["features"] },
+      { title: "Pictures", fields: ["cardImage", "heroImage", "interiorGallery", "exteriorGallery"] },
       { title: "Colours", fields: ["colors"] },
       { title: "Specifications", fields: ["specs"] },
-      { title: "Settings", fields: ["category", "fuel", "ranges", "series", "brochure", "slug"] },
+      { title: "Settings", fields: ["category", "fuel", "ranges", "series", "slug"] },
     ],
     summary: (item) => {
       const variants = Array.isArray(item.variants) ? (item.variants as JsonObject[]) : [];
@@ -76,7 +78,19 @@ const vehicleHints: FieldHints = {
   "[].highlights": { label: "Key features", help: "Bullet points on the model page.", addLabel: "Add feature" },
   "[].cardImage": { label: "List picture", help: "Side view on a transparent background, used in model lists and the homepage." },
   "[].heroImage": { label: "Top picture", help: "The large picture at the top of the model page." },
-  "[].gallery": { label: "Gallery pictures", addLabel: "Add picture" },
+  "[].interiorGallery": { label: "Interior gallery", help: "Large photos under \"Interior\" on the model page.", addLabel: "Add picture" },
+  "[].exteriorGallery": { label: "Exterior gallery", help: "Large photos under \"Exterior\" on the model page.", addLabel: "Add picture" },
+  "[].stories": {
+    label: "Highlights tabs",
+    help: "Each tab on the model page shows a photo, a title and a short text.",
+    addLabel: "Add tab",
+  },
+  "[].stories[].title": { label: "Tab title" },
+  "[].stories[].text": { label: "Text", control: "textarea" },
+  "[].stories[].image": { label: "Photo" },
+  "[].features": { label: "Feature photos", help: "Small photos with a caption, e.g. \"Wireless charging\".", addLabel: "Add feature" },
+  "[].features[].title": { label: "Caption" },
+  "[].features[].image": { label: "Photo" },
   "[].colors": { label: "Colours", help: "Shown as colour chips on the model page and price list.", addLabel: "Add colour" },
   "[].colors[].name": { label: "Colour name" },
   "[].colors[].hex": { label: "Colour", control: "color" },
@@ -103,7 +117,10 @@ const vehicleHints: FieldHints = {
     control: "select",
     options: seriesFilters.map((filter) => ({ label: filter.label, value: filter.id })),
   },
-  "[].brochure": { label: "Brochure link" },
+  "[].brochure": {
+    label: "e-Brochure (PDF)",
+    help: "Link to the brochure PDF, e.g. /brochures/elantra-1-6.pdf, or a link to a PDF hosted elsewhere. Leave empty to hide the download buttons.",
+  },
   "[].slug": lockedSlug,
 
   "[].variants": {
@@ -245,5 +262,13 @@ export const FIELD_HINTS: Record<string, FieldHints> = {
   site: siteHints,
   nav: navHints,
   offers: { "": { addLabel: "Add offer" } },
+  "booking-notice": {
+    enabled: { label: "Show the pop-up when someone opens the website" },
+    title: { label: "Heading" },
+    sections: { label: "Sections", addLabel: "Add section" },
+    "sections[].title": { label: "Section heading" },
+    "sections[].items": { label: "Lines", addLabel: "Add line" },
+    notes: { label: "Small print", addLabel: "Add note" },
+  },
   about: { "": { addLabel: "Add paragraph" } },
 };

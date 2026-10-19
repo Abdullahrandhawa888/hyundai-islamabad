@@ -34,7 +34,7 @@ export default function DealershipFacilityPage() {
       hours: site.hours.sales,
       location: salesLocation,
       icon: Store,
-      cta: { label: "Request a test drive", href: "/testdrive" },
+      cta: { label: "Make an enquiry", href: "/enquiry" },
     },
     {
       title: "Service workshop",

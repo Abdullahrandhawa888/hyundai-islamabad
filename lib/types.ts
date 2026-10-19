@@ -86,12 +86,30 @@ export type Vehicle = {
   category: "Sedan" | "SUV" | "Electric" | "Commercial";
   fuel: "Petrol" | "Hybrid" | "Electric" | "Diesel";
   cardImage: string;
+  /** Wide photo at the top of the model page. */
   heroImage: string;
-  gallery: string[];
+  /** The "Highlights" tabs on the model page: one photo and a short text each. */
+  stories: VehicleStory[];
+  /** Feature photos with a caption, e.g. "Wireless charging". */
+  features: VehicleFeature[];
+  interiorGallery: string[];
+  exteriorGallery: string[];
   colors: VehicleColor[];
   specs: VehicleSpec[];
   variants: VehicleVariant[];
+  /** The e-brochure PDF, e.g. "/brochures/elantra-1-6.pdf". */
   brochure: string;
+};
+
+export type VehicleStory = {
+  title: string;
+  text: string;
+  image: string;
+};
+
+export type VehicleFeature = {
+  title: string;
+  image: string;
 };
 
 export type Offer = {
@@ -169,6 +187,14 @@ export type PriceList = {
   };
   models: PriceListModel[];
   paymentTerms: { title: string; left: string[]; right: string[] };
+};
+
+/** The "Booking your Hyundai?" pop-up shown once per visit. */
+export type BookingNotice = {
+  enabled: boolean;
+  title: string;
+  sections: { title: string; items: string[] }[];
+  notes: string[];
 };
 
 export type EmiPage = {

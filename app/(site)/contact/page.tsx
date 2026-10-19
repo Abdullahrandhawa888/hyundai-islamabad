@@ -57,7 +57,7 @@ export default async function ContactPage({
     {
       title: "Call sales",
       value: site.phoneDisplay,
-      text: "New cars, prices and test drives",
+      text: "New cars, prices and bookings",
       href: site.phoneHref,
       icon: Phone,
     },

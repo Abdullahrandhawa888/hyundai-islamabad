@@ -4,7 +4,7 @@
   },
   "facility": {
     "intro": "Hyundai Islamabad’s showroom and service workshop share one site off 9th Avenue in I-9/3, so you can choose, buy and look after your Hyundai in one place.",
-    "showroom": "Explore the current Hyundai line-up, take a test drive, and talk through prices and EMI plans with our sales team.",
+    "showroom": "Explore the current Hyundai line-up and talk through prices and EMI plans with our sales team.",
     "workshop": "Free services, periodic maintenance, mechanical repairs and body & paint work, carried out by Hyundai-trained technicians.",
     "gallery": [
       "/images/vehicles/dealership-showroom.jpg",
@@ -72,18 +72,147 @@
   "maintenanceCharts": {
     "intro": "Stay on top of your Hyundai’s upkeep with our periodic maintenance chart. It shows how often each item should be replaced, model by model.",
     "note": "Intervals are a guide for normal driving. If you drive in severe conditions, follow the shorter schedule in your Owner’s Manual, or ask our service advisors.",
-    "columns": ["Elantra", "Sonata", "Tucson", "Santa Fe", "IONIQ Hybrid", "Staria", "Grand Starex", "Porter H-100"],
+    "columns": [
+      "Elantra",
+      "Sonata",
+      "Tucson",
+      "Santa Fe",
+      "IONIQ Hybrid",
+      "Staria",
+      "Grand Starex",
+      "Porter H-100"
+    ],
     "items": [
-      { "item": "Engine oil", "values": ["5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "3,000 km"] },
-      { "item": "Oil filter", "values": ["5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "5,000 km", "3,000 km"] },
-      { "item": "Element air cleaner", "values": ["20,000 km", "20,000 km", "20,000 km", "20,000 km", "20,000 km", "10,000 km", "10,000 km", "15,000 km"] },
-      { "item": "AC filter", "values": ["15,000 km", "15,000 km", "15,000 km", "15,000 km", "15,000 km", "20,000 km", "20,000 km", "-"] },
-      { "item": "Spark plugs", "values": ["100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km"] },
-      { "item": "Fuel filter", "values": ["40,000 km", "40,000 km", "40,000 km", "40,000 km", "40,000 km", "60,000 km", "60,000 km", "20,000 km"] },
-      { "item": "Brake fluid", "values": ["60,000 km", "60,000 km", "60,000 km", "60,000 km", "30,000 km", "60,000 km", "60,000 km", "60,000 km"] },
-      { "item": "Transmission oil", "values": ["100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "100,000 km", "40,000 km"] },
-      { "item": "HSG belt", "values": ["-", "-", "-", "-", "10,000 km", "-", "-", "-"] },
-      { "item": "Engine clutch actuator fluid", "values": ["-", "-", "-", "-", "40,000 km", "-", "-", "-"] }
+      {
+        "item": "Engine oil",
+        "values": [
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "3,000 km"
+        ]
+      },
+      {
+        "item": "Oil filter",
+        "values": [
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "5,000 km",
+          "3,000 km"
+        ]
+      },
+      {
+        "item": "Element air cleaner",
+        "values": [
+          "20,000 km",
+          "20,000 km",
+          "20,000 km",
+          "20,000 km",
+          "20,000 km",
+          "10,000 km",
+          "10,000 km",
+          "15,000 km"
+        ]
+      },
+      {
+        "item": "AC filter",
+        "values": [
+          "15,000 km",
+          "15,000 km",
+          "15,000 km",
+          "15,000 km",
+          "15,000 km",
+          "20,000 km",
+          "20,000 km",
+          "-"
+        ]
+      },
+      {
+        "item": "Spark plugs",
+        "values": [
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km"
+        ]
+      },
+      {
+        "item": "Fuel filter",
+        "values": [
+          "40,000 km",
+          "40,000 km",
+          "40,000 km",
+          "40,000 km",
+          "40,000 km",
+          "60,000 km",
+          "60,000 km",
+          "20,000 km"
+        ]
+      },
+      {
+        "item": "Brake fluid",
+        "values": [
+          "60,000 km",
+          "60,000 km",
+          "60,000 km",
+          "60,000 km",
+          "30,000 km",
+          "60,000 km",
+          "60,000 km",
+          "60,000 km"
+        ]
+      },
+      {
+        "item": "Transmission oil",
+        "values": [
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "100,000 km",
+          "40,000 km"
+        ]
+      },
+      {
+        "item": "HSG belt",
+        "values": [
+          "-",
+          "-",
+          "-",
+          "-",
+          "10,000 km",
+          "-",
+          "-",
+          "-"
+        ]
+      },
+      {
+        "item": "Engine clutch actuator fluid",
+        "values": [
+          "-",
+          "-",
+          "-",
+          "-",
+          "40,000 km",
+          "-",
+          "-",
+          "-"
+        ]
+      }
     ]
   },
   "freeServices": {

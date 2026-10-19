@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import { rangeTabs, seriesFiltersFor, vehiclesByRange } from "@/lib/data";
 import type { Vehicle, VehicleRange, VehicleSeries } from "@/lib/types";
-import { Button, DiscoverLink } from "../shared/Button";
+import { Button } from "../shared/Button";
 
 function useItemsPerView() {
   const [items, setItems] = useState(4);
@@ -40,9 +41,14 @@ function chunk(list: Vehicle[], size: number) {
   return pages.length ? pages : [[]];
 }
 
+/** A model in the homepage carousel. The whole tile is one link to the model's page. */
 function ModelTile({ vehicle }: { vehicle: Vehicle }) {
   return (
-    <article className="group text-center">
+    <Link
+      href={`/models/${vehicle.slug}`}
+      draggable={false}
+      className="group block text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+    >
       <div className="relative mx-auto h-52 w-full overflow-hidden lg:h-60">
         <Image
           src={vehicle.cardImage}
@@ -54,11 +60,14 @@ function ModelTile({ vehicle }: { vehicle: Vehicle }) {
         />
       </div>
       <h3 className="mt-5 text-[15px] font-semibold tracking-wide uppercase">{vehicle.name}</h3>
-      <div className="relative mt-2 inline-flex flex-col items-center">
-        <DiscoverLink href={`/models/${vehicle.slug}`} />
+      <span className="relative mt-2 inline-flex flex-col items-center">
+        <span className="inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors duration-300 ease-out group-hover:text-accent">
+          <span aria-hidden>›</span>
+          Discover Now
+        </span>
         <span className="mt-1 h-[2px] w-0 bg-accent transition-all duration-300 ease-out group-hover:w-full" />
-      </div>
-    </article>
+      </span>
+    </Link>
   );
 }
 
@@ -289,9 +298,6 @@ export function ModelRange() {
       <div className="flex flex-wrap justify-center gap-4 pb-12">
         <Button href="/enquiry" variant="outline">
           Make An Enquiry
-        </Button>
-        <Button href="/testdrive" variant="outline">
-          Request A Test Drive
         </Button>
       </div>
     </section>

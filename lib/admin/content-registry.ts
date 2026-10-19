@@ -87,6 +87,13 @@ export const CONTENT_REGISTRY = {
     group: "Settings",
     viewHref: "/",
   },
+  "booking-notice": {
+    path: "content/booking-notice.json",
+    label: "Booking pop-up",
+    description: "The \"Booking your Hyundai?\" pop-up shown when someone opens the website. Turn it on or off and edit its text.",
+    group: "Settings",
+    viewHref: "/",
+  },
 } as const;
 
 export type ContentKey = keyof typeof CONTENT_REGISTRY;

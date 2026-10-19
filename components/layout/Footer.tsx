@@ -33,6 +33,7 @@ const columns = [
       { label: "Models", href: "/models" },
       { label: "Price List", href: "/prices" },
       { label: "EMI Plans", href: "/emi-plans" },
+      { label: "e-Brochures", href: "/e-brochures" },
       { label: "Offers", href: "/offers" },
       { label: "Corporate Sales", href: "/corporate" },
     ],

@@ -1,4 +1,5 @@
 import aboutData from "@/content/about.json";
+import bookingNoticeData from "@/content/booking-notice.json";
 import emiPageData from "@/content/emi-page.json";
 import emiPlansData from "@/content/emi-plans.json";
 import homeData from "@/content/home.json";
@@ -11,6 +12,7 @@ import siteData from "@/content/site.json";
 import teamData from "@/content/team.json";
 import vehiclesData from "@/content/vehicles.json";
 import type {
+  BookingNotice,
   EmiPage,
   EmiPlan,
   EmiTenure,
@@ -45,6 +47,8 @@ export const serviceLocation =
   (locations as Location[])[0];
 
 export const navItems = navData as NavItem[];
+
+export const bookingNotice = bookingNoticeData as BookingNotice;
 
 export const vehicles = vehiclesData as Vehicle[];
 
@@ -177,7 +181,6 @@ export const serviceTypes: FormOption[] = [
  * e.g. the Accessories page opens the form on "accessories". */
 export const contactTopics: FormOption[] = [
   { label: "New vehicle enquiry", value: "vehicle" },
-  { label: "Test drive", value: "testdrive" },
   { label: "Price list & EMI plans", value: "prices" },
   { label: "Service & maintenance", value: "service" },
   { label: "Accessories", value: "accessories" },

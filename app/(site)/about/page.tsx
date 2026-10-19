@@ -184,7 +184,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-light">The people behind the showroom</h2>
             <p className="mt-3 max-w-xl text-[14px] leading-7 text-muted">
-              Every enquiry, test drive and service visit is handled by a real person who knows
+              Every enquiry and service visit is handled by a real person who knows
               our range inside out. Come say hello, or reach any one of them directly.
             </p>
             <Link

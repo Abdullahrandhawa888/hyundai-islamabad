@@ -29,6 +29,34 @@ export function StickyHeader({ children }: { children: React.ReactNode }) {
     setHidden(false);
   }
 
+  // Open every new page at the very top. Next.js only scrolls to the top when
+  // the new page's first element is out of view; with this header pinned over
+  // the page, a page scrolled a little still counts as "in view", so the next
+  // page used to open with the top of its banner hidden behind the header.
+  // Back/Forward keep the browser's own scroll restoration, and links to a
+  // #section still go to that section.
+  const isFirstRender = useRef(true);
+  const isHistoryNavigation = useRef(false);
+  useEffect(() => {
+    const onPopState = () => {
+      isHistoryNavigation.current = true;
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (isHistoryNavigation.current) {
+      isHistoryNavigation.current = false;
+      return;
+    }
+    if (window.location.hash) return;
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+
   useEffect(() => {
     const el = ref.current;
     if (!el) return;

@@ -1,3 +1,4 @@
+import { BookingNotice } from "./BookingNotice";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { StickyHeader } from "./StickyHeader";
@@ -14,6 +15,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <main className="flex-1">{children}</main>
       <Footer />
       <WhatsAppButton />
+      <BookingNotice />
     </div>
   );
 }

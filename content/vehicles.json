@@ -4,15 +4,16 @@
     "name": "THE Elantra 1.6",
     "shortName": "Elantra 1.6",
     "tagline": "Distinctive design, everyday efficiency.",
-    "description": "The Hyundai ELANTRA 1.6 pairs Hyundai’s parametric design language with a proven 1.6L Smartstream petrol engine, delivering a refined, fuel-efficient sedan for daily driving - assembled locally to global standards.",
+    "description": "The ELANTRA 1.6 Special Edition adds a powered sunroof, wireless charging, an 8-way powered driver's seat and a choice of upgraded interiors to a proven 1.6-litre petrol sedan.",
     "highlights": [
-      "1.6L Smartstream petrol engine",
-      "6-speed automatic transmission",
-      "10.25-inch TFT LCD cluster and infotainment",
-      "Wireless Android Auto and Apple CarPlay",
-      "Dual-zone automatic climate control",
-      "Electronic parking brake with Auto-Hold",
-      "LED headlamps, DRLs and tail lights"
+      "1.6L petrol engine, 126 hp",
+      "6-speed automatic with Sport, Eco and Normal modes",
+      "8\" touchscreen with Apple CarPlay and Android Auto",
+      "Powered sunroof",
+      "Wireless phone charger",
+      "8-way powered driver's seat with lumbar support",
+      "Cruise control and push-button start",
+      "Tetra LED headlamps with daytime running lights"
     ],
     "ranges": [
       "hyundai"
@@ -21,9 +22,77 @@
     "category": "Sedan",
     "fuel": "Petrol",
     "cardImage": "/images/vehicles/elantra-1-6-card.png",
-    "heroImage": "/images/vehicles/elantra-1-6.png",
-    "gallery": [
-      "/images/vehicles/elantra-1-6.png"
+    "heroImage": "/images/models/elantra-1-6/hero.jpg",
+    "stories": [
+      {
+        "title": "Sharper by design",
+        "text": "Tetra LED headlamps, a rear spoiler and black side mirrors give the Special Edition a crisp, confident look from every angle.",
+        "image": "/images/models/elantra-1-6/story-design.jpg"
+      },
+      {
+        "title": "Comfort for every trip",
+        "text": "Choose standard fabric or upgraded leather in Cappuccino, Burgundy or Beige, with an 8-way powered driver's seat and rear AC vents.",
+        "image": "/images/models/elantra-1-6/story-comfort.jpg"
+      },
+      {
+        "title": "Smooth, efficient power",
+        "text": "A 1.6-litre petrol engine and 6-speed automatic make everyday driving relaxed, with Sport, Eco and Normal modes to suit the road.",
+        "image": "/images/models/elantra-1-6/story-performance.jpg"
+      },
+      {
+        "title": "Connected and in control",
+        "text": "An 8-inch touchscreen with Apple CarPlay and Android Auto, wireless charging, cruise control and push-button start keep everything within reach.",
+        "image": "/images/models/elantra-1-6/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "Tetra LED headlamps with DRLs",
+        "image": "/images/models/elantra-1-6/feature-tetra-led-headlamps.jpg"
+      },
+      {
+        "title": "LED rear combination lamps",
+        "image": "/images/models/elantra-1-6/feature-led-rear-lamps.jpg"
+      },
+      {
+        "title": "Powered sunroof",
+        "image": "/images/models/elantra-1-6/feature-powered-sunroof.jpg"
+      },
+      {
+        "title": "8\" touchscreen with CarPlay & Android Auto",
+        "image": "/images/models/elantra-1-6/feature-infotainment-8-inch.jpg"
+      },
+      {
+        "title": "Leather steering wheel with cruise control",
+        "image": "/images/models/elantra-1-6/feature-leather-steering-cruise.jpg"
+      },
+      {
+        "title": "Push-button start",
+        "image": "/images/models/elantra-1-6/feature-push-start.jpg"
+      },
+      {
+        "title": "8-way powered driver's seat",
+        "image": "/images/models/elantra-1-6/feature-powered-seat.jpg"
+      },
+      {
+        "title": "Smart entry door handles",
+        "image": "/images/models/elantra-1-6/feature-smart-entry-handles.jpg"
+      },
+      {
+        "title": "Leather gear knob with drive modes",
+        "image": "/images/models/elantra-1-6/feature-gear-knob-drive-modes.jpg"
+      },
+      {
+        "title": "Smart trunk",
+        "image": "/images/models/elantra-1-6/feature-smart-trunk.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/elantra-1-6/interior-1.jpg",
+      "/images/models/elantra-1-6/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/elantra-1-6/exterior-1.jpg"
     ],
     "colors": [
       {
@@ -62,19 +131,47 @@
     "specs": [
       {
         "label": "Engine",
-        "value": "1.6 Smartstream petrol"
+        "value": "1.6L MPi petrol, 1591 cc"
       },
       {
-        "label": "Drivetrain",
-        "value": "FWD"
+        "label": "Power",
+        "value": "126 hp @ 6300 rpm"
+      },
+      {
+        "label": "Torque",
+        "value": "156 Nm @ 4850 rpm"
       },
       {
         "label": "Transmission",
         "value": "6-speed automatic"
       },
       {
+        "label": "Drive modes",
+        "value": "Sport / Eco / Normal"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4620 × 1800 × 1450 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2700 mm"
+      },
+      {
+        "label": "Boot space",
+        "value": "407 L"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "50 L"
+      },
+      {
         "label": "Wheels",
-        "value": "16-inch alloy"
+        "value": "16\" alloy, 215/55 R16"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
       },
       {
         "label": "Warranty",
@@ -127,23 +224,23 @@
         "cvt": 0
       }
     ],
-    "brochure": "/enquiry?type=brochure&model=elantra-1-6"
+    "brochure": "/brochures/elantra-1-6.pdf"
   },
   {
     "slug": "elantra-hybrid",
     "name": "THE Elantra Hybrid",
     "shortName": "Elantra Hybrid",
     "tagline": "Pakistan’s first hybrid sedan.",
-    "description": "The all-new Hyundai ELANTRA Hybrid embodies the spirit of innovation through parametric design. Powered by a Smartstream GDi HEV engine and EcoShift dual-clutch transmission, it blends petrol and electric power for a smoother, more economical drive - assembled locally to global standards.",
+    "description": "The ELANTRA Hybrid pairs a 1.6-litre GDi engine with an electric motor for 139 hp combined, a 6-speed EcoShift dual-clutch gearbox and a cabin led by twin 10.25-inch screens.",
     "highlights": [
-      "1.6L Smartstream GDi HEV engine",
-      "EcoShift 6-speed dual-clutch transmission",
-      "10.25-inch TFT LCD cluster and infotainment",
-      "Wireless Android Auto and Apple CarPlay",
-      "Heated and ventilated seats",
+      "1.6L GDi hybrid, 139 hp combined",
+      "6-speed EcoShift dual-clutch transmission",
+      "Twin 10.25\" digital cluster and touchscreen",
+      "Wireless Apple CarPlay and Android Auto",
+      "Heated and ventilated front seats",
+      "Powered sunroof",
       "Dual-zone automatic climate control",
-      "Electronic parking brake with Auto-Hold",
-      "LED headlamps, DRLs and tail lights"
+      "Rear AC vents and USB Type-C charging"
     ],
     "ranges": [
       "hyundai"
@@ -152,11 +249,74 @@
     "category": "Sedan",
     "fuel": "Hybrid",
     "cardImage": "/images/vehicles/elantra-hybrid-card.png",
-    "heroImage": "/images/vehicles/elantra-hybrid.webp",
-    "gallery": [
-      "/images/vehicles/elantra-hybrid.webp",
-      "/images/vehicles/elantra-hybrid.webp",
-      "/images/news/elantra-launch.jpg"
+    "heroImage": "/images/models/elantra-hybrid/hero.jpg",
+    "stories": [
+      {
+        "title": "Parametric, through and through",
+        "text": "Sharp parametric surfaces, a full-width LED light bar and a fastback roofline make the ELANTRA Hybrid instantly recognisable.",
+        "image": "/images/models/elantra-hybrid/story-design.jpg"
+      },
+      {
+        "title": "A calmer cabin",
+        "text": "Heated and ventilated seats, a powered sunroof and dual-zone climate control with rear vents keep every passenger comfortable.",
+        "image": "/images/models/elantra-hybrid/story-comfort.jpg"
+      },
+      {
+        "title": "Electric help on every drive",
+        "text": "The engine and electric motor work together for 139 hp and smooth, fuel-saving acceleration, switching between them on their own.",
+        "image": "/images/models/elantra-hybrid/story-performance.jpg"
+      },
+      {
+        "title": "Two screens, one view",
+        "text": "Twin 10.25-inch displays bring navigation, wireless Apple CarPlay and Android Auto, and live hybrid energy flow into one clean panel.",
+        "image": "/images/models/elantra-hybrid/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "Parametric LED headlamps",
+        "image": "/images/models/elantra-hybrid/feature-parametric-led-headlamps.jpg"
+      },
+      {
+        "title": "LED rear lamps",
+        "image": "/images/models/elantra-hybrid/feature-led-rear-lamps.jpg"
+      },
+      {
+        "title": "10.25\" digital cluster",
+        "image": "/images/models/elantra-hybrid/feature-digital-cluster.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/elantra-hybrid/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Heated & ventilated seats",
+        "image": "/images/models/elantra-hybrid/feature-ventilated-seats.jpg"
+      },
+      {
+        "title": "Powered sunroof",
+        "image": "/images/models/elantra-hybrid/feature-powered-sunroof.jpg"
+      },
+      {
+        "title": "Dual-zone climate control",
+        "image": "/images/models/elantra-hybrid/feature-dual-zone-climate.jpg"
+      },
+      {
+        "title": "Rear USB Type-C ports",
+        "image": "/images/models/elantra-hybrid/feature-usb-c-ports.jpg"
+      },
+      {
+        "title": "Smart key",
+        "image": "/images/models/elantra-hybrid/feature-smart-key.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/elantra-hybrid/interior-1.jpg",
+      "/images/models/elantra-hybrid/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/elantra-hybrid/exterior-1.jpg",
+      "/images/models/elantra-hybrid/exterior-2.jpg"
     ],
     "colors": [
       {
@@ -187,19 +347,47 @@
     "specs": [
       {
         "label": "Engine",
-        "value": "1.6 Smartstream GDi HEV"
+        "value": "1.6L GDi Atkinson-cycle petrol, 1580 cc"
       },
       {
-        "label": "Drivetrain",
-        "value": "FWD"
+        "label": "Electric motor",
+        "value": "43 hp, 170 Nm"
+      },
+      {
+        "label": "Combined output",
+        "value": "139 hp, 264 Nm"
+      },
+      {
+        "label": "Battery",
+        "value": "1.32 kWh lithium-ion polymer"
       },
       {
         "label": "Transmission",
         "value": "6-speed EcoShift DCT"
       },
       {
-        "label": "Wheels",
-        "value": "16-inch alloy"
+        "label": "Drive modes",
+        "value": "Eco / Smart / Sport"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4710 × 1825 × 1430 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2720 mm"
+      },
+      {
+        "label": "Boot space",
+        "value": "402 L"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "42 L"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
       },
       {
         "label": "Warranty",
@@ -219,23 +407,23 @@
         "cvt": 0
       }
     ],
-    "brochure": "/enquiry?type=brochure&model=elantra-hybrid"
+    "brochure": "/brochures/elantra-hybrid.pdf"
   },
   {
     "slug": "sonata",
     "name": "THE Sonata",
     "shortName": "Sonata",
     "tagline": "A refined business sedan.",
-    "description": "The Hyundai Sonata is a spacious, well-equipped sedan designed for comfort on long motorway runs and daily city driving. Available in 2.0L and 2.5L petrol variants with a premium cabin, dual-zone climate control and Hyundai safety systems.",
+    "description": "The Sonata pairs a long, low fastback design with a roomy, leather-trimmed cabin. Its 2.5-litre Smartstream engine and 6-speed automatic make long motorway runs effortless.",
     "highlights": [
-      "2.0L and 2.5L petrol options",
-      "Push-button start and smart entry",
-      "Cruise control",
-      "Leather interior",
-      "Powered driver’s seat with lumbar support",
-      "Wireless charging",
-      "Dual-zone automatic climate control",
-      "ESC and traction control"
+      "Smartstream 2.5L petrol, 180 hp",
+      "6-speed automatic with push-button shift-by-wire",
+      "Panoramic sunroof",
+      "Wireless phone charging",
+      "Remote engine start",
+      "Dual-zone automatic climate control with rear vents",
+      "18\" alloy wheels",
+      "Five drive modes including Sport and Eco"
     ],
     "ranges": [
       "hyundai"
@@ -244,9 +432,70 @@
     "category": "Sedan",
     "fuel": "Petrol",
     "cardImage": "/images/vehicles/sonata-card.png",
-    "heroImage": "/images/vehicles/sonata.webp",
-    "gallery": [
-      "/images/vehicles/sonata.webp"
+    "heroImage": "/images/models/sonata/hero.jpg",
+    "stories": [
+      {
+        "title": "Coupé-like presence",
+        "text": "A long, low silhouette with hidden lighting and a sweeping roofline gives the Sonata real presence wherever it parks.",
+        "image": "/images/models/sonata/story-design.jpg"
+      },
+      {
+        "title": "Room to stretch out",
+        "text": "Leather seating, generous rear legroom and a panoramic sunroof make the Sonata as comfortable for passengers as it is for the driver.",
+        "image": "/images/models/sonata/story-comfort.jpg"
+      },
+      {
+        "title": "Effortless on the motorway",
+        "text": "The 2.5-litre engine and 6-speed automatic deliver smooth, quiet power, with five drive modes to match the journey.",
+        "image": "/images/models/sonata/story-performance.jpg"
+      },
+      {
+        "title": "Simple, modern controls",
+        "text": "A touchscreen, a digital instrument cluster, push-button gear selection and wireless charging keep the cabin clean and intuitive.",
+        "image": "/images/models/sonata/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "LED headlamps",
+        "image": "/images/models/sonata/feature-led-headlamps.jpg"
+      },
+      {
+        "title": "LED rear lamps",
+        "image": "/images/models/sonata/feature-led-rear-lamps.jpg"
+      },
+      {
+        "title": "Panoramic sunroof",
+        "image": "/images/models/sonata/feature-panoramic-sunroof.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/sonata/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Push-button shift-by-wire",
+        "image": "/images/models/sonata/feature-shift-by-wire.jpg"
+      },
+      {
+        "title": "Touchscreen infotainment",
+        "image": "/images/models/sonata/feature-infotainment.jpg"
+      },
+      {
+        "title": "Digital instrument cluster",
+        "image": "/images/models/sonata/feature-digital-cluster.jpg"
+      },
+      {
+        "title": "510 L boot",
+        "image": "/images/models/sonata/feature-smart-trunk.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/sonata/interior-1.jpg",
+      "/images/models/sonata/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/sonata/exterior-1.jpg",
+      "/images/models/sonata/exterior-2.jpg"
     ],
     "colors": [
       {
@@ -273,15 +522,47 @@
     "specs": [
       {
         "label": "Engine",
-        "value": "2.0L / 2.5L GDi"
+        "value": "Smartstream 2.5L MPi, 2497 cc"
       },
       {
-        "label": "Drivetrain",
-        "value": "FWD"
+        "label": "Power",
+        "value": "180 hp @ 6000 rpm"
+      },
+      {
+        "label": "Torque",
+        "value": "232 Nm @ 4000 rpm"
       },
       {
         "label": "Transmission",
-        "value": "Automatic"
+        "value": "6-speed automatic, shift-by-wire"
+      },
+      {
+        "label": "Drive modes",
+        "value": "Smart / Sport / Eco / Custom / Comfort"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4900 × 1860 × 1445 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2840 mm"
+      },
+      {
+        "label": "Boot space",
+        "value": "510 L"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "60 L"
+      },
+      {
+        "label": "Wheels",
+        "value": "18\" alloy, 235/45 R18"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
       },
       {
         "label": "Warranty",
@@ -301,120 +582,23 @@
         "cvt": 0
       }
     ],
-    "brochure": "/enquiry?type=brochure&model=sonata"
-  },
-  {
-    "slug": "santa-fe-hybrid",
-    "name": "THE Santa Fe Hybrid",
-    "shortName": "Santa Fe Hybrid",
-    "tagline": "Experience everything.",
-    "description": "The all-new Hyundai SANTA FE Hybrid is a leap towards sustainable mobility - a three-row hybrid SUV with presence, space and a 1.6 T-GDi HEV powertrain in Smart FWD and Signature AWD.",
-    "highlights": [
-      "1.6 T-GDi HEV",
-      "Three-row family SUV",
-      "Smart FWD and Signature AWD",
-      "6-speed EcoShift DCT",
-      "Commanding road presence"
-    ],
-    "ranges": [
-      "hyundai"
-    ],
-    "series": "S",
-    "category": "SUV",
-    "fuel": "Hybrid",
-    "cardImage": "/images/vehicles/santa-fe-card.png",
-    "heroImage": "/images/vehicles/santa-fe.png",
-    "gallery": [
-      "/images/vehicles/santa-fe.png",
-      "/images/vehicles/santa-fe.png",
-      "/images/news/santa-fe.jpg"
-    ],
-    "colors": [
-      {
-        "name": "Polar White",
-        "hex": "#F5FAFE"
-      },
-      {
-        "name": "Metallic Silver",
-        "hex": "#959597"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#676868"
-      },
-      {
-        "name": "Oxford Blue",
-        "hex": "#012659"
-      },
-      {
-        "name": "Diamond Black Metallic",
-        "hex": "#242B3A"
-      },
-      {
-        "name": "Rain Forest",
-        "hex": "#015D5A"
-      }
-    ],
-    "specs": [
-      {
-        "label": "Engine",
-        "value": "1.6 T-GDi HEV"
-      },
-      {
-        "label": "Drivetrain",
-        "value": "FWD or AWD"
-      },
-      {
-        "label": "Transmission",
-        "value": "6-speed EcoShift DCT"
-      },
-      {
-        "label": "Seating",
-        "value": "Three-row"
-      },
-      {
-        "label": "Warranty",
-        "value": "48 months / 100,000 km"
-      }
-    ],
-    "variants": [
-      {
-        "name": "Santa Fe Hybrid Signature AWD",
-        "price": 14720000,
-        "grade": "Signature AWD",
-        "variantLabel": "1.6(T-GDI) HEV",
-        "option": "",
-        "transportation": 68000,
-        "nevLevy": 0,
-        "whtTax": 295760,
-        "cvt": 0
-      },
-      {
-        "name": "Santa Fe Hybrid Smart FWD",
-        "price": 13258000,
-        "grade": "Smart FWD",
-        "variantLabel": "1.6(T-GDI) HEV",
-        "option": "",
-        "transportation": 68000,
-        "nevLevy": 0,
-        "whtTax": 266520,
-        "cvt": 0
-      }
-    ],
-    "brochure": "/enquiry?type=brochure&model=santa-fe-hybrid"
+    "brochure": "/brochures/sonata.pdf"
   },
   {
     "slug": "sonata-n-line",
     "name": "THE Sonata N Line",
     "shortName": "Sonata N Line",
     "tagline": "Performance, dressed for the city.",
-    "description": "Sonata N Line brings Hyundai N performance cues to the executive sedan: a 2.5 turbo GDi engine, sport-tuned presence and a cabin finished for drivers who want more than a commute.",
+    "description": "Sonata N Line takes Hyundai's executive sedan and adds a 290 hp 2.5-litre turbo, an 8-speed wet dual-clutch gearbox and N Line styling inside and out.",
     "highlights": [
-      "2.5 Turbo GDi",
-      "N Line exterior and interior styling",
-      "Sport-focused driving modes",
-      "Premium infotainment",
-      "Performance-oriented design"
+      "Smartstream 2.5L T-GDi, 290 hp",
+      "8-speed wet dual-clutch transmission",
+      "N Line bumpers, badges and twin exhaust",
+      "Bose 12-speaker premium sound",
+      "Dual 12.3\" curved displays with head-up display",
+      "Heated and ventilated front seats",
+      "Surround View Monitor",
+      "Sunroof"
     ],
     "ranges": [
       "hyundai",
@@ -424,9 +608,74 @@
     "category": "Sedan",
     "fuel": "Petrol",
     "cardImage": "/images/vehicles/sonata-n-line-card.png",
-    "heroImage": "/images/vehicles/sonata-n-line.webp",
-    "gallery": [
-      "/images/vehicles/sonata-n-line.webp"
+    "heroImage": "/images/models/sonata-n-line/hero.jpg",
+    "stories": [
+      {
+        "title": "N Line, inside and out",
+        "text": "Sharper bumpers, N Line badging, a rear spoiler and twin exhaust tips give this Sonata a sportier stance.",
+        "image": "/images/models/sonata-n-line/story-design.jpg"
+      },
+      {
+        "title": "Sports seats, all-day comfort",
+        "text": "N Line seats with red detailing are heated and ventilated, with an 8-way powered driver's seat and lumbar support.",
+        "image": "/images/models/sonata-n-line/story-comfort.jpg"
+      },
+      {
+        "title": "290 horsepower",
+        "text": "A 2.5-litre turbocharged engine and 8-speed wet dual-clutch gearbox deliver quick, responsive acceleration.",
+        "image": "/images/models/sonata-n-line/story-performance.jpg"
+      },
+      {
+        "title": "A cockpit built around you",
+        "text": "Dual 12.3-inch curved displays, a head-up display, Bose 12-speaker sound and a surround view monitor.",
+        "image": "/images/models/sonata-n-line/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "N Line styling",
+        "image": "/images/models/sonata-n-line/feature-n-line-badge.jpg"
+      },
+      {
+        "title": "Twin exhaust tips",
+        "image": "/images/models/sonata-n-line/feature-twin-exhaust.jpg"
+      },
+      {
+        "title": "N Line sports seats",
+        "image": "/images/models/sonata-n-line/feature-n-sports-seats.jpg"
+      },
+      {
+        "title": "Bose 12-speaker sound",
+        "image": "/images/models/sonata-n-line/feature-bose-sound.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/sonata-n-line/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Heated & ventilated seats",
+        "image": "/images/models/sonata-n-line/feature-ventilated-seats.jpg"
+      },
+      {
+        "title": "Sunroof",
+        "image": "/images/models/sonata-n-line/feature-sunroof.jpg"
+      },
+      {
+        "title": "Surround View Monitor",
+        "image": "/images/models/sonata-n-line/feature-surround-view.jpg"
+      },
+      {
+        "title": "N Line steering wheel",
+        "image": "/images/models/sonata-n-line/feature-n-steering-paddles.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/sonata-n-line/interior-1.jpg",
+      "/images/models/sonata-n-line/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/sonata-n-line/exterior-1.jpg",
+      "/images/models/sonata-n-line/exterior-2.jpg"
     ],
     "colors": [
       {
@@ -465,15 +714,35 @@
     "specs": [
       {
         "label": "Engine",
-        "value": "2.5 Turbo GDi"
+        "value": "Smartstream 2.5L T-GDi, 2497 cc"
       },
       {
-        "label": "Drivetrain",
-        "value": "FWD"
+        "label": "Power",
+        "value": "290 hp @ 5800 rpm"
+      },
+      {
+        "label": "Torque",
+        "value": "422 Nm @ 4000 rpm"
       },
       {
         "label": "Transmission",
-        "value": "Automatic"
+        "value": "8-speed wet DCT"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4910 × 1860 × 1445 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2840 mm"
+      },
+      {
+        "label": "Boot space",
+        "value": "480 L"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
       },
       {
         "label": "Warranty",
@@ -493,111 +762,23 @@
         "cvt": 0
       }
     ],
-    "brochure": "/enquiry?type=brochure&model=sonata-n-line"
-  },
-  {
-    "slug": "palisade",
-    "name": "THE Palisade",
-    "shortName": "Palisade",
-    "tagline": "Command the road, three rows deep.",
-    "description": "The Hyundai PALISADE is a flagship three-row SUV built for large families - bold presence, a premium cabin and long-distance comfort for Pakistan’s motorways.",
-    "highlights": [
-      "Flagship three-row SUV",
-      "Premium, tech-forward cabin",
-      "Advanced driver assistance suite",
-      "Commanding road presence",
-      "Generous cargo and passenger space"
-    ],
-    "ranges": [
-      "hyundai"
-    ],
-    "series": "P",
-    "category": "SUV",
-    "fuel": "Hybrid",
-    "cardImage": "/images/vehicles/palisade-card.png",
-    "heroImage": "/images/vehicles/palisade.png",
-    "gallery": [
-      "/images/vehicles/palisade.png"
-    ],
-    "colors": [
-      {
-        "name": "Polar White",
-        "hex": "#F0F5FC"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A1A5A8"
-      },
-      {
-        "name": "Hampton Gray",
-        "hex": "#686B6D"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#242525"
-      },
-      {
-        "name": "Robust Emerald Green",
-        "hex": "#13372E"
-      }
-    ],
-    "specs": [
-      {
-        "label": "Engine",
-        "value": "2.5L HEV"
-      },
-      {
-        "label": "Combined power",
-        "value": "329 hp / 460 Nm"
-      },
-      {
-        "label": "Battery warranty",
-        "value": "8 years / 160,000 km"
-      },
-      {
-        "label": "Warranty",
-        "value": "4 years / 100,000 km"
-      }
-    ],
-    "variants": [
-      {
-        "name": "Palisade Smart (8-seater)",
-        "price": 22625000,
-        "grade": "2.5 HEV",
-        "variantLabel": "Smart (8-seater)",
-        "option": "",
-        "transportation": 76000,
-        "nevLevy": 684169,
-        "whtTax": 1649607,
-        "cvt": 180639
-      },
-      {
-        "name": "Palisade Calligraphy (7-seater)",
-        "price": 24075000,
-        "grade": "2.5 HEV",
-        "variantLabel": "Calligraphy (7-seater)",
-        "option": "",
-        "transportation": 76000,
-        "nevLevy": 728016,
-        "whtTax": 1754986,
-        "cvt": 192216
-      }
-    ],
-    "brochure": "/enquiry?type=brochure&model=palisade"
+    "brochure": "/brochures/sonata-n-line.pdf"
   },
   {
     "slug": "tucson-hybrid",
     "name": "THE Tucson Hybrid",
     "shortName": "Tucson Hybrid",
     "tagline": "The hybrid SUV for every journey.",
-    "description": "Tucson Hybrid pairs Hyundai’s parametric SUV design with a 1.6 GDi hybrid powertrain. Choose Smart FWD or Signature AWD - both with an 8-speed DCT and a cabin built for family miles.",
+    "description": "Tucson Hybrid combines a 1.6-litre turbo engine with an electric motor for 232 hp, wrapped in Hyundai's parametric SUV design. Choose Smart FWD or Signature AWD.",
     "highlights": [
-      "1.6 GDi HEV powertrain",
+      "Smartstream 1.6L T-GDi hybrid, 232 hp combined",
+      "Automatic with column-type shift-by-wire",
       "Smart FWD or Signature AWD",
-      "8-speed EcoShift DCT",
-      "Panoramic presence and LED lighting",
-      "Advanced driver assistance",
-      "Family-ready cargo space"
+      "Panoramic sunroof",
+      "12.3\" panoramic curved displays",
+      "Heated and ventilated front seats, heated steering wheel",
+      "Surround View Monitor",
+      "Smart powered tailgate and remote engine start"
     ],
     "ranges": [
       "hyundai"
@@ -606,10 +787,70 @@
     "category": "SUV",
     "fuel": "Hybrid",
     "cardImage": "/images/vehicles/tucson-hybrid-card.png",
-    "heroImage": "/images/vehicles/tucson-hybrid.webp",
-    "gallery": [
-      "/images/vehicles/tucson-hybrid.webp",
-      "/images/vehicles/tucson-hybrid.webp"
+    "heroImage": "/images/models/tucson-hybrid/hero.jpg",
+    "stories": [
+      {
+        "title": "Parametric presence",
+        "text": "Hidden parametric LED lamps that disappear into the grille when switched off, and bold sculpted surfaces down each side.",
+        "image": "/images/models/tucson-hybrid/story-design.jpg"
+      },
+      {
+        "title": "Space that adapts",
+        "text": "A quiet, spacious cabin with heated and ventilated front seats, a heated steering wheel and rear seats that fold for up to 1,903 litres.",
+        "image": "/images/models/tucson-hybrid/story-comfort.jpg"
+      },
+      {
+        "title": "Hybrid power, AWD grip",
+        "text": "232 hp from the 1.6-litre turbo hybrid, with an AWD option and terrain modes for confident driving off the beaten path.",
+        "image": "/images/models/tucson-hybrid/story-performance.jpg"
+      },
+      {
+        "title": "A connected cockpit",
+        "text": "Panoramic curved displays, a surround view monitor, remote engine start and fingerprint authentication.",
+        "image": "/images/models/tucson-hybrid/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "Parametric hidden LED lamps",
+        "image": "/images/models/tucson-hybrid/feature-parametric-lamps.jpg"
+      },
+      {
+        "title": "Panoramic sunroof",
+        "image": "/images/models/tucson-hybrid/feature-panoramic-sunroof.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/tucson-hybrid/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Surround View Monitor",
+        "image": "/images/models/tucson-hybrid/feature-surround-view.jpg"
+      },
+      {
+        "title": "Heated & ventilated seats",
+        "image": "/images/models/tucson-hybrid/feature-ventilated-seats.jpg"
+      },
+      {
+        "title": "Smart powered tailgate",
+        "image": "/images/models/tucson-hybrid/feature-smart-tailgate.jpg"
+      },
+      {
+        "title": "Remote engine start",
+        "image": "/images/models/tucson-hybrid/feature-remote-start.jpg"
+      },
+      {
+        "title": "Drive & terrain modes",
+        "image": "/images/models/tucson-hybrid/feature-drive-terrain-modes.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/tucson-hybrid/interior-1.jpg",
+      "/images/models/tucson-hybrid/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/tucson-hybrid/exterior-1.jpg",
+      "/images/models/tucson-hybrid/exterior-2.jpg"
     ],
     "colors": [
       {
@@ -648,15 +889,47 @@
     "specs": [
       {
         "label": "Engine",
-        "value": "1.6 GDi HEV"
+        "value": "Smartstream 1.6L T-GDi, 1598 cc, 178 hp"
       },
       {
-        "label": "Drivetrain",
-        "value": "FWD or AWD"
+        "label": "Electric motor",
+        "value": "47.7 kW, 264 Nm"
+      },
+      {
+        "label": "Combined output",
+        "value": "232 hp, 367 Nm"
       },
       {
         "label": "Transmission",
-        "value": "8-speed DCT"
+        "value": "Automatic, column-type shift-by-wire"
+      },
+      {
+        "label": "Drive",
+        "value": "FWD (Smart) / AWD (Signature)"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4640 × 1865 × 1665 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2755 mm"
+      },
+      {
+        "label": "Ground clearance",
+        "value": "181 mm"
+      },
+      {
+        "label": "Boot space",
+        "value": "582 – 1903 L"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "52 L"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
       },
       {
         "label": "Warranty",
@@ -687,19 +960,759 @@
         "cvt": 0
       }
     ],
-    "brochure": "/enquiry?type=brochure&model=tucson-hybrid"
+    "brochure": "/brochures/tucson-hybrid.pdf"
+  },
+  {
+    "slug": "santa-fe-hybrid",
+    "name": "THE Santa Fe Hybrid",
+    "shortName": "Santa Fe Hybrid",
+    "tagline": "Experience everything.",
+    "description": "The SANTA FE Hybrid is a seven-seat SUV with a 1.6-litre turbo hybrid producing 227 hp, a 6-speed automatic and an AWD option with multi-terrain modes.",
+    "highlights": [
+      "Smartstream 1.6L T-GDi hybrid, 227 hp combined",
+      "6-speed automatic with shift-by-wire",
+      "Seven seats in three rows",
+      "Smart FWD or Signature AWD with terrain modes",
+      "Panoramic sunroof",
+      "Heated and ventilated seats",
+      "Surround View and Blind-Spot View Monitors",
+      "19\" alloy wheels"
+    ],
+    "ranges": [
+      "hyundai"
+    ],
+    "series": "S",
+    "category": "SUV",
+    "fuel": "Hybrid",
+    "cardImage": "/images/vehicles/santa-fe-card.png",
+    "heroImage": "/images/models/santa-fe-hybrid/hero.jpg",
+    "stories": [
+      {
+        "title": "Made to be noticed",
+        "text": "T-shaped LED daytime running lights, a wide grille and 19-inch alloys give the SANTA FE real road presence.",
+        "image": "/images/models/santa-fe-hybrid/story-design.jpg"
+      },
+      {
+        "title": "Room for seven",
+        "text": "Three rows of seating, heated and ventilated seats and a panoramic sunroof make long family journeys easy.",
+        "image": "/images/models/santa-fe-hybrid/story-comfort.jpg"
+      },
+      {
+        "title": "Ready for any terrain",
+        "text": "227 hp from the turbo hybrid, with Snow, Mud and Sand modes on the Signature AWD.",
+        "image": "/images/models/santa-fe-hybrid/story-performance.jpg"
+      },
+      {
+        "title": "Everything at your fingertips",
+        "text": "A digital cluster, shift-by-wire controls, wireless charging and a surround view monitor for easy parking.",
+        "image": "/images/models/santa-fe-hybrid/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "T-shaped LED DRLs",
+        "image": "/images/models/santa-fe-hybrid/feature-t-shaped-drl.jpg"
+      },
+      {
+        "title": "Panoramic sunroof",
+        "image": "/images/models/santa-fe-hybrid/feature-panoramic-sunroof.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/santa-fe-hybrid/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Shift-by-wire controls",
+        "image": "/images/models/santa-fe-hybrid/feature-shift-by-wire.jpg"
+      },
+      {
+        "title": "Multi-terrain modes",
+        "image": "/images/models/santa-fe-hybrid/feature-terrain-modes.jpg"
+      },
+      {
+        "title": "Ventilated seats",
+        "image": "/images/models/santa-fe-hybrid/feature-ventilated-seats.jpg"
+      },
+      {
+        "title": "Surround View Monitor",
+        "image": "/images/models/santa-fe-hybrid/feature-surround-view.jpg"
+      },
+      {
+        "title": "Wide-opening tailgate",
+        "image": "/images/models/santa-fe-hybrid/feature-power-tailgate.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/santa-fe-hybrid/interior-1.jpg",
+      "/images/models/santa-fe-hybrid/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/santa-fe-hybrid/exterior-1.jpg",
+      "/images/models/santa-fe-hybrid/exterior-2.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Polar White",
+        "hex": "#F5FAFE"
+      },
+      {
+        "name": "Metallic Silver",
+        "hex": "#959597"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#676868"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#012659"
+      },
+      {
+        "name": "Diamond Black Metallic",
+        "hex": "#242B3A"
+      },
+      {
+        "name": "Rain Forest",
+        "hex": "#015D5A"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Engine",
+        "value": "Smartstream 1.6L T-GDi, 1598 cc, 177 hp"
+      },
+      {
+        "label": "Electric motor",
+        "value": "44.2 kW, 264 Nm"
+      },
+      {
+        "label": "Combined output",
+        "value": "227 hp, 350 Nm"
+      },
+      {
+        "label": "Battery",
+        "value": "1.49 kWh lithium-ion polymer"
+      },
+      {
+        "label": "Transmission",
+        "value": "6-speed automatic"
+      },
+      {
+        "label": "Drive",
+        "value": "FWD (Smart) / AWD with terrain modes (Signature)"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4785 × 1900 × 1710 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2765 mm"
+      },
+      {
+        "label": "Ground clearance",
+        "value": "176 mm"
+      },
+      {
+        "label": "Luggage space",
+        "value": "Up to 782 L"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "67 L"
+      },
+      {
+        "label": "Wheels",
+        "value": "19\" alloy, 235/55 R19"
+      },
+      {
+        "label": "Seating",
+        "value": "7 (three rows)"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Santa Fe Hybrid Signature AWD",
+        "price": 14720000,
+        "grade": "Signature AWD",
+        "variantLabel": "1.6(T-GDI) HEV",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 295760,
+        "cvt": 0
+      },
+      {
+        "name": "Santa Fe Hybrid Smart FWD",
+        "price": 13258000,
+        "grade": "Smart FWD",
+        "variantLabel": "1.6(T-GDI) HEV",
+        "option": "",
+        "transportation": 68000,
+        "nevLevy": 0,
+        "whtTax": 266520,
+        "cvt": 0
+      }
+    ],
+    "brochure": "/brochures/santa-fe-hybrid.pdf"
+  },
+  {
+    "slug": "palisade",
+    "name": "THE Palisade",
+    "shortName": "Palisade",
+    "tagline": "Command the road, three rows deep.",
+    "description": "The PALISADE Hybrid is Hyundai's flagship SUV: a 2.5-litre turbo hybrid with 329 hp, all-wheel drive and a premium three-row cabin in 7 or 8-seat layouts.",
+    "highlights": [
+      "2.5L turbo hybrid, 329 hp and 460 Nm combined",
+      "AWD with 6-speed automatic",
+      "7-seat Calligraphy or 8-seat Smart",
+      "Head-up display",
+      "Bose premium sound with 14 speakers",
+      "Ergo Motion relaxation seats with leg rest",
+      "Dual-pane sunroof",
+      "Surround View Monitor and 8 airbags"
+    ],
+    "ranges": [
+      "hyundai"
+    ],
+    "series": "P",
+    "category": "SUV",
+    "fuel": "Hybrid",
+    "cardImage": "/images/vehicles/palisade-card.png",
+    "heroImage": "/images/models/palisade/hero.jpg",
+    "stories": [
+      {
+        "title": "Flagship presence",
+        "text": "A bold, upright front, vertical LED lighting and up to 21-inch wheels make the PALISADE the biggest statement in the range.",
+        "image": "/images/models/palisade/story-design.jpg"
+      },
+      {
+        "title": "First class in every row",
+        "text": "Nappa leather on Calligraphy, Ergo Motion relaxation seats with leg rests and a dual-pane sunroof over all three rows.",
+        "image": "/images/models/palisade/story-comfort.jpg"
+      },
+      {
+        "title": "Hybrid muscle",
+        "text": "329 hp and 460 Nm from the 2.5-litre turbo hybrid, with all-wheel drive and terrain modes for any road.",
+        "image": "/images/models/palisade/story-performance.jpg"
+      },
+      {
+        "title": "A wraparound cockpit",
+        "text": "Panoramic curved displays, a head-up display and Bose sound with 14 speakers.",
+        "image": "/images/models/palisade/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "Head-up display",
+        "image": "/images/models/palisade/feature-head-up-display.jpg"
+      },
+      {
+        "title": "Bose 14-speaker sound",
+        "image": "/images/models/palisade/feature-bose-sound.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/palisade/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Ergo Motion relaxation seats",
+        "image": "/images/models/palisade/feature-relaxation-seats.jpg"
+      },
+      {
+        "title": "Powered memory seats",
+        "image": "/images/models/palisade/feature-memory-seats.jpg"
+      },
+      {
+        "title": "Dual-pane sunroof",
+        "image": "/images/models/palisade/feature-dual-sunroof.jpg"
+      },
+      {
+        "title": "Powered tailgate",
+        "image": "/images/models/palisade/feature-power-tailgate.jpg"
+      },
+      {
+        "title": "Smart key",
+        "image": "/images/models/palisade/feature-smart-key.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/palisade/interior-1.jpg",
+      "/images/models/palisade/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/palisade/exterior-1.jpg",
+      "/images/models/palisade/exterior-2.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Polar White",
+        "hex": "#F0F5FC"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A1A5A8"
+      },
+      {
+        "name": "Hampton Gray",
+        "hex": "#686B6D"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#242525"
+      },
+      {
+        "name": "Robust Emerald Green",
+        "hex": "#13372E"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Engine",
+        "value": "Smartstream 2.5L turbo hybrid, 2497 cc, 258 hp"
+      },
+      {
+        "label": "Electric motor",
+        "value": "54 kW, 264 Nm"
+      },
+      {
+        "label": "Combined output",
+        "value": "329 hp, 460 Nm"
+      },
+      {
+        "label": "Battery",
+        "value": "1.65 kWh lithium-ion polymer"
+      },
+      {
+        "label": "Transmission",
+        "value": "6-speed automatic, shift-by-wire"
+      },
+      {
+        "label": "Drive",
+        "value": "AWD with Snow / Mud / Sand modes"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "5065 × 1980 × 1805 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2970 mm"
+      },
+      {
+        "label": "Ground clearance",
+        "value": "187 mm"
+      },
+      {
+        "label": "Boot space",
+        "value": "540 L (up to 2455 L)"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "72 L"
+      },
+      {
+        "label": "Seating",
+        "value": "7 or 8 (three rows)"
+      },
+      {
+        "label": "Battery warranty",
+        "value": "8 years / 160,000 km"
+      },
+      {
+        "label": "Warranty",
+        "value": "4 years / 100,000 km"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Palisade Smart (8-seater)",
+        "price": 22625000,
+        "grade": "2.5 HEV",
+        "variantLabel": "Smart (8-seater)",
+        "option": "",
+        "transportation": 76000,
+        "nevLevy": 684169,
+        "whtTax": 1649607,
+        "cvt": 180639
+      },
+      {
+        "name": "Palisade Calligraphy (7-seater)",
+        "price": 24075000,
+        "grade": "2.5 HEV",
+        "variantLabel": "Calligraphy (7-seater)",
+        "option": "",
+        "transportation": 76000,
+        "nevLevy": 728016,
+        "whtTax": 1754986,
+        "cvt": 192216
+      }
+    ],
+    "brochure": "/brochures/palisade.pdf"
+  },
+  {
+    "slug": "ioniq-5",
+    "name": "THE IONIQ 5",
+    "shortName": "IONIQ 5",
+    "tagline": "Lead the charge.",
+    "description": "IONIQ 5 is Hyundai's all-electric crossover: up to 500 km of range, 325 PS all-wheel drive, a flat-floor lounge-like cabin and Vehicle-to-Load power on the go.",
+    "highlights": [
+      "Dual-motor AWD, up to 325 PS and 605 Nm",
+      "Up to 500 km range (84 kWh battery)",
+      "Vehicle-to-Load (V2L), inside and outside",
+      "Universal Island sliding centre console",
+      "Front relaxation seats",
+      "Bose premium sound",
+      "Surround View and Blind-Spot View Monitors",
+      "Parametric Pixel LED lamps"
+    ],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
+    "series": "I",
+    "category": "Electric",
+    "fuel": "Electric",
+    "cardImage": "/images/vehicles/ioniq-5-card.png",
+    "heroImage": "/images/models/ioniq-5/hero.jpg",
+    "stories": [
+      {
+        "title": "Pixels and precision",
+        "text": "Parametric Pixel lamps, crisp creases and a long 3,000 mm wheelbase give IONIQ 5 its unmistakable look.",
+        "image": "/images/models/ioniq-5/story-design.jpg"
+      },
+      {
+        "title": "A lounge on wheels",
+        "text": "A flat floor, the sliding Universal Island console and relaxation seats turn the cabin into a calm, open space.",
+        "image": "/images/models/ioniq-5/story-comfort.jpg"
+      },
+      {
+        "title": "Instant electric power",
+        "text": "Dual motors with all-wheel drive deliver up to 325 PS and 605 Nm, with up to 500 km on a single charge.",
+        "image": "/images/models/ioniq-5/story-performance.jpg"
+      },
+      {
+        "title": "Connected and capable",
+        "text": "Dual displays, a surround view monitor and Vehicle-to-Load, which powers devices and appliances straight from the battery.",
+        "image": "/images/models/ioniq-5/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "Parametric Pixel lamps",
+        "image": "/images/models/ioniq-5/feature-pixel-lamps.jpg"
+      },
+      {
+        "title": "Universal Island sliding console",
+        "image": "/images/models/ioniq-5/feature-universal-island.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/ioniq-5/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Bose premium sound",
+        "image": "/images/models/ioniq-5/feature-bose-sound.jpg"
+      },
+      {
+        "title": "Vehicle-to-Load (V2L)",
+        "image": "/images/models/ioniq-5/feature-v2l.jpg"
+      },
+      {
+        "title": "Surround View Monitor",
+        "image": "/images/models/ioniq-5/feature-surround-view.jpg"
+      },
+      {
+        "title": "Pixel rear lamps",
+        "image": "/images/models/ioniq-5/feature-rear-lamps.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/ioniq-5/interior-1.jpg",
+      "/images/models/ioniq-5/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/ioniq-5/exterior-1.jpg",
+      "/images/models/ioniq-5/exterior-2.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Powertrain",
+        "value": "Dual-motor electric, AWD"
+      },
+      {
+        "label": "Power",
+        "value": "325 PS (84 kWh) / 305 PS (72.6 kWh)"
+      },
+      {
+        "label": "Torque",
+        "value": "605 Nm"
+      },
+      {
+        "label": "Battery",
+        "value": "84 kWh or 72.6 kWh lithium-ion"
+      },
+      {
+        "label": "Range",
+        "value": "Up to 500 km (84 kWh) / up to 430 km (72.6 kWh)"
+      },
+      {
+        "label": "Transmission",
+        "value": "Single-speed reduction gear"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4655 × 1890 × 1605 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "3000 mm"
+      },
+      {
+        "label": "Cargo space",
+        "value": "745 – 770 L"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
+    ],
+    "variants": [
+      {
+        "name": "IONIQ 5",
+        "price": 22540000,
+        "grade": "",
+        "variantLabel": "",
+        "option": "",
+        "transportation": 0,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
+      }
+    ],
+    "brochure": "/brochures/ioniq-5.pdf"
+  },
+  {
+    "slug": "ioniq-6",
+    "name": "THE IONIQ 6",
+    "shortName": "IONIQ 6",
+    "tagline": "Electrified streamliner.",
+    "description": "IONIQ 6 is Hyundai's electric streamliner: a sleek fastback sedan with up to 519 km of range, 325 PS all-wheel drive and Vehicle-to-Load.",
+    "highlights": [
+      "Dual-motor AWD, 325 PS and 605 Nm",
+      "Up to 519 km range (77.4 kWh battery)",
+      "Parametric Pixel lighting",
+      "Vehicle-to-Load (V2L)",
+      "Heated and ventilated front seats, heated rear seats",
+      "Column-type shift-by-wire",
+      "Wireless phone charging",
+      "Sunroof"
+    ],
+    "ranges": [
+      "hyundai",
+      "ioniq"
+    ],
+    "series": "I",
+    "category": "Electric",
+    "fuel": "Electric",
+    "cardImage": "/images/vehicles/ioniq-6-card.png",
+    "heroImage": "/images/models/ioniq-6/hero.jpg",
+    "stories": [
+      {
+        "title": "Shaped by the wind",
+        "text": "One sweeping curve from nose to tail, pixel lights and a ducktail spoiler give IONIQ 6 its streamliner shape.",
+        "image": "/images/models/ioniq-6/story-design.jpg"
+      },
+      {
+        "title": "Calm and comfortable",
+        "text": "Heated and ventilated front seats, heated rear seats and customisable ambient lighting.",
+        "image": "/images/models/ioniq-6/story-comfort.jpg"
+      },
+      {
+        "title": "Electric performance",
+        "text": "Dual motors deliver 325 PS and 605 Nm, with up to 519 km of range.",
+        "image": "/images/models/ioniq-6/story-performance.jpg"
+      },
+      {
+        "title": "Digital, simplified",
+        "text": "A wide integrated display, column shift-by-wire, wireless charging and Vehicle-to-Load.",
+        "image": "/images/models/ioniq-6/story-technology.jpg"
+      }
+    ],
+    "features": [
+      {
+        "title": "Parametric Pixel headlamps",
+        "image": "/images/models/ioniq-6/feature-pixel-headlamps.jpg"
+      },
+      {
+        "title": "Pixel rear lamps & spoiler",
+        "image": "/images/models/ioniq-6/feature-pixel-rear-lamps.jpg"
+      },
+      {
+        "title": "Heated & ventilated seats",
+        "image": "/images/models/ioniq-6/feature-ventilated-seats.jpg"
+      },
+      {
+        "title": "Column-type shift-by-wire",
+        "image": "/images/models/ioniq-6/feature-shift-by-wire.jpg"
+      },
+      {
+        "title": "Wireless phone charging",
+        "image": "/images/models/ioniq-6/feature-wireless-charging.jpg"
+      },
+      {
+        "title": "Vehicle-to-Load (V2L)",
+        "image": "/images/models/ioniq-6/feature-v2l.jpg"
+      },
+      {
+        "title": "Ambient mood lighting",
+        "image": "/images/models/ioniq-6/feature-ambient-lighting.jpg"
+      }
+    ],
+    "interiorGallery": [
+      "/images/models/ioniq-6/interior-1.jpg",
+      "/images/models/ioniq-6/interior-2.jpg"
+    ],
+    "exteriorGallery": [
+      "/images/models/ioniq-6/exterior-1.jpg",
+      "/images/models/ioniq-6/exterior-2.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Polar White",
+        "hex": "#F4F4F2"
+      },
+      {
+        "name": "Silver Metallic",
+        "hex": "#A8ADB3"
+      },
+      {
+        "name": "Magnetic Force",
+        "hex": "#4A4E55"
+      },
+      {
+        "name": "Phantom Black",
+        "hex": "#111111"
+      },
+      {
+        "name": "Oxford Blue",
+        "hex": "#1B3A6B"
+      },
+      {
+        "name": "Fiery Red",
+        "hex": "#B3121B"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Powertrain",
+        "value": "Dual-motor electric, AWD"
+      },
+      {
+        "label": "Power",
+        "value": "239 kW (325 PS)"
+      },
+      {
+        "label": "Torque",
+        "value": "605 Nm"
+      },
+      {
+        "label": "Battery",
+        "value": "77.4 kWh lithium-ion"
+      },
+      {
+        "label": "Range",
+        "value": "Up to 519 km"
+      },
+      {
+        "label": "Transmission",
+        "value": "Single-speed reduction gear"
+      },
+      {
+        "label": "Dimensions (L × W × H)",
+        "value": "4855 × 1880 × 1495 mm"
+      },
+      {
+        "label": "Wheelbase",
+        "value": "2950 mm"
+      },
+      {
+        "label": "Cargo space",
+        "value": "316 L"
+      },
+      {
+        "label": "Seating",
+        "value": "5"
+      },
+      {
+        "label": "Warranty",
+        "value": "48 months / 100,000 km"
+      }
+    ],
+    "variants": [
+      {
+        "name": "IONIQ 6",
+        "price": 22540000,
+        "grade": "",
+        "variantLabel": "",
+        "option": "",
+        "transportation": 0,
+        "nevLevy": 0,
+        "whtTax": 0,
+        "cvt": 0
+      }
+    ],
+    "brochure": "/brochures/ioniq-6.pdf"
   },
   {
     "slug": "porter",
     "name": "THE Porter",
     "shortName": "Porter",
     "tagline": "The commercial workhorse.",
-    "description": "The Hyundai Porter (H-100) is built for business - a durable light commercial vehicle trusted by fleets and family enterprises across Islamabad and beyond.",
+    "description": "The Hyundai Porter H-100 is built for business: a durable 1-ton light commercial vehicle with a 2.6-litre diesel engine, trusted by fleets and family enterprises.",
     "highlights": [
-      "Light commercial payload",
-      "Durable workhorse platform",
-      "Practical cargo bed",
-      "Trusted by Pakistani fleets"
+      "2.6L diesel, 79 PS",
+      "5-speed manual",
+      "1-ton load capacity",
+      "Flat deck body",
+      "Power steering",
+      "AM/FM/Bluetooth/AUX/USB audio",
+      "Room lamp with sunglass holder",
+      "Full-size spare wheel"
     ],
     "ranges": [
       "hyundai"
@@ -708,11 +1721,36 @@
     "category": "Commercial",
     "fuel": "Diesel",
     "cardImage": "/images/vehicles/porter-card.png",
-    "heroImage": "/images/vehicles/porter.webp",
-    "gallery": [
-      "/images/vehicles/porter.webp",
-      "/images/vehicles/porter.webp"
+    "heroImage": "/images/models/porter/hero.jpg",
+    "stories": [],
+    "features": [
+      {
+        "title": "Easy-read gauge cluster",
+        "image": "/images/models/porter/feature-gauge-cluster.jpg"
+      },
+      {
+        "title": "AM/FM/BT/AUX/USB audio",
+        "image": "/images/models/porter/feature-audio-system.jpg"
+      },
+      {
+        "title": "Room lamp & sunglass holder",
+        "image": "/images/models/porter/feature-room-lamp.jpg"
+      },
+      {
+        "title": "Flat deck",
+        "image": "/images/models/porter/feature-flat-deck.jpg"
+      },
+      {
+        "title": "Roomy cabin",
+        "image": "/images/models/porter/feature-roomy-cabin.jpg"
+      },
+      {
+        "title": "Built to carry",
+        "image": "/images/models/porter/feature-built-for-loads.jpg"
+      }
     ],
+    "interiorGallery": [],
+    "exteriorGallery": [],
     "colors": [
       {
         "name": "White - H100",
@@ -722,11 +1760,35 @@
     "specs": [
       {
         "label": "Engine",
-        "value": "2.6L diesel"
+        "value": "2.6L naturally aspirated diesel"
       },
       {
-        "label": "Body",
-        "value": "Light commercial / H-100"
+        "label": "Power",
+        "value": "79 PS @ 4000 rpm"
+      },
+      {
+        "label": "Torque",
+        "value": "167 Nm @ 2200 rpm"
+      },
+      {
+        "label": "Transmission",
+        "value": "5-speed manual"
+      },
+      {
+        "label": "Load capacity",
+        "value": "1 ton"
+      },
+      {
+        "label": "Fuel tank",
+        "value": "65 L"
+      },
+      {
+        "label": "Tyres",
+        "value": "205/70 R15C, steel rims"
+      },
+      {
+        "label": "Turning radius",
+        "value": "5.3 m"
       },
       {
         "label": "Warranty",
@@ -801,180 +1863,6 @@
         "cvt": 0
       }
     ],
-    "brochure": "/enquiry?type=brochure&model=porter"
-  },
-  {
-    "slug": "ioniq-5",
-    "name": "THE IONIQ 5",
-    "shortName": "IONIQ 5",
-    "tagline": "Lead the charge.",
-    "description": "Breathtakingly beautiful and amazingly advanced, the IONIQ 5 is redefining the way people look at electric cars. Concept-car design, environmentally friendly materials and an astonishing array of smart tech - this all-electric midsize CUV is a game changer.",
-    "highlights": [
-      "Parametric Pixel dual LED DRLs",
-      "20-inch alloy rims",
-      "Auto-flush door handles",
-      "Panoramic sunroof",
-      "12.25-inch dual displays",
-      "Vehicle-to-Load (V2L)",
-      "Premium Bose sound system",
-      "360° surround view monitor",
-      "Heated and ventilated front seats"
-    ],
-    "ranges": [
-      "hyundai",
-      "ioniq"
-    ],
-    "series": "I",
-    "category": "Electric",
-    "fuel": "Electric",
-    "cardImage": "/images/vehicles/ioniq-5-card.png",
-    "heroImage": "/images/vehicles/ioniq-5.webp",
-    "gallery": [
-      "/images/vehicles/ioniq-5.webp",
-      "/images/vehicles/ioniq-5.webp"
-    ],
-    "colors": [
-      {
-        "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#111111"
-      },
-      {
-        "name": "Oxford Blue",
-        "hex": "#1B3A6B"
-      },
-      {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
-      }
-    ],
-    "specs": [
-      {
-        "label": "Powertrain",
-        "value": "100% Electric"
-      },
-      {
-        "label": "Displays",
-        "value": "12.25\" cluster + 12.25\" infotainment"
-      },
-      {
-        "label": "Audio",
-        "value": "Premium Bose"
-      },
-      {
-        "label": "V2L",
-        "value": "Vehicle-to-Load equipped"
-      },
-      {
-        "label": "Warranty",
-        "value": "48 months / 100,000 km"
-      }
-    ],
-    "variants": [
-      {
-        "name": "IONIQ 5",
-        "price": 22540000,
-        "grade": "",
-        "variantLabel": "",
-        "option": "",
-        "transportation": 0,
-        "nevLevy": 0,
-        "whtTax": 0,
-        "cvt": 0
-      }
-    ],
-    "brochure": "/enquiry?type=brochure&model=ioniq-5"
-  },
-  {
-    "slug": "ioniq-6",
-    "name": "THE IONIQ 6",
-    "shortName": "IONIQ 6",
-    "tagline": "Electrified streamliner.",
-    "description": "IONIQ 6 is Hyundai’s electric streamliner - a sleek, aerodynamic sedan with pixel lighting, a digital cockpit and long-distance EV comfort for Pakistan’s motorways.",
-    "highlights": [
-      "100% electric streamliner",
-      "Parametric Pixel lighting",
-      "Digital cockpit",
-      "Aerodynamic silhouette",
-      "Hyundai SmartSense safety"
-    ],
-    "ranges": [
-      "hyundai",
-      "ioniq"
-    ],
-    "series": "I",
-    "category": "Electric",
-    "fuel": "Electric",
-    "cardImage": "/images/vehicles/ioniq-6-card.png",
-    "heroImage": "/images/vehicles/ioniq-6.webp",
-    "gallery": [
-      "/images/vehicles/ioniq-6.webp",
-      "/images/vehicles/ioniq-6.webp"
-    ],
-    "colors": [
-      {
-        "name": "Polar White",
-        "hex": "#F4F4F2"
-      },
-      {
-        "name": "Silver Metallic",
-        "hex": "#A8ADB3"
-      },
-      {
-        "name": "Magnetic Force",
-        "hex": "#4A4E55"
-      },
-      {
-        "name": "Phantom Black",
-        "hex": "#111111"
-      },
-      {
-        "name": "Oxford Blue",
-        "hex": "#1B3A6B"
-      },
-      {
-        "name": "Fiery Red",
-        "hex": "#B3121B"
-      }
-    ],
-    "specs": [
-      {
-        "label": "Powertrain",
-        "value": "100% Electric"
-      },
-      {
-        "label": "Body",
-        "value": "Streamliner sedan"
-      },
-      {
-        "label": "Warranty",
-        "value": "48 months / 100,000 km"
-      }
-    ],
-    "variants": [
-      {
-        "name": "IONIQ 6",
-        "price": 22540000,
-        "grade": "",
-        "variantLabel": "",
-        "option": "",
-        "transportation": 0,
-        "nevLevy": 0,
-        "whtTax": 0,
-        "cvt": 0
-      }
-    ],
-    "brochure": "/enquiry?type=brochure&model=ioniq-6"
+    "brochure": "/brochures/porter.pdf"
   }
 ]

@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "title": "Booking your Hyundai? Here's what you'll need.",
+  "sections": [
+    {
+      "title": "Documents required for booking",
+      "items": [
+        "An original pay order or demand draft made in favour of \"Hyundai Nishat Motor (Private) Limited, A/C Purchaser's Name\", payable at any bank branch in Pakistan.",
+        "The amount should cover the full price of the vehicle, advance income tax (231B), and freight and transit insurance."
+      ]
+    },
+    {
+      "title": "Individual customers",
+      "items": [
+        "A copy of your valid CNIC (Computerised National Identity Card)."
+      ]
+    },
+    {
+      "title": "Corporate and government customers",
+      "items": [
+        "Please contact Hyundai Islamabad or visit our dealership in I-9/3, and our team will tell you exactly which documents you need."
+      ]
+    }
+  ],
+  "notes": [
+    "All details must be filled in and signed by the customer on the booking (PBO) form.",
+    "Additional documents may be requested depending on the customer category."
+  ]
+}

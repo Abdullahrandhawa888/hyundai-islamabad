@@ -6,7 +6,7 @@ import { Button } from "./Button";
 import { FormField } from "./FormField";
 
 type EnquiryFormProps = {
-  intent?: "enquiry" | "testdrive" | "brochure" | "contact";
+  intent?: "enquiry" | "brochure" | "contact";
   defaultModel?: string;
   /** contact only: pre-selects "What can we help with?" (a contactTopics value). */
   defaultTopic?: string;
@@ -18,7 +18,6 @@ type EnquiryFormProps = {
 
 const titles: Record<NonNullable<EnquiryFormProps["intent"]>, string> = {
   enquiry: "Make an enquiry",
-  testdrive: "Request a test drive",
   brochure: "Request a brochure",
   contact: "How can we help you?",
 };
@@ -85,12 +84,6 @@ export function EnquiryForm({
           />
         ) : null}
       </div>
-      {intent === "testdrive" ? (
-        <div className="grid gap-4 md:grid-cols-2">
-          <FormField label="Preferred date" name="date" type="date" />
-          <FormField label="Preferred city" name="city" placeholder="Islamabad" />
-        </div>
-      ) : null}
       <FormField
         label={intent === "contact" ? "Your message" : "Comments"}
         name="message"

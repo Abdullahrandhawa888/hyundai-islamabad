@@ -6,6 +6,7 @@ import {
   FileText,
   House,
   Info,
+  Megaphone,
   Menu,
   Newspaper,
   PencilLine,
@@ -33,6 +34,7 @@ const ICONS: Record<ContentKey, LucideIcon> = {
   about: Info,
   site: Phone,
   nav: Menu,
+  "booking-notice": Megaphone,
 };
 
 const STEPS = [

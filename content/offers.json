@@ -15,13 +15,5 @@
     "validUntil": "While stocks last",
     "image": "/images/news/elantra-launch.jpg",
     "href": "/models/elantra-hybrid"
-  },
-  {
-    "id": "test-drive",
-    "title": "Request a complimentary test drive",
-    "summary": "Experience the Hyundai range at our I-9/3 showroom. Book a test drive with our sales team.",
-    "validUntil": "Ongoing",
-    "image": "/images/vehicles/santa-fe.png",
-    "href": "/testdrive"
   }
 ]

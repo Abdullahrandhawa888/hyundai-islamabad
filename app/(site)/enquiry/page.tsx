@@ -20,7 +20,7 @@ export default async function EnquiryPage({
   const model = first(query.model);
   const stock = first(query.stock);
   const intent =
-    type === "brochure" || type === "testdrive" ? type : "enquiry";
+    type === "brochure" ? type : "enquiry";
 
   return (
     <>
