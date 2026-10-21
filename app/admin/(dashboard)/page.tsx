@@ -16,6 +16,7 @@ import {
   Tag,
   Users,
   Globe,
+  ShoppingBag,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
@@ -30,10 +31,12 @@ const ICONS: Record<ContentKey, LucideIcon> = {
   offers: Tag,
   news: Newspaper,
   team: Users,
+  "after-sales-team": Users,
   service: Wrench,
   about: Info,
   site: Phone,
   nav: Menu,
+  accessories: ShoppingBag,
   "booking-notice": Megaphone,
 };
 

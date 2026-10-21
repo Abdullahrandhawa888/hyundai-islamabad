@@ -4,7 +4,7 @@ import { TeamHeroBanner } from "@/components/team/TeamHeroBanner";
 import { team, teamRowSizes } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Our Team",
+  title: "Sales Team",
 };
 
 function chunkByRowSizes<T>(list: T[], rowSizes: readonly number[]) {
@@ -26,8 +26,8 @@ export default function TeamPage() {
 
       <section className="mx-auto max-w-6xl px-5 pt-10 pb-6 md:px-8">
         <p className="max-w-2xl text-[14px] leading-7 text-muted">
-          The people behind every sale, service and support visit at Hyundai Islamabad -
-          reach out to anyone below directly.
+          Our sales team will help you choose, price and book your Hyundai. Reach out to
+          anyone below directly.
         </p>
       </section>
 

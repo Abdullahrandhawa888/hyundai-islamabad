@@ -54,10 +54,17 @@ export const CONTENT_REGISTRY = {
   },
   team: {
     path: "content/team.json",
-    label: "Our team",
-    description: "Staff photos, roles, bios and WhatsApp numbers.",
+    label: "Sales team",
+    description: "Sales team photos, roles, bios and WhatsApp numbers.",
     group: "Website pages",
     viewHref: "/team",
+  },
+  "after-sales-team": {
+    path: "content/after-sales-team.json",
+    label: "After Sales team",
+    description: "Cards on the After Sales Team page: names, roles, photos and contact numbers.",
+    group: "Website pages",
+    viewHref: "/after-sales-team",
   },
   service: {
     path: "content/service.json",
@@ -86,6 +93,13 @@ export const CONTENT_REGISTRY = {
     description: "The links and dropdowns in the website's top menu.",
     group: "Settings",
     viewHref: "/",
+  },
+  accessories: {
+    path: "content/accessories.json",
+    label: "Accessories shop",
+    description: "Products customers can reserve and collect from the dealership: names, prices and pictures.",
+    group: "Website pages",
+    viewHref: "/accessories",
   },
   "booking-notice": {
     path: "content/booking-notice.json",

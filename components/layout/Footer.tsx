@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Clock, Wrench, type LucideIcon } from "lucide-react";
 import { site, vehicles } from "@/lib/data";
 
-/** "Mon–Fri: 10:00 AM – 06:00 PM · Sat: 11:00 AM – 07:00 PM" → one row per day group. */
+/** "Mon–Fri: 10:00 AM – 06:00 PM · Sat: 11:00 AM – 06:00 PM" → one row per day group. */
 function hoursRows(hours: string) {
   return hours.split(" · ").map((part) => {
     const split = part.indexOf(": ");

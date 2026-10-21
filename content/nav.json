@@ -23,7 +23,13 @@
       { "label": "Book a Service", "href": "/after-sales/book-a-service", "group": "Service Appointment" }
     ]
   },
-  { "label": "Our Team", "href": "/team" },
+  {
+    "label": "Our Team",
+    "children": [
+      { "label": "Sales Team", "href": "/team" },
+      { "label": "After Sales Team", "href": "/after-sales-team" }
+    ]
+  },
   { "label": "Accessories", "href": "/accessories" },
   { "label": "About Us", "href": "/about" }
 ]

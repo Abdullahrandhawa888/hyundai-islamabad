@@ -1,4 +1,4 @@
-import { rangeTabs, seriesFilters, vehicles } from "@/lib/data";
+import { accessories, rangeTabs, seriesFilters, vehicles } from "@/lib/data";
 
 // How the admin editor should present each field: friendly labels, help text,
 // dropdowns instead of free typing, tabs for long items, and live totals.
@@ -231,6 +231,19 @@ const teamHints: FieldHints = {
   "[].bio": { label: "Bio", control: "textarea" },
 };
 
+const afterSalesTeamHints: FieldHints = {
+  "": { addLabel: "Add team member" },
+  "[]": {
+    summary: (item) => ({
+      title: typeof item.name === "string" ? item.name : undefined,
+      detail: typeof item.role === "string" ? item.role : undefined,
+    }),
+  },
+  "[].image": { label: "Photo", help: "Picture path, e.g. /images/team/name.png. Leave empty to show a placeholder." },
+  "[].whatsappHref": { label: "WhatsApp link (optional)", help: "Format: https://wa.me/923001234567 (country code, no + or spaces). Leave empty to hide." },
+  "[].phoneDisplay": { label: "Phone (as shown, optional)" },
+};
+
 const newsHints: FieldHints = {
   "": { addLabel: "Add article" },
   "[].slug": lockedSlug,
@@ -258,10 +271,36 @@ export const FIELD_HINTS: Record<string, FieldHints> = {
   "emi-plans": emiPlanHints,
   "price-list": priceListHints,
   team: teamHints,
+  "after-sales-team": afterSalesTeamHints,
   news: newsHints,
   site: siteHints,
   nav: navHints,
   offers: { "": { addLabel: "Add offer" } },
+  accessories: {
+    intro: { label: "Introduction", control: "textarea", help: "Shown above the products." },
+    orderNote: { label: "Order note", control: "textarea", help: "Pick-up and payment terms shown next to the reservation form." },
+    categories: { label: "Categories", addLabel: "Add category", help: "Used for the filter buttons. A product's category must match one of these." },
+    products: { label: "Products", addLabel: "Add product" },
+    "products[]": {
+      order: ["name", "price", "category", "inStock"],
+      summary: (item) => ({
+        title: typeof item.name === "string" ? item.name : undefined,
+        detail: `${rupees(num(item.price))}${item.inStock === false ? " · out of stock" : ""}`,
+      }),
+    },
+    "products[].name": { label: "Product name" },
+    "products[].price": { label: "Price (PKR)", control: "money" },
+    "products[].category": {
+      label: "Category",
+      control: "select",
+      options: accessories.categories.map((category) => ({ label: category, value: category })),
+    },
+    "products[].inStock": { label: "In stock", help: "Switch off to show the product as out of stock." },
+    "products[].description": { label: "Description", control: "textarea" },
+    "products[].fits": { label: "Fits", help: 'Which models, e.g. "All sedans".' },
+    "products[].image": { label: "Picture", help: "Picture path, e.g. /images/accessories/mats.jpg. Leave empty to show an icon." },
+    "products[].id": lockedSlug,
+  },
   "booking-notice": {
     enabled: { label: "Show the pop-up when someone opens the website" },
     title: { label: "Heading" },

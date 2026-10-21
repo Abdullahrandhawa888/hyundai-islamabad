@@ -1,0 +1,87 @@
+{
+  "intro": "Genuine accessories for your Hyundai. See the prices, reserve what you need, and collect it from our dealership. We do not deliver accessories.",
+  "orderNote": "Reserving is free and does not take any payment. Our team will call you to confirm availability and fitment, and you pay and collect at the dealership. Delivery is not available.",
+  "categories": ["Exterior", "Interior", "Technology", "Protection"],
+  "products": [
+    {
+      "id": "door-visors",
+      "name": "Door Visors (Set of 4)",
+      "category": "Exterior",
+      "price": 12000,
+      "description": "Smoked rain and wind deflectors for the front and rear windows.",
+      "fits": "All sedans",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "rear-spoiler",
+      "name": "Rear Spoiler",
+      "category": "Exterior",
+      "price": 18000,
+      "description": "Body-coloured boot lip spoiler with fitting kit.",
+      "fits": "Elantra, Sonata",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "floor-mats",
+      "name": "All-Weather Floor Mats",
+      "category": "Interior",
+      "price": 9500,
+      "description": "Moulded mats that hold spills and wipe clean, cut to your model.",
+      "fits": "All models",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "seat-covers",
+      "name": "Leatherette Seat Covers",
+      "category": "Interior",
+      "price": 32000,
+      "description": "Full set of fitted covers for front and rear seats.",
+      "fits": "All sedans and SUVs",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "dash-camera",
+      "name": "Dash Camera (Front)",
+      "category": "Technology",
+      "price": 15000,
+      "description": "Full HD front camera with loop recording and a wide viewing angle.",
+      "fits": "All models",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "wireless-charger",
+      "name": "Wireless Charging Pad",
+      "category": "Technology",
+      "price": 6500,
+      "description": "Fast Qi charging pad that sits in the centre console.",
+      "fits": "All models",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "paint-protection",
+      "name": "Paint Protection Film (Bonnet)",
+      "category": "Protection",
+      "price": 45000,
+      "description": "Clear film that guards the bonnet against stone chips and scratches.",
+      "fits": "All models",
+      "image": "",
+      "inStock": true
+    },
+    {
+      "id": "scuff-plates",
+      "name": "Door Scuff Plates (Set of 4)",
+      "category": "Protection",
+      "price": 8500,
+      "description": "Stainless steel plates that protect the door sills.",
+      "fits": "All models",
+      "image": "",
+      "inStock": false
+    }
+  ]
+}

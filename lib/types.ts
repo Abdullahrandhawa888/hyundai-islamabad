@@ -232,3 +232,34 @@ export type EmiPlan = {
   variantName: string;
   tenures: EmiTenure[];
 };
+
+export type AccessoryProduct = {
+  id: string;
+  name: string;
+  category: string;
+  /** Price in PKR. */
+  price: number;
+  description: string;
+  /** Models it fits, in words, e.g. "All sedans". */
+  fits: string;
+  /** Picture path. Leave empty to show a category icon instead. */
+  image: string;
+  inStock: boolean;
+};
+
+export type AccessoriesPage = {
+  intro: string;
+  /** Shown beside the reservation form: pick-up and payment terms. */
+  orderNote: string;
+  categories: string[];
+  products: AccessoryProduct[];
+};
+
+/** A card on the After Sales Team page. Photo and contact details are optional. */
+export type AfterSalesTeamMember = {
+  name: string;
+  role: string;
+  image: string;
+  whatsappHref: string;
+  phoneDisplay: string;
+};

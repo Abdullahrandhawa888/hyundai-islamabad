@@ -1,4 +1,6 @@
 import aboutData from "@/content/about.json";
+import afterSalesTeamData from "@/content/after-sales-team.json";
+import accessoriesData from "@/content/accessories.json";
 import bookingNoticeData from "@/content/booking-notice.json";
 import emiPageData from "@/content/emi-page.json";
 import emiPlansData from "@/content/emi-plans.json";
@@ -12,6 +14,8 @@ import siteData from "@/content/site.json";
 import teamData from "@/content/team.json";
 import vehiclesData from "@/content/vehicles.json";
 import type {
+  AccessoriesPage,
+  AfterSalesTeamMember,
   BookingNotice,
   EmiPage,
   EmiPlan,
@@ -34,6 +38,9 @@ import type {
 // through the dashboard, or by hand-editing the JSON files directly - not in
 // this file. This file only keeps the typed re-exports and derived helpers
 // that the rest of the app imports from "@/lib/data".
+
+// The Accessories page: products that can be ordered (cash on delivery).
+export const accessories = accessoriesData as AccessoriesPage;
 
 export const site = siteData.site;
 export const extraPhones = siteData.extraPhones;
@@ -118,6 +125,7 @@ export const news = newsData as NewsArticle[];
 export const teamRowSizes = [2, 3, 2, 1] as const;
 
 export const team = teamData as TeamMember[];
+export const afterSalesTeam = afterSalesTeamData as AfterSalesTeamMember[];
 
 // After Sales section (/after-sales/*).
 export const afterSalesOverview = serviceData.overview;
