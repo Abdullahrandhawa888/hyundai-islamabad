@@ -126,6 +126,9 @@ export const teamRowSizes = [2, 3, 2, 1] as const;
 
 export const team = teamData as TeamMember[];
 export const afterSalesTeam = afterSalesTeamData as AfterSalesTeamMember[];
+// How many cards sit on each row of the After Sales Team page, top to bottom.
+// Anyone added beyond these rows is shown on a final row.
+export const afterSalesTeamRowSizes = [2, 4, 4] as const;
 
 // After Sales section (/after-sales/*).
 export const afterSalesOverview = serviceData.overview;

@@ -1,13 +1,14 @@
 import Image from "next/image";
-import { UserRound } from "lucide-react";
 import { WhatsAppIcon } from "@/components/shared/WhatsAppIcon";
+import { site } from "@/lib/data";
 import type { AfterSalesTeamMember } from "@/lib/types";
 
-/** A card on the After Sales Team page. Same look as the sales cards, but
- * without a profile page, and the photo and contact line are optional. */
+/** A card on the After Sales Team page. Same design as the sales team card
+ * (components/team/TeamCard.tsx), but without a profile page. Someone with no
+ * photo yet gets the Hyundai logo. */
 export function AfterSalesTeamCard({ member }: { member: AfterSalesTeamMember }) {
   return (
-    <article className="group w-full max-w-[260px] shrink-0">
+    <article className="group w-full max-w-[260px] shrink-0 lg:min-w-0 lg:shrink">
       <div className="relative flex aspect-[3/4] w-full items-center justify-center overflow-hidden bg-[#f0f3f7]">
         {member.image ? (
           <Image
@@ -18,7 +19,14 @@ export function AfterSalesTeamCard({ member }: { member: AfterSalesTeamMember })
             className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
           />
         ) : (
-          <UserRound size={72} strokeWidth={1} className="text-accent/35" aria-hidden />
+          <Image
+            src={site.logo}
+            alt="Hyundai Islamabad"
+            width={523}
+            height={147}
+            sizes="260px"
+            className="h-auto w-3/5 object-contain"
+          />
         )}
       </div>
       <h3 className="mt-4 text-[16px] font-semibold text-foreground">{member.name}</h3>

@@ -1,5 +1,72 @@
 [
-  { "name": "After Sales Advisor", "role": "Service Advisor", "image": "", "whatsappHref": "", "phoneDisplay": "" },
-  { "name": "After Sales Advisor", "role": "Service Advisor", "image": "", "whatsappHref": "", "phoneDisplay": "" },
-  { "name": "After Sales Advisor", "role": "Service Advisor", "image": "", "whatsappHref": "", "phoneDisplay": "" }
+  {
+    "name": "Sikandar Babar Paracha",
+    "role": "Service Manager After Sales",
+    "image": "/images/team/sikandar-babar-paracha.png",
+    "whatsappHref": "https://wa.me/923305001904",
+    "phoneDisplay": "+92 330 5001904"
+  },
+  {
+    "name": "Fakhar Zaman Khan",
+    "role": "Parts Manager",
+    "image": "/images/team/fakhar-zaman-khan.png",
+    "whatsappHref": "https://wa.me/923305001905",
+    "phoneDisplay": "+92 330 5001905"
+  },
+  {
+    "name": "Aqeel Nawaz",
+    "role": "Service Advisor Body Shop",
+    "image": "/images/team/aqeel-nawaz.png",
+    "whatsappHref": "https://wa.me/923331150176",
+    "phoneDisplay": "+92 333 1150176"
+  },
+  {
+    "name": "Ashfaq",
+    "role": "Service Advisor Body Shop",
+    "image": "/images/team/ashfaq.png",
+    "whatsappHref": "https://wa.me/923331150177",
+    "phoneDisplay": "+92 333 1150177"
+  },
+  {
+    "name": "Aqib",
+    "role": "Warranty Advisor",
+    "image": "/images/team/aqib.png",
+    "whatsappHref": "https://wa.me/923302001487",
+    "phoneDisplay": "+92 330 2001487"
+  },
+  {
+    "name": "Ijaz Khan Niazi",
+    "role": "Warranty Advisor",
+    "image": "/images/team/ijaz-khan-niazi.png",
+    "whatsappHref": "https://wa.me/923302001487",
+    "phoneDisplay": "+92 330 2001487"
+  },
+  {
+    "name": "Shehzad",
+    "role": "Parts Executive",
+    "image": "/images/team/shehzad.png",
+    "whatsappHref": "https://wa.me/923319522374",
+    "phoneDisplay": "+92 331 9522374"
+  },
+  {
+    "name": "Muhammad Noman Khan",
+    "role": "Service Advisor Mechanical",
+    "image": "/images/team/muhammad-noman-khan.png",
+    "whatsappHref": "https://wa.me/923305001906",
+    "phoneDisplay": "+92 330 5001906"
+  },
+  {
+    "name": "Abdul Manan",
+    "role": "Service Advisor Mechanical",
+    "image": "",
+    "whatsappHref": "https://wa.me/923302001486",
+    "phoneDisplay": "+92 330 2001486"
+  },
+  {
+    "name": "Raheel Ahmed",
+    "role": "PDI Incharge",
+    "image": "/images/team/raheel-ahmed.png",
+    "whatsappHref": "https://wa.me/923331150174",
+    "phoneDisplay": "+92 333 1150174"
+  }
 ]
