@@ -114,14 +114,27 @@ export type VehicleFeature = {
   image: string;
 };
 
+export type OfferSection = {
+  heading: string;
+  text?: string;
+  table?: { columns: string[]; rows: { cells: string[] }[] };
+  note?: string;
+};
+
 export type Offer = {
   id: string;
   title: string;
   summary: string;
-  validUntil: string;
+  validity: string;
   image: string;
+  imageAlt?: string;
   href: string;
   savings?: string;
+  /** Detail page (/offers/<id>): shown only when there are sections. */
+  intro?: string;
+  sections?: OfferSection[];
+  links?: { label: string; href: string }[];
+  terms?: string[];
 };
 
 export type NewsArticle = {

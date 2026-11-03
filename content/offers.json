@@ -1,19 +1,116 @@
 [
   {
-    "id": "hybrid-promo",
-    "title": "Hybrid range promotional pricing",
-    "summary": "Ex-factory promotional prices on Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid, valid until 31 August 2026.",
-    "validUntil": "31 August 2026",
-    "image": "/images/vehicles/elantra-hybrid.webp",
-    "href": "/prices",
-    "savings": "Save up to Rs 1,403,000"
+    "id": "hybrid-free-registration",
+    "title": "Free registration and lower Easy Own charges on hybrids",
+    "summary": "Buy an Elantra Hybrid, Tucson Hybrid or Santa Fe Hybrid by 31 December 2026. Pay cash and we cover your registration up to PKR 400,000, or pay in instalments with Hyundai Easy Own and save up to PKR 380,000 in admin charges.",
+    "validity": "15 October – 31 December 2026",
+    "image": "/images/offers/q4-hybrid-campaign.webp",
+    "imageAlt": "Free registration worth up to PKR 400,000 on the Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid",
+    "href": "/offers/hybrid-free-registration",
+    "savings": "Free registration worth up to PKR 400,000",
+    "intro": "From 15 October to 31 December 2026, Hyundai's hybrid range comes with free registration for cash buyers and lower admin charges on Hyundai Easy Own instalment plans.",
+    "sections": [
+      {
+        "heading": "Free registration for cash buyers",
+        "text": "Pay cash for a new hybrid and we cover your registration, up to the amount below. It comes straight off your invoice when you book, so you don't pay it first and claim it back.",
+        "table": {
+          "columns": ["Model", "Variants", "Free registration up to"],
+          "rows": [
+            { "cells": ["Elantra Hybrid", "All", "PKR 200,000"] },
+            { "cells": ["Tucson Hybrid", "Smart FWD & Signature AWD", "PKR 300,000"] },
+            { "cells": ["Santa Fe Hybrid", "Smart FWD & Signature AWD", "PKR 400,000"] }
+          ]
+        },
+        "note": "Cash purchases only."
+      },
+      {
+        "heading": "Lower admin charges on Hyundai Easy Own",
+        "text": "Admin charges on Hyundai Easy Own instalment plans have been reduced for the hybrid range.",
+        "table": {
+          "columns": ["Model / variant", "Tenure", "Was", "Now", "You save"],
+          "rows": [
+            { "cells": ["Elantra Hybrid", "18 months", "PKR 520,000", "PKR 350,000", "PKR 170,000"] },
+            { "cells": ["Elantra Hybrid", "24 months", "PKR 450,000", "PKR 350,000", "PKR 100,000"] },
+            { "cells": ["Tucson Hybrid Smart FWD", "18 months", "PKR 450,000", "PKR 350,000", "PKR 100,000"] },
+            { "cells": ["Tucson Hybrid Smart FWD", "24 months", "PKR 670,000", "PKR 400,000", "PKR 270,000"] },
+            { "cells": ["Tucson Hybrid Signature AWD", "18 months", "PKR 630,000", "PKR 350,000", "PKR 280,000"] },
+            { "cells": ["Santa Fe Hybrid Smart FWD", "18 months", "PKR 300,000", "PKR 300,000", "Unchanged"] },
+            { "cells": ["Santa Fe Hybrid Signature AWD", "18 months", "PKR 640,000", "PKR 350,000", "PKR 290,000"] },
+            { "cells": ["Santa Fe Hybrid Signature AWD", "24 months", "PKR 930,000", "PKR 550,000", "PKR 380,000"] }
+          ]
+        }
+      },
+      {
+        "heading": "Hyundai Easy Own monthly instalments",
+        "text": "Your monthly instalment with the new admin charges included.",
+        "table": {
+          "columns": ["Model / variant", "Tenure", "Down payment", "Admin charges", "Monthly instalment"],
+          "rows": [
+            { "cells": ["Elantra Hybrid", "18 months", "40% · PKR 4,304,400", "PKR 350,000", "PKR 378,144"] },
+            { "cells": ["Elantra Hybrid", "24 months", "60% · PKR 6,456,600", "PKR 350,000", "PKR 193,933"] },
+            { "cells": ["Tucson Hybrid Smart FWD", "18 months", "50% · PKR 6,101,000", "PKR 350,000", "PKR 358,389"] },
+            { "cells": ["Tucson Hybrid Smart FWD", "24 months", "50% · PKR 6,101,000", "PKR 400,000", "PKR 270,875"] },
+            { "cells": ["Tucson Hybrid Signature AWD", "18 months", "50% · PKR 6,650,000", "PKR 350,000", "PKR 388,889"] },
+            { "cells": ["Santa Fe Hybrid Smart FWD", "18 months", "45% · PKR 5,966,100", "PKR 300,000", "PKR 421,772"] },
+            { "cells": ["Santa Fe Hybrid Signature AWD", "18 months", "45% · PKR 6,624,000", "PKR 350,000", "PKR 469,222"] },
+            { "cells": ["Santa Fe Hybrid Signature AWD", "24 months", "45% · PKR 6,624,000", "PKR 550,000", "PKR 360,250"] }
+          ]
+        },
+        "note": "Based on ex-factory prices: Elantra Hybrid PKR 10,761,000, Tucson Hybrid Smart FWD PKR 12,202,000, Tucson Hybrid Signature AWD PKR 13,300,000, Santa Fe Hybrid Smart FWD PKR 13,258,000, Santa Fe Hybrid Signature AWD PKR 14,720,000."
+      }
+    ],
+    "links": [
+      { "label": "See all EMI plans", "href": "/emi-plans" },
+      { "label": "Make an Enquiry", "href": "/enquiry" }
+    ],
+    "terms": [
+      "Valid on new orders invoiced from 15 October to 31 December 2026.",
+      "Free registration is for cash purchases only, up to PKR 200,000 on the Elantra Hybrid, PKR 300,000 on the Tucson Hybrid and PKR 400,000 on the Santa Fe Hybrid.",
+      "The registration amount is taken off your vehicle invoice when you book and cannot be more than the amount for your model.",
+      "The new Hyundai Easy Own admin charges apply as shown for each model and tenure.",
+      "Invoicing takes about 10 to 12 working days.",
+      "Freight, withholding tax, registration costs above the free amount, and any future government levies or tax changes are charged separately.",
+      "Additional sales tax, where it applies, is charged separately.",
+      "All orders are subject to Hyundai Nishat Motor (Private) Limited's standard booking (PBO) terms and conditions.",
+      "Hyundai Nishat Motor may change, extend or withdraw this offer without notice."
+    ]
   },
   {
-    "id": "elantra-limited",
-    "title": "All-new Elantra Hybrid - limited units",
-    "summary": "Pakistan’s first locally assembled hybrid sedan is available now at Hyundai Islamabad. Enquire for current allocation.",
-    "validUntil": "While stocks last",
-    "image": "/images/news/elantra-launch.jpg",
-    "href": "/models/elantra-hybrid"
+    "id": "hybrid-prices",
+    "title": "New hybrid prices at 18% sales tax",
+    "summary": "Locally assembled hybrids with engines up to 2,000cc now carry 18% sales tax, and the ex-factory prices of the Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid have been revised to match.",
+    "validity": "Until further notice",
+    "image": "/images/offers/hybrid-prices-2026.webp",
+    "imageAlt": "New hybrid ex-factory prices: Elantra Hybrid PKR 10,761,000, Tucson Hybrid from PKR 12,202,000, Santa Fe Hybrid from PKR 13,258,000",
+    "href": "/offers/hybrid-prices",
+    "savings": "Elantra Hybrid now PKR 10,761,000",
+    "intro": "The government's new sales tax rates for locally assembled hybrid cars are now confirmed: 18% for engines up to 2,000cc and 25% for engines above 2,000cc. Hyundai's Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid all fall under the 18% rate, and their ex-factory prices have been revised accordingly.",
+    "sections": [
+      {
+        "heading": "Ex-factory prices at 18% sales tax",
+        "text": "",
+        "table": {
+          "columns": ["Model / variant", "Ex-factory price"],
+          "rows": [
+            { "cells": ["Elantra Hybrid", "PKR 10,761,000"] },
+            { "cells": ["Tucson Hybrid Smart FWD", "PKR 12,202,000"] },
+            { "cells": ["Tucson Hybrid Signature AWD", "PKR 13,300,000"] },
+            { "cells": ["Santa Fe Hybrid Smart FWD", "PKR 13,258,000"] },
+            { "cells": ["Santa Fe Hybrid Signature AWD", "PKR 14,720,000"] }
+          ]
+        },
+        "note": "For the on-road price with freight and taxes, see our price list."
+      }
+    ],
+    "links": [
+      { "label": "See the full price list", "href": "/prices" },
+      { "label": "Make an Enquiry", "href": "/enquiry" }
+    ],
+    "terms": [
+      "Prices are based on the government's current sales tax structure and the duties, taxes and levies in force.",
+      "The new prices apply from the date set by Hyundai Nishat Motor (Private) Limited.",
+      "Any new or revised government duty, tax, levy, fee or charge imposed before invoicing or delivery is charged to the customer.",
+      "Hyundai Nishat Motor's standard booking, payment, invoicing, registration and delivery terms and conditions apply."
+    ]
   }
 ]

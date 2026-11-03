@@ -34,6 +34,11 @@ export type AfterSalesPageInfo = {
   hero: string;
   /** Text colour over the hero photo: "light" (white) or "dark" (black). */
   heroTone: "light" | "dark";
+  /** Put the heading at the top of the photo instead of the middle, for photos
+   * whose subject sits in the middle. */
+  heroTop?: boolean;
+  /** Without a photo: the plain panel is beige, or Hyundai blue with white text. */
+  heroBlue?: boolean;
   /** Crumbs between Home and this page. */
   parents: readonly Crumb[];
   icon: LucideIcon;
@@ -159,8 +164,9 @@ export const afterSalesPages = [
     metaTitle: "Customer Promise | Our Commitment to You",
     tagline: "Together, we promise to deliver exceptional service and exceed your expectations.",
     summary: "The commitments we make to you every time you visit our workshop.",
-    hero: "",
-    heroTone: "dark",
+    hero: "/images/after-sales/customer-promise-hero.webp",
+    heroTone: "light",
+    heroTop: true,
     parents: [AFTER_SALES],
     icon: HeartHandshake,
   },
@@ -226,6 +232,7 @@ export const afterSalesPages = [
     summary: "Request an appointment at our I-9/3 workshop online.",
     hero: "",
     heroTone: "dark",
+    heroBlue: true,
     parents: [AFTER_SALES],
     icon: CalendarCheck,
   },

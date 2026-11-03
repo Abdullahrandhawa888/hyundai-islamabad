@@ -100,6 +100,11 @@ export const electricModels = vehicles.filter(
 
 export const offers = offersData as Offer[];
 
+/** Offers with their own detail page at /offers/<id>. */
+export function getOffer(id: string) {
+  return offers.find((offer) => offer.id === id && offer.sections?.length);
+}
+
 // Interest-free installment plans. Figures (advance amount, freight,
 // insurance, tax, admin charges, monthly cheque) come from bank/leasing
 // partner flyers supplied by the dealership and are set by them, not

@@ -52,6 +52,37 @@ const lockedSlug: FieldHint = {
   help: "Part of this item's page link. Changing it breaks links people have saved or shared, so only change it if you have to.",
 };
 
+const offerHints: FieldHints = {
+  "": { addLabel: "Add offer" },
+  "[]": {
+    groups: [
+      { title: "Card", fields: ["title", "summary", "validity", "savings", "image", "imageAlt", "href"] },
+      { title: "Offer page", fields: ["intro", "sections", "links", "terms"] },
+    ],
+    summary: (item) => ({
+      title: typeof item.title === "string" ? item.title : undefined,
+      detail: typeof item.validity === "string" ? `Valid: ${item.validity}` : undefined,
+    }),
+  },
+  "[].id": lockedSlug,
+  "[].title": { label: "Title" },
+  "[].summary": { label: "Summary", control: "textarea", help: "Shown on the Offers page card." },
+  "[].validity": { label: "Valid", help: 'e.g. "15 October – 31 December 2026" or "Until further notice".' },
+  "[].savings": { label: "Highlight", help: "One line in blue, e.g. the biggest saving." },
+  "[].image": { label: "Picture", help: "3:2 picture at 2400 x 1600 for sharp text. Shown whole and never compressed, so text on it is safe." },
+  "[].imageAlt": { label: "Picture description", help: "What the picture says, for screen readers." },
+  "[].href": { label: "Find Out More link", help: "Usually /offers/ followed by the web address above." },
+  "[].intro": { label: "Introduction", control: "textarea", help: "Top of the offer page." },
+  "[].sections": { label: "Sections", addLabel: "Add section", help: "Each section is a heading, text and an optional table." },
+  "[].sections[].text": { control: "textarea" },
+  "[].sections[].table.columns": { label: "Column headings", addLabel: "Add column" },
+  "[].sections[].table.rows": { label: "Rows", addLabel: "Add row" },
+  "[].sections[].table.rows[].cells": { label: "Cells", help: "One per column, in the same order.", addLabel: "Add cell" },
+  "[].sections[].note": { label: "Small print", help: "Grey line under the table." },
+  "[].links": { label: "Buttons", addLabel: "Add button" },
+  "[].terms": { label: "Terms & Conditions", addLabel: "Add term" },
+};
+
 const vehicleHints: FieldHints = {
   "": { addLabel: "Add vehicle" },
   "[]": {
@@ -377,7 +408,7 @@ export const FIELD_HINTS: Record<string, FieldHints> = {
   news: newsHints,
   site: siteHints,
   nav: navHints,
-  offers: { "": { addLabel: "Add offer" } },
+  offers: offerHints,
   accessories: {
     intro: { label: "Introduction", control: "textarea", help: "Shown above the products." },
     orderNote: { label: "Order note", control: "textarea", help: "Pick-up and payment terms shown next to the reservation form." },

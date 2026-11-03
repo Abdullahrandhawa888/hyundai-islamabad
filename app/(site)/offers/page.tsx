@@ -17,21 +17,30 @@ export default function OffersPage() {
           { label: "Homepage", href: "/" },
           { label: "Offers" },
         ]}
-        image="/images/vehicles/offers-banner.png"
-        imagePosition="object-left md:object-center"
+        image="/images/offers/offers-hero.webp"
+        unoptimized
       />
       <section className="mx-auto max-w-6xl space-y-8 px-5 py-14 md:px-8">
         {offers.map((offer) => (
           <article
             key={offer.id}
-            className="grid overflow-hidden border border-line md:grid-cols-[1.1fr_1fr]"
+            className="grid overflow-hidden border border-line md:grid-cols-[1.1fr_1fr] md:items-center"
           >
-            <div className="relative min-h-[220px]">
-              <Image src={offer.image} alt={offer.title} fill className="object-cover" />
+            {/* Offer pictures carry text: shown whole (3:2) and served as the original
+                2400px file (unoptimized), so the text stays sharp on every screen. */}
+            <div className="relative aspect-[3/2]">
+              <Image
+                src={offer.image}
+                alt={offer.imageAlt || offer.title}
+                unoptimized
+                fill
+                sizes="(min-width: 1152px) 570px, (min-width: 768px) 52vw, 100vw"
+                className="object-cover"
+              />
             </div>
             <div className="p-8">
               <p className="text-[12px] tracking-wide text-muted uppercase">
-                Valid: {offer.validUntil}
+                Valid: {offer.validity}
               </p>
               <h2 className="mt-2 text-2xl font-light">{offer.title}</h2>
               <p className="mt-4 text-[14px] leading-7 text-[#444]">{offer.summary}</p>

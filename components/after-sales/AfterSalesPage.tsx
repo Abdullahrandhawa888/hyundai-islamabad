@@ -60,7 +60,11 @@ export function AfterSalesPage({
 
       <section className="mx-auto max-w-[1320px] md:px-6">
         {page.hero ? (
-          <div className="relative flex min-h-[260px] items-center overflow-hidden md:min-h-[370px]">
+          <div
+            className={`relative flex min-h-[260px] overflow-hidden md:min-h-[370px] ${
+              page.heroTop ? "items-start" : "items-center"
+            }`}
+          >
             <Image
               src={page.hero}
               alt=""
@@ -68,9 +72,11 @@ export function AfterSalesPage({
               sizes="(min-width: 1320px) 1272px, 100vw"
               className="object-cover"
               priority
+              unoptimized
             />
             {dark ? null : <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent" />}
-            <div className="relative mx-auto w-full max-w-6xl px-5 py-10 md:px-8">
+            {page.heroTop ? <div className="absolute inset-0 bg-gradient-to-b from-black/35 to-transparent to-60%" /> : null}
+            <div className={`relative mx-auto w-full max-w-6xl px-5 md:px-8 ${page.heroTop ? "pt-8 pb-10 md:pt-10" : "py-10"}`}>
               <h1
                 className={`max-w-3xl text-4xl leading-tight font-semibold md:text-[52px] ${
                   dark ? "text-foreground" : "text-white"
@@ -84,7 +90,9 @@ export function AfterSalesPage({
             </div>
           </div>
         ) : (
-          <div className="bg-[#f6f3f2] px-5 py-14 text-center md:py-20">
+          <div
+            className={`px-5 py-14 text-center md:py-20 ${page.heroBlue ? "bg-navy text-white" : "bg-[#f6f3f2]"}`}
+          >
             <h1 className="text-4xl leading-tight font-semibold md:text-[56px]">{heading}</h1>
             <p className="mx-auto mt-5 max-w-3xl text-[16px] leading-7 md:text-[18px]">{lead}</p>
           </div>

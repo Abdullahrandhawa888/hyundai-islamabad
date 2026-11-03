@@ -11,6 +11,8 @@ type PageHeroProps = {
   /** On wide screens, show the photo on the right with the title on navy.
    * For photos whose subject would be cut off by a full-width crop. */
   imageRight?: boolean;
+  /** Serve the original file at full resolution instead of a resized copy. */
+  unoptimized?: boolean;
 };
 
 export function PageHero({
@@ -21,6 +23,7 @@ export function PageHero({
   compact = false,
   imagePosition = "object-center",
   imageRight = false,
+  unoptimized = false,
 }: PageHeroProps) {
   return (
     <section
@@ -36,6 +39,7 @@ export function PageHero({
           sizes={imageRight ? "(min-width: 1024px) 52vw, 100vw" : "100vw"}
           className={`object-cover ${imagePosition} transition-transform duration-[8000ms] ease-out hover:scale-105`}
           priority
+          unoptimized={unoptimized}
         />
         {imageRight ? (
           // Blends the photo's left edge into the navy panel behind the title.
