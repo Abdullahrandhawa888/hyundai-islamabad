@@ -62,16 +62,23 @@ export const CONTENT_REGISTRY = {
   "after-sales-team": {
     path: "content/after-sales-team.json",
     label: "After Sales team",
-    description: "Cards on the After Sales Team page: names, roles, photos and contact numbers.",
+    description: "After Sales Team cards and profile pages: names, roles, photos, bios and contact numbers.",
     group: "Website pages",
     viewHref: "/after-sales-team",
   },
   service: {
     path: "content/service.json",
     label: "After Sales pages",
-    description: "Warranty, free services, maintenance chart, manuals and more.",
+    description: "Warranty, extended warranty, free services, maintenance charts, manuals, facility and more.",
     group: "Website pages",
     viewHref: "/after-sales",
+  },
+  parts: {
+    path: "content/parts.json",
+    label: "Genuine parts & lubricants",
+    description: "Genuine Parts, Other Parts, Hyundai-Shell lubricants and N-Sprint engine oil pages.",
+    group: "Website pages",
+    viewHref: "/after-sales/genuine-parts",
   },
   about: {
     path: "content/about.json",

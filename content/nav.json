@@ -11,16 +11,19 @@
   },
   {
     "label": "After Sales",
-    "href": "/after-sales",
-    "image": "/images/after-sales/manual-santa-fe-hybrid.png",
     "children": [
-      { "label": "Warranty T&Cs", "href": "/after-sales/warranty", "group": "Warranty Terms & Conditions" },
-      { "label": "Customer Promise", "href": "/after-sales/customer-promise", "group": "Hyundai ISB Service" },
-      { "label": "Dealership Facility", "href": "/after-sales/dealership-facility", "group": "Hyundai ISB Service" },
-      { "label": "Free Services", "href": "/after-sales/free-services", "group": "Hyundai ISB Service" },
-      { "label": "Periodic Maintenance Charts", "href": "/after-sales/maintenance-charts", "group": "Hyundai ISB Service" },
-      { "label": "Owner’s Manual", "href": "/after-sales/owners-manual", "group": "Hyundai ISB Service" },
-      { "label": "Book a Service", "href": "/after-sales/book-a-service", "group": "Service Appointment" }
+      { "label": "Conditions", "href": "/after-sales/warranty", "group": "Warranty" },
+      { "label": "Extended Warranty", "href": "/after-sales/extended-warranty", "group": "Warranty" },
+      { "label": "Genuine Parts", "href": "/after-sales/genuine-parts", "group": "Parts & Accessories" },
+      { "label": "Lubricants", "href": "/after-sales/lubricants", "group": "Parts & Accessories" },
+      { "label": "Hyundai-Shell Co-branded", "href": "/after-sales/lubricants", "group": "Parts & Accessories", "sub": true },
+      { "label": "N-Sprint (Nishat Genuine Engine Oil)", "href": "/after-sales/n-sprint", "group": "Parts & Accessories", "sub": true },
+      { "label": "Customer Promise", "href": "/after-sales/customer-promise", "group": "Hyundai Service" },
+      { "label": "Dealership Facility", "href": "/after-sales/dealership-facility", "group": "Hyundai Service" },
+      { "label": "Free Services", "href": "/after-sales/free-services", "group": "Hyundai Service" },
+      { "label": "Periodic Maintenance Charts", "href": "/after-sales/maintenance-charts", "group": "Hyundai Service" },
+      { "label": "Owner’s Manual", "href": "/after-sales/owners-manual", "group": "Hyundai Service" },
+      { "label": "Service Appointment", "href": "/after-sales/book-a-service", "group": "Service Appointment Request" }
     ]
   },
   {

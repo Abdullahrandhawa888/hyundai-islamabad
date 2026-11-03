@@ -4,6 +4,8 @@ export type NavLink = {
   /** Heading this link is listed under in its dropdown. Links with no group
    * render as a plain list, like the Offers & Plans menu. */
   group?: string;
+  /** Shown indented under the link above it, with a ↳ arrow. */
+  sub?: boolean;
 };
 
 export type NavItem = {
@@ -255,11 +257,14 @@ export type AccessoriesPage = {
   products: AccessoryProduct[];
 };
 
-/** A card on the After Sales Team page. Photo and contact details are optional. */
+/** A card on the After Sales Team page, with its own profile page at
+ * /after-sales-team/<slug>. Photo and contact details are optional. */
 export type AfterSalesTeamMember = {
+  slug: string;
   name: string;
   role: string;
   image: string;
   whatsappHref: string;
   phoneDisplay: string;
+  bio: string;
 };

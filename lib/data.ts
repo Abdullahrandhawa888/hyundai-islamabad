@@ -8,6 +8,7 @@ import homeData from "@/content/home.json";
 import navData from "@/content/nav.json";
 import newsData from "@/content/news.json";
 import offersData from "@/content/offers.json";
+import partsData from "@/content/parts.json";
 import priceListData from "@/content/price-list.json";
 import serviceData from "@/content/service.json";
 import siteData from "@/content/site.json";
@@ -125,19 +126,64 @@ export const news = newsData as NewsArticle[];
 export const teamRowSizes = [2, 3, 2, 1] as const;
 
 export const team = teamData as TeamMember[];
-export const afterSalesTeam = afterSalesTeamData as AfterSalesTeamMember[];
+// Someone added in /admin without a web address still gets a profile page,
+// with one made from their name.
+export const afterSalesTeam = (afterSalesTeamData as Partial<AfterSalesTeamMember>[]).map(
+  (member): AfterSalesTeamMember => ({
+    name: "",
+    role: "",
+    image: "",
+    whatsappHref: "",
+    phoneDisplay: "",
+    bio: "",
+    ...member,
+    slug:
+      member.slug ||
+      (member.name ?? "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, ""),
+  }),
+);
 // How many cards sit on each row of the After Sales Team page, top to bottom.
 // Anyone added beyond these rows is shown on a final row.
 export const afterSalesTeamRowSizes = [2, 4, 4] as const;
 
 // After Sales section (/after-sales/*).
 export const afterSalesOverview = serviceData.overview;
+export const workshopServices = serviceData.services;
 export const dealershipFacility = serviceData.facility;
 export const ownerManuals = serviceData.ownerManuals;
 export const customerPromise = serviceData.customerPromise;
 export const maintenanceCharts = serviceData.maintenanceCharts;
 export const freeServices = serviceData.freeServices;
 export const warranty = serviceData.warranty;
+export const extendedWarranty = serviceData.extendedWarranty;
+
+// Genuine parts and lubricants (/after-sales/genuine-parts, /lubricants, /n-sprint).
+const toSlug = (text: string) =>
+  text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+// A part added in /admin without a web address gets one made from its name.
+export const genuineParts = {
+  ...partsData.genuineParts,
+  parts: partsData.genuineParts.parts.map((part) => ({ ...part, slug: part.slug || toSlug(part.name) })),
+  otherParts: partsData.genuineParts.otherParts.map((part) => ({
+    ...part,
+    slug: part.slug || toSlug(part.name),
+    title: part.title || part.name,
+  })),
+};
+export const lubricants = partsData.lubricants;
+export const nSprint = partsData.nSprint;
+
+export function getGenuinePart(slug: string) {
+  return genuineParts.parts.find((part) => part.slug === slug);
+}
+
+export function getOtherPart(slug: string) {
+  return genuineParts.otherParts.find((part) => part.slug === slug);
+}
 
 export const aboutParagraphs = aboutData;
 
@@ -148,21 +194,16 @@ export const modelOptions: FormOption[] = vehicles.map((vehicle) => ({
 
 // Every model the workshop services, including ones no longer on sale, so
 // this is deliberately not derived from `vehicles` (the current price list).
+// "Model Name" on the booking form, as on hyundai-nishat.com.
 export const serviceModelOptions: FormOption[] = [
   { label: "Elantra", value: "elantra" },
-  { label: "Elantra Hybrid", value: "elantra-hybrid" },
   { label: "Sonata", value: "sonata" },
-  { label: "Sonata N Line", value: "sonata-n-line" },
   { label: "Tucson", value: "tucson" },
-  { label: "Tucson Hybrid", value: "tucson-hybrid" },
-  { label: "Santa Fe Hybrid", value: "santa-fe-hybrid" },
-  { label: "Palisade", value: "palisade" },
-  { label: "IONIQ Hybrid", value: "ioniq" },
-  { label: "IONIQ 5", value: "ioniq-5" },
-  { label: "IONIQ 6", value: "ioniq-6" },
-  { label: "Staria", value: "staria" },
-  { label: "Grand Starex", value: "starex" },
   { label: "Porter", value: "porter" },
+  { label: "Starex", value: "starex" },
+  { label: "Staria", value: "staria" },
+  { label: "Santa Fe", value: "santa-fe" },
+  { label: "Ioniq", value: "ioniq" },
   { label: "Other", value: "other" },
 ];
 
@@ -180,6 +221,8 @@ export function getServiceYearOptions(now = new Date()): FormOption[] {
   return options;
 }
 
+/** "Service type" on the booking form, as on hyundai-nishat.com. Links can
+ * pre-select one with ?type=<value>, e.g. ?type=free. */
 export const serviceTypes: FormOption[] = [
   { label: "General", value: "general" },
   { label: "Periodic Maintenance", value: "periodic" },
@@ -340,6 +383,10 @@ export function getNews(slug: string) {
 
 export function getTeamMember(slug: string) {
   return team.find((member) => member.slug === slug);
+}
+
+export function getAfterSalesTeamMember(slug: string) {
+  return afterSalesTeam.find((member) => member.slug === slug);
 }
 
 export function vehiclesByRange(range: VehicleRange) {

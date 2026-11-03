@@ -1,0 +1,456 @@
+{
+  "genuineParts": {
+    "tagline": "Your Partner in Parts and Service.",
+    "banner": "/images/after-sales/parts/genuine-parts-banner.webp",
+    "diagram": "/images/after-sales/parts/car-diagram.webp",
+    "heading": "Genuine Parts",
+    "intro": [
+      "Hyundai Genuine Parts are designed and engineered specifically for your Hyundai. Over the years, significant investments in R&D have been made to study the design, material selection and internal construction of Hyundai Genuine Parts.",
+      "These fit-first-time, production quality parts are tested under various simulated extreme conditions to ensure quality, reliability and durability. For peace of mind, always insist on Hyundai Genuine Parts."
+    ],
+    "parts": [
+      {
+        "slug": "air-filter",
+        "name": "Air Filter",
+        "summary": "The engine air filter removes dust and other foreign matter from the air and reduces air intake noise.",
+        "function": "The engine needs an exact mixture of fuel and air in order to run. All of the air enters the system first through the air filter. This catches the dirt and other foreign particles in the air, preventing them from entering the system and possibly damaging the engine.",
+        "card": "/images/after-sales/parts/airfilter-card.webp",
+        "diagram": "/images/after-sales/parts/airfilter-diagram.webp",
+        "detail": "/images/after-sales/parts/airfilter-detail.webp",
+        "video": "/videos/genuine-parts/air-filter.mp4",
+        "hotspotX": 28.3,
+        "hotspotY": 38.4
+      },
+      {
+        "slug": "brake-pad",
+        "name": "Brake Pad",
+        "summary": "The brake pad grips the disc brake to produce a stopping force.",
+        "function": "Brake pads are steel backing plates with friction materials bound to the surface that faces the disc brake rotor. It transmits the pressure applied to the brake pedal to the wheels and stops or decelerates the motion of the vehicle.",
+        "card": "/images/after-sales/parts/brakepad-card.webp",
+        "diagram": "/images/after-sales/parts/brakepad-diagram.webp",
+        "detail": "/images/after-sales/parts/brakepad-detail.webp",
+        "video": "/videos/genuine-parts/brake-pad.mp4",
+        "hotspotX": 52.8,
+        "hotspotY": 75.5
+      },
+      {
+        "slug": "cabin-air-filter",
+        "name": "Cabin Air Filter",
+        "summary": "The cabin air filter cleans the air that comes into the interior through the heating, ventilation and air conditioning system.",
+        "function": "Dust captured in any cabin air filter causes a gradual reduction in airflow over the working life of the part, resulting in a loss of engine performance and poor fuel consumption. Its function is also to provide optimal air flow to the engine.",
+        "card": "/images/after-sales/parts/cabinairfilter-card.webp",
+        "diagram": "/images/after-sales/parts/cabinairfilter-diagram.webp",
+        "detail": "/images/after-sales/parts/cabinairfilter-detail.webp",
+        "video": "/videos/genuine-parts/cabin-air-filter.mp4",
+        "hotspotX": 44,
+        "hotspotY": 50.8
+      },
+      {
+        "slug": "fuel-filter",
+        "name": "Fuel Filter",
+        "summary": "The fuel filter prevents the fuel pump from clogging and malfunctioning by removing impurities such as dust and steel particles.",
+        "function": "The fuel filter prevents abrasion inside cylinders, particularly in the upper sections. If the fuel filter is not replaced regularly, it may become clogged with contaminants and cause a restriction in the fuel flow, causing a significant drop in engine performance.",
+        "card": "/images/after-sales/parts/fuelfilter-card.webp",
+        "diagram": "/images/after-sales/parts/fuelfilter-diagram.webp",
+        "detail": "/images/after-sales/parts/fuelfilter-detail.webp",
+        "video": "/videos/genuine-parts/fuel-filter.mp4",
+        "hotspotX": 17.1,
+        "hotspotY": 36
+      },
+      {
+        "slug": "oil-filter",
+        "name": "Oil Filter",
+        "summary": "The inner filter paper strains the engine oil and removes contaminants, keeping the engine oil clean.",
+        "function": "As the oil circulates through the engine, it becomes contaminated over time. An oil filter will remove these impurities, in order to ensure smooth engine operation.",
+        "card": "/images/after-sales/parts/oilfilter-card.webp",
+        "diagram": "/images/after-sales/parts/oilfilter-diagram.webp",
+        "detail": "/images/after-sales/parts/oilfilter-detail.webp",
+        "video": "/videos/genuine-parts/oil-filter.mp4",
+        "hotspotX": 18.1,
+        "hotspotY": 68.1
+      },
+      {
+        "slug": "timing-belt",
+        "name": "Timing Belt",
+        "summary": "A timing belt controls the camshafts in your engine, opening and closing valves at just the right time for smooth operation.",
+        "function": "The timing belt must be properly calibrated in order to move in sequence with the motion of the pistons. Regardless of what type of motor is present in your vehicle, a failure in the timing belt will cause the engine to suddenly stop. Timing belts are present in engines with overhead cams and are essential to keep these cams turning at the right time in order to keep the engine running.",
+        "card": "/images/after-sales/parts/timingbelt-card.webp",
+        "diagram": "/images/after-sales/parts/timingbelt-diagram.webp",
+        "detail": "/images/after-sales/parts/timingbelt-detail.webp",
+        "video": "/videos/genuine-parts/timing-belt.mp4",
+        "hotspotX": 20.5,
+        "hotspotY": 53.7
+      }
+    ],
+    "comparisonQuestion": "Which One Would You Install?",
+    "comparisonAnswer": "Hyundai Genuine Parts?",
+    "comparison": [
+      {
+        "name": "Oil filter",
+        "image": "/images/after-sales/parts/compare-oil-filter.webp"
+      },
+      {
+        "name": "Timing belt",
+        "image": "/images/after-sales/parts/compare-timing-belt.webp"
+      },
+      {
+        "name": "Air filter",
+        "image": "/images/after-sales/parts/compare-air-filter.webp"
+      },
+      {
+        "name": "Fuel filter",
+        "image": "/images/after-sales/parts/compare-fuel-filter.webp"
+      },
+      {
+        "name": "Brake pad",
+        "image": "/images/after-sales/parts/compare-brake-pad.webp"
+      },
+      {
+        "name": "Air conditioner filter",
+        "image": "/images/after-sales/parts/compare-air-conditioner-filter.webp"
+      }
+    ],
+    "otherParts": [
+      {
+        "slug": "arm-complete-fr-lwr-lh",
+        "name": "ARM COMPLETE-FR LWR, LH",
+        "title": "Arm Complete-FR LWR, LH",
+        "image": "/images/after-sales/parts/other/p1.webp"
+      },
+      {
+        "slug": "bearing-fr-wheel-hub",
+        "name": "BEARING-FR WHEEL HUB",
+        "title": "Bearing-FR Wheel Hub",
+        "image": "/images/after-sales/parts/other/p2.webp"
+      },
+      {
+        "slug": "belt-chain",
+        "name": "BELT-CHAIN",
+        "title": "Belt-Chain",
+        "image": "/images/after-sales/parts/other/p3.webp"
+      },
+      {
+        "slug": "cover-assy-clutch",
+        "name": "COVER ASSY-CLUTCH",
+        "title": "Cover Assy-Clutch",
+        "image": "/images/after-sales/parts/other/p5.webp"
+      },
+      {
+        "slug": "cover-fr-bumper",
+        "name": "COVER-FR BUMPER",
+        "title": "Cover-FR Bumper",
+        "image": "/images/after-sales/parts/other/p6.webp"
+      },
+      {
+        "slug": "cover-rr-bumper",
+        "name": "COVER-RR BUMPER",
+        "title": "Cover-RR Bumper",
+        "image": "/images/after-sales/parts/other/p7.webp"
+      },
+      {
+        "slug": "disc-assy-clutch",
+        "name": "DISC ASSY-CLUTCH",
+        "title": "Disc Assy-Clutch",
+        "image": "/images/after-sales/parts/other/p8.webp"
+      },
+      {
+        "slug": "disc-fr-wheel-brake",
+        "name": "DISC-FR WHEEL BRAKE",
+        "title": "Disc-FR Wheel Brake",
+        "image": "/images/after-sales/parts/other/p9.webp"
+      },
+      {
+        "slug": "generation-assy",
+        "name": "GENERATION ASSY",
+        "title": "Generation Assy",
+        "image": "/images/after-sales/parts/other/p14.webp"
+      },
+      {
+        "slug": "grille-assy-radiator",
+        "name": "GRILLE ASSY-RADIATOR",
+        "title": "Grille Assy-Radiator",
+        "image": "/images/after-sales/parts/other/p15.webp"
+      },
+      {
+        "slug": "injector-assy-fuel",
+        "name": "INJECTOR ASSY FUEL",
+        "title": "Injector Assy Fuel",
+        "image": "/images/after-sales/parts/other/p16.webp"
+      },
+      {
+        "slug": "joint-assy-cv-lh",
+        "name": "JOINT ASSY-CV, LH",
+        "title": "Joint Assy-CV, LH",
+        "image": "/images/after-sales/parts/other/p17.webp"
+      },
+      {
+        "slug": "lamp-assy-fr-fog-lh",
+        "name": "LAMP ASSY-FR FOG, LH",
+        "title": "Lamp Assy-FR Fog, LH",
+        "image": "/images/after-sales/parts/other/p18.webp"
+      },
+      {
+        "slug": "lamp-assy-head-lh",
+        "name": "LAMP ASSY-HEAD, LH",
+        "title": "Lamp Assy-Head, LH",
+        "image": "/images/after-sales/parts/other/p19.webp"
+      },
+      {
+        "slug": "lamp-assy-rr-comb-os-lh",
+        "name": "LAMP ASSY-RR COMB OS, LH",
+        "title": "Lamp Assy-RR Comb OS, LH",
+        "image": "/images/after-sales/parts/other/p20.webp"
+      },
+      {
+        "slug": "muffler-assy-rr",
+        "name": "MUFFLER ASSY-RR",
+        "title": "Muffler Assy-RR",
+        "image": "/images/after-sales/parts/other/p22.webp"
+      },
+      {
+        "slug": "plug-assy-spark",
+        "name": "PLUG ASSY-SPARK",
+        "title": "Plug Assy-Spark",
+        "image": "/images/after-sales/parts/other/p27.webp"
+      },
+      {
+        "slug": "plug-glow",
+        "name": "PLUG-GLOW",
+        "title": "Plug-Glow",
+        "image": "/images/after-sales/parts/other/p28.webp"
+      },
+      {
+        "slug": "pump-assy-coolant",
+        "name": "PUMP ASSY-COOLANT",
+        "title": "Pump Assy-Coolant",
+        "image": "/images/after-sales/parts/other/p29.webp"
+      },
+      {
+        "slug": "radiator-assy",
+        "name": "RADIATOR ASSY",
+        "title": "Radiator Assy",
+        "image": "/images/after-sales/parts/other/p30.webp"
+      },
+      {
+        "slug": "shock-absorber-assy-fr-lh",
+        "name": "SHOCK ABSORBER ASSY-FR, LH",
+        "title": "Shock Absorber Assy-FR, LH",
+        "image": "/images/after-sales/parts/other/p31.webp"
+      },
+      {
+        "slug": "tensioner-assy-timing-chain",
+        "name": "TENSIONER ASSY-TIMING CHAIN",
+        "title": "Tensioner Assy-Timing Chain",
+        "image": "/images/after-sales/parts/other/p32.webp"
+      },
+      {
+        "slug": "turbo-charger",
+        "name": "TURBO CHARGER",
+        "title": "Turbo Charger",
+        "image": "/images/after-sales/parts/other/p33.webp"
+      },
+      {
+        "slug": "v-ribbed-belt",
+        "name": "V-RIBBED BELT",
+        "title": "V-Ribbed Belt",
+        "image": "/images/after-sales/parts/other/p34.webp"
+      }
+    ],
+    "otherPartsLead": "Genuine Hyundai {part} designed and rigorously tested to ensure optimum performance.",
+    "otherPartsBody": "The quality of the {part} cannot be judged merely by appearance. Only Genuine Hyundai {part} is designed and engineered specifically for your Hyundai vehicle; for trouble-free driving, always ask for genuine Hyundai {part}.",
+    "disclaimer": "Some photos in this web have been taken under controlled conditions while others have not. Colors and images displayed are subjected to viewing screens and are approximations only. Images displayed in this web may differ slightly from the actual color and products specifications.",
+    "logo": "/images/after-sales/parts/genuine-parts-logo.webp",
+    "assistance": "Need Assistance? Contact Your Nearest Dealer"
+  },
+  "lubricants": {
+    "intro": "Keep your engine running smoothly with our high-quality lubricants.",
+    "sectionTitle": "Hyundai-shell co-branded lubricants",
+    "products": [
+      {
+        "name": "Shell Helix HX7 AH SP 5W-30",
+        "description": "Next-generation Co-branded lubricant Hyundai-shell helix HX7 AH SP 5W-30 fully synthetic, specially formulated and built to keep the Hyundai vehicle’s engine running at full performance and it is designed to meet the demanding requirements of particular high-performance engines.",
+        "benefits": [
+          "Better cleansing power",
+          "Less engine wear",
+          "Better low-temperature flow",
+          "Reduced oil consumption",
+          "Better oxidation stability"
+        ],
+        "image": "/images/after-sales/lubricants/shell-helix-hx7.webp"
+      },
+      {
+        "name": "Shell Helix Ultra 0W20 AH",
+        "description": "Is specifically formulated to match the operation temperatures and pressure profiles of Hyundai Engines making them uniquely suited for reliability, efficiency and extended engine life.",
+        "benefits": [
+          "Helps Hyundai’s high-performance engines",
+          "Provides complete protection against weather",
+          "Reduces friction for better component life",
+          "Superior wear and corrosion protection",
+          "Exceptional sludge control"
+        ],
+        "image": "/images/after-sales/lubricants/shell-helix-ultra.webp"
+      }
+    ],
+    "tableTitle": "Models",
+    "models": [
+      "Elantra",
+      "Tucson",
+      "Sonata",
+      "Sonata FL",
+      "Santa Fe HEV",
+      "Elantra HEV",
+      "Tucson HEV",
+      "Staria",
+      "Porter H-100"
+    ],
+    "rows": [
+      {
+        "name": "Hyundai Shell Helix HX7 AH SP 5W-30",
+        "fits": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "name": "Shell Helix Ultra SP 0W-20",
+        "fits": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "Shell Rimula R2 Extra 20W-50",
+        "fits": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "name": "Hyundai Shell Prote SP 0W-30",
+        "fits": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  "nSprint": {
+    "name": "N-Sprint (Nishat Genuine Engine Oil)",
+    "intro": "Keep your engine running smoothly with our high-quality lubricants.",
+    "banner": "/images/after-sales/lubricants/n-sprint-banner.webp",
+    "highlightTitle": "Product Highlight:",
+    "highlight": "N-Sprint is a high-performance engine oil range formulated to meet the requirements of modern gasoline and diesel engines operating under diverse driving conditions, providing reliable lubrication, optimized engine protection.",
+    "specs": [
+      {
+        "label": "Standard Compliance",
+        "value": "API SP / ILSAC GF-6A (Highest Standard)"
+      },
+      {
+        "label": "Technology",
+        "value": "Fully Synthetic Formulation"
+      },
+      {
+        "label": "Recommended Models",
+        "value": "All Hyundai & other models"
+      }
+    ],
+    "tableTitle": "Available in extended range:",
+    "models": [
+      "Elantra",
+      "Tucson",
+      "Sonata",
+      "Sonata FL",
+      "Santa Fe HEV",
+      "Elantra HEV",
+      "Tucson HEV",
+      "Staria",
+      "Porter H-100"
+    ],
+    "rows": [
+      {
+        "name": "N-Sprint SP/GF-6A 5W30",
+        "fits": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "name": "N-Sprint SP/GF-6A 0W20",
+        "fits": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "N-Sprint SP/GF-6A 0W30",
+        "fits": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "N-Sprint API CI-4 15W40",
+        "fits": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
+  }
+}

@@ -1,72 +1,92 @@
 [
   {
+    "slug": "sikandar-babar-paracha",
     "name": "Sikandar Babar Paracha",
     "role": "Service Manager After Sales",
     "image": "/images/team/sikandar-babar-paracha.png",
     "whatsappHref": "https://wa.me/923305001904",
-    "phoneDisplay": "+92 330 5001904"
+    "phoneDisplay": "+92 330 5001904",
+    "bio": "Sikandar leads the after sales department at Hyundai Islamabad, overseeing the workshop, body shop, parts and warranty teams. He makes sure every vehicle is serviced to Hyundai standards and that every customer leaves happy with the work and the price."
   },
   {
+    "slug": "fakhar-zaman-khan",
     "name": "Fakhar Zaman Khan",
     "role": "Parts Manager",
     "image": "/images/team/fakhar-zaman-khan.png",
     "whatsappHref": "https://wa.me/923305001905",
-    "phoneDisplay": "+92 330 5001905"
+    "phoneDisplay": "+92 330 5001905",
+    "bio": "Fakhar manages the parts department, keeping genuine Hyundai parts and accessories in stock for the workshop and for customers. He makes sure the right part is available quickly, so your car spends less time off the road."
   },
   {
+    "slug": "aqeel-nawaz",
     "name": "Aqeel Nawaz",
     "role": "Service Advisor Body Shop",
     "image": "/images/team/aqeel-nawaz.png",
     "whatsappHref": "https://wa.me/923331150176",
-    "phoneDisplay": "+92 333 1150176"
+    "phoneDisplay": "+92 333 1150176",
+    "bio": "Aqeel looks after body shop customers, from accident repairs and dent work to paint jobs. He inspects the damage, explains the repair and the cost in plain terms, and keeps you updated until your car is back to how it should look."
   },
   {
+    "slug": "ashfaq",
     "name": "Ashfaq",
     "role": "Service Advisor Body Shop",
     "image": "/images/team/ashfaq.png",
     "whatsappHref": "https://wa.me/923331150177",
-    "phoneDisplay": "+92 333 1150177"
+    "phoneDisplay": "+92 333 1150177",
+    "bio": "Ashfaq is a body shop service advisor who helps customers with accident repairs, insurance claims and paint work. He coordinates with the body shop technicians so repairs are done properly and handed back on time."
   },
   {
+    "slug": "aqib",
     "name": "Aqib",
     "role": "Warranty Advisor",
     "image": "/images/team/aqib.png",
     "whatsappHref": "https://wa.me/923302001487",
-    "phoneDisplay": "+92 330 2001487"
+    "phoneDisplay": "+92 330 2001487",
+    "bio": "Aqib handles warranty claims at Hyundai Islamabad. If something on your Hyundai needs attention under warranty, he checks your cover, explains what is included and takes care of the claim with Hyundai Nishat Motor for you."
   },
   {
+    "slug": "ijaz-khan-niazi",
     "name": "Ijaz Khan Niazi",
     "role": "Warranty Advisor",
     "image": "/images/team/ijaz-khan-niazi.png",
     "whatsappHref": "https://wa.me/923302001487",
-    "phoneDisplay": "+92 330 2001487"
+    "phoneDisplay": "+92 330 2001487",
+    "bio": "Ijaz is a warranty advisor who helps customers understand their Hyundai warranty and get covered repairs done without hassle. He looks after the paperwork so you don't have to."
   },
   {
+    "slug": "shehzad",
     "name": "Shehzad",
     "role": "Parts Executive",
     "image": "/images/team/shehzad.png",
     "whatsappHref": "https://wa.me/923319522374",
-    "phoneDisplay": "+92 331 9522374"
+    "phoneDisplay": "+92 331 9522374",
+    "bio": "Shehzad works in the parts department, helping workshop technicians and walk-in customers find the genuine Hyundai parts they need. He handles parts orders, availability checks and quotations."
   },
   {
+    "slug": "muhammad-noman-khan",
     "name": "Muhammad Noman Khan",
     "role": "Service Advisor Mechanical",
     "image": "/images/team/muhammad-noman-khan.png",
     "whatsappHref": "https://wa.me/923305001906",
-    "phoneDisplay": "+92 330 5001906"
+    "phoneDisplay": "+92 330 5001906",
+    "bio": "Noman is a mechanical service advisor who books in your Hyundai for scheduled services and repairs. He listens to your concerns, gives you a clear estimate before any work starts, and explains everything that was done when you collect your car."
   },
   {
+    "slug": "abdul-manan",
     "name": "Abdul Manan",
     "role": "Service Advisor Mechanical",
     "image": "",
     "whatsappHref": "https://wa.me/923302001486",
-    "phoneDisplay": "+92 330 2001486"
+    "phoneDisplay": "+92 330 2001486",
+    "bio": "Abdul Manan is a mechanical service advisor who helps customers with periodic maintenance, free services and repairs. He keeps you informed while your car is in the workshop and makes sure it is ready when promised."
   },
   {
+    "slug": "raheel-ahmed",
     "name": "Raheel Ahmed",
     "role": "PDI Incharge",
     "image": "/images/team/raheel-ahmed.png",
     "whatsappHref": "https://wa.me/923331150174",
-    "phoneDisplay": "+92 333 1150174"
+    "phoneDisplay": "+92 333 1150174",
+    "bio": "Raheel is in charge of Pre-Delivery Inspection (PDI). Before any new Hyundai is handed over, his team checks it thoroughly so it reaches its new owner in perfect condition."
   }
 ]

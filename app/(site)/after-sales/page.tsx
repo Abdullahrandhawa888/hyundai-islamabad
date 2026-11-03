@@ -8,8 +8,9 @@ import {
 } from "@/components/after-sales/AfterSalesPage";
 import { WorkshopCard } from "@/components/after-sales/WorkshopCard";
 import { afterSalesPages } from "@/components/after-sales/pages";
+import { ServiceIcon } from "@/components/after-sales/service-icons";
 import { Button } from "@/components/shared/Button";
-import { afterSalesOverview, freeServices, serviceLocation } from "@/lib/data";
+import { afterSalesOverview, freeServices, serviceLocation, workshopServices } from "@/lib/data";
 
 export const metadata: Metadata = afterSalesMetadata("overview");
 
@@ -29,7 +30,7 @@ const workshopPhotos = [
 ];
 
 export default function AfterSalesOverviewPage() {
-  const sections = afterSalesPages.filter((page) => page.slug !== "overview");
+  const sections = afterSalesPages.filter((page) => page.summary && page.slug !== "services");
 
   return (
     <AfterSalesPage slug="overview">
@@ -50,7 +51,39 @@ export default function AfterSalesOverviewPage() {
         <WorkshopCard />
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8">
+      <section className="border-y border-line bg-[#f7f9fc]">
+        <div className="mx-auto max-w-6xl px-5 py-14 md:px-8">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <Eyebrow>Services available</Eyebrow>
+              <h2 className="mt-2 text-2xl font-light md:text-3xl">What we can do for your car</h2>
+            </div>
+            <Link
+              href="/after-sales/services"
+              className="shrink-0 self-start text-[13px] font-medium transition-colors duration-300 ease-out hover:text-accent md:self-auto"
+            >
+              › See all services
+            </Link>
+          </div>
+          <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {workshopServices.items.map((service) => (
+              <li key={service.name}>
+                <Link
+                  href="/after-sales/services"
+                  className="group flex h-full items-center gap-3 border border-line bg-white p-4 text-[14px] font-medium leading-5 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_14px_34px_-18px_rgba(28,105,212,0.55)]"
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent transition-colors duration-300 ease-out group-hover:bg-accent group-hover:text-white">
+                    <ServiceIcon name={service.icon} size={19} strokeWidth={1.6} aria-hidden />
+                  </span>
+                  {service.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-16 md:px-8">
         <h2 className="text-2xl font-light">Explore After Sales</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {sections.map(({ slug, href, title, summary, icon: Icon }) => (

@@ -1,4 +1,5 @@
-import { accessories, rangeTabs, seriesFilters, vehicles } from "@/lib/data";
+import { SERVICE_ICONS } from "@/components/after-sales/service-icons";
+import { accessories, rangeTabs, seriesFilters, serviceTypes, vehicles, workshopServices } from "@/lib/data";
 
 // How the admin editor should present each field: friendly labels, help text,
 // dropdowns instead of free typing, tabs for long items, and live totals.
@@ -239,9 +240,14 @@ const afterSalesTeamHints: FieldHints = {
       detail: typeof item.role === "string" ? item.role : undefined,
     }),
   },
+  "[].slug": {
+    ...lockedSlug,
+    help: "Their profile page link, e.g. aqib makes /after-sales-team/aqib. Leave empty for a new person and it's made from their name.",
+  },
   "[].image": { label: "Photo", help: "Picture path, e.g. /images/team/name.png. Leave empty to show a placeholder." },
   "[].whatsappHref": { label: "WhatsApp link (optional)", help: "Format: https://wa.me/923001234567 (country code, no + or spaces). Leave empty to hide." },
   "[].phoneDisplay": { label: "Phone (as shown, optional)" },
+  "[].bio": { label: "Bio", control: "textarea", help: "Shown on their profile page." },
 };
 
 const newsHints: FieldHints = {
@@ -263,10 +269,106 @@ const navHints: FieldHints = {
   "": { addLabel: "Add menu item" },
   "[].children": { label: "Dropdown links", addLabel: "Add link" },
   "[].children[].group": { label: "Column heading", help: "Links with the same heading are listed together." },
+  "[].children[].sub": { label: "Indent under the link above (↳)" },
   "[].image": { label: "Faded picture behind the dropdown" },
 };
 
+const serviceHints: FieldHints = {
+  services: { label: "Our Services page", help: "The workshop services on /after-sales/services and the After Sales overview." },
+  "services.intro": { label: "Introduction", control: "textarea" },
+  "services.categories": {
+    label: "Sections",
+    addLabel: "Add section",
+    help: "The headings services are grouped under, in page order. A service's \"Section\" must match one of these names exactly.",
+  },
+  "services.categories[].name": { label: "Section name" },
+  "services.categories[].blurb": { label: "Short description", control: "textarea" },
+  "services.categories[].image": { label: "Photo", help: "Large picture shown beside this section's services." },
+  "services.items": { label: "Services", addLabel: "Add service", help: "Use the arrows to change the order." },
+  "services.items[]": {
+    order: ["name", "category", "icon", "bookingType", "description"],
+    summary: (item) => ({
+      title: typeof item.name === "string" ? item.name : undefined,
+      detail: typeof item.category === "string" ? item.category : undefined,
+    }),
+  },
+  "services.items[].name": { label: "Service name" },
+  "services.items[].category": {
+    label: "Section",
+    control: "select",
+    options: workshopServices.categories.map((c) => ({ label: c.name, value: c.name })),
+    help: "Which heading this service is listed under. To add a new heading, add it under Sections first and save.",
+  },
+  "services.items[].icon": {
+    label: "Icon",
+    control: "select",
+    options: Object.entries(SERVICE_ICONS).map(([value, { label }]) => ({ label, value })),
+  },
+  "services.items[].bookingType": {
+    label: "\"Book this service\" opens the form on",
+    control: "select",
+    options: serviceTypes,
+  },
+  "services.items[].description": { label: "Description", control: "textarea" },
+  extendedWarranty: { label: "Extended Warranty page" },
+  "extendedWarranty.benefits": { label: "Benefits", addLabel: "Add benefit" },
+  "extendedWarranty.criteria": { label: "Criteria", addLabel: "Add line" },
+  "facility.features": { label: "Facility photos", addLabel: "Add photo", help: "The photo grid on the Dealership Facility page." },
+  "maintenanceCharts.charts": { label: "Charts", addLabel: "Add chart", help: "One table each, e.g. Petrol, Diesel, Electric Vehicle." },
+  "maintenanceCharts.charts[].rows[].values": { label: "Intervals", help: "One per column, in the same order. Use - where it doesn't apply." },
+  "warranty.sections": { label: "Accordion sections", addLabel: "Add section", help: "Each one is a navy bar that opens on the Conditions page." },
+  "warranty.sections[].blocks": { label: "Paragraphs", addLabel: "Add paragraph" },
+  "warranty.sections[].blocks[].text": { control: "textarea" },
+  "warranty.sections[].blocks[].items": { label: "Bullet points", addLabel: "Add bullet" },
+};
+
+/** Fits-each-model ticks: one per model, in the same order as the Models list. */
+const fitsHint = { label: "Fits (one tick per model, same order as Models)" };
+
+const partsHints: FieldHints = {
+  genuineParts: { label: "Genuine Parts" },
+  "genuineParts.parts": { label: "Featured parts", addLabel: "Add part", help: "Each one gets its own page and a dot on the car drawing." },
+  "genuineParts.parts[]": {
+    summary: (item) => ({ title: typeof item.name === "string" ? item.name : undefined }),
+  },
+  "genuineParts.parts[].slug": lockedSlug,
+  "genuineParts.parts[].summary": { label: "One-line summary", control: "textarea" },
+  "genuineParts.parts[].function": { label: "Function and mechanism", control: "textarea" },
+  "genuineParts.parts[].card": { label: "Card picture" },
+  "genuineParts.parts[].diagram": { label: "Diagram picture" },
+  "genuineParts.parts[].detail": { label: "Detail picture" },
+  "genuineParts.parts[].video": { label: "Comparison video", help: "Path to an .mp4 file, e.g. /videos/genuine-parts/air-filter.mp4." },
+  "genuineParts.parts[].hotspotX": { label: "Dot position across (%)", help: "0 is the left edge of the car drawing, 100 the right." },
+  "genuineParts.parts[].hotspotY": { label: "Dot position down (%)", help: "0 is the top of the car drawing, 100 the bottom." },
+  "genuineParts.comparison": { label: "Old vs new pictures", addLabel: "Add picture" },
+  "genuineParts.otherParts": { label: "Other parts", addLabel: "Add part" },
+  "genuineParts.otherParts[]": {
+    summary: (item) => ({ title: typeof item.name === "string" ? item.name : undefined }),
+  },
+  "genuineParts.otherParts[].slug": lockedSlug,
+  "genuineParts.otherParts[].name": { label: "Catalogue name", help: 'As in the parts catalogue, e.g. "BEARING-FR WHEEL HUB".' },
+  "genuineParts.otherParts[].title": { label: "Name in sentences", help: 'e.g. "Bearing-FR Wheel Hub".' },
+  "genuineParts.otherPartsLead": { label: "Part page: first line", control: "textarea", help: "{part} is replaced by the part's name." },
+  "genuineParts.otherPartsBody": { label: "Part page: paragraph", control: "textarea", help: "{part} is replaced by the part's name." },
+  "genuineParts.disclaimer": { label: "Photo disclaimer", control: "textarea" },
+  lubricants: { label: "Lubricants page" },
+  "lubricants.products": { label: "Oils", addLabel: "Add oil" },
+  "lubricants.products[].description": { control: "textarea" },
+  "lubricants.products[].benefits": { label: "Benefits", addLabel: "Add benefit" },
+  "lubricants.models": { label: "Models (table columns)", addLabel: "Add model" },
+  "lubricants.rows": { label: "Table rows", addLabel: "Add oil" },
+  "lubricants.rows[].fits": fitsHint,
+  nSprint: { label: "N-Sprint page" },
+  "nSprint.highlight": { control: "textarea" },
+  "nSprint.specs": { label: "Specifications", addLabel: "Add specification" },
+  "nSprint.models": { label: "Models (table columns)", addLabel: "Add model" },
+  "nSprint.rows": { label: "Table rows", addLabel: "Add oil" },
+  "nSprint.rows[].fits": fitsHint,
+};
+
 export const FIELD_HINTS: Record<string, FieldHints> = {
+  service: serviceHints,
+  parts: partsHints,
   vehicles: vehicleHints,
   "emi-plans": emiPlanHints,
   "price-list": priceListHints,

@@ -115,3 +115,13 @@ body {
     animation: none;
   }
 }
+
+/* Genuine Parts explorer: the part card fades in when a dot is chosen. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

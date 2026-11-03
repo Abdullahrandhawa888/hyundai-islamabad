@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
-import { ChevronDown, MapPin, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, CornerDownRight, MapPin, Menu, Phone, X } from "lucide-react";
 import { navItems, site } from "@/lib/data";
 import type { NavItem, NavLink } from "@/lib/types";
 import { ContactDrawer } from "./ContactDrawer";
@@ -82,7 +82,7 @@ export function Header() {
 
   return (
     <>
-      <header className="border-b border-line bg-white">
+      <header className="relative border-b border-line bg-white">
         <div className="flex h-[88px] items-center">
           <a
             href="https://ittehad.com.pk"
@@ -144,7 +144,8 @@ export function Header() {
                 return (
                   <div
                     key={item.label}
-                    className="relative flex h-full items-center"
+                    // A wide (4+ column) menu is centred under the whole header, not this item.
+                    className={`${groupLinks(item.children).length > 3 ? "" : "relative"} flex h-full items-center`}
                     onMouseEnter={() => {
                       hoveredRef.current = item.label;
                       setOpenMenu(item.label);
@@ -338,10 +339,11 @@ export function Header() {
                                 ) : null}
                                 {group.links.map((link) => (
                                   <MobileLink
-                                    key={link.href}
+                                    key={`${link.label}-${link.href}`}
                                     href={link.href}
                                     current={isWithin(pathname, link.href)}
                                   >
+                                    {link.sub ? <span className="mr-1.5 pl-2 text-muted">↳</span> : null}
                                     {link.label}
                                   </MobileLink>
                                 ))}
@@ -428,12 +430,14 @@ function DropdownPanel({
     );
   }
 
-  // Grouped mega menu (e.g. After Sales): a column per heading, with the
-  // section's picture faded in behind, like the original hyundai-islamabad.com menu.
+  // Grouped mega menu (e.g. After Sales): a column per heading, like the
+  // hyundai-nishat.com menu. Wide enough for four columns.
   return (
     <div
       id={id}
-      className={`absolute top-full left-1/2 -mt-px w-[46rem] -translate-x-1/2 overflow-hidden border border-line bg-white shadow-xl transition-all duration-300 ease-out ${visibility}`}
+      className={`absolute top-full left-1/2 -mt-px -translate-x-1/2 overflow-hidden border border-line bg-white shadow-xl transition-all duration-300 ease-out ${
+        groups.length > 3 ? "w-[min(66rem,calc(100vw-2rem))]" : "w-[46rem]"
+      } ${visibility}`}
     >
       {item.image ? (
         <Image
@@ -452,13 +456,14 @@ function DropdownPanel({
         {groups.map((group) => (
           <div key={group.title || "links"}>
             {group.title ? (
-              <p className="text-[17px] leading-snug font-normal text-foreground">{group.title}</p>
+              <p className="text-[17px] leading-snug font-semibold text-foreground">{group.title}</p>
             ) : null}
-            <ul className="mt-5 space-y-2.5">
+            <ul className="mt-5 space-y-3">
               {group.links.map((link) => {
                 const current = isWithin(pathname, link.href);
                 return (
-                  <li key={link.href}>
+                  <li key={`${link.label}-${link.href}`} className={link.sub ? "-mt-1 flex items-center gap-2 pl-0.5" : ""}>
+                    {link.sub ? <CornerDownRight size={16} strokeWidth={1.4} className="shrink-0 text-muted" aria-hidden /> : null}
                     <Link
                       href={link.href}
                       aria-current={current ? "page" : undefined}

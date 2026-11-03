@@ -1,67 +1,167 @@
 import {
+  BadgeCheck,
   BookOpen,
   Building2,
   CalendarCheck,
+  CarFront,
+  Droplets,
+  Fuel,
   Gauge,
   Gift,
   HeartHandshake,
+  Settings,
   ShieldCheck,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
 
+type Crumb = { label: string; href?: string };
+
 export type AfterSalesPageInfo = {
   slug: string;
   href: string;
-  /** Short label for the section tabs and breadcrumb. */
+  /** Breadcrumb label for this page. */
   navLabel: string;
-  /** Page <h1> and browser-tab title. */
+  /** Big heading in the hero. */
   title: string;
-  /** Line under the title in the hero; also the meta description. */
+  /** Browser-tab title. */
+  metaTitle: string;
+  /** Line under the heading in the hero; also the meta description. */
   tagline: string;
   /** One-liner on the After Sales overview cards. */
   summary: string;
+  /** Hero photo. Empty for the plain beige hero with a centred heading. */
   hero: string;
-  heroPosition: string;
+  /** Text colour over the hero photo: "light" (white) or "dark" (black). */
+  heroTone: "light" | "dark";
+  /** Crumbs between Home and this page. */
+  parents: readonly Crumb[];
   icon: LucideIcon;
 };
 
-// The pages that make up /after-sales, in tab order. Each route is a real
-// folder under app/(site)/after-sales, so adding a page means adding the
-// folder and an entry here. The header dropdown is configured separately in
-// content/nav.json so staff can edit it from /admin.
+const AFTER_SALES: Crumb = { label: "After Sales" };
+const GENUINE_PARTS: Crumb = { label: "Genuine Parts", href: "/after-sales/genuine-parts" };
+
+// The pages that make up /after-sales, laid out like hyundai-nishat.com.
+// Each route is a real folder under app/(site)/after-sales. The header
+// dropdown is configured separately in content/nav.json (editable in /admin).
 export const afterSalesPages = [
   {
     slug: "overview",
     href: "/after-sales",
-    navLabel: "Overview",
+    navLabel: "After Sales",
     title: "After Sales",
+    metaTitle: "After Sales",
     tagline: "Service, warranty and care for your Hyundai at our I-9/3 workshop.",
     summary: "",
     hero: "/images/after-sales/workshop-technician.webp",
-    heroPosition: "object-[center_30%]",
+    heroTone: "light",
+    parents: [],
     icon: Wrench,
+  },
+  {
+    slug: "services",
+    href: "/after-sales/services",
+    navLabel: "Our Services",
+    title: "Our Services",
+    metaTitle: "Our Services",
+    tagline: "Maintenance, mechanical repairs, body & paint and paint protection, all at our I-9/3 workshop.",
+    summary: "Accident repairs, paint protection, wheel alignment, A/C and more, under one roof.",
+    hero: "/images/after-sales/workshop-lift.jpg",
+    heroTone: "light",
+    parents: [AFTER_SALES],
+    icon: CarFront,
   },
   {
     slug: "warranty",
     href: "/after-sales/warranty",
-    navLabel: "Warranty",
-    title: "Warranty Terms & Conditions",
-    tagline: "What your Hyundai warranty covers, for how long, and how to get warranty service.",
-    summary: "New vehicle, paint and OEM warranty cover, and what each one includes.",
-    hero: "/images/after-sales/warranty-hero.webp",
-    heroPosition: "object-center",
+    navLabel: "Conditions",
+    title: "Conditions",
+    metaTitle: "Warranty Conditions & Coverage",
+    tagline:
+      "A written promise from Hyundai Nishat Motor Limited to repair or replace a component of vehicle that develops a fault due to material or workmanship within a fixed period of time.",
+    summary: "New vehicle, paint, OEM and hybrid system warranty cover.",
+    hero: "/images/after-sales/warranty/conditions-banner.webp",
+    heroTone: "light",
+    parents: [],
     icon: ShieldCheck,
+  },
+  {
+    slug: "extended-warranty",
+    href: "/after-sales/extended-warranty",
+    navLabel: "Extended Warranty",
+    title: "Drive worry-free, mile after mile",
+    metaTitle: "Hyundai Extended Warranty",
+    tagline: "With Hyundai’s Extended Warranty, you can focus on the road, not the repairs.",
+    summary: "Up to 5 years or 125,000 km of cover.",
+    hero: "/images/after-sales/warranty/extended-warranty-banner.webp",
+    heroTone: "light",
+    parents: [],
+    icon: BadgeCheck,
+  },
+  {
+    slug: "genuine-parts",
+    href: "/after-sales/genuine-parts",
+    navLabel: "Genuine Parts",
+    title: "Genuine Parts",
+    metaTitle: "Hyundai Genuine Parts",
+    tagline: "Your Partner in Parts and Service.",
+    summary: "Filters, brake pads, timing belts and more, engineered for your Hyundai.",
+    hero: "/images/after-sales/parts/genuine-parts-banner.webp",
+    heroTone: "dark",
+    parents: [],
+    icon: Settings,
+  },
+  {
+    slug: "genuine-part",
+    href: "/after-sales/genuine-parts",
+    navLabel: "Genuine Parts",
+    title: "Genuine Parts",
+    metaTitle: "Hyundai Genuine Parts",
+    tagline: "Your Partner in Parts and Service.",
+    summary: "",
+    hero: "/images/after-sales/parts/genuine-parts-banner.webp",
+    heroTone: "dark",
+    parents: [GENUINE_PARTS],
+    icon: Settings,
+  },
+  {
+    slug: "lubricants",
+    href: "/after-sales/lubricants",
+    navLabel: "Lubricants",
+    title: "Lubricants",
+    metaTitle: "Hyundai Lubricants & Engine Oils",
+    tagline: "Keep your engine running smoothly with our high-quality lubricants.",
+    summary: "Hyundai-Shell co-branded engine oils, and which one fits your model.",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES],
+    icon: Droplets,
+  },
+  {
+    slug: "n-sprint",
+    href: "/after-sales/n-sprint",
+    navLabel: "N-Sprint (Nishat Genuine Engine Oil)",
+    title: "N-Sprint (Nishat Genuine Engine Oil)",
+    metaTitle: "N-Sprint Genuine Engine Oil",
+    tagline: "Keep your engine running smoothly with our high-quality lubricants.",
+    summary: "Nishat’s own fully synthetic engine oil range.",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES, { label: "Lubricants", href: "/after-sales/lubricants" }],
+    icon: Fuel,
   },
   {
     slug: "customer-promise",
     href: "/after-sales/customer-promise",
     navLabel: "Customer Promise",
     title: "Customer Promise",
-    tagline: "Our commitment to every customer who brings their Hyundai to us.",
+    metaTitle: "Customer Promise | Our Commitment to You",
+    tagline: "Together, we promise to deliver exceptional service and exceed your expectations.",
     summary: "The commitments we make to you every time you visit our workshop.",
-    hero: "/images/team/group-photo-banner.png",
-    heroPosition: "object-[center_30%]",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES],
     icon: HeartHandshake,
   },
   {
@@ -69,10 +169,12 @@ export const afterSalesPages = [
     href: "/after-sales/dealership-facility",
     navLabel: "Dealership Facility",
     title: "Dealership Facility",
-    tagline: "Sales and service under one roof at I-9/3, Islamabad.",
-    summary: "Our I-9/3 showroom and service workshop, and how to find us.",
-    hero: "/images/vehicles/dealership-showroom.jpg",
-    heroPosition: "object-[center_35%]",
+    metaTitle: "Dealership Facility",
+    tagline: "Experience the ultimate in automotive luxury and convenience at our dealership facility.",
+    summary: "Diagnostic systems, wheel and chassis aligners, a paint booth and our customer lounge.",
+    hero: "/images/after-sales/facility/dealership-banner.webp",
+    heroTone: "light",
+    parents: [AFTER_SALES],
     icon: Building2,
   },
   {
@@ -80,43 +182,51 @@ export const afterSalesPages = [
     href: "/after-sales/free-services",
     navLabel: "Free Services",
     title: "Free Services",
-    tagline: "Three complimentary scheduled services with every new Hyundai.",
-    summary: "When your three complimentary services are due, and what they include.",
-    hero: "/images/after-sales/workshop-lift.jpg",
-    heroPosition: "object-[center_20%]",
+    metaTitle: "Hyundai Free Services",
+    tagline: "At Hyundai, we put all our efforts to provide customers with the best after sales service",
+    summary: "When your three complimentary services are due.",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES],
     icon: Gift,
   },
   {
     slug: "maintenance-charts",
     href: "/after-sales/maintenance-charts",
-    navLabel: "Maintenance Charts",
+    navLabel: "Periodic Maintenance Charts",
     title: "Periodic Maintenance Charts",
-    tagline: "How often each item should be replaced, model by model.",
-    summary: "Replacement intervals for oil, filters, spark plugs and fluids by model.",
-    hero: "/images/after-sales/workshop-oil-change.jpg",
-    heroPosition: "object-[center_55%]",
+    metaTitle: "Hyundai Periodic Maintenance Charts",
+    tagline: "Stay on top of your vehicle's maintenance with our easy-to-follow periodic maintenance chart.",
+    summary: "Replacement intervals for petrol, diesel and electric Hyundai models.",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES],
     icon: Gauge,
   },
   {
     slug: "owners-manual",
     href: "/after-sales/owners-manual",
-    navLabel: "Owner’s Manual",
-    title: "Owner’s Manual",
-    tagline: "Download the official Owner’s Manual for your Hyundai.",
+    navLabel: "Owner's Manual",
+    title: "Owner's Manual",
+    metaTitle: "Hyundai Owner's Manual Download",
+    tagline: "Unlock the full potential of your vehicle with our comprehensive owner's manual.",
     summary: "Download the official manual for your model as a PDF.",
-    hero: "/images/vehicles/lineup-banner-centered.jpg",
-    heroPosition: "object-center",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES],
     icon: BookOpen,
   },
   {
     slug: "book-a-service",
     href: "/after-sales/book-a-service",
-    navLabel: "Book a Service",
+    navLabel: "Service Appointment Request",
     title: "Book a Service",
-    tagline: "Request a workshop appointment at a time that suits you.",
+    metaTitle: "Book a Hyundai Service | Online Booking",
+    tagline: "Hyundai provide you with booking service for your valuable time.",
     summary: "Request an appointment at our I-9/3 workshop online.",
-    hero: "/images/after-sales/workshop-technician.webp",
-    heroPosition: "object-[center_80%]",
+    hero: "",
+    heroTone: "dark",
+    parents: [AFTER_SALES],
     icon: CalendarCheck,
   },
 ] as const satisfies readonly AfterSalesPageInfo[];
