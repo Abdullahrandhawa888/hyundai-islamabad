@@ -59,7 +59,26 @@ export function AfterSalesPage({
       </nav>
 
       <section className="mx-auto max-w-[1320px] md:px-6">
-        {page.hero ? (
+        {page.hero && page.heroSplit ? (
+          // Photo shown whole (never cropped) on the right; heading on navy beside it.
+          // On phones the photo sits on top and the heading below.
+          <div className="flex flex-col-reverse bg-navy text-white md:h-[370px] md:flex-row">
+            <div className="flex flex-1 flex-col justify-center px-5 py-10 md:px-12">
+              <h1 className="text-4xl leading-tight font-semibold md:text-[48px]">{heading}</h1>
+              <p className="mt-3 max-w-md text-[16px] leading-7 text-white/85 md:text-[18px]">{lead}</p>
+            </div>
+            <Image
+              src={page.hero}
+              alt=""
+              width={727}
+              height={405}
+              // Fades into the navy (down on phones, left on wide screens) instead of a hard edge.
+              className="h-auto w-full [mask-image:linear-gradient(to_bottom,black_65%,transparent)] md:h-full md:w-auto md:[mask-image:linear-gradient(to_right,transparent,rgba(0,0,0,0.55)_18%,black_38%)]"
+              priority
+              unoptimized
+            />
+          </div>
+        ) : page.hero ? (
           <div
             className={`relative flex min-h-[260px] overflow-hidden md:min-h-[370px] ${
               page.heroTop ? "items-start" : "items-center"
@@ -70,7 +89,7 @@ export function AfterSalesPage({
               alt=""
               fill
               sizes="(min-width: 1320px) 1272px, 100vw"
-              className="object-cover"
+              className={`object-cover ${page.heroPosition ?? "object-center"}`}
               priority
               unoptimized
             />

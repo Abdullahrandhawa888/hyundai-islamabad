@@ -39,6 +39,11 @@ export type AfterSalesPageInfo = {
   heroTop?: boolean;
   /** Without a photo: the plain panel is beige, or Hyundai blue with white text. */
   heroBlue?: boolean;
+  /** Which part of the photo stays in view when it is cropped, e.g. "object-top". */
+  heroPosition?: string;
+  /** Show the photo whole on the right, with the heading on navy beside it.
+   * For photos with their own text, which a full-width crop would cut off. */
+  heroSplit?: boolean;
   /** Crumbs between Home and this page. */
   parents: readonly Crumb[];
   icon: LucideIcon;
@@ -138,8 +143,9 @@ export const afterSalesPages = [
     metaTitle: "Hyundai Lubricants & Engine Oils",
     tagline: "Keep your engine running smoothly with our high-quality lubricants.",
     summary: "Hyundai-Shell co-branded engine oils, and which one fits your model.",
-    hero: "",
-    heroTone: "dark",
+    hero: "/images/after-sales/lubricants/lubricants-hero.webp",
+    heroPosition: "object-[center_20%]",
+    heroTone: "light",
     parents: [AFTER_SALES],
     icon: Droplets,
   },
@@ -151,8 +157,9 @@ export const afterSalesPages = [
     metaTitle: "N-Sprint Genuine Engine Oil",
     tagline: "Keep your engine running smoothly with our high-quality lubricants.",
     summary: "Nishat’s own fully synthetic engine oil range.",
-    hero: "",
-    heroTone: "dark",
+    hero: "/images/after-sales/lubricants/lubricants-hero.webp",
+    heroPosition: "object-[center_20%]",
+    heroTone: "light",
     parents: [AFTER_SALES, { label: "Lubricants", href: "/after-sales/lubricants" }],
     icon: Fuel,
   },
@@ -191,8 +198,9 @@ export const afterSalesPages = [
     metaTitle: "Hyundai Free Services",
     tagline: "At Hyundai, we put all our efforts to provide customers with the best after sales service",
     summary: "When your three complimentary services are due.",
-    hero: "",
-    heroTone: "dark",
+    hero: "/images/after-sales/free-services/free-services-hero.webp",
+    heroPosition: "object-right",
+    heroTone: "light",
     parents: [AFTER_SALES],
     icon: Gift,
   },
@@ -204,8 +212,9 @@ export const afterSalesPages = [
     metaTitle: "Hyundai Periodic Maintenance Charts",
     tagline: "Stay on top of your vehicle's maintenance with our easy-to-follow periodic maintenance chart.",
     summary: "Replacement intervals for petrol, diesel and electric Hyundai models.",
-    hero: "",
-    heroTone: "dark",
+    hero: "/images/after-sales/maintenance-charts-hero.webp",
+    heroSplit: true,
+    heroTone: "light",
     parents: [AFTER_SALES],
     icon: Gauge,
   },
