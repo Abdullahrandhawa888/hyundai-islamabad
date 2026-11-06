@@ -44,7 +44,7 @@ const columns = [
       { label: "Conditions", href: "/after-sales/warranty" },
       { label: "Extended Warranty", href: "/after-sales/extended-warranty" },
       { label: "Genuine Parts", href: "/after-sales/genuine-parts" },
-      { label: "Lubricants", href: "/after-sales/lubricants" },
+      { label: "Lubricants", href: "/after-sales/n-sprint" },
       { label: "Free Services", href: "/after-sales/free-services" },
       { label: "Maintenance Charts", href: "/after-sales/maintenance-charts" },
       { label: "Owner's Manual", href: "/after-sales/owners-manual" },

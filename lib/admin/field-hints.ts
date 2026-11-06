@@ -288,7 +288,8 @@ const newsHints: FieldHints = {
 };
 
 const siteHints: FieldHints = {
-  "site.whatsapp": { label: "WhatsApp link", help: "Format: https://wa.me/923001234567 (country code, no + or spaces). Used by every WhatsApp button." },
+  "site.whatsapp": { label: "WhatsApp link", help: "Format: https://wa.me/923001234567 (country code, no + or spaces). Used by the floating WhatsApp button, except on After Sales pages." },
+  "site.serviceWhatsapp": { label: "Service WhatsApp link", help: "The service team's WhatsApp, used by the floating WhatsApp button on After Sales pages. Format: https://wa.me/923001234567?text=Hello (keep the ?text= greeting: without it, WhatsApp Desktop can wrongly say a business number is not on WhatsApp)." },
   "site.phoneHref": { label: "Phone link", help: "Format: tel:+9251111500200" },
   "site.mapUrl": { label: "Google Maps link", help: "Opens when someone taps the map." },
   "site.mapEmbedUrl": { label: "Map shown on the page", help: "From Google Maps: Share → Embed a map → copy the link inside src=\"...\"." },
@@ -345,7 +346,12 @@ const serviceHints: FieldHints = {
   "extendedWarranty.benefits": { label: "Benefits", addLabel: "Add benefit" },
   "extendedWarranty.criteria": { label: "Criteria", addLabel: "Add line" },
   "facility.features": { label: "Facility photos", addLabel: "Add photo", help: "The photo grid on the Dealership Facility page." },
-  "maintenanceCharts.charts": { label: "Charts", addLabel: "Add chart", help: "One table each, e.g. Petrol, Diesel, Electric Vehicle." },
+  "maintenanceCharts.charts": { label: "Charts", addLabel: "Add chart", help: "One table each. The title (e.g. Petrol, Diesel, Electric Vehicle) shows in the top-left cell of its table." },
+  "maintenanceCharts.charts[].columns": {
+    label: "Column headings",
+    addLabel: "Add column",
+    help: 'Text in brackets at the end shows as a small note under the heading, e.g. "AC filter (As per condition)".',
+  },
   "maintenanceCharts.charts[].rows[].values": { label: "Intervals", help: "One per column, in the same order. Use - where it doesn't apply." },
   "warranty.sections": { label: "Accordion sections", addLabel: "Add section", help: "Each one is a navy bar that opens on the Conditions page." },
   "warranty.sections[].blocks": { label: "Paragraphs", addLabel: "Add paragraph" },
@@ -382,13 +388,6 @@ const partsHints: FieldHints = {
   "genuineParts.otherPartsLead": { label: "Part page: first line", control: "textarea", help: "{part} is replaced by the part's name." },
   "genuineParts.otherPartsBody": { label: "Part page: paragraph", control: "textarea", help: "{part} is replaced by the part's name." },
   "genuineParts.disclaimer": { label: "Photo disclaimer", control: "textarea" },
-  lubricants: { label: "Lubricants page" },
-  "lubricants.products": { label: "Oils", addLabel: "Add oil" },
-  "lubricants.products[].description": { control: "textarea" },
-  "lubricants.products[].benefits": { label: "Benefits", addLabel: "Add benefit" },
-  "lubricants.models": { label: "Models (table columns)", addLabel: "Add model" },
-  "lubricants.rows": { label: "Table rows", addLabel: "Add oil" },
-  "lubricants.rows[].fits": fitsHint,
   nSprint: { label: "N-Sprint page" },
   "nSprint.highlight": { control: "textarea" },
   "nSprint.specs": { label: "Specifications", addLabel: "Add specification" },

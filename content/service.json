@@ -236,14 +236,13 @@
   },
   "maintenanceCharts": {
     "intro": "Stay on top of your vehicle's maintenance with our easy-to-follow periodic maintenance chart.",
-    "note": "Below parts are replaced at every frequency interval.",
     "charts": [
       {
         "title": "Petrol",
         "columns": [
           "Engine Oil & Filter",
-          "Element Air Cleaner",
-          "AC filter",
+          "Element Air Cleaner (As per condition)",
+          "AC filter (As per condition)",
           "Spark Plugs",
           "Fuel Filter",
           "Brake Fluid",
@@ -370,8 +369,8 @@
         "title": "Diesel",
         "columns": [
           "Engine Oil & Filter",
-          "Element Air Cleaner",
-          "AC filter",
+          "Element Air Cleaner (As per condition)",
+          "AC filter (As per condition)",
           "Spark Plugs",
           "Fuel Filter",
           "Brake Fluid",
@@ -442,21 +441,21 @@
         "title": "First free service",
         "distance": "1,000 km",
         "time": "1 month",
-        "detail": "First Free Service is due on completion of 1,000 Km or 1 month (whichever comes first). To avail this offer, visit our authorized dealerships nearest to your location. This periodic maintenance is performed as per owner’s manual with no charges except any parts, lubricants and accessories (if consumed).",
+        "detail": "First Free Service is due on completion of 1,000 Km or 1 month (whichever comes first). To avail this offer, visit Hyundai Islamabad at I-9/3, Islamabad. This periodic maintenance is performed as per owner’s manual with no charges except any parts, lubricants and accessories (if consumed).",
         "image": "/images/after-sales/free-services/first.webp"
       },
       {
         "title": "Second free service",
         "distance": "5,000 km",
         "time": "3 months",
-        "detail": "Second Free Service is due on completion of 5,000 Km or 3 months (whichever comes first). To avail this offer, visit our authorized dealerships nearest to your location. This periodic maintenance is performed as per owner’s manual with no charges except any parts, lubricants and accessories (if consumed).",
+        "detail": "Second Free Service is due on completion of 5,000 Km or 3 months (whichever comes first). To avail this offer, visit Hyundai Islamabad at I-9/3, Islamabad. This periodic maintenance is performed as per owner’s manual with no charges except any parts, lubricants and accessories (if consumed).",
         "image": "/images/after-sales/free-services/second.webp"
       },
       {
         "title": "Third free service",
         "distance": "10,000 km",
         "time": "6 months",
-        "detail": "Third Free Service is due on completion of 10,000 Km or 6 months (whichever comes first). To avail this offer, visit our authorized dealerships nearest to your location. This periodic maintenance is performed as per owner’s manual with no charges except any parts, lubricants and accessories (if consumed).",
+        "detail": "Third Free Service is due on completion of 10,000 Km or 6 months (whichever comes first). To avail this offer, visit Hyundai Islamabad at I-9/3, Islamabad. This periodic maintenance is performed as per owner’s manual with no charges except any parts, lubricants and accessories (if consumed).",
         "image": "/images/after-sales/free-services/third.webp"
       }
     ]
@@ -664,7 +663,7 @@
     ],
     "terms": "Terms & Conditions apply",
     "criteriaTitle": "Criteria:",
-    "criteriaIntro": "Extended Warranty service can be purchased from Authorized Hyundai Dealership:",
+    "criteriaIntro": "Extended Warranty can be purchased at Hyundai Islamabad:",
     "criteria": [
       "At the time of new vehicle sales",
       "Up to the **Second Free Service (SFS)** or **3 months** (whichever comes first) from vehicle sales date"

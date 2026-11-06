@@ -76,7 +76,7 @@ export const CONTENT_REGISTRY = {
   parts: {
     path: "content/parts.json",
     label: "Genuine parts & lubricants",
-    description: "Genuine Parts, Other Parts, Hyundai-Shell lubricants and N-Sprint engine oil pages.",
+    description: "Genuine Parts, Other Parts and N-Sprint engine oil pages.",
     group: "Website pages",
     viewHref: "/after-sales/genuine-parts",
   },

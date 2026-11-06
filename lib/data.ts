@@ -165,7 +165,7 @@ export const freeServices = serviceData.freeServices;
 export const warranty = serviceData.warranty;
 export const extendedWarranty = serviceData.extendedWarranty;
 
-// Genuine parts and lubricants (/after-sales/genuine-parts, /lubricants, /n-sprint).
+// Genuine parts and lubricants (/after-sales/genuine-parts, /n-sprint).
 const toSlug = (text: string) =>
   text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -179,7 +179,6 @@ export const genuineParts = {
     title: part.title || part.name,
   })),
 };
-export const lubricants = partsData.lubricants;
 export const nSprint = partsData.nSprint;
 
 export function getGenuinePart(slug: string) {

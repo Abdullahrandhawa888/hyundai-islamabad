@@ -1,9 +1,14 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { site } from "@/lib/data";
 
 export function WhatsAppButton() {
+  // After Sales pages go to the service team's WhatsApp; everything else to sales.
+  const pathname = usePathname();
+  const isAfterSales = pathname === "/after-sales" || pathname.startsWith("/after-sales/");
+  const href = isAfterSales && site.serviceWhatsapp ? site.serviceWhatsapp : site.whatsapp;
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -37,7 +42,7 @@ export function WhatsAppButton() {
 
   return (
     <a
-      href={site.whatsapp}
+      href={href}
       target="_blank"
       rel="noreferrer"
       className={`fixed right-4 bottom-5 z-40 flex items-center gap-2 transition-all duration-300 ease-out hover:scale-105 ${

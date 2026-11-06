@@ -16,11 +16,18 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
+  // Makes the link-preview image (app/opengraph-image.png) a full web address.
+  metadataBase: new URL("https://hyundai-islamabad.com"),
   title: {
     default: `${site.name} | New Hyundai Dealer Islamabad`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  openGraph: {
+    siteName: site.name,
+    type: "website",
+    locale: "en_PK",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
