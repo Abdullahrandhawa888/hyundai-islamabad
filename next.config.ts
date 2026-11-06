@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
       { source: "/testdrive", destination: "/enquiry", permanent: false },
       // The Hyundai-Shell lubricants page was removed: only N-Sprint (Nishat) oil is sold.
       { source: "/after-sales/lubricants", destination: "/after-sales/n-sprint", permanent: false },
+      // Offer taken down for now (Nov 2026); old shared links land on the Offers page.
+      { source: "/offers/hybrid-prices", destination: "/offers", permanent: false },
 
       // After Sales URLs from the previous WordPress site (hyundai-islamabad.com),
       // so old links and search results keep working once the domain points here.

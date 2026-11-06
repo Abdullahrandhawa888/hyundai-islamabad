@@ -74,43 +74,5 @@
       "All orders are subject to Hyundai Nishat Motor (Private) Limited's standard booking (PBO) terms and conditions.",
       "Hyundai Nishat Motor may change, extend or withdraw this offer without notice."
     ]
-  },
-  {
-    "id": "hybrid-prices",
-    "title": "New hybrid prices at 18% sales tax",
-    "summary": "Locally assembled hybrids with engines up to 2,000cc now carry 18% sales tax, and the ex-factory prices of the Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid have been revised to match.",
-    "validity": "Until further notice",
-    "image": "/images/offers/hybrid-prices-2026.webp",
-    "imageAlt": "New hybrid ex-factory prices: Elantra Hybrid PKR 10,761,000, Tucson Hybrid from PKR 12,202,000, Santa Fe Hybrid from PKR 13,258,000",
-    "href": "/offers/hybrid-prices",
-    "savings": "Elantra Hybrid now PKR 10,761,000",
-    "intro": "The government's new sales tax rates for locally assembled hybrid cars are now confirmed: 18% for engines up to 2,000cc and 25% for engines above 2,000cc. Hyundai's Elantra Hybrid, Tucson Hybrid and Santa Fe Hybrid all fall under the 18% rate, and their ex-factory prices have been revised accordingly.",
-    "sections": [
-      {
-        "heading": "Ex-factory prices at 18% sales tax",
-        "text": "",
-        "table": {
-          "columns": ["Model / variant", "Ex-factory price"],
-          "rows": [
-            { "cells": ["Elantra Hybrid", "PKR 10,761,000"] },
-            { "cells": ["Tucson Hybrid Smart FWD", "PKR 12,202,000"] },
-            { "cells": ["Tucson Hybrid Signature AWD", "PKR 13,300,000"] },
-            { "cells": ["Santa Fe Hybrid Smart FWD", "PKR 13,258,000"] },
-            { "cells": ["Santa Fe Hybrid Signature AWD", "PKR 14,720,000"] }
-          ]
-        },
-        "note": "For the on-road price with freight and taxes, see our price list."
-      }
-    ],
-    "links": [
-      { "label": "See the full price list", "href": "/prices" },
-      { "label": "Make an Enquiry", "href": "/enquiry" }
-    ],
-    "terms": [
-      "Prices are based on the government's current sales tax structure and the duties, taxes and levies in force.",
-      "The new prices apply from the date set by Hyundai Nishat Motor (Private) Limited.",
-      "Any new or revised government duty, tax, levy, fee or charge imposed before invoicing or delivery is charged to the customer.",
-      "Hyundai Nishat Motor's standard booking, payment, invoicing, registration and delivery terms and conditions apply."
-    ]
   }
 ]

@@ -85,7 +85,7 @@ export function Footer() {
               href="/contact#map"
               className="border border-white/35 px-4 py-2 text-[12.5px] font-semibold transition-colors duration-300 ease-out hover:border-white"
             >
-              Our Locations
+              Our Location
             </Link>
           </div>
           <div className="mt-6 flex flex-wrap gap-2">
@@ -165,9 +165,6 @@ export function Footer() {
             <Link href="/careers" className={linkClass}>
               Careers
             </Link>
-            <a href={site.social.nishat} target="_blank" rel="noreferrer" className={linkClass}>
-              Hyundai Nishat
-            </a>
           </div>
         </div>
       </div>
